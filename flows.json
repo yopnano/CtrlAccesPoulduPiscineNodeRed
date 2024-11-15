@@ -1,1 +1,4060 @@
-[]
+[
+    {
+        "id": "0401eb93d584c99a",
+        "type": "tab",
+        "label": "Contrôle d'accès",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f99f61d176d88850",
+        "type": "tab",
+        "label": "Interface",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b7fb87140232fe9d",
+        "type": "tab",
+        "label": "CSV Badges",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0e51b8022c654cc0",
+        "type": "tab",
+        "label": "Test unitaires",
+        "disabled": false,
+        "info": "Ce Flux permet de faire différents tests",
+        "env": []
+    },
+    {
+        "id": "591abc7ecc8a82dd",
+        "type": "tab",
+        "label": "Communication",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5bab6ada0af81ef8",
+        "type": "tab",
+        "label": "Parametres",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "03abf3d3ef281a57",
+        "type": "group",
+        "z": "0401eb93d584c99a",
+        "name": "Lecture du badge",
+        "style": {
+            "fill": "#bfdbef",
+            "label": true,
+            "stroke": "#000000",
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "db65c9d28895a6c5",
+            "599740772563d9fe",
+            "92e181a1ce7fe4e8",
+            "af6ae15c6f3eed6c",
+            "f32ba09408f3c256",
+            "e84bd0b3f880aafe"
+        ],
+        "x": 54,
+        "y": 19,
+        "w": 852,
+        "h": 122
+    },
+    {
+        "id": "6ae47d635703e4eb",
+        "type": "group",
+        "z": "0401eb93d584c99a",
+        "name": "Recherche du badge lu dans le fichier csv (contenant tous les badges)",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#dbcbe7",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "5fe01198061cfc1b",
+            "9b3dee8eb70002a2",
+            "1b9c9329f5b78ac0",
+            "533786b989e49c4b",
+            "e468a557ba55eab8",
+            "e685f8dc9885ee8b",
+            "e47d6d7ececec8b0"
+        ],
+        "x": 54,
+        "y": 159,
+        "w": 1002,
+        "h": 102
+    },
+    {
+        "id": "ab13c8a209213fdb",
+        "type": "group",
+        "z": "0401eb93d584c99a",
+        "name": "Action selon le type de badge",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#ffffbf",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "ecda955ce03fae64",
+            "5cc76e319a5ee2b9",
+            "c68b5b63817d1772",
+            "93647590fdfecef8",
+            "e63502d184c8cbf5",
+            "b8d398a96cc4d34a",
+            "309962c378d3d1c4",
+            "50bf8a8f2b0c039c",
+            "2cf05a948962d114",
+            "329d668a16c6b1e4",
+            "f0ce225c397959d5",
+            "8e57d5a6527160a6",
+            "ac7637cdb85568cd"
+        ],
+        "x": 54,
+        "y": 359,
+        "w": 1022,
+        "h": 242
+    },
+    {
+        "id": "08523bcc635d9f44",
+        "type": "group",
+        "z": "f99f61d176d88850",
+        "name": "Point d'accès WiFi activé par badge configuration se désactive au bout d' 1/2 h",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#bfdbef",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "e306ac211462d63b",
+            "06009135086b5ea4",
+            "01bf14d42e33bb88",
+            "cc7f6406773f5abb",
+            "149e46a2cb4358e2",
+            "3968539fa1701aae",
+            "14f8c8471f2fcf03",
+            "d8264aa3e617f306",
+            "bbc878407e728744",
+            "5a74f9beba8eef68",
+            "ef75846b774ac1dd",
+            "ef5d4cb491e348ec",
+            "a1dde28a3427a9cc",
+            "dabe3f0a19b9823a",
+            "871ee9c8ff9b401a",
+            "26eb8b2acbec1356",
+            "5fa0b17c9b2bde53",
+            "392ed94bab86b646",
+            "91c7594f1be37e54"
+        ],
+        "x": 34,
+        "y": 31.5,
+        "w": 1172,
+        "h": 369.5
+    },
+    {
+        "id": "5a391963a7287350",
+        "type": "group",
+        "z": "f99f61d176d88850",
+        "name": "Date et Heure système",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#e3f3d3",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "becf941b1a8de637",
+            "format-date-time",
+            "798f8938cab8d653",
+            "3692e410e43961cd",
+            "248e24b72cc80b9b",
+            "9fb2a73cd4792475",
+            "080297b2478bcc19",
+            "4b6a23c6150c579a",
+            "a6fd6480f60f1efb",
+            "b3832d375286d59e",
+            "8ad750ef08bb7665",
+            "89b65951d548a3f6"
+        ],
+        "x": 34,
+        "y": 459,
+        "w": 752,
+        "h": 282
+    },
+    {
+        "id": "6236bcedb5ad3ed2",
+        "type": "group",
+        "z": "0401eb93d584c99a",
+        "name": "Déverrouillage du poratil",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#bfc7d7",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "53e4d97e846b8932",
+            "9d7108206de36d72",
+            "377f56af49bc3b6c",
+            "6be108f6c54f7f4d",
+            "959ab5871d0d2368"
+        ],
+        "x": 54,
+        "y": 639,
+        "w": 712,
+        "h": 122
+    },
+    {
+        "id": "5444c772b7bef63c",
+        "type": "group",
+        "z": "b7fb87140232fe9d",
+        "name": "Mise à jour du fichier CSV",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#bfdbef",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "update-csv",
+            "write-updated-csv",
+            "delete-from-csv",
+            "b4193616c42bd034",
+            "c18097db6ea8c49a",
+            "cbebc005f2e85a7d",
+            "c9a6d29df5ef2a8b",
+            "5201f1bc8e4e41e5",
+            "48fe8ebc4af5cd6b",
+            "e81743050a9f376b",
+            "6c65b544c9dba5ad",
+            "a306b64fd90323a8",
+            "3031944d6dea631e",
+            "9926e8fc24a9d1f3"
+        ],
+        "x": 44,
+        "y": 519,
+        "w": 942,
+        "h": 202
+    },
+    {
+        "id": "6fb40bcfcadc177b",
+        "type": "group",
+        "z": "b7fb87140232fe9d",
+        "name": "Interface de gestion des badges",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#e3f3d3",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "parse-csv",
+            "prepare-badge-list",
+            "add-badge",
+            "ui-table",
+            "0713f52a4738adcf",
+            "5195e03d72347812",
+            "430b8d717d649def",
+            "0167bafd27ea1a58",
+            "8319687c46b92b91",
+            "d70e0a76ad116354",
+            "982e71bcc423b51e",
+            "73f87137ca42f812",
+            "c0ed11991259f947",
+            "f8e161c6df3483ee",
+            "de1e94ac57e14e9b",
+            "5b3a2cbf42ca0f61",
+            "89be4880b3ec336f",
+            "a8b8abe0dbb89d01",
+            "8315cb0b37bf2360",
+            "3223507d3cfa6ef0",
+            "12daa1d853407168",
+            "e4a7312f36a25dd0",
+            "ca0494bb7ee27c7b",
+            "be51f9118da183d6",
+            "1f52d09d7dfc537a",
+            "e3c2daa8b6415d3c",
+            "a29b7c7115c54d1d",
+            "beaa458f9661cf23",
+            "af9e52185c4c958b",
+            "0dd4a1227a3644e8",
+            "01bd06a552790404",
+            "428593e904c3f9e3",
+            "cdc669b609c0032f",
+            "07cbe2e7971d840e"
+        ],
+        "x": 54,
+        "y": 119,
+        "w": 1332,
+        "h": 362
+    },
+    {
+        "id": "ecc3d44747b5a6e4",
+        "type": "group",
+        "z": "f99f61d176d88850",
+        "name": "Redémarrage",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#bfdbef",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "680c5a11adb41484",
+            "52060a56fc94b130"
+        ],
+        "x": 34,
+        "y": 991.5,
+        "w": 412,
+        "h": 97
+    },
+    {
+        "id": "2473d132d401207a",
+        "type": "group",
+        "z": "f99f61d176d88850",
+        "name": "Arrêt",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#bfdbef",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "2a321425f18897f0",
+            "a66e470e394d0ace"
+        ],
+        "x": 474,
+        "y": 991.5,
+        "w": 412,
+        "h": 97
+    },
+    {
+        "id": "a9faafd56d192f4c",
+        "type": "group",
+        "z": "5bab6ada0af81ef8",
+        "name": "Réglage de la plage d'accès",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#ffffbf",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "5cd69b99726aeee1",
+            "b6c7e6c16a2aec3f",
+            "62e05b89f6b12354",
+            "be3535c3eb8a8f3d",
+            "c07bf0d2236c4427",
+            "8c486ffe2a3019e8"
+        ],
+        "x": 94,
+        "y": 279,
+        "w": 972,
+        "h": 142
+    },
+    {
+        "id": "2af2e23a3cac9b4d",
+        "type": "ui_group",
+        "name": "Contrôle / Commandes",
+        "tab": "a14588abf773c2cf",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a14588abf773c2cf",
+        "type": "ui_tab",
+        "name": "Accueil",
+        "icon": "home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a63c80323ee93ce4",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Contrôle d'accès piscine - Interface de gestion",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "51aac18895484626",
+        "type": "ui_tab",
+        "name": "Paramètres",
+        "icon": "settings",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2fc761fc214b7ca9",
+        "type": "ui_group",
+        "name": "Date et heure",
+        "tab": "51aac18895484626",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "de61be64d46e4941",
+        "type": "ui_group",
+        "name": "Date et heure",
+        "tab": "a14588abf773c2cf",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8d754f839da525fc",
+        "type": "ui_group",
+        "name": "Accès piscine",
+        "tab": "51aac18895484626",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fb8ef8df1ea1ad74",
+        "type": "ui_group",
+        "name": "Gestion badges",
+        "tab": "0774bc01ee11c4d3",
+        "order": 3,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0774bc01ee11c4d3",
+        "type": "ui_tab",
+        "name": "Badges",
+        "icon": "person",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "59fa5f21b1f59787",
+        "type": "ui_group",
+        "name": "Liste badges",
+        "tab": "0774bc01ee11c4d3",
+        "order": 2,
+        "disp": true,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "631cc1e4eb5c5735",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "db65c9d28895a6c5",
+        "type": "moment",
+        "z": "0401eb93d584c99a",
+        "g": "03abf3d3ef281a57",
+        "name": "Format Date",
+        "topic": "",
+        "input": "payload.timestamp",
+        "inputType": "msg",
+        "inTz": "Europe/Paris",
+        "adjAmount": "1",
+        "adjType": "months",
+        "adjDir": "add",
+        "format": "object",
+        "locale": "fr-FR",
+        "output": "payload.datetime",
+        "outputType": "msg",
+        "outTz": "Europe/Paris",
+        "x": 510,
+        "y": 80,
+        "wires": [
+            [
+                "af6ae15c6f3eed6c"
+            ]
+        ]
+    },
+    {
+        "id": "f32ba09408f3c256",
+        "type": "debug",
+        "z": "0401eb93d584c99a",
+        "g": "03abf3d3ef281a57",
+        "name": "RFID",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "599740772563d9fe",
+        "type": "function",
+        "z": "0401eb93d584c99a",
+        "g": "03abf3d3ef281a57",
+        "name": "Format HEX",
+        "func": "msg.payload = {\n    uid: String(msg.payload.code),\n    timestamp: Date.now()\n};\n\n// Retourner le message transformé\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [
+                "db65c9d28895a6c5"
+            ]
+        ],
+        "info": "Formatage de l'UID reçu sous forme décimale en chaine \r\nde caractère représentant la valeur en hexadécimal\r\n\r\nL'ordre des octets est inversée pour correpondre\r\nà la valeur inscrite sur le badge"
+    },
+    {
+        "id": "53e4d97e846b8932",
+        "type": "change",
+        "z": "0401eb93d584c99a",
+        "g": "6236bcedb5ad3ed2",
+        "name": "Temps d'ouverture",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "5000",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 700,
+        "wires": [
+            [
+                "959ab5871d0d2368"
+            ]
+        ]
+    },
+    {
+        "id": "92e181a1ce7fe4e8",
+        "type": "link out",
+        "z": "0401eb93d584c99a",
+        "g": "03abf3d3ef281a57",
+        "name": "Badge_Lu",
+        "mode": "link",
+        "links": [
+            "5fe01198061cfc1b",
+            "af9e52185c4c958b"
+        ],
+        "x": 775,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5fe01198061cfc1b",
+        "type": "link in",
+        "z": "0401eb93d584c99a",
+        "g": "6ae47d635703e4eb",
+        "name": "Recherche",
+        "links": [
+            "92e181a1ce7fe4e8"
+        ],
+        "x": 95,
+        "y": 220,
+        "wires": [
+            [
+                "e685f8dc9885ee8b"
+            ]
+        ]
+    },
+    {
+        "id": "9b3dee8eb70002a2",
+        "type": "csv",
+        "z": "0401eb93d584c99a",
+        "g": "6ae47d635703e4eb",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": "",
+        "x": 400,
+        "y": 220,
+        "wires": [
+            [
+                "1b9c9329f5b78ac0"
+            ]
+        ]
+    },
+    {
+        "id": "af6ae15c6f3eed6c",
+        "type": "change",
+        "z": "0401eb93d584c99a",
+        "g": "03abf3d3ef281a57",
+        "name": "Memo",
+        "rules": [
+            {
+                "t": "set",
+                "p": "scannedTag",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 80,
+        "wires": [
+            [
+                "f32ba09408f3c256",
+                "92e181a1ce7fe4e8"
+            ]
+        ]
+    },
+    {
+        "id": "1b9c9329f5b78ac0",
+        "type": "function",
+        "z": "0401eb93d584c99a",
+        "g": "6ae47d635703e4eb",
+        "name": "Recherche",
+        "func": "let scannedUID = flow.get(\"scannedTag.uid\");\n\n// Table des badges provenant du CSV\nlet badges = msg.payload;\n\n// Rechercher le badge correspondant à l'UID scanné\nlet foundBadge = badges.find(badge => badge.UID == scannedUID);\n\nif (foundBadge) {\n    // Badge trouvé, renvoyer les informations\n    msg.payload = {\n        success: true,\n        message: \"Badge trouvé\",\n        badge: foundBadge\n    };\n} else {\n    // Badge non trouvé\n    msg.payload = {\n        success: false,\n        UID: scannedUID,\n        message: \"Badge non trouvé\"\n    };\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 220,
+        "wires": [
+            [
+                "e468a557ba55eab8"
+            ]
+        ]
+    },
+    {
+        "id": "533786b989e49c4b",
+        "type": "link out",
+        "z": "0401eb93d584c99a",
+        "g": "6ae47d635703e4eb",
+        "name": "Badge_Reconnu",
+        "mode": "link",
+        "links": [
+            "ecda955ce03fae64"
+        ],
+        "x": 1015,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9d7108206de36d72",
+        "type": "inject",
+        "z": "0401eb93d584c99a",
+        "g": "6236bcedb5ad3ed2",
+        "name": "Test",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 720,
+        "wires": [
+            [
+                "6be108f6c54f7f4d"
+            ]
+        ]
+    },
+    {
+        "id": "377f56af49bc3b6c",
+        "type": "link in",
+        "z": "0401eb93d584c99a",
+        "g": "6236bcedb5ad3ed2",
+        "name": "Deverrouillage_Portail",
+        "links": [
+            "329d668a16c6b1e4",
+            "93647590fdfecef8"
+        ],
+        "x": 185,
+        "y": 680,
+        "wires": [
+            [
+                "6be108f6c54f7f4d"
+            ]
+        ]
+    },
+    {
+        "id": "e468a557ba55eab8",
+        "type": "switch",
+        "z": "0401eb93d584c99a",
+        "g": "6ae47d635703e4eb",
+        "name": "Resultat",
+        "property": "payload.success",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 700,
+        "y": 220,
+        "wires": [
+            [
+                "e47d6d7ececec8b0"
+            ],
+            [
+                "b12f129bdae72d5f",
+                "3a3ec17fe7f6a1aa"
+            ]
+        ]
+    },
+    {
+        "id": "6be108f6c54f7f4d",
+        "type": "ui_button",
+        "z": "0401eb93d584c99a",
+        "g": "6236bcedb5ad3ed2",
+        "name": "Ouverture",
+        "group": "2af2e23a3cac9b4d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Ouverture portail",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 300,
+        "y": 700,
+        "wires": [
+            [
+                "53e4d97e846b8932"
+            ]
+        ]
+    },
+    {
+        "id": "ecda955ce03fae64",
+        "type": "link in",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Gestion_Acces",
+        "links": [
+            "533786b989e49c4b"
+        ],
+        "x": 95,
+        "y": 460,
+        "wires": [
+            [
+                "5cc76e319a5ee2b9",
+                "c68b5b63817d1772"
+            ]
+        ]
+    },
+    {
+        "id": "5cc76e319a5ee2b9",
+        "type": "debug",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Info badge",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 230,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "c68b5b63817d1772",
+        "type": "switch",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Groupe",
+        "property": "payload.badge.Group",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "999",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 220,
+        "y": 520,
+        "wires": [
+            [
+                "b8d398a96cc4d34a"
+            ],
+            [
+                "93647590fdfecef8"
+            ],
+            [
+                "e63502d184c8cbf5"
+            ]
+        ]
+    },
+    {
+        "id": "93647590fdfecef8",
+        "type": "link out",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Badge_permanent",
+        "mode": "link",
+        "links": [
+            "377f56af49bc3b6c"
+        ],
+        "x": 355,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "e63502d184c8cbf5",
+        "type": "link out",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Badge_configuration",
+        "mode": "link",
+        "links": [
+            "14f8c8471f2fcf03"
+        ],
+        "x": 355,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "b8d398a96cc4d34a",
+        "type": "file in",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Paramètres.json",
+        "filename": "/home/pi/Documents/ControleAcces/Parametres.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 460,
+        "wires": [
+            [
+                "309962c378d3d1c4"
+            ]
+        ]
+    },
+    {
+        "id": "309962c378d3d1c4",
+        "type": "json",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Parse Config",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 590,
+        "y": 460,
+        "wires": [
+            [
+                "50bf8a8f2b0c039c"
+            ]
+        ]
+    },
+    {
+        "id": "50bf8a8f2b0c039c",
+        "type": "function",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Accès d'été",
+        "func": "let config = msg.payload.acces_piscine;\n\nlet now = new Date();\nlet currentMonth = now.getMonth() + 1;  // getMonth is 0-indexed\nlet currentDay = now.getDate();\nlet currentHour = now.getHours();\nlet currentMinute = now.getMinutes();\n\n// Parse la période de début et de fin d'acces\nlet [startDay, startMonth] = config.date_debut.split('/').map(Number);\nlet [endDay, endMonth] = config.date_fin.split('/').map(Number);\nlet [startHour, startMinute] = config.heure_debut.split(':').map(Number);\nlet [endHour, endMinute] = config.heure_fin.split(':').map(Number);\n\n// Check if current date is within the summer period\nlet withinDateRange = (currentMonth > startMonth || (currentMonth === startMonth && currentDay >= startDay)) &&\n                      (currentMonth < endMonth || (currentMonth === endMonth && currentDay <= endDay));\n\n// Check if current time is within the allowed time range\nlet withinTimeRange = (currentHour > startHour || (currentHour === startHour && currentMinute >= startMinute)) &&\n                      (currentHour < endHour || (currentHour === endHour && currentMinute <= endMinute));\n\nmsg.payload = {};\n\nif (withinDateRange && withinTimeRange) {\n    msg.payload.access = true;\n    msg.payload.info = \"Accès Autorisé\";\n} else {\n    msg.payload.access = false;\n    msg.payload.info = \"Accès refusé\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 460,
+        "wires": [
+            [
+                "2cf05a948962d114"
+            ]
+        ]
+    },
+    {
+        "id": "2cf05a948962d114",
+        "type": "switch",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Autorisation",
+        "property": "payload.access",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 930,
+        "y": 460,
+        "wires": [
+            [
+                "329d668a16c6b1e4"
+            ],
+            [
+                "1008f636f4a91260",
+                "b12f129bdae72d5f"
+            ]
+        ]
+    },
+    {
+        "id": "329d668a16c6b1e4",
+        "type": "link out",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Badge_simple_autorisé",
+        "mode": "link",
+        "links": [
+            "377f56af49bc3b6c"
+        ],
+        "x": 1035,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f0ce225c397959d5",
+        "type": "comment",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Contrôle date et heure pour les badges simple",
+        "info": "",
+        "x": 570,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "8e57d5a6527160a6",
+        "type": "comment",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Ouverture badge rouge",
+        "info": "",
+        "x": 480,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "ac7637cdb85568cd",
+        "type": "comment",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Activation WiFi badge configuration",
+        "info": "",
+        "x": 520,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e685f8dc9885ee8b",
+        "type": "link call",
+        "z": "0401eb93d584c99a",
+        "g": "6ae47d635703e4eb",
+        "name": "",
+        "links": [
+            "d2ce0b8ca3f408a5"
+        ],
+        "linkType": "static",
+        "timeout": "1",
+        "x": 230,
+        "y": 220,
+        "wires": [
+            [
+                "9b3dee8eb70002a2"
+            ]
+        ]
+    },
+    {
+        "id": "e47d6d7ececec8b0",
+        "type": "switch",
+        "z": "0401eb93d584c99a",
+        "g": "6ae47d635703e4eb",
+        "name": "Badge actif",
+        "property": "payload.badge.Active",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 870,
+        "y": 200,
+        "wires": [
+            [
+                "533786b989e49c4b"
+            ],
+            [
+                "b12f129bdae72d5f",
+                "3a3ec17fe7f6a1aa"
+            ]
+        ]
+    },
+    {
+        "id": "e84bd0b3f880aafe",
+        "type": "mqtt in",
+        "z": "0401eb93d584c99a",
+        "g": "03abf3d3ef281a57",
+        "name": "Badge / Code",
+        "topic": "CtrlAccess/state/Wiegand",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "631cc1e4eb5c5735",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "599740772563d9fe"
+            ]
+        ]
+    },
+    {
+        "id": "959ab5871d0d2368",
+        "type": "mqtt out",
+        "z": "0401eb93d584c99a",
+        "g": "6236bcedb5ad3ed2",
+        "name": "Déverouillage",
+        "topic": "CtrlAccess/Deverrouillage",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "631cc1e4eb5c5735",
+        "x": 660,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "b12f129bdae72d5f",
+        "type": "change",
+        "z": "0401eb93d584c99a",
+        "name": "ON",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1170,
+        "y": 320,
+        "wires": [
+            [
+                "59fbb270a12c7e8f"
+            ]
+        ]
+    },
+    {
+        "id": "3a3ec17fe7f6a1aa",
+        "type": "delay",
+        "z": "0401eb93d584c99a",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1030,
+        "y": 260,
+        "wires": [
+            [
+                "a03c13440fecb56e"
+            ]
+        ]
+    },
+    {
+        "id": "a03c13440fecb56e",
+        "type": "change",
+        "z": "0401eb93d584c99a",
+        "name": "Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1170,
+        "y": 280,
+        "wires": [
+            [
+                "59fbb270a12c7e8f"
+            ]
+        ]
+    },
+    {
+        "id": "59fbb270a12c7e8f",
+        "type": "mqtt out",
+        "z": "0401eb93d584c99a",
+        "name": "",
+        "topic": "CtrlAccess/Buzzer",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "631cc1e4eb5c5735",
+        "x": 1350,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1008f636f4a91260",
+        "type": "delay",
+        "z": "0401eb93d584c99a",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "150",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1030,
+        "y": 300,
+        "wires": [
+            [
+                "a03c13440fecb56e"
+            ]
+        ]
+    },
+    {
+        "id": "e306ac211462d63b",
+        "type": "inject",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Activer AP",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 400,
+        "y": 80,
+        "wires": [
+            [
+                "3968539fa1701aae"
+            ]
+        ]
+    },
+    {
+        "id": "06009135086b5ea4",
+        "type": "inject",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Désactiver AP",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            [
+                "149e46a2cb4358e2"
+            ]
+        ]
+    },
+    {
+        "id": "01bf14d42e33bb88",
+        "type": "exec",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "command": "sudo nmcli c up ControleAcces",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1050,
+        "y": 80,
+        "wires": [
+            [],
+            [
+                "3c38367fcb324d86"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "cc7f6406773f5abb",
+        "type": "exec",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "command": "sudo nmcli c down ControleAcces",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1040,
+        "y": 240,
+        "wires": [
+            [],
+            [
+                "3c38367fcb324d86"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3c38367fcb324d86",
+        "type": "debug",
+        "z": "f99f61d176d88850",
+        "name": "Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "149e46a2cb4358e2",
+        "type": "ui_button",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Désactiver AP",
+        "group": "2af2e23a3cac9b4d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Désactiver WiFi",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 620,
+        "y": 240,
+        "wires": [
+            [
+                "cc7f6406773f5abb",
+                "26eb8b2acbec1356"
+            ]
+        ]
+    },
+    {
+        "id": "3968539fa1701aae",
+        "type": "ui_button",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Activer AP",
+        "group": "2af2e23a3cac9b4d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Activer WiFi",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 630,
+        "y": 80,
+        "wires": [
+            [
+                "01bf14d42e33bb88",
+                "26eb8b2acbec1356"
+            ]
+        ]
+    },
+    {
+        "id": "14f8c8471f2fcf03",
+        "type": "link in",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Activer_AP_WiFi",
+        "links": [
+            "e63502d184c8cbf5"
+        ],
+        "x": 75,
+        "y": 140,
+        "wires": [
+            [
+                "ef5d4cb491e348ec"
+            ]
+        ]
+    },
+    {
+        "id": "3692e410e43961cd",
+        "type": "ui_text",
+        "z": "f99f61d176d88850",
+        "g": "5a391963a7287350",
+        "group": "de61be64d46e4941",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Date",
+        "label": "",
+        "format": "{{msg.payload.datetime}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 550,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "248e24b72cc80b9b",
+        "type": "moment",
+        "z": "f99f61d176d88850",
+        "g": "5a391963a7287350",
+        "name": "Format Jour",
+        "topic": "",
+        "input": "payload.timestamp",
+        "inputType": "msg",
+        "inTz": "Europe/Paris",
+        "adjAmount": "0",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "dddd",
+        "locale": "fr-FR",
+        "output": "payload.day",
+        "outputType": "msg",
+        "outTz": "Europe/Paris",
+        "x": 390,
+        "y": 660,
+        "wires": [
+            [
+                "080297b2478bcc19"
+            ]
+        ]
+    },
+    {
+        "id": "798f8938cab8d653",
+        "type": "inject",
+        "z": "f99f61d176d88850",
+        "g": "5a391963a7287350",
+        "name": "Timestamp",
+        "props": [
+            {
+                "p": "payload.timestamp",
+                "v": "",
+                "vt": "date"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 210,
+        "y": 680,
+        "wires": [
+            [
+                "248e24b72cc80b9b",
+                "9fb2a73cd4792475"
+            ]
+        ]
+    },
+    {
+        "id": "9fb2a73cd4792475",
+        "type": "moment",
+        "z": "f99f61d176d88850",
+        "g": "5a391963a7287350",
+        "name": "Format Date",
+        "topic": "",
+        "input": "payload.timestamp",
+        "inputType": "msg",
+        "inTz": "Europe/Paris",
+        "adjAmount": "0",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "DD/MM/yyyy HH:mm:ss",
+        "locale": "fr-FR",
+        "output": "payload.datetime",
+        "outputType": "msg",
+        "outTz": "Europe/Paris",
+        "x": 390,
+        "y": 700,
+        "wires": [
+            [
+                "3692e410e43961cd"
+            ]
+        ]
+    },
+    {
+        "id": "080297b2478bcc19",
+        "type": "ui_text",
+        "z": "f99f61d176d88850",
+        "g": "5a391963a7287350",
+        "group": "de61be64d46e4941",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Jour",
+        "label": "",
+        "format": "{{msg.payload.day}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 550,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "becf941b1a8de637",
+        "type": "ui_form",
+        "z": "f99f61d176d88850",
+        "g": "5a391963a7287350",
+        "name": "",
+        "label": "Régler la date et heure",
+        "group": "2fc761fc214b7ca9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Date",
+                "value": "Date",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Heure",
+                "value": "Heure",
+                "type": "time",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Date": "",
+            "Heure": ""
+        },
+        "payload": "",
+        "submit": "Définir",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "className": "",
+        "x": 480,
+        "y": 500,
+        "wires": [
+            [
+                "format-date-time"
+            ]
+        ]
+    },
+    {
+        "id": "format-date-time",
+        "type": "function",
+        "z": "f99f61d176d88850",
+        "g": "5a391963a7287350",
+        "name": "Formatage",
+        "func": "var date = new Date(msg.payload.Date);\nvar time = new Date(msg.payload.Heure);\n\n// Extraire la partie date\nvar year = date.getFullYear();\nvar month = (date.getMonth() + 1).toString().padStart(2, '0');\nvar day = date.getDate().toString().padStart(2, '0');\n\n// Extraire la partie heure\nvar hours = time.getHours().toString().padStart(2, '0');\nvar minutes = time.getMinutes().toString().padStart(2, '0');\nvar seconds = time.getSeconds().toString().padStart(2, '0');\n\n// Combiner en chaîne formatée\nvar formattedDateTime = `\"${year}-${month}-${day} ${hours}:${minutes}:${seconds}\"`;\n\nmsg.payload = formattedDateTime;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 500,
+        "wires": [
+            [
+                "79a7cf37b21aa4f4"
+            ]
+        ]
+    },
+    {
+        "id": "set-system-time",
+        "type": "exec",
+        "z": "f99f61d176d88850",
+        "command": "sudo date -s ",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Définir heure système",
+        "x": 1340,
+        "y": 480,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d8264aa3e617f306",
+        "type": "exec",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "command": "sudo nmcli -t -f NAME,STATE con show --active | grep ControleAcces",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Etat de l'AP",
+        "x": 470,
+        "y": 320,
+        "wires": [
+            [
+                "bbc878407e728744",
+                "91c7594f1be37e54"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bbc878407e728744",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            },
+            {
+                "t": "empty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 640,
+        "y": 340,
+        "wires": [
+            [
+                "dabe3f0a19b9823a"
+            ],
+            [
+                "871ee9c8ff9b401a"
+            ]
+        ]
+    },
+    {
+        "id": "5a74f9beba8eef68",
+        "type": "timer-node",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Tempo",
+        "topic": "",
+        "timer": "1800",
+        "payloadOn": "true",
+        "payloadOnType": "bool",
+        "payloadOff": "false",
+        "payloadOffType": "bool",
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [
+                "ef75846b774ac1dd"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ef75846b774ac1dd",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 420,
+        "y": 140,
+        "wires": [
+            [
+                "3968539fa1701aae"
+            ],
+            [
+                "149e46a2cb4358e2"
+            ]
+        ]
+    },
+    {
+        "id": "ef5d4cb491e348ec",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Activer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "5a74f9beba8eef68"
+            ]
+        ]
+    },
+    {
+        "id": "4b6a23c6150c579a",
+        "type": "comment",
+        "z": "f99f61d176d88850",
+        "g": "5a391963a7287350",
+        "name": "Affichage de l'heure",
+        "info": "Affichage de l'heure sur la page d'accueil",
+        "x": 190,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "79a7cf37b21aa4f4",
+        "type": "debug",
+        "z": "f99f61d176d88850",
+        "name": "Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "a6fd6480f60f1efb",
+        "type": "comment",
+        "z": "f99f61d176d88850",
+        "g": "5a391963a7287350",
+        "name": "Réglage de l'heure",
+        "info": "",
+        "x": 490,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "b3832d375286d59e",
+        "type": "ui_ui_control",
+        "z": "f99f61d176d88850",
+        "g": "5a391963a7287350",
+        "name": "",
+        "events": "all",
+        "x": 120,
+        "y": 500,
+        "wires": [
+            [
+                "8ad750ef08bb7665"
+            ]
+        ]
+    },
+    {
+        "id": "8ad750ef08bb7665",
+        "type": "function",
+        "z": "f99f61d176d88850",
+        "g": "5a391963a7287350",
+        "name": "Formatage",
+        "func": "var date = new Date();\n\n// Récupérer uniquement les heures et les minutes\nvar heures = date.getHours();\nvar minutes = date.getMinutes();\n\nif (heures < 10) {\n    heures = '0' + heures;\n}\n\n// Ajouter un 0 devant les minutes si elles sont inférieures à 10 (format HH:mm)\nif (minutes < 10) {\n    minutes = '0' + minutes;\n}\n\nmsg.payload = {\n    Date: date, // Formater la date en chaîne lisible\n    Heure: heures + \":\" + minutes + \" :00\" // Formater l'heure en HH:mm :00\n    // Attention l'espace avant les secondes est important, sinon le time picker affiche --:--\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 500,
+        "wires": [
+            [
+                "becf941b1a8de637"
+            ]
+        ]
+    },
+    {
+        "id": "89b65951d548a3f6",
+        "type": "comment",
+        "z": "f99f61d176d88850",
+        "g": "5a391963a7287350",
+        "name": "Pré-remplissage du formulaire",
+        "info": "",
+        "x": 200,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "a1dde28a3427a9cc",
+        "type": "mqtt out",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "",
+        "topic": "CtrlAccess/Led",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "631cc1e4eb5c5735",
+        "x": 1060,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "dabe3f0a19b9823a",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Led Verte",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 320,
+        "wires": [
+            [
+                "a1dde28a3427a9cc"
+            ]
+        ]
+    },
+    {
+        "id": "871ee9c8ff9b401a",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Led Rouge",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 360,
+        "wires": [
+            [
+                "a1dde28a3427a9cc"
+            ]
+        ]
+    },
+    {
+        "id": "26eb8b2acbec1356",
+        "type": "link out",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Changement_AP_WiFi",
+        "mode": "link",
+        "links": [
+            "5fa0b17c9b2bde53"
+        ],
+        "x": 785,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5fa0b17c9b2bde53",
+        "type": "link in",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Etat_AP_WiFi",
+        "links": [
+            "26eb8b2acbec1356"
+        ],
+        "x": 315,
+        "y": 320,
+        "wires": [
+            [
+                "d8264aa3e617f306"
+            ]
+        ]
+    },
+    {
+        "id": "392ed94bab86b646",
+        "type": "inject",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "1 min",
+        "props": [],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 290,
+        "y": 360,
+        "wires": [
+            [
+                "d8264aa3e617f306"
+            ]
+        ]
+    },
+    {
+        "id": "91c7594f1be37e54",
+        "type": "debug",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "680c5a11adb41484",
+        "type": "ui_button",
+        "z": "f99f61d176d88850",
+        "g": "ecc3d44747b5a6e4",
+        "name": "",
+        "group": "2af2e23a3cac9b4d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Redémarrer",
+        "tooltip": "",
+        "color": "BLACK",
+        "bgcolor": "ORANGE",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 1040,
+        "wires": [
+            [
+                "52060a56fc94b130"
+            ]
+        ]
+    },
+    {
+        "id": "52060a56fc94b130",
+        "type": "exec",
+        "z": "f99f61d176d88850",
+        "g": "ecc3d44747b5a6e4",
+        "command": "sudo reboot now",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 330,
+        "y": 1040,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "2a321425f18897f0",
+        "type": "exec",
+        "z": "f99f61d176d88850",
+        "g": "2473d132d401207a",
+        "command": "sudo shutdown now",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 760,
+        "y": 1040,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a66e470e394d0ace",
+        "type": "inject",
+        "z": "f99f61d176d88850",
+        "g": "2473d132d401207a",
+        "name": "Stop",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 570,
+        "y": 1040,
+        "wires": [
+            [
+                "2a321425f18897f0"
+            ]
+        ]
+    },
+    {
+        "id": "bf529392d7957bf4",
+        "type": "file in",
+        "z": "b7fb87140232fe9d",
+        "name": "Badges.csv",
+        "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 230,
+        "y": 60,
+        "wires": [
+            [
+                "f1b989b616a3c2b8"
+            ]
+        ]
+    },
+    {
+        "id": "d2ce0b8ca3f408a5",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "name": "Recup_Badges_In",
+        "links": [],
+        "x": 125,
+        "y": 60,
+        "wires": [
+            [
+                "bf529392d7957bf4"
+            ]
+        ]
+    },
+    {
+        "id": "parse-csv",
+        "type": "csv",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Parse CSV",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "obj",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "prepare-badge-list"
+            ]
+        ]
+    },
+    {
+        "id": "prepare-badge-list",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Prepare Badge List",
+        "func": "msg.payload = msg.payload.map(badge => ({\n    uid: badge.UID,\n    firstname: badge.FirstName,\n    lastname: badge.LastName,\n    group: badge.Group,\n    active: badge.Active === 'true'\n}));\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 200,
+        "wires": [
+            [
+                "ui-table"
+            ]
+        ]
+    },
+    {
+        "id": "add-badge",
+        "type": "ui_form",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Form Badge",
+        "label": "Edition d'un badge",
+        "group": "fb8ef8df1ea1ad74",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Code",
+                "value": "uid",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Badge activé",
+                "value": "active",
+                "type": "switch",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Type d'accès",
+                "value": "group",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Prénom",
+                "value": "firstname",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Nom",
+                "value": "lastname",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "uid": "",
+            "active": false,
+            "group": "",
+            "firstname": "",
+            "lastname": ""
+        },
+        "payload": "",
+        "submit": "Gérer le badge",
+        "cancel": "",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 990,
+        "y": 200,
+        "wires": [
+            [
+                "5195e03d72347812",
+                "c0ed11991259f947"
+            ]
+        ]
+    },
+    {
+        "id": "update-csv",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "Update CSV",
+        "func": "// Supposons que le contenu du fichier CSV est déjà chargé dans msg.payload\nlet csvContent = msg.payload; // Contenu du fichier CSV\nlet csvLines = csvContent.split('\\n'); // Diviser par ligne\n\nconst objectToCSVLine = (obj) => {\n    return `${obj.uid},${obj.firstname},${obj.lastname},${obj.group},${obj.active}`;\n};\n\nlet originalCSVLine = objectToCSVLine(flow.get('form_data_original'));\nlet newCSVLine = objectToCSVLine(flow.get('form_data'));\n\nlet updatedCSVLines = csvLines.map(line => {\n    return line === originalCSVLine ? newCSVLine : line; // Remplacer la ligne correspondante\n});\n\nlet updatedCSVContent = updatedCSVLines.join('\\n'); // Combiner les lignes en une seule chaîne\nmsg.payload = updatedCSVContent; // Mettre à jour le message pour écrire dans le fichier\n\nreturn msg; // Cette sortie sera envoyée à un noeud file out\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 620,
+        "wires": [
+            [
+                "write-updated-csv"
+            ]
+        ]
+    },
+    {
+        "id": "write-updated-csv",
+        "type": "file",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "Write Updated CSV",
+        "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 790,
+        "y": 660,
+        "wires": [
+            [
+                "6c65b544c9dba5ad"
+            ]
+        ]
+    },
+    {
+        "id": "delete-from-csv",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "Delete From CSV",
+        "func": "// Supposons que le contenu du fichier CSV est déjà chargé dans msg.payload\nlet csvContent = msg.payload; // Contenu du fichier CSV\nlet csvLines = csvContent.split('\\n'); // Diviser par ligne\n\n// Convertir form_data_original en chaîne CSV\nconst objectToCSVLine = (obj) => {\n    return `${obj.uid},${obj.firstname},${obj.lastname},${obj.group},${obj.active}`;\n};\n\nlet originalCSVLine = objectToCSVLine(flow.get('form_data_original'));\n\n// Filtrer le contenu CSV pour supprimer la ligne correspondante\nlet updatedCSVLines = csvLines.filter(line => line !== originalCSVLine); // Garder toutes les lignes sauf celle à supprimer\n\n// Combiner les lignes restantes en une seule chaîne\nlet updatedCSVContent = updatedCSVLines.join('\\n'); // Combiner les lignes restantes\nmsg.payload = updatedCSVContent; // Mettre à jour le message pour écrire dans le fichier\n\nreturn msg; // Cette sortie sera envoyée à un noeud file out\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 680,
+        "wires": [
+            [
+                "write-updated-csv"
+            ]
+        ]
+    },
+    {
+        "id": "ui-table",
+        "type": "ui_table",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "group": "59fa5f21b1f59787",
+        "name": "Liste des badges",
+        "order": 1,
+        "width": "11",
+        "height": "5",
+        "columns": [
+            {
+                "field": "active",
+                "title": "Activé",
+                "width": "15px",
+                "align": "center",
+                "formatter": "tickCross",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "uid",
+                "title": "Code",
+                "width": "20px",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "group",
+                "title": "Type accès",
+                "width": "15px",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "lastname",
+                "title": "Nom",
+                "width": "35%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "firstname",
+                "title": "Prénom",
+                "width": "35%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 810,
+        "y": 200,
+        "wires": [
+            [
+                "add-badge",
+                "ca0494bb7ee27c7b"
+            ]
+        ]
+    },
+    {
+        "id": "0713f52a4738adcf",
+        "type": "ui_ui_control",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "",
+        "events": "all",
+        "x": 140,
+        "y": 320,
+        "wires": [
+            [
+                "d70e0a76ad116354",
+                "a29b7c7115c54d1d"
+            ]
+        ]
+    },
+    {
+        "id": "5195e03d72347812",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Stocker Données",
+        "func": "flow.set('form_data', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "430b8d717d649def",
+        "type": "ui_ui-button",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "action": "action",
+        "actionType": "msg",
+        "name": "Ajouter",
+        "group": "fb8ef8df1ea1ad74",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Ajouter",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "icon": "add",
+        "x": 1120,
+        "y": 320,
+        "wires": [
+            [
+                "a8b8abe0dbb89d01"
+            ]
+        ]
+    },
+    {
+        "id": "0167bafd27ea1a58",
+        "type": "ui_ui-button",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "action": "action",
+        "actionType": "msg",
+        "name": "Modifier",
+        "group": "fb8ef8df1ea1ad74",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Modifier",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "x": 1120,
+        "y": 380,
+        "wires": [
+            [
+                "8315cb0b37bf2360"
+            ]
+        ]
+    },
+    {
+        "id": "8319687c46b92b91",
+        "type": "ui_ui-button",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "action": "action",
+        "actionType": "msg",
+        "name": "Supprimer",
+        "group": "fb8ef8df1ea1ad74",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Supprimer",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "icon": "delete",
+        "x": 1230,
+        "y": 440,
+        "wires": [
+            [
+                "3223507d3cfa6ef0"
+            ]
+        ]
+    },
+    {
+        "id": "d70e0a76ad116354",
+        "type": "change",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Cacher",
+        "rules": [
+            {
+                "t": "set",
+                "p": "action",
+                "pt": "msg",
+                "to": "hide",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 320,
+        "wires": [
+            [
+                "430b8d717d649def",
+                "8319687c46b92b91",
+                "0167bafd27ea1a58"
+            ]
+        ]
+    },
+    {
+        "id": "982e71bcc423b51e",
+        "type": "csv",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": "",
+        "x": 410,
+        "y": 400,
+        "wires": [
+            [
+                "73f87137ca42f812"
+            ]
+        ]
+    },
+    {
+        "id": "73f87137ca42f812",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Recherche",
+        "func": "let scannedUID = flow.get(\"form_data.uid\");\n\nnode.warn(scannedUID);\n\n// Table des badges provenant du CSV\nlet badges = msg.payload;\n\n// Rechercher le badge correspondant à l'UID scanné\nlet foundBadge = badges.find(badge => badge.UID == scannedUID);\n\nif (foundBadge) {\n    // Badge trouvé, renvoyer les informations\n    msg.payload = {\n        trouve: true,\n        message: \"Badge trouvé\",\n        badge: foundBadge\n    };\n} else {\n    // Badge non trouvé\n    msg.payload = {\n        trouve: false,\n        UID: scannedUID,\n        message: \"Badge non trouvé\"\n    };\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 400,
+        "wires": [
+            [
+                "de1e94ac57e14e9b",
+                "12daa1d853407168"
+            ]
+        ]
+    },
+    {
+        "id": "c0ed11991259f947",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Form_Badge_Submit",
+        "mode": "link",
+        "links": [
+            "f8e161c6df3483ee",
+            "89be4880b3ec336f"
+        ],
+        "x": 1115,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f8e161c6df3483ee",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Form_Badge_Action",
+        "links": [
+            "c0ed11991259f947"
+        ],
+        "x": 125,
+        "y": 400,
+        "wires": [
+            [
+                "be51f9118da183d6"
+            ]
+        ]
+    },
+    {
+        "id": "de1e94ac57e14e9b",
+        "type": "change",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Afficher",
+        "rules": [
+            {
+                "t": "set",
+                "p": "action",
+                "pt": "msg",
+                "to": "show",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 400,
+        "wires": [
+            [
+                "5b3a2cbf42ca0f61"
+            ]
+        ]
+    },
+    {
+        "id": "5b3a2cbf42ca0f61",
+        "type": "switch",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "",
+        "property": "payload.trouve",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 880,
+        "y": 400,
+        "wires": [
+            [
+                "430b8d717d649def"
+            ],
+            [
+                "0167bafd27ea1a58",
+                "cdc669b609c0032f"
+            ]
+        ]
+    },
+    {
+        "id": "89be4880b3ec336f",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Form_Badge_Reset",
+        "links": [
+            "07cbe2e7971d840e",
+            "6c65b544c9dba5ad",
+            "c0ed11991259f947"
+        ],
+        "x": 785,
+        "y": 320,
+        "wires": [
+            [
+                "d70e0a76ad116354"
+            ]
+        ]
+    },
+    {
+        "id": "a8b8abe0dbb89d01",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Form_Badge_Ajouter",
+        "mode": "link",
+        "links": [
+            "cbebc005f2e85a7d"
+        ],
+        "x": 1225,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8315cb0b37bf2360",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Form_Badge_Modifier",
+        "mode": "link",
+        "links": [
+            "c9a6d29df5ef2a8b"
+        ],
+        "x": 1225,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "3223507d3cfa6ef0",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Form_Badge_Supprimer",
+        "mode": "link",
+        "links": [
+            "5201f1bc8e4e41e5",
+            "0dd4a1227a3644e8"
+        ],
+        "x": 1345,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b4193616c42bd034",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "Format CSV",
+        "func": "let csvContent = msg.payload; // Contenu du fichier CSV chargé\nlet csvLines = csvContent.split('\\n'); // Diviser par ligne\nlet notif = \"\";\n\nconst form_data = flow.get('form_data');  // La nouvelle ligne que tu souhaites ajouter\n\n// Fonction pour convertir une ligne CSV en objet\nconst csvLineToObject = (line) => {\n    let [uid, firstname, lastname, group, active] = line.split(',');\n    return { uid, firstname, lastname, group, active };\n};\n\n// Variable pour indiquer s'il y a un doublon\nlet duplicateFound = false;\n\n// Parcourir les lignes du CSV pour vérifier les doublons\nfor (let i = 0; i < csvLines.length; i++) {\n    let existingEntry = csvLineToObject(csvLines[i]);\n\n    // Vérifier si un couple nom-prénom ou un uid est déjà présent\n    if (existingEntry.firstname === form_data.firstname && existingEntry.lastname === form_data.lastname) {\n        duplicateFound = true;\n        notif = \"Doublon detecté pour nom et prénom.\"\n        break;  // Sortir si un doublon est trouvé\n    }\n\n    if (existingEntry.uid === form_data.uid) {\n        duplicateFound = true;\n        notif = \"Doublon detecté pour UID.\"        \n        break;  // Sortir si un doublon est trouvé\n    }\n}\n\n// Si aucun doublon n'est trouvé, ajouter la nouvelle ligne\nif (!duplicateFound) {\n    // Concatène les valeurs de l'objet en une ligne CSV\n    // Tu peux ajuster l'ordre et le délimiteur en fonction de tes besoins.\n    let csvLine = `${form_data.uid},${form_data.firstname},${form_data.lastname},${form_data.group},${form_data.active}`;\n\n    // Écrire cette ligne dans msg.payload pour l'enregistrer dans un fichier\n    msg.payload = csvLine + \"\\n\";  // Ajoute un retour à la ligne à la fin\n\n} else {\n    node.warn(notif);\n    msg.payload = notif\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 560,
+        "wires": [
+            [
+                "9926e8fc24a9d1f3"
+            ]
+        ]
+    },
+    {
+        "id": "c18097db6ea8c49a",
+        "type": "file",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "Write to CSV",
+        "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 810,
+        "y": 620,
+        "wires": [
+            [
+                "6c65b544c9dba5ad"
+            ]
+        ]
+    },
+    {
+        "id": "cbebc005f2e85a7d",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "Ajout_Badge",
+        "links": [
+            "a8b8abe0dbb89d01"
+        ],
+        "x": 85,
+        "y": 560,
+        "wires": [
+            [
+                "a306b64fd90323a8"
+            ]
+        ]
+    },
+    {
+        "id": "12daa1d853407168",
+        "type": "change",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Cacher",
+        "rules": [
+            {
+                "t": "set",
+                "p": "action",
+                "pt": "msg",
+                "to": "hide",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 360,
+        "wires": [
+            [
+                "e4a7312f36a25dd0"
+            ]
+        ]
+    },
+    {
+        "id": "e4a7312f36a25dd0",
+        "type": "switch",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "",
+        "property": "payload.trouve",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 880,
+        "y": 360,
+        "wires": [
+            [
+                "430b8d717d649def"
+            ],
+            [
+                "0167bafd27ea1a58",
+                "8319687c46b92b91"
+            ]
+        ]
+    },
+    {
+        "id": "c9a6d29df5ef2a8b",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "Modifier_Badge",
+        "links": [
+            "8315cb0b37bf2360"
+        ],
+        "x": 85,
+        "y": 620,
+        "wires": [
+            [
+                "48fe8ebc4af5cd6b"
+            ]
+        ]
+    },
+    {
+        "id": "ca0494bb7ee27c7b",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Stocker Données",
+        "func": "flow.set('form_data_original', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 160,
+        "wires": [
+            [
+                "07cbe2e7971d840e"
+            ]
+        ]
+    },
+    {
+        "id": "5201f1bc8e4e41e5",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "Supprimer_Badge",
+        "links": [
+            "3223507d3cfa6ef0"
+        ],
+        "x": 85,
+        "y": 680,
+        "wires": [
+            [
+                "e81743050a9f376b"
+            ]
+        ]
+    },
+    {
+        "id": "be51f9118da183d6",
+        "type": "link call",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "",
+        "links": [
+            "d2ce0b8ca3f408a5"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "982e71bcc423b51e"
+            ]
+        ]
+    },
+    {
+        "id": "48fe8ebc4af5cd6b",
+        "type": "link call",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "",
+        "links": [
+            "d2ce0b8ca3f408a5"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 210,
+        "y": 620,
+        "wires": [
+            [
+                "update-csv"
+            ]
+        ]
+    },
+    {
+        "id": "e81743050a9f376b",
+        "type": "link call",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "",
+        "links": [
+            "d2ce0b8ca3f408a5"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 210,
+        "y": 680,
+        "wires": [
+            [
+                "delete-from-csv"
+            ]
+        ]
+    },
+    {
+        "id": "1f52d09d7dfc537a",
+        "type": "comment",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Gestion de l'affichage des boutons (ajout / modification / suppression)",
+        "info": "",
+        "x": 690,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "e3c2daa8b6415d3c",
+        "type": "comment",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Affichage de la liste des badges dans un tableau",
+        "info": "",
+        "x": 700,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f1b989b616a3c2b8",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "name": "Recup_Badges_Out",
+        "mode": "return",
+        "links": [],
+        "x": 335,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "a29b7c7115c54d1d",
+        "type": "link call",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "",
+        "links": [
+            "d2ce0b8ca3f408a5"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "parse-csv"
+            ]
+        ]
+    },
+    {
+        "id": "6c65b544c9dba5ad",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "Fichier_Badge_Modifié",
+        "mode": "link",
+        "links": [
+            "89be4880b3ec336f",
+            "beaa458f9661cf23"
+        ],
+        "x": 925,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "beaa458f9661cf23",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Table_Update",
+        "links": [
+            "6c65b544c9dba5ad"
+        ],
+        "x": 145,
+        "y": 280,
+        "wires": [
+            [
+                "a29b7c7115c54d1d"
+            ]
+        ]
+    },
+    {
+        "id": "af9e52185c4c958b",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Form_Read_Tag",
+        "links": [
+            "92e181a1ce7fe4e8"
+        ],
+        "x": 665,
+        "y": 240,
+        "wires": [
+            [
+                "428593e904c3f9e3"
+            ]
+        ]
+    },
+    {
+        "id": "0dd4a1227a3644e8",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Form_Memo_Suppr",
+        "links": [
+            "3223507d3cfa6ef0"
+        ],
+        "x": 665,
+        "y": 280,
+        "wires": [
+            [
+                "01bd06a552790404"
+            ]
+        ]
+    },
+    {
+        "id": "01bd06a552790404",
+        "type": "change",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Ancienne valeur",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "form_data",
+                "tot": "flow",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 280,
+        "wires": [
+            [
+                "add-badge"
+            ]
+        ]
+    },
+    {
+        "id": "428593e904c3f9e3",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "uid Lu",
+        "func": "var uid = msg.payload.uid;\n\nmsg.payload = {\n    uid : uid\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 240,
+        "wires": [
+            [
+                "add-badge"
+            ]
+        ]
+    },
+    {
+        "id": "cdc669b609c0032f",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Pas modifié",
+        "func": "let _old = flow.get('form_data_original');\nlet _new = flow.get('form_data');\n\nvar equals = _old.uid === _new.uid\n    && _old.firstname === _new.firstname\n    && _old.lastname === _new.lastname\n    && _old.group === _new.group\n    && _old.active === _new.active\n\nif (equals === true) \n{\n    msg.action = \"show\";\n} else {\n    msg.action = \"hide\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 440,
+        "wires": [
+            [
+                "8319687c46b92b91"
+            ]
+        ]
+    },
+    {
+        "id": "07cbe2e7971d840e",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "Table_Selection",
+        "mode": "link",
+        "links": [
+            "89be4880b3ec336f"
+        ],
+        "x": 1135,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a306b64fd90323a8",
+        "type": "link call",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "",
+        "links": [
+            "d2ce0b8ca3f408a5"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 210,
+        "y": 560,
+        "wires": [
+            [
+                "b4193616c42bd034"
+            ]
+        ]
+    },
+    {
+        "id": "3031944d6dea631e",
+        "type": "ui_toast",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 870,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "9926e8fc24a9d1f3",
+        "type": "switch",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "Anti. doublons",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Doublon detecté",
+                "vt": "str"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 580,
+        "y": 560,
+        "wires": [
+            [
+                "3031944d6dea631e",
+                "6c65b544c9dba5ad"
+            ],
+            [
+                "c18097db6ea8c49a"
+            ]
+        ]
+    },
+    {
+        "id": "78bc32fd489261d1",
+        "type": "mqtt in",
+        "z": "591abc7ecc8a82dd",
+        "name": "",
+        "topic": "CtrlAccess/state/Life",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "631cc1e4eb5c5735",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 200,
+        "wires": [
+            [
+                "c2a5d3ed4375ca2e",
+                "c9c3485fced0181e",
+                "b6730c9cd280693e"
+            ]
+        ]
+    },
+    {
+        "id": "d8b59f3350b520fa",
+        "type": "mqtt in",
+        "z": "591abc7ecc8a82dd",
+        "name": "",
+        "topic": "CtrlAccess/state/Online",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "631cc1e4eb5c5735",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 60,
+        "wires": [
+            [
+                "d2273536d7b960a9"
+            ]
+        ]
+    },
+    {
+        "id": "d2273536d7b960a9",
+        "type": "link out",
+        "z": "591abc7ecc8a82dd",
+        "name": "MQTT_Online",
+        "mode": "link",
+        "links": [
+            "bb93693afc0eb254"
+        ],
+        "x": 425,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "c9c3485fced0181e",
+        "type": "mqtt out",
+        "z": "591abc7ecc8a82dd",
+        "name": "",
+        "topic": "CtrlAccess/Life",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "631cc1e4eb5c5735",
+        "x": 540,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "ac8af869b3242cbd",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "name": "Mémo Old",
+        "rules": [
+            {
+                "t": "set",
+                "p": "LifeOld",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b6730c9cd280693e",
+        "type": "switch",
+        "z": "591abc7ecc8a82dd",
+        "name": "Différente",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "LifeOld",
+                "vt": "flow"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "ac8af869b3242cbd",
+                "1b3a505c1fb09b5a"
+            ]
+        ]
+    },
+    {
+        "id": "1b3a505c1fb09b5a",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "name": "Tempo RAZ",
+        "rules": [
+            {
+                "t": "set",
+                "p": "TempoComm",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2a5d3ed4375ca2e",
+        "type": "debug",
+        "z": "591abc7ecc8a82dd",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "960329839e07f6fd",
+        "type": "inject",
+        "z": "591abc7ecc8a82dd",
+        "name": "ft1s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "41517a322d9eb80e",
+                "85b7f075344482af"
+            ]
+        ]
+    },
+    {
+        "id": "41517a322d9eb80e",
+        "type": "function",
+        "z": "591abc7ecc8a82dd",
+        "name": "Gestion tempo",
+        "func": "let tempo = flow.get(\"TempoComm\");\n\nif (tempo < 5)\n{\n    flow.set(\"TempoComm\", tempo + 1);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85b7f075344482af",
+        "type": "switch",
+        "z": "591abc7ecc8a82dd",
+        "name": "Etat communication",
+        "property": "TempoComm",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "gte",
+                "v": "5",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "413eeeea223db926"
+            ],
+            [
+                "af2ce02634a47f83"
+            ]
+        ]
+    },
+    {
+        "id": "af2ce02634a47f83",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "name": "KO",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DefCom",
+                "pt": "global",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 360,
+        "wires": [
+            [
+                "3487b4a67424ab63"
+            ]
+        ]
+    },
+    {
+        "id": "413eeeea223db926",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "name": "OK",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DefCom",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 320,
+        "wires": [
+            [
+                "3487b4a67424ab63"
+            ]
+        ]
+    },
+    {
+        "id": "3487b4a67424ab63",
+        "type": "debug",
+        "z": "591abc7ecc8a82dd",
+        "name": "Défaut de commnucation",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "$globalContext(\"DefCom\")",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d781b125dcb35617",
+        "type": "link in",
+        "z": "5bab6ada0af81ef8",
+        "name": "Param_In",
+        "links": [],
+        "x": 115,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6b041eff7f4ab10",
+        "type": "debug",
+        "z": "5bab6ada0af81ef8",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "a2bc741b89ed8091",
+        "type": "inject",
+        "z": "5bab6ada0af81ef8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "743a7b716d76cc7d"
+            ]
+        ]
+    },
+    {
+        "id": "5cd69b99726aeee1",
+        "type": "file",
+        "z": "5bab6ada0af81ef8",
+        "g": "a9faafd56d192f4c",
+        "name": "Sauvegarde des paramètres",
+        "filename": "/home/pi/Documents/ControleAcces/Parametres.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 920,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b6c7e6c16a2aec3f",
+        "type": "ui_form",
+        "z": "5bab6ada0af81ef8",
+        "g": "a9faafd56d192f4c",
+        "name": "Réglage des acces",
+        "label": "Période d'accès piscine",
+        "group": "8d754f839da525fc",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "options": [
+            {
+                "label": "Date début (DD/MM)",
+                "value": "date_debut",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Date fin (DD/MM)",
+                "value": "date_fin",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Heure debut (HH:mm)",
+                "value": "heure_debut",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Heure fin (HH:mm)",
+                "value": "heure_fin",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "date_debut": "",
+            "date_fin": "",
+            "heure_debut": "",
+            "heure_fin": ""
+        },
+        "payload": "",
+        "submit": "Mettre à jour",
+        "cancel": "",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 650,
+        "y": 320,
+        "wires": [
+            [
+                "62e05b89f6b12354"
+            ]
+        ]
+    },
+    {
+        "id": "62e05b89f6b12354",
+        "type": "function",
+        "z": "5bab6ada0af81ef8",
+        "g": "a9faafd56d192f4c",
+        "name": "Formatage en Json",
+        "func": "msg.payload = {\n    \"acces_piscine\": {\n        \"date_debut\": msg.payload.date_debut,\n        \"date_fin\": msg.payload.date_fin,\n        \"heure_debut\": msg.payload.heure_debut,\n        \"heure_fin\": msg.payload.heure_fin\n    }\n};\nmsg.payload = JSON.stringify(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 380,
+        "wires": [
+            [
+                "5cd69b99726aeee1"
+            ]
+        ]
+    },
+    {
+        "id": "be3535c3eb8a8f3d",
+        "type": "ui_ui_control",
+        "z": "5bab6ada0af81ef8",
+        "g": "a9faafd56d192f4c",
+        "name": "",
+        "events": "all",
+        "x": 180,
+        "y": 320,
+        "wires": [
+            [
+                "743a7b716d76cc7d"
+            ]
+        ]
+    },
+    {
+        "id": "c07bf0d2236c4427",
+        "type": "debug",
+        "z": "5bab6ada0af81ef8",
+        "g": "a9faafd56d192f4c",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "8c486ffe2a3019e8",
+        "type": "function",
+        "z": "5bab6ada0af81ef8",
+        "g": "a9faafd56d192f4c",
+        "name": "Parse",
+        "func": "// Supposons que msg.payload contient une chaîne JSON\nvar parsedPayload = JSON.parse(msg.payload);\n\n// Récupérer les valeurs de l'objet et les réassigner à msg.payload\nmsg.payload = {\n    date_debut: parsedPayload.acces_piscine.date_debut,\n    date_fin: parsedPayload.acces_piscine.date_fin,\n    heure_debut: parsedPayload.acces_piscine.heure_debut,\n    heure_fin: parsedPayload.acces_piscine.heure_fin\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a137ba9570f26ea4",
+        "type": "ui_form",
+        "z": "5bab6ada0af81ef8",
+        "name": "",
+        "label": "Paramètres d'accès",
+        "group": "8d754f839da525fc",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "options": [
+            {
+                "label": "Date début (DD/MM)",
+                "value": "date_debut",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Date fin (DD/MM)",
+                "value": "date_fin",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Heure debut (HH:mm)",
+                "value": "heure_debut",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Heure fin (HH:mm)",
+                "value": "heure_fin",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Temps d'ouverture entrée (sec)",
+                "value": "temps_ouverture_entree",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Temps d'ouverture sortie (sec)",
+                "value": "temps_ouverture_sortie",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "date_debut": "",
+            "date_fin": "",
+            "heure_debut": "",
+            "heure_fin": "",
+            "temps_ouverture_entree": "",
+            "temps_ouverture_sortie": ""
+        },
+        "payload": "",
+        "submit": "Appliquer",
+        "cancel": "",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": true,
+        "className": "",
+        "x": 670,
+        "y": 60,
+        "wires": [
+            [
+                "823152d71a0076a1",
+                "d6b041eff7f4ab10"
+            ]
+        ]
+    },
+    {
+        "id": "0c9abe6325775d84",
+        "type": "change",
+        "z": "5bab6ada0af81ef8",
+        "name": "Acces Piscine",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.acces_piscine",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 100,
+        "wires": [
+            [
+                "a137ba9570f26ea4",
+                "d6b041eff7f4ab10"
+            ]
+        ]
+    },
+    {
+        "id": "823152d71a0076a1",
+        "type": "json",
+        "z": "5bab6ada0af81ef8",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 890,
+        "y": 100,
+        "wires": [
+            [
+                "d6b041eff7f4ab10"
+            ]
+        ]
+    },
+    {
+        "id": "743a7b716d76cc7d",
+        "type": "file in",
+        "z": "5bab6ada0af81ef8",
+        "name": "Paramètres.json",
+        "filename": "/home/pi/Documents/ControleAcces/Parametres.json",
+        "filenameType": "str",
+        "format": "",
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 340,
+        "y": 220,
+        "wires": [
+            [
+                "0c9abe6325775d84"
+            ]
+        ]
+    }
+]
