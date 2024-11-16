@@ -40,19 +40,12 @@
         "env": []
     },
     {
-        "id": "5bab6ada0af81ef8",
+        "id": "2bda734229a070eb",
         "type": "tab",
         "label": "Parametres",
         "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "2bda734229a070eb",
-        "type": "tab",
-        "label": "Flux 2",
-        "disabled": false,
-        "info": "",
+        "locked": true,
+        "info": "Gestion des fichier de paramétrage\r\n\r\nCe flux permet de modifier les paramètres avec les formulaires disponible sur l'interface web graphique",
         "env": []
     },
     {
@@ -360,30 +353,6 @@
         "h": 97
     },
     {
-        "id": "a9faafd56d192f4c",
-        "type": "group",
-        "z": "5bab6ada0af81ef8",
-        "name": "Réglage de la plage d'accès",
-        "style": {
-            "stroke": "#3f3f3f",
-            "fill": "#ffffbf",
-            "label": true,
-            "label-position": "n",
-            "color": "#3f3f3f"
-        },
-        "nodes": [
-            "5cd69b99726aeee1",
-            "b6c7e6c16a2aec3f",
-            "62e05b89f6b12354",
-            "c07bf0d2236c4427",
-            "8c486ffe2a3019e8"
-        ],
-        "x": 294,
-        "y": 379,
-        "w": 692,
-        "h": 142
-    },
-    {
         "id": "5712cf90b1da71a0",
         "type": "group",
         "z": "2bda734229a070eb",
@@ -661,6 +630,16 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
+    },
+    {
+        "id": "df78866d954116a4",
+        "type": "ui_spacer",
+        "z": "2bda734229a070eb",
+        "name": "spacer",
+        "group": "8d754f839da525fc",
+        "order": 2,
+        "width": 1,
+        "height": 1
     },
     {
         "id": "db65c9d28895a6c5",
@@ -3771,489 +3750,14 @@
         "wires": []
     },
     {
-        "id": "d781b125dcb35617",
-        "type": "link in",
-        "z": "5bab6ada0af81ef8",
-        "name": "Param_In",
-        "links": [],
-        "x": 45,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a2bc741b89ed8091",
-        "type": "inject",
-        "z": "5bab6ada0af81ef8",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 110,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5cd69b99726aeee1",
-        "type": "file",
-        "z": "5bab6ada0af81ef8",
-        "g": "a9faafd56d192f4c",
-        "name": "Sauvegarde des paramètres",
-        "filename": "/home/pi/Documents/ControleAcces/Parametres.json",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": false,
-        "overwriteFile": "true",
-        "encoding": "utf8",
-        "x": 840,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b6c7e6c16a2aec3f",
-        "type": "ui_form",
-        "z": "5bab6ada0af81ef8",
-        "d": true,
-        "g": "a9faafd56d192f4c",
-        "name": "Réglage des acces",
-        "label": "Période d'accès piscine",
-        "group": "8d754f839da525fc",
-        "order": 0,
-        "width": "0",
-        "height": "0",
-        "options": [
-            {
-                "label": "Date début (DD/MM)",
-                "value": "date_debut",
-                "type": "text",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Date fin (DD/MM)",
-                "value": "date_fin",
-                "type": "text",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Heure debut (HH:mm)",
-                "value": "heure_debut",
-                "type": "text",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Heure fin (HH:mm)",
-                "value": "heure_fin",
-                "type": "text",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "date_debut": "",
-            "date_fin": "",
-            "heure_debut": "",
-            "heure_fin": ""
-        },
-        "payload": "",
-        "submit": "Mettre à jour",
-        "cancel": "",
-        "topic": "",
-        "topicType": "str",
-        "splitLayout": false,
-        "className": "",
-        "x": 570,
-        "y": 420,
-        "wires": [
-            [
-                "62e05b89f6b12354"
-            ]
-        ]
-    },
-    {
-        "id": "62e05b89f6b12354",
-        "type": "function",
-        "z": "5bab6ada0af81ef8",
-        "g": "a9faafd56d192f4c",
-        "name": "Formatage en Json",
-        "func": "msg.payload = {\n    \"acces_piscine\": {\n        \"date_debut\": msg.payload.date_debut,\n        \"date_fin\": msg.payload.date_fin,\n        \"heure_debut\": msg.payload.heure_debut,\n        \"heure_fin\": msg.payload.heure_fin\n    }\n};\nmsg.payload = JSON.stringify(msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 610,
-        "y": 480,
-        "wires": [
-            [
-                "5cd69b99726aeee1"
-            ]
-        ]
-    },
-    {
-        "id": "c07bf0d2236c4427",
-        "type": "debug",
-        "z": "5bab6ada0af81ef8",
-        "g": "a9faafd56d192f4c",
-        "name": "debug 2",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 380,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "8c486ffe2a3019e8",
-        "type": "function",
-        "z": "5bab6ada0af81ef8",
-        "g": "a9faafd56d192f4c",
-        "name": "Parse",
-        "func": "// Supposons que msg.payload contient une chaîne JSON\nvar parsedPayload = JSON.parse(msg.payload);\n\n// Récupérer les valeurs de l'objet et les réassigner à msg.payload\nmsg.payload = {\n    date_debut: parsedPayload.acces_piscine.date_debut,\n    date_fin: parsedPayload.acces_piscine.date_fin,\n    heure_debut: parsedPayload.acces_piscine.heure_debut,\n    heure_fin: parsedPayload.acces_piscine.heure_fin\n};\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 420,
-        "wires": [
-            [
-                "b6c7e6c16a2aec3f"
-            ]
-        ]
-    },
-    {
-        "id": "b072f73e283e0b69",
-        "type": "ui_form",
-        "z": "5bab6ada0af81ef8",
-        "name": "",
-        "label": "Temps d'ouverture",
-        "group": "8d754f839da525fc",
-        "order": 0,
-        "width": "0",
-        "height": "0",
-        "options": [
-            {
-                "label": "Entrée (sec)",
-                "value": "entree",
-                "type": "number",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Sortie (sec)",
-                "value": "sortie",
-                "type": "number",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "entree": "",
-            "sortie": ""
-        },
-        "payload": "",
-        "submit": "Appliquer",
-        "cancel": "",
-        "topic": "",
-        "topicType": "str",
-        "splitLayout": true,
-        "className": "",
-        "x": 930,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a137ba9570f26ea4",
-        "type": "ui_form",
-        "z": "5bab6ada0af81ef8",
-        "name": "",
-        "label": "Plage d'accès",
-        "group": "8d754f839da525fc",
-        "order": 0,
-        "width": "0",
-        "height": "0",
-        "options": [
-            {
-                "label": "Date début (DD/MM)",
-                "value": "date_debut",
-                "type": "text",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Date fin (DD/MM)",
-                "value": "date_fin",
-                "type": "text",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Heure debut (HH:mm)",
-                "value": "heure_debut",
-                "type": "text",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Heure fin (HH:mm)",
-                "value": "heure_fin",
-                "type": "text",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "date_debut": "",
-            "date_fin": "",
-            "heure_debut": "",
-            "heure_fin": ""
-        },
-        "payload": "",
-        "submit": "Appliquer",
-        "cancel": "",
-        "topic": "",
-        "topicType": "str",
-        "splitLayout": true,
-        "className": "",
-        "x": 940,
-        "y": 80,
-        "wires": [
-            [
-                "cce97116581c053a"
-            ]
-        ]
-    },
-    {
-        "id": "0c9abe6325775d84",
-        "type": "change",
-        "z": "5bab6ada0af81ef8",
-        "name": "Acces Piscine",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.acces_piscine",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 720,
-        "y": 80,
-        "wires": [
-            [
-                "a137ba9570f26ea4",
-                "0efac362e514ed42"
-            ]
-        ]
-    },
-    {
-        "id": "823152d71a0076a1",
-        "type": "json",
-        "z": "5bab6ada0af81ef8",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": true,
-        "x": 1070,
-        "y": 160,
-        "wires": [
-            [
-                "e53b812cf51d4b03"
-            ]
-        ]
-    },
-    {
-        "id": "743a7b716d76cc7d",
-        "type": "file in",
-        "z": "5bab6ada0af81ef8",
-        "name": "Paramètres.json",
-        "filename": "/home/pi/Documents/ControleAcces/Parametres.json",
-        "filenameType": "str",
-        "format": "utf8",
-        "sendError": true,
-        "encoding": "utf8",
-        "allProps": false,
-        "x": 420,
-        "y": 80,
-        "wires": [
-            [
-                "2dc5d0645e5a8599"
-            ]
-        ]
-    },
-    {
-        "id": "2dc5d0645e5a8599",
-        "type": "json",
-        "z": "5bab6ada0af81ef8",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": true,
-        "x": 570,
-        "y": 80,
-        "wires": [
-            [
-                "0c9abe6325775d84"
-            ]
-        ]
-    },
-    {
-        "id": "cce97116581c053a",
-        "type": "change",
-        "z": "5bab6ada0af81ef8",
-        "name": "msg.form",
-        "rules": [
-            {
-                "t": "set",
-                "p": "form",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg",
-                "dc": true
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1120,
-        "y": 80,
-        "wires": [
-            [
-                "743a7b716d76cc7d"
-            ]
-        ]
-    },
-    {
-        "id": "78fa1140d1bd295b",
-        "type": "change",
-        "z": "5bab6ada0af81ef8",
-        "name": "",
-        "rules": [
-            {
-                "t": "delete",
-                "p": "payload",
-                "pt": "msg"
-            },
-            {
-                "t": "set",
-                "p": "payload.acces_piscine",
-                "pt": "msg",
-                "to": "form",
-                "tot": "msg",
-                "dc": true
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 880,
-        "y": 200,
-        "wires": [
-            [
-                "823152d71a0076a1"
-            ]
-        ]
-    },
-    {
-        "id": "0efac362e514ed42",
-        "type": "switch",
-        "z": "5bab6ada0af81ef8",
-        "name": "",
-        "property": "form",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "nempty"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 780,
-        "y": 140,
-        "wires": [
-            [
-                "78fa1140d1bd295b"
-            ]
-        ]
-    },
-    {
-        "id": "e53b812cf51d4b03",
-        "type": "debug",
-        "z": "5bab6ada0af81ef8",
-        "name": "debug 4",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1200,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "be3535c3eb8a8f3d",
-        "type": "ui_ui_control",
-        "z": "5bab6ada0af81ef8",
-        "name": "",
-        "events": "all",
-        "x": 200,
-        "y": 80,
-        "wires": [
-            [
-                "743a7b716d76cc7d"
-            ]
-        ]
-    },
-    {
         "id": "form_piscine",
         "type": "ui_form",
         "z": "2bda734229a070eb",
         "g": "5712cf90b1da71a0",
         "name": "Accès piscine",
         "label": "Plage d'accès",
-        "group": "de61be64d46e4941",
+        "group": "8d754f839da525fc",
+        "order": 1,
         "width": "",
         "height": "",
         "options": [
@@ -4296,7 +3800,7 @@
         "cancel": "",
         "topic": "",
         "topicType": "str",
-        "splitLayout": false,
+        "splitLayout": true,
         "className": "",
         "x": 1060,
         "y": 100,
@@ -4313,7 +3817,8 @@
         "g": "5712cf90b1da71a0",
         "name": "Temps ouverture",
         "label": "Temps d'ouverture",
-        "group": "de61be64d46e4941",
+        "group": "8d754f839da525fc",
+        "order": 3,
         "width": "",
         "height": "",
         "options": [
