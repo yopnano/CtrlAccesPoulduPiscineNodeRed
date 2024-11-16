@@ -162,7 +162,8 @@
             "26eb8b2acbec1356",
             "5fa0b17c9b2bde53",
             "392ed94bab86b646",
-            "91c7594f1be37e54"
+            "91c7594f1be37e54",
+            "783525c359edfba6"
         ],
         "x": 34,
         "y": 31.5,
@@ -402,11 +403,13 @@
             "3f43fdfde31db126",
             "4294cbb75e704dcd",
             "73de6374571858aa",
-            "b0cc9c632e5568e7"
+            "b0cc9c632e5568e7",
+            "ab73f302936e1e51",
+            "d01648807342866a"
         ],
         "x": 34,
         "y": 239,
-        "w": 1132,
+        "w": 1412,
         "h": 162
     },
     {
@@ -1577,7 +1580,7 @@
         "wires": [
             [
                 "cc7f6406773f5abb",
-                "26eb8b2acbec1356"
+                "783525c359edfba6"
             ]
         ]
     },
@@ -1607,7 +1610,7 @@
         "wires": [
             [
                 "01bf14d42e33bb88",
-                "26eb8b2acbec1356"
+                "783525c359edfba6"
             ]
         ]
     },
@@ -2142,7 +2145,7 @@
         "links": [
             "5fa0b17c9b2bde53"
         ],
-        "x": 785,
+        "x": 915,
         "y": 160,
         "wires": []
     },
@@ -2299,6 +2302,32 @@
         "wires": [
             [
                 "2a321425f18897f0"
+            ]
+        ]
+    },
+    {
+        "id": "783525c359edfba6",
+        "type": "delay",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 820,
+        "y": 160,
+        "wires": [
+            [
+                "26eb8b2acbec1356"
             ]
         ]
     },
@@ -3830,7 +3859,7 @@
                 "rows": null
             },
             {
-                "label": "Sorite (sec)",
+                "label": "Sortie (sec)",
                 "value": "sortie",
                 "type": "number",
                 "required": true,
@@ -3845,7 +3874,7 @@
         "cancel": "",
         "topic": "",
         "topicType": "str",
-        "splitLayout": false,
+        "splitLayout": true,
         "className": "",
         "x": 1070,
         "y": 140,
@@ -3978,7 +4007,7 @@
         "z": "2bda734229a070eb",
         "g": "653da2730ee03df8",
         "name": "Debug ré-assemblage",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4175,8 +4204,58 @@
         "x": 1020,
         "y": 320,
         "wires": [
-            []
+            [
+                "d01648807342866a"
+            ]
         ],
         "info": "Le fichier est écrasé avec les nouvelles valeurs."
+    },
+    {
+        "id": "ab73f302936e1e51",
+        "type": "ui_toast",
+        "z": "2bda734229a070eb",
+        "g": "653da2730ee03df8",
+        "position": "top right",
+        "displayTime": "2",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Notification",
+        "x": 1350,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "d01648807342866a",
+        "type": "change",
+        "z": "2bda734229a070eb",
+        "g": "653da2730ee03df8",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Paramètres mis à jour",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 320,
+        "wires": [
+            [
+                "ab73f302936e1e51"
+            ]
+        ]
     }
 ]
