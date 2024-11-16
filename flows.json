@@ -24,18 +24,11 @@
         "env": []
     },
     {
-        "id": "0e51b8022c654cc0",
-        "type": "tab",
-        "label": "Test unitaires",
-        "disabled": false,
-        "info": "Ce Flux permet de faire différents tests",
-        "env": []
-    },
-    {
         "id": "591abc7ecc8a82dd",
         "type": "tab",
         "label": "Communication",
         "disabled": false,
+        "locked": true,
         "info": "",
         "env": []
     },
@@ -44,7 +37,6 @@
         "type": "tab",
         "label": "Parametres",
         "disabled": false,
-        "locked": true,
         "info": "Gestion des fichier de paramétrage\r\n\r\nCe flux permet de modifier les paramètres avec les formulaires disponible sur l'interface web graphique",
         "env": []
     },
@@ -152,54 +144,35 @@
             "3968539fa1701aae",
             "14f8c8471f2fcf03",
             "d8264aa3e617f306",
-            "bbc878407e728744",
-            "5a74f9beba8eef68",
             "ef75846b774ac1dd",
-            "ef5d4cb491e348ec",
             "a1dde28a3427a9cc",
-            "dabe3f0a19b9823a",
-            "871ee9c8ff9b401a",
             "26eb8b2acbec1356",
             "5fa0b17c9b2bde53",
             "392ed94bab86b646",
-            "91c7594f1be37e54",
-            "783525c359edfba6"
+            "783525c359edfba6",
+            "3c38367fcb324d86",
+            "d37db19602b1723c",
+            "18a8e13db3b812da",
+            "b44de002ef35811b",
+            "8150baa479df1502",
+            "a028c0b4a886159f",
+            "03529e86e0ffdd59",
+            "b2517b9c2b89c31b",
+            "0fe615746f8fcb91",
+            "7b12f19cb42502b9",
+            "5169d8c1c23ea18a",
+            "905dfca79840796c",
+            "60a4e596c3d8dad8",
+            "547b97ced74669ee",
+            "71778f27525cd34a",
+            "bdba2b4f959a87a0",
+            "70e930a250435c8a",
+            "7120fb30ecfc74af"
         ],
-        "x": 34,
-        "y": 31.5,
-        "w": 1172,
-        "h": 369.5
-    },
-    {
-        "id": "5a391963a7287350",
-        "type": "group",
-        "z": "f99f61d176d88850",
-        "name": "Date et Heure système",
-        "style": {
-            "stroke": "#3f3f3f",
-            "fill": "#e3f3d3",
-            "label": true,
-            "label-position": "n",
-            "color": "#3f3f3f"
-        },
-        "nodes": [
-            "becf941b1a8de637",
-            "format-date-time",
-            "798f8938cab8d653",
-            "3692e410e43961cd",
-            "248e24b72cc80b9b",
-            "9fb2a73cd4792475",
-            "080297b2478bcc19",
-            "4b6a23c6150c579a",
-            "a6fd6480f60f1efb",
-            "b3832d375286d59e",
-            "8ad750ef08bb7665",
-            "89b65951d548a3f6"
-        ],
-        "x": 34,
-        "y": 459,
-        "w": 752,
-        "h": 282
+        "x": 24,
+        "y": 19,
+        "w": 1362,
+        "h": 342
     },
     {
         "id": "6236bcedb5ad3ed2",
@@ -318,18 +291,23 @@
         "name": "Redémarrage",
         "style": {
             "stroke": "#3f3f3f",
-            "fill": "#bfdbef",
+            "fill": "#ffefbf",
             "label": true,
             "label-position": "n",
             "color": "#3f3f3f"
         },
         "nodes": [
             "680c5a11adb41484",
-            "52060a56fc94b130"
+            "52060a56fc94b130",
+            "0a1b5d6b91c62d0b",
+            "42bf7d4dce6fc68b",
+            "3e98501042490dc4",
+            "eeb2b765754f01b8",
+            "653ed643d71f86fe"
         ],
-        "x": 34,
-        "y": 991.5,
-        "w": 412,
+        "x": 14,
+        "y": 391.5,
+        "w": 1252,
         "h": 97
     },
     {
@@ -339,18 +317,23 @@
         "name": "Arrêt",
         "style": {
             "stroke": "#3f3f3f",
-            "fill": "#bfdbef",
+            "fill": "#ffbfbf",
             "label": true,
             "label-position": "n",
             "color": "#3f3f3f"
         },
         "nodes": [
             "2a321425f18897f0",
-            "a66e470e394d0ace"
+            "a52ae96f1a7720a0",
+            "00e10551be067ba2",
+            "b227e619e3daa05a",
+            "89bd908fa4185299",
+            "2de3d6d6cea2f8fc",
+            "d5a56c3e54241e69"
         ],
-        "x": 474,
-        "y": 991.5,
-        "w": 412,
+        "x": 14,
+        "y": 511.5,
+        "w": 1252,
         "h": 97
     },
     {
@@ -378,7 +361,7 @@
             "5dd6483293b45783",
             "d8c3b3d7be81b28f"
         ],
-        "x": 34,
+        "x": 14,
         "y": 39,
         "w": 1242,
         "h": 162
@@ -407,10 +390,108 @@
             "ab73f302936e1e51",
             "d01648807342866a"
         ],
-        "x": 34,
+        "x": 14,
         "y": 239,
         "w": 1412,
         "h": 162
+    },
+    {
+        "id": "5a391963a7287350",
+        "type": "group",
+        "z": "2bda734229a070eb",
+        "name": "Date et Heure système",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#e3f3d3",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "becf941b1a8de637",
+            "format-date-time",
+            "798f8938cab8d653",
+            "3692e410e43961cd",
+            "248e24b72cc80b9b",
+            "9fb2a73cd4792475",
+            "080297b2478bcc19",
+            "4b6a23c6150c579a",
+            "a6fd6480f60f1efb",
+            "b3832d375286d59e",
+            "8ad750ef08bb7665",
+            "89b65951d548a3f6",
+            "fc52c7a5b42d6d93",
+            "bc176d9dc4165081",
+            "set-system-time",
+            "104cbd5487291ad2"
+        ],
+        "x": 14,
+        "y": 619,
+        "w": 1212,
+        "h": 282
+    },
+    {
+        "id": "75a9a7cf037a474d",
+        "type": "group",
+        "z": "591abc7ecc8a82dd",
+        "name": "Surveillance de la communication",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#e3f3d3",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "78bc32fd489261d1",
+            "c9c3485fced0181e",
+            "ac8af869b3242cbd",
+            "b6730c9cd280693e",
+            "1b3a505c1fb09b5a",
+            "c2a5d3ed4375ca2e",
+            "960329839e07f6fd",
+            "41517a322d9eb80e",
+            "85b7f075344482af",
+            "af2ce02634a47f83",
+            "413eeeea223db926",
+            "3487b4a67424ab63",
+            "7e39c6db9fc3e5d7",
+            "70e975d29c6d573f",
+            "422152293a8cc4ae",
+            "4ae815b9e2048893",
+            "7dd13654c169f94c",
+            "96e1a885a08e2b85",
+            "a48aabe134c6753a",
+            "8b66295461714e80",
+            "0d1b2a142d8a2c92",
+            "456387f7ddb14772"
+        ],
+        "x": 14,
+        "y": 19,
+        "w": 1212,
+        "h": 342
+    },
+    {
+        "id": "8da2d3af0c18bd9f",
+        "type": "group",
+        "z": "2bda734229a070eb",
+        "name": "3.Mise à jour des paramètres dans l'arduino",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#dbcbe7",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "51a010616a1a2b65",
+            "adbad85229010494",
+            "c1ab756bcd256b8f"
+        ],
+        "x": 14,
+        "y": 439,
+        "w": 1152,
+        "h": 122
     },
     {
         "id": "2af2e23a3cac9b4d",
@@ -643,6 +724,17 @@
         "order": 2,
         "width": 1,
         "height": 1
+    },
+    {
+        "id": "39dd9e70963c8db5",
+        "type": "ui_group",
+        "name": "Wi-Fi",
+        "tab": "a14588abf773c2cf",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "db65c9d28895a6c5",
@@ -1453,11 +1545,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 400,
-        "y": 80,
+        "x": 780,
+        "y": 60,
         "wires": [
             [
-                "3968539fa1701aae"
+                "01bf14d42e33bb88"
             ]
         ]
     },
@@ -1483,11 +1575,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 410,
-        "y": 240,
+        "x": 770,
+        "y": 200,
         "wires": [
             [
-                "149e46a2cb4358e2"
+                "cc7f6406773f5abb"
             ]
         ]
     },
@@ -1503,14 +1595,14 @@
         "timer": "",
         "winHide": false,
         "oldrc": false,
-        "name": "",
-        "x": 1050,
-        "y": 80,
+        "name": "Activer Wi-Fi",
+        "x": 970,
+        "y": 100,
         "wires": [
-            [],
             [
-                "3c38367fcb324d86"
+                "60a4e596c3d8dad8"
             ],
+            [],
             []
         ]
     },
@@ -1526,14 +1618,14 @@
         "timer": "",
         "winHide": false,
         "oldrc": false,
-        "name": "",
-        "x": 1040,
+        "name": "Désactiver Wi-Fi",
+        "x": 980,
         "y": 240,
         "wires": [
-            [],
             [
-                "3c38367fcb324d86"
+                "547b97ced74669ee"
             ],
+            [],
             []
         ]
     },
@@ -1541,8 +1633,9 @@
         "id": "3c38367fcb324d86",
         "type": "debug",
         "z": "f99f61d176d88850",
-        "name": "Error",
-        "active": true,
+        "g": "08523bcc635d9f44",
+        "name": "Debug",
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1550,8 +1643,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1290,
-        "y": 160,
+        "x": 170,
+        "y": 320,
         "wires": []
     },
     {
@@ -1560,27 +1653,26 @@
         "z": "f99f61d176d88850",
         "g": "08523bcc635d9f44",
         "name": "Désactiver AP",
-        "group": "2af2e23a3cac9b4d",
+        "group": "39dd9e70963c8db5",
         "order": 2,
         "width": 0,
         "height": 0,
         "passthru": true,
         "label": "Désactiver WiFi",
         "tooltip": "",
-        "color": "",
-        "bgcolor": "",
+        "color": "Black",
+        "bgcolor": "Orange",
         "className": "",
         "icon": "",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 620,
+        "x": 760,
         "y": 240,
         "wires": [
             [
-                "cc7f6406773f5abb",
-                "783525c359edfba6"
+                "cc7f6406773f5abb"
             ]
         ]
     },
@@ -1590,8 +1682,8 @@
         "z": "f99f61d176d88850",
         "g": "08523bcc635d9f44",
         "name": "Activer AP",
-        "group": "2af2e23a3cac9b4d",
-        "order": 3,
+        "group": "39dd9e70963c8db5",
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -1605,12 +1697,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 630,
-        "y": 80,
+        "x": 150,
+        "y": 160,
         "wires": [
             [
-                "01bf14d42e33bb88",
-                "783525c359edfba6"
+                "7b12f19cb42502b9"
             ]
         ]
     },
@@ -1623,222 +1714,12 @@
         "links": [
             "e63502d184c8cbf5"
         ],
-        "x": 75,
-        "y": 140,
+        "x": 65,
+        "y": 60,
         "wires": [
             [
-                "ef5d4cb491e348ec"
+                "03529e86e0ffdd59"
             ]
-        ]
-    },
-    {
-        "id": "3692e410e43961cd",
-        "type": "ui_text",
-        "z": "f99f61d176d88850",
-        "g": "5a391963a7287350",
-        "group": "de61be64d46e4941",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "Date",
-        "label": "",
-        "format": "{{msg.payload.datetime}}",
-        "layout": "col-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 550,
-        "y": 700,
-        "wires": []
-    },
-    {
-        "id": "248e24b72cc80b9b",
-        "type": "moment",
-        "z": "f99f61d176d88850",
-        "g": "5a391963a7287350",
-        "name": "Format Jour",
-        "topic": "",
-        "input": "payload.timestamp",
-        "inputType": "msg",
-        "inTz": "Europe/Paris",
-        "adjAmount": "0",
-        "adjType": "hours",
-        "adjDir": "add",
-        "format": "dddd",
-        "locale": "fr-FR",
-        "output": "payload.day",
-        "outputType": "msg",
-        "outTz": "Europe/Paris",
-        "x": 390,
-        "y": 660,
-        "wires": [
-            [
-                "080297b2478bcc19"
-            ]
-        ]
-    },
-    {
-        "id": "798f8938cab8d653",
-        "type": "inject",
-        "z": "f99f61d176d88850",
-        "g": "5a391963a7287350",
-        "name": "Timestamp",
-        "props": [
-            {
-                "p": "payload.timestamp",
-                "v": "",
-                "vt": "date"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 210,
-        "y": 680,
-        "wires": [
-            [
-                "248e24b72cc80b9b",
-                "9fb2a73cd4792475"
-            ]
-        ]
-    },
-    {
-        "id": "9fb2a73cd4792475",
-        "type": "moment",
-        "z": "f99f61d176d88850",
-        "g": "5a391963a7287350",
-        "name": "Format Date",
-        "topic": "",
-        "input": "payload.timestamp",
-        "inputType": "msg",
-        "inTz": "Europe/Paris",
-        "adjAmount": "0",
-        "adjType": "hours",
-        "adjDir": "add",
-        "format": "DD/MM/yyyy HH:mm:ss",
-        "locale": "fr-FR",
-        "output": "payload.datetime",
-        "outputType": "msg",
-        "outTz": "Europe/Paris",
-        "x": 390,
-        "y": 700,
-        "wires": [
-            [
-                "3692e410e43961cd"
-            ]
-        ]
-    },
-    {
-        "id": "080297b2478bcc19",
-        "type": "ui_text",
-        "z": "f99f61d176d88850",
-        "g": "5a391963a7287350",
-        "group": "de61be64d46e4941",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "Jour",
-        "label": "",
-        "format": "{{msg.payload.day}}",
-        "layout": "col-center",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 550,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "becf941b1a8de637",
-        "type": "ui_form",
-        "z": "f99f61d176d88850",
-        "g": "5a391963a7287350",
-        "name": "",
-        "label": "Régler la date et heure",
-        "group": "2fc761fc214b7ca9",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "label": "Date",
-                "value": "Date",
-                "type": "date",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Heure",
-                "value": "Heure",
-                "type": "time",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "Date": "",
-            "Heure": ""
-        },
-        "payload": "",
-        "submit": "Définir",
-        "cancel": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "splitLayout": false,
-        "className": "",
-        "x": 480,
-        "y": 500,
-        "wires": [
-            [
-                "format-date-time"
-            ]
-        ]
-    },
-    {
-        "id": "format-date-time",
-        "type": "function",
-        "z": "f99f61d176d88850",
-        "g": "5a391963a7287350",
-        "name": "Formatage",
-        "func": "var date = new Date(msg.payload.Date);\nvar time = new Date(msg.payload.Heure);\n\n// Extraire la partie date\nvar year = date.getFullYear();\nvar month = (date.getMonth() + 1).toString().padStart(2, '0');\nvar day = date.getDate().toString().padStart(2, '0');\n\n// Extraire la partie heure\nvar hours = time.getHours().toString().padStart(2, '0');\nvar minutes = time.getMinutes().toString().padStart(2, '0');\nvar seconds = time.getSeconds().toString().padStart(2, '0');\n\n// Combiner en chaîne formatée\nvar formattedDateTime = `\"${year}-${month}-${day} ${hours}:${minutes}:${seconds}\"`;\n\nmsg.payload = formattedDateTime;\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 690,
-        "y": 500,
-        "wires": [
-            [
-                "79a7cf37b21aa4f4"
-            ]
-        ]
-    },
-    {
-        "id": "set-system-time",
-        "type": "exec",
-        "z": "f99f61d176d88850",
-        "command": "sudo date -s ",
-        "addpay": "payload",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "Définir heure système",
-        "x": 1340,
-        "y": 480,
-        "wires": [
-            [],
-            [],
-            []
         ]
     },
     {
@@ -1853,66 +1734,14 @@
         "timer": "",
         "winHide": false,
         "oldrc": false,
-        "name": "Etat de l'AP",
-        "x": 470,
-        "y": 320,
+        "name": "Etat du Wi-Fi",
+        "x": 390,
+        "y": 100,
         "wires": [
             [
-                "bbc878407e728744",
-                "91c7594f1be37e54"
+                "a028c0b4a886159f"
             ],
             [],
-            []
-        ]
-    },
-    {
-        "id": "bbc878407e728744",
-        "type": "switch",
-        "z": "f99f61d176d88850",
-        "g": "08523bcc635d9f44",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "nempty"
-            },
-            {
-                "t": "empty"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 640,
-        "y": 340,
-        "wires": [
-            [
-                "dabe3f0a19b9823a"
-            ],
-            [
-                "871ee9c8ff9b401a"
-            ]
-        ]
-    },
-    {
-        "id": "5a74f9beba8eef68",
-        "type": "timer-node",
-        "z": "f99f61d176d88850",
-        "g": "08523bcc635d9f44",
-        "name": "Tempo",
-        "topic": "",
-        "timer": "1800",
-        "payloadOn": "true",
-        "payloadOnType": "bool",
-        "payloadOff": "false",
-        "payloadOffType": "bool",
-        "x": 290,
-        "y": 140,
-        "wires": [
-            [
-                "ef75846b774ac1dd"
-            ],
             []
         ]
     },
@@ -1921,144 +1750,34 @@
         "type": "switch",
         "z": "f99f61d176d88850",
         "g": "08523bcc635d9f44",
-        "name": "",
+        "name": "Inverser",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
             {
-                "t": "true"
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
             },
             {
-                "t": "false"
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
             }
         ],
-        "checkall": "true",
+        "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 420,
+        "x": 780,
         "y": 140,
         "wires": [
             [
-                "3968539fa1701aae"
+                "01bf14d42e33bb88"
             ],
             [
-                "149e46a2cb4358e2"
+                "cc7f6406773f5abb"
             ]
         ]
-    },
-    {
-        "id": "ef5d4cb491e348ec",
-        "type": "change",
-        "z": "f99f61d176d88850",
-        "g": "08523bcc635d9f44",
-        "name": "Activer",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 170,
-        "y": 140,
-        "wires": [
-            [
-                "5a74f9beba8eef68"
-            ]
-        ]
-    },
-    {
-        "id": "4b6a23c6150c579a",
-        "type": "comment",
-        "z": "f99f61d176d88850",
-        "g": "5a391963a7287350",
-        "name": "Affichage de l'heure",
-        "info": "Affichage de l'heure sur la page d'accueil",
-        "x": 190,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "79a7cf37b21aa4f4",
-        "type": "debug",
-        "z": "f99f61d176d88850",
-        "name": "Error",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1110,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "a6fd6480f60f1efb",
-        "type": "comment",
-        "z": "f99f61d176d88850",
-        "g": "5a391963a7287350",
-        "name": "Réglage de l'heure",
-        "info": "",
-        "x": 490,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "b3832d375286d59e",
-        "type": "ui_ui_control",
-        "z": "f99f61d176d88850",
-        "g": "5a391963a7287350",
-        "name": "",
-        "events": "all",
-        "x": 120,
-        "y": 500,
-        "wires": [
-            [
-                "8ad750ef08bb7665"
-            ]
-        ]
-    },
-    {
-        "id": "8ad750ef08bb7665",
-        "type": "function",
-        "z": "f99f61d176d88850",
-        "g": "5a391963a7287350",
-        "name": "Formatage",
-        "func": "var date = new Date();\n\n// Récupérer uniquement les heures et les minutes\nvar heures = date.getHours();\nvar minutes = date.getMinutes();\n\nif (heures < 10) {\n    heures = '0' + heures;\n}\n\n// Ajouter un 0 devant les minutes si elles sont inférieures à 10 (format HH:mm)\nif (minutes < 10) {\n    minutes = '0' + minutes;\n}\n\nmsg.payload = {\n    Date: date, // Formater la date en chaîne lisible\n    Heure: heures + \":\" + minutes + \" :00\" // Formater l'heure en HH:mm :00\n    // Attention l'espace avant les secondes est important, sinon le time picker affiche --:--\n};\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 270,
-        "y": 500,
-        "wires": [
-            [
-                "becf941b1a8de637"
-            ]
-        ]
-    },
-    {
-        "id": "89b65951d548a3f6",
-        "type": "comment",
-        "z": "f99f61d176d88850",
-        "g": "5a391963a7287350",
-        "name": "Pré-remplissage du formulaire",
-        "info": "",
-        "x": 200,
-        "y": 540,
-        "wires": []
     },
     {
         "id": "a1dde28a3427a9cc",
@@ -2075,65 +1794,9 @@
         "correl": "",
         "expiry": "",
         "broker": "631cc1e4eb5c5735",
-        "x": 1060,
-        "y": 340,
+        "x": 580,
+        "y": 60,
         "wires": []
-    },
-    {
-        "id": "dabe3f0a19b9823a",
-        "type": "change",
-        "z": "f99f61d176d88850",
-        "g": "08523bcc635d9f44",
-        "name": "Led Verte",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "1",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 840,
-        "y": 320,
-        "wires": [
-            [
-                "a1dde28a3427a9cc"
-            ]
-        ]
-    },
-    {
-        "id": "871ee9c8ff9b401a",
-        "type": "change",
-        "z": "f99f61d176d88850",
-        "g": "08523bcc635d9f44",
-        "name": "Led Rouge",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "0",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 830,
-        "y": 360,
-        "wires": [
-            [
-                "a1dde28a3427a9cc"
-            ]
-        ]
     },
     {
         "id": "26eb8b2acbec1356",
@@ -2145,8 +1808,8 @@
         "links": [
             "5fa0b17c9b2bde53"
         ],
-        "x": 915,
-        "y": 160,
+        "x": 1345,
+        "y": 260,
         "wires": []
     },
     {
@@ -2158,11 +1821,13 @@
         "links": [
             "26eb8b2acbec1356"
         ],
-        "x": 315,
-        "y": 320,
+        "x": 65,
+        "y": 280,
         "wires": [
             [
-                "d8264aa3e617f306"
+                "783525c359edfba6",
+                "3c38367fcb324d86",
+                "8150baa479df1502"
             ]
         ]
     },
@@ -2171,38 +1836,20 @@
         "type": "inject",
         "z": "f99f61d176d88850",
         "g": "08523bcc635d9f44",
-        "name": "1 min",
+        "name": "ft1m",
         "props": [],
         "repeat": "60",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 290,
-        "y": 360,
+        "x": 170,
+        "y": 100,
         "wires": [
             [
                 "d8264aa3e617f306"
             ]
         ]
-    },
-    {
-        "id": "91c7594f1be37e54",
-        "type": "debug",
-        "z": "f99f61d176d88850",
-        "g": "08523bcc635d9f44",
-        "name": "Debug",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 630,
-        "y": 300,
-        "wires": []
     },
     {
         "id": "680c5a11adb41484",
@@ -2225,11 +1872,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
-        "y": 1040,
+        "x": 110,
+        "y": 440,
         "wires": [
             [
-                "52060a56fc94b130"
+                "0a1b5d6b91c62d0b"
             ]
         ]
     },
@@ -2246,10 +1893,12 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 330,
-        "y": 1040,
+        "x": 810,
+        "y": 440,
         "wires": [
-            [],
+            [
+                "eeb2b765754f01b8"
+            ],
             [],
             []
         ]
@@ -2267,42 +1916,14 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 760,
-        "y": 1040,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "a66e470e394d0ace",
-        "type": "inject",
-        "z": "f99f61d176d88850",
-        "g": "2473d132d401207a",
-        "name": "Stop",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 570,
-        "y": 1040,
+        "x": 800,
+        "y": 560,
         "wires": [
             [
-                "2a321425f18897f0"
-            ]
+                "2de3d6d6cea2f8fc"
+            ],
+            [],
+            []
         ]
     },
     {
@@ -2310,9 +1931,9 @@
         "type": "delay",
         "z": "f99f61d176d88850",
         "g": "08523bcc635d9f44",
-        "name": "",
+        "name": "2 sec",
         "pauseType": "delay",
-        "timeout": "5",
+        "timeout": "2",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -2323,13 +1944,764 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 820,
-        "y": 160,
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "d8264aa3e617f306"
+            ]
+        ]
+    },
+    {
+        "id": "d37db19602b1723c",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Topic",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "activation",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "bascule",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 630,
+        "y": 120,
+        "wires": [
+            [
+                "5169d8c1c23ea18a"
+            ],
+            [
+                "ef75846b774ac1dd"
+            ]
+        ]
+    },
+    {
+        "id": "b44de002ef35811b",
+        "type": "function",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Gestion tempo",
+        "func": "let tempo = flow.get(\"TempoWlan\");\nlet defCom = global.get(\"DefCom\");\n\nif (tempo > 0 && defCom === false)\n{\n    tempo = tempo - 1;\n    flow.set(\"TempoWlan\", tempo);\n}\nmsg.payload = tempo;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 280,
+        "wires": [
+            [
+                "b2517b9c2b89c31b",
+                "0fe615746f8fcb91"
+            ]
+        ]
+    },
+    {
+        "id": "8150baa479df1502",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "RAZ Tempo",
+        "rules": [
+            {
+                "t": "set",
+                "p": "TempoWlan",
+                "pt": "flow",
+                "to": "1800",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18a8e13db3b812da",
+        "type": "inject",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "ft1s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 410,
+        "y": 280,
+        "wires": [
+            [
+                "b44de002ef35811b"
+            ]
+        ]
+    },
+    {
+        "id": "a028c0b4a886159f",
+        "type": "function",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Booleen",
+        "func": "let payload = msg.payload;\n\n// Si message non vide on envoie 1 sinon 0\nmsg.payload = (payload) ? '1' : '0';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 60,
+        "wires": [
+            [
+                "a1dde28a3427a9cc",
+                "d37db19602b1723c"
+            ]
+        ]
+    },
+    {
+        "id": "03529e86e0ffdd59",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Bascule",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "bascule",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 160,
+        "y": 60,
+        "wires": [
+            [
+                "d8264aa3e617f306"
+            ]
+        ]
+    },
+    {
+        "id": "b2517b9c2b89c31b",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "d": true,
+        "g": "08523bcc635d9f44",
+        "name": "Temps écoulé",
+        "property": "TempoWlan",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 280,
+        "wires": [
+            [
+                "cc7f6406773f5abb"
+            ]
+        ]
+    },
+    {
+        "id": "0fe615746f8fcb91",
+        "type": "ui_gauge",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Durée Wi-Fi",
+        "group": "39dd9e70963c8db5",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Temps restant Wi-Fi",
+        "label": "secondes",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1800",
+        "colors": [
+            "#ca3838",
+            "#e6e600",
+            "#00b500"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 770,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "7b12f19cb42502b9",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Activation",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "activation",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 180,
+        "wires": [
+            [
+                "d8264aa3e617f306"
+            ]
+        ]
+    },
+    {
+        "id": "5169d8c1c23ea18a",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Activer",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 100,
+        "wires": [
+            [
+                "01bf14d42e33bb88"
+            ],
+            [
+                "71778f27525cd34a"
+            ]
+        ]
+    },
+    {
+        "id": "905dfca79840796c",
+        "type": "ui_toast",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "position": "top right",
+        "displayTime": "2",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Notification",
+        "x": 1230,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "60a4e596c3d8dad8",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Wi-Fi activé",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 140,
+        "wires": [
+            [
+                "905dfca79840796c",
+                "71778f27525cd34a"
+            ]
+        ]
+    },
+    {
+        "id": "547b97ced74669ee",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Wi-Fi désactivé",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 280,
+        "wires": [
+            [
+                "905dfca79840796c",
+                "71778f27525cd34a"
+            ]
+        ]
+    },
+    {
+        "id": "71778f27525cd34a",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "RAZ Topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1230,
+        "y": 260,
         "wires": [
             [
                 "26eb8b2acbec1356"
             ]
         ]
+    },
+    {
+        "id": "bdba2b4f959a87a0",
+        "type": "link in",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Activer_WiFi",
+        "links": [
+            "70e975d29c6d573f"
+        ],
+        "x": 65,
+        "y": 200,
+        "wires": [
+            [
+                "70e930a250435c8a"
+            ]
+        ]
+    },
+    {
+        "id": "70e930a250435c8a",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "",
+        "property": "DefCom",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "7b12f19cb42502b9"
+            ]
+        ]
+    },
+    {
+        "id": "a52ae96f1a7720a0",
+        "type": "ui_button",
+        "z": "f99f61d176d88850",
+        "g": "2473d132d401207a",
+        "name": "",
+        "group": "2af2e23a3cac9b4d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Arrêter",
+        "tooltip": "",
+        "color": "BLACK",
+        "bgcolor": "RED",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 560,
+        "wires": [
+            [
+                "b227e619e3daa05a"
+            ]
+        ]
+    },
+    {
+        "id": "00e10551be067ba2",
+        "type": "ui_toast",
+        "z": "f99f61d176d88850",
+        "g": "2473d132d401207a",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Oui",
+        "cancel": "Annuler",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Confirmation",
+        "x": 450,
+        "y": 560,
+        "wires": [
+            [
+                "d5a56c3e54241e69"
+            ]
+        ]
+    },
+    {
+        "id": "b227e619e3daa05a",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "2473d132d401207a",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Arrêt du système",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Êtes-vous sûr de vouloir arrêter l'installation ? Le système pourra être mis hors tension en toute sécurité",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 560,
+        "wires": [
+            [
+                "00e10551be067ba2"
+            ]
+        ]
+    },
+    {
+        "id": "89bd908fa4185299",
+        "type": "ui_toast",
+        "z": "f99f61d176d88850",
+        "g": "2473d132d401207a",
+        "position": "top right",
+        "displayTime": "30",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Notification",
+        "x": 1170,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2de3d6d6cea2f8fc",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "2473d132d401207a",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Arrêt du système",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Arrêt du système en cours, rétablir le courant pour le démarrer",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1000,
+        "y": 560,
+        "wires": [
+            [
+                "89bd908fa4185299"
+            ]
+        ]
+    },
+    {
+        "id": "0a1b5d6b91c62d0b",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "ecc3d44747b5a6e4",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Redémarrage du système",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Voulez-vous redémarrer l'installation ? Le système sera indisponible pendant 5 minutes",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 440,
+        "wires": [
+            [
+                "42bf7d4dce6fc68b"
+            ]
+        ]
+    },
+    {
+        "id": "42bf7d4dce6fc68b",
+        "type": "ui_toast",
+        "z": "f99f61d176d88850",
+        "g": "ecc3d44747b5a6e4",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Oui",
+        "cancel": "Annuler",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Confirmation",
+        "x": 450,
+        "y": 440,
+        "wires": [
+            [
+                "653ed643d71f86fe"
+            ]
+        ]
+    },
+    {
+        "id": "3e98501042490dc4",
+        "type": "ui_toast",
+        "z": "f99f61d176d88850",
+        "g": "ecc3d44747b5a6e4",
+        "position": "top right",
+        "displayTime": "30",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Notification",
+        "x": 1170,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "eeb2b765754f01b8",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "ecc3d44747b5a6e4",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Arrêt du système",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Redémarrage du système en cours, vous allez être déconnecté",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1000,
+        "y": 440,
+        "wires": [
+            [
+                "3e98501042490dc4"
+            ]
+        ]
+    },
+    {
+        "id": "653ed643d71f86fe",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "g": "ecc3d44747b5a6e4",
+        "name": "Choix",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Oui",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 610,
+        "y": 440,
+        "wires": [
+            [
+                "52060a56fc94b130"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d5a56c3e54241e69",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "g": "2473d132d401207a",
+        "name": "Choix",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Oui",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 610,
+        "y": 560,
+        "wires": [
+            [
+                "2a321425f18897f0"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7120fb30ecfc74af",
+        "type": "comment",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "Aide",
+        "info": "# Gestion du Wi-Fi : Points d'entrée et comportements\n\n## Points d'entrée\n1. **Bascule du Wi-Fi**  \n   - Activation ou désactivation via la saisie d’un code ou l’utilisation d’un badge d’administration.\n   \n2. **Lecture de l’état Wi-Fi**  \n   - **Périodique** : Toutes les minutes, pour actualiser l’état du voyant (vert/rouge).  \n   - **Événementielle** : Sur détection d’un changement d’état du Wi-Fi, pour une mise à jour immédiate du voyant.\n\n3. **Activation automatique**  \n   - Déclenchée en cas de défaut de communication MQTT.  \n   - Possible via une commande depuis l’interface web.\n\n---\n\n## Vérification de l’état Wi-Fi\n- Une commande shell est exécutée pour obtenir l’état actuel du point d’accès Wi-Fi.  \n- L’état est converti en une valeur booléenne (`vrai/faux`) et utilisé pour mettre à jour la couleur du voyant lumineux.\n\n---\n\n## Gestion des commandes reçues\nLorsque le topic contient les mots-clés **_bascule_** ou **_activation_**, les actions suivantes sont effectuées :  \n\n### 1. Commande : Activation\n- Si le Wi-Fi est **désactivé** :  \n  1. Activation via une commande shell.  \n  2. Initialisation d’une temporisation d’extinction.  \n- Si le Wi-Fi est **déjà activé** :  \n  1. Réinitialisation de la temporisation d’extinction.  \n- En cas de défaut de communication MQTT :  \n  1. La temporisation d’extinction est mise en pause pour maintenir le Wi-Fi activé.\n\n### 2. Commande : Bascule\n- Si le Wi-Fi est **désactivé** :  \n  1. Activation via une commande shell.  \n  2. Initialisation d’une temporisation d’extinction.  \n- Si le Wi-Fi est **déjà activé** :  \n  1. Désactivation via une commande shell.\n\n---\n\n## Temporisation d’extinction\n- Lorsque la temporisation d’extinction atteint **zéro**, le Wi-Fi est automatiquement désactivé.  \n- Objectif : Garantir une désactivation du Wi-Fi en cas d’oubli ou d’inactivité prolongée.\n\n### Raison d’être de cette mesure\n1. **Consommation d’énergie** :  \n   Le Wi-Fi augmente la consommation énergétique de la carte, il est donc préférable de le désactiver lorsqu’il n’est pas nécessaire.\n\n2. **Sécurité** :  \n   Maintenir le Wi-Fi désactivé réduit les risques de vulnérabilités ou d'accès non autorisés.\n",
+        "x": 510,
+        "y": 180,
+        "wires": []
     },
     {
         "id": "bf529392d7957bf4",
@@ -3467,6 +3839,7 @@
         "id": "78bc32fd489261d1",
         "type": "mqtt in",
         "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
         "name": "",
         "topic": "CtrlAccess/state/Life",
         "qos": "2",
@@ -3476,8 +3849,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 270,
-        "y": 200,
+        "x": 130,
+        "y": 120,
         "wires": [
             [
                 "c2a5d3ed4375ca2e",
@@ -3499,8 +3872,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 280,
-        "y": 60,
+        "x": 140,
+        "y": 440,
         "wires": [
             [
                 "d2273536d7b960a9"
@@ -3516,14 +3889,15 @@
         "links": [
             "bb93693afc0eb254"
         ],
-        "x": 425,
-        "y": 60,
+        "x": 285,
+        "y": 440,
         "wires": []
     },
     {
         "id": "c9c3485fced0181e",
         "type": "mqtt out",
         "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
         "name": "",
         "topic": "CtrlAccess/Life",
         "qos": "",
@@ -3534,14 +3908,15 @@
         "correl": "",
         "expiry": "",
         "broker": "631cc1e4eb5c5735",
-        "x": 540,
-        "y": 200,
+        "x": 400,
+        "y": 120,
         "wires": []
     },
     {
         "id": "ac8af869b3242cbd",
         "type": "change",
         "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
         "name": "Mémo Old",
         "rules": [
             {
@@ -3557,8 +3932,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
-        "y": 240,
+        "x": 590,
+        "y": 160,
         "wires": [
             []
         ]
@@ -3567,6 +3942,7 @@
         "id": "b6730c9cd280693e",
         "type": "switch",
         "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
         "name": "Différente",
         "property": "payload",
         "propertyType": "msg",
@@ -3580,8 +3956,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 520,
-        "y": 260,
+        "x": 380,
+        "y": 180,
         "wires": [
             [
                 "ac8af869b3242cbd",
@@ -3593,6 +3969,7 @@
         "id": "1b3a505c1fb09b5a",
         "type": "change",
         "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
         "name": "Tempo RAZ",
         "rules": [
             {
@@ -3608,8 +3985,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
-        "y": 280,
+        "x": 590,
+        "y": 200,
         "wires": [
             []
         ]
@@ -3618,6 +3995,7 @@
         "id": "c2a5d3ed4375ca2e",
         "type": "debug",
         "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
         "name": "debug 3",
         "active": false,
         "tosidebar": true,
@@ -3626,14 +4004,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 520,
-        "y": 140,
+        "x": 380,
+        "y": 60,
         "wires": []
     },
     {
         "id": "960329839e07f6fd",
         "type": "inject",
         "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
         "name": "ft1s",
         "props": [
             {
@@ -3645,10 +4024,10 @@
         "once": false,
         "onceDelay": "10",
         "topic": "",
-        "payload": "1",
-        "payloadType": "str",
-        "x": 130,
-        "y": 320,
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 280,
         "wires": [
             [
                 "41517a322d9eb80e",
@@ -3660,16 +4039,17 @@
         "id": "41517a322d9eb80e",
         "type": "function",
         "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
         "name": "Gestion tempo",
-        "func": "let tempo = flow.get(\"TempoComm\");\n\nif (tempo < 5)\n{\n    flow.set(\"TempoComm\", tempo + 1);\n}\n\nreturn msg;",
+        "func": "let tempo = flow.get(\"TempoComm\");\n\nif (tempo < 10)\n{\n    tempo = tempo + 1;\n    flow.set(\"TempoComm\", tempo);\n}\nmsg.payload = tempo;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 300,
+        "x": 280,
+        "y": 260,
         "wires": [
             []
         ]
@@ -3678,26 +4058,27 @@
         "id": "85b7f075344482af",
         "type": "switch",
         "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
         "name": "Etat communication",
         "property": "TempoComm",
         "propertyType": "flow",
         "rules": [
             {
-                "t": "eq",
-                "v": "0",
+                "t": "lt",
+                "v": "10",
                 "vt": "str"
             },
             {
                 "t": "gte",
-                "v": "5",
+                "v": "10",
                 "vt": "str"
             }
         ],
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 310,
-        "y": 340,
+        "x": 290,
+        "y": 300,
         "wires": [
             [
                 "413eeeea223db926"
@@ -3711,12 +4092,13 @@
         "id": "af2ce02634a47f83",
         "type": "change",
         "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
         "name": "KO",
         "rules": [
             {
                 "t": "set",
-                "p": "DefCom",
-                "pt": "global",
+                "p": "payload",
+                "pt": "msg",
                 "to": "true",
                 "tot": "bool"
             }
@@ -3726,11 +4108,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 360,
+        "x": 470,
+        "y": 320,
         "wires": [
             [
-                "3487b4a67424ab63"
+                "422152293a8cc4ae"
             ]
         ]
     },
@@ -3738,12 +4120,13 @@
         "id": "413eeeea223db926",
         "type": "change",
         "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
         "name": "OK",
         "rules": [
             {
                 "t": "set",
-                "p": "DefCom",
-                "pt": "global",
+                "p": "payload",
+                "pt": "msg",
                 "to": "false",
                 "tot": "bool"
             }
@@ -3753,11 +4136,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 320,
+        "x": 470,
+        "y": 280,
         "wires": [
             [
-                "3487b4a67424ab63"
+                "422152293a8cc4ae"
             ]
         ]
     },
@@ -3765,7 +4148,8 @@
         "id": "3487b4a67424ab63",
         "type": "debug",
         "z": "591abc7ecc8a82dd",
-        "name": "Défaut de commnucation",
+        "g": "75a9a7cf037a474d",
+        "name": "Défaut de commnunication",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -3774,8 +4158,245 @@
         "targetType": "jsonata",
         "statusVal": "",
         "statusType": "auto",
-        "x": 690,
-        "y": 340,
+        "x": 980,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "7e39c6db9fc3e5d7",
+        "type": "inject",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Firstscan",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "b6730c9cd280693e"
+            ]
+        ]
+    },
+    {
+        "id": "70e975d29c6d573f",
+        "type": "link out",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "DefComm",
+        "mode": "link",
+        "links": [
+            "bdba2b4f959a87a0"
+        ],
+        "x": 875,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "422152293a8cc4ae",
+        "type": "switch",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Changement de valeur",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "DefCom",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 660,
+        "y": 300,
+        "wires": [
+            [
+                "a48aabe134c6753a"
+            ]
+        ]
+    },
+    {
+        "id": "0d1b2a142d8a2c92",
+        "type": "ui_toast",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "position": "top right",
+        "displayTime": "5",
+        "highlight": "Red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Notification",
+        "x": 1130,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "4ae815b9e2048893",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Communication MQTT rétablie",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 200,
+        "wires": [
+            [
+                "456387f7ddb14772"
+            ]
+        ]
+    },
+    {
+        "id": "7dd13654c169f94c",
+        "type": "switch",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Défaut",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 830,
+        "y": 180,
+        "wires": [
+            [
+                "96e1a885a08e2b85"
+            ],
+            [
+                "4ae815b9e2048893"
+            ]
+        ]
+    },
+    {
+        "id": "96e1a885a08e2b85",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Défaut de communication MQTT",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 160,
+        "wires": [
+            [
+                "0d1b2a142d8a2c92"
+            ]
+        ]
+    },
+    {
+        "id": "456387f7ddb14772",
+        "type": "ui_toast",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "position": "top right",
+        "displayTime": "2",
+        "highlight": "Green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Notification",
+        "x": 1130,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a48aabe134c6753a",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Memo",
+        "rules": [
+            {
+                "t": "set",
+                "p": "DefCom",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 240,
+        "wires": [
+            [
+                "7dd13654c169f94c",
+                "3487b4a67424ab63",
+                "70e975d29c6d573f"
+            ]
+        ]
+    },
+    {
+        "id": "8b66295461714e80",
+        "type": "comment",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Aide",
+        "info": "# Documentation du Flux : Gestion de la Communication MQTT avec Bit de Vie\n\nCe flux gère la communication MQTT en surveillant l'état de vie (`Life Bit`) et en détectant les éventuels défauts de communication. Voici une explication des principaux nœuds et de leur rôle.\n\n---\n\n## Nœuds Principaux\n\n### 1. **[Entrée MQTT : CtrlAccess/state/Life]**\n- **Type** : `mqtt in`\n- **Description** : Ce nœud écoute les messages MQTT publiés sur le topic `CtrlAccess/state/Life` pour détecter les bits de vie (indicateurs que la communication est active).  \n- **Connecté à** : \n  - Le nœud de debug (`debug 3`) pour observer les messages reçus.\n  - Le nœud de comparaison (`Différente`) pour analyser si l'état reçu est nouveau.\n  - Le nœud de sortie MQTT (`CtrlAccess/Life`) pour réémettre l'état.\n\n---\n\n### 2. **[Sortie MQTT : CtrlAccess/Life]**\n- **Type** : `mqtt out`\n- **Description** : Ce nœud publie l'état `Life` sur le topic `CtrlAccess/Life` pour le renvoyer à la source qui se charge d'inverser ce quelle reçoi via ce topic.\n\n---\n\n### 3. **[Mémo Old : Sauvegarde de l'état précédent]**\n- **Type** : `change`\n- **Description** : Ce nœud enregistre l'état précédent du bit de vie (`LifeOld`) dans le contexte `flow` pour comparer les nouveaux états.  \n- **Connecté à** : Le nœud de comparaison (`Différente`).\n\n---\n\n### 4. **[Différente : Comparaison d'états]**\n- **Type** : `switch`\n- **Description** : Ce nœud compare l'état actuel reçu (`payload`) avec l'état précédent (`LifeOld`).  \n- **Règle** : Si les deux états sont différents, le flux continue vers :\n  - **Mémo Old** pour mettre à jour l'état sauvegardé.\n  - **Tempo RAZ** pour réinitialiser le compteur de temporisation.\n\n---\n\n### 5. **[Tempo RAZ : Réinitialisation de la temporisation]**\n- **Type** : `change`\n- **Description** : Ce nœud remet la temporisation (`TempoComm`) à 0 pour indiquer qu'un bit de vie a été détecté.  \n\n---\n\n### 6. **[Gestion tempo : Gestion de la temporisation]**\n- **Type** : `function`\n- **Description** : Ce nœud incrémente périodiquement la temporisation (`TempoComm`) si aucune donnée nouvelle n'est reçue.  \n- **Logiciel** : Si la temporisation atteint une valeur limite (10 ici), cela indique un défaut de communication.\n\n---\n\n### 7. **[État communication : Vérification de la temporisation]**\n- **Type** : `switch`\n- **Description** : Ce nœud vérifie si la temporisation est en dessous ou au-dessus de la limite (10).  \n- **Règles** : \n  - Si `< 10` : La communication est considérée comme fonctionnelle.\n  - Si `>= 10` : Un défaut de communication est déclaré.\n\n---\n\n### 8. **[Défaut : Gestion des défauts de communication]**\n- **Type** : `switch`\n- **Description** : Ce nœud divise le flux selon l'état de la communication :  \n  - **Défaut** : Active une notification d'erreur et met à jour le contexte global (`DefCom`).  \n  - **OK** : Informe que la communication est rétablie.\n\n---\n\n### 9. **[Notification et Journalisation]**\n- **Type** : `ui_toast` et `debug`\n- **Description** : \n  - Une notification visuelle est affichée en cas de défaut ou de rétablissement de la communication.\n  - Les messages d'état sont également affichés dans la console debug pour faciliter le diagnostic.\n\n---\n\n## Scénarios\n- **Bit de vie reçu** : Le flux réinitialise la temporisation et enregistre l'état reçu. La communication est considérée comme fonctionnelle.\n- **Aucun bit de vie reçu pendant un certain temps** : Le flux détecte un défaut, génère une alerte et met à jour l'état global.\n- **Communication rétablie après un défaut** : Une notification de rétablissement est affichée, et l'état global est remis à jour.\n\n---\n\n## Points à noter\n- **Temporisation** : Le système repose sur une temporisation incrémentale pour surveiller les défauts de communication. Cela permet de tolérer des interruptions momentanées.  \n- **Notifications** : Les notifications aident à surveiller en temps réel l'état du système, sans intervention constante.  \n",
+        "x": 90,
+        "y": 60,
         "wires": []
     },
     {
@@ -3831,7 +4452,7 @@
         "topicType": "str",
         "splitLayout": true,
         "className": "",
-        "x": 1060,
+        "x": 1040,
         "y": 100,
         "wires": [
             [
@@ -3876,7 +4497,7 @@
         "topicType": "str",
         "splitLayout": true,
         "className": "",
-        "x": 1070,
+        "x": 1050,
         "y": 140,
         "wires": [
             [
@@ -3896,7 +4517,7 @@
         "sendError": true,
         "encoding": "utf8",
         "allProps": false,
-        "x": 290,
+        "x": 270,
         "y": 120,
         "wires": [
             [
@@ -3912,7 +4533,7 @@
         "g": "5712cf90b1da71a0",
         "name": "",
         "events": "all",
-        "x": 120,
+        "x": 100,
         "y": 120,
         "wires": [
             [
@@ -3930,7 +4551,7 @@
         "property": "payload",
         "action": "",
         "pretty": true,
-        "x": 470,
+        "x": 450,
         "y": 120,
         "wires": [
             [
@@ -3952,7 +4573,7 @@
         "stream": false,
         "addname": "topic",
         "property": "payload",
-        "x": 640,
+        "x": 620,
         "y": 120,
         "wires": [
             [
@@ -3988,7 +4609,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 3,
-        "x": 840,
+        "x": 820,
         "y": 140,
         "wires": [
             [
@@ -4015,7 +4636,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1020,
+        "x": 1000,
         "y": 280,
         "wires": []
     },
@@ -4031,7 +4652,7 @@
         "sendError": true,
         "encoding": "utf8",
         "allProps": false,
-        "x": 490,
+        "x": 470,
         "y": 320,
         "wires": [
             [
@@ -4053,7 +4674,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 240,
+        "x": 220,
         "y": 320,
         "wires": [
             [
@@ -4075,7 +4696,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 750,
+        "x": 730,
         "y": 320,
         "wires": [
             [
@@ -4100,7 +4721,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
+        "x": 810,
         "y": 100,
         "wires": []
     },
@@ -4114,7 +4735,7 @@
         "links": [
             "4294cbb75e704dcd"
         ],
-        "x": 1235,
+        "x": 1215,
         "y": 120,
         "wires": [],
         "info": "Redirection vers la validation des formumaires"
@@ -4127,9 +4748,10 @@
         "name": "Param_JSON_Updated",
         "mode": "link",
         "links": [
-            "5dd6483293b45783"
+            "5dd6483293b45783",
+            "51a010616a1a2b65"
         ],
-        "x": 935,
+        "x": 915,
         "y": 360,
         "wires": []
     },
@@ -4140,9 +4762,10 @@
         "g": "5712cf90b1da71a0",
         "name": "Param_Re-populate_Forms",
         "links": [
-            "3f43fdfde31db126"
+            "3f43fdfde31db126",
+            "ae532957954d1202"
         ],
-        "x": 365,
+        "x": 345,
         "y": 160,
         "wires": [
             [
@@ -4159,7 +4782,7 @@
         "links": [
             "d04a035bf1a5d153"
         ],
-        "x": 85,
+        "x": 65,
         "y": 320,
         "wires": [
             [
@@ -4173,8 +4796,8 @@
         "z": "2bda734229a070eb",
         "g": "5712cf90b1da71a0",
         "name": "Aide",
-        "info": "les étapes du flux sont les suivantes :\n\n 1. On récupère le fichier contenant les paramètres au format JSON\n 2. Les données JSON sont converties en objet javascript\n 3. Chaque jeu de paramètres est traité individuellement et possède son formulaire\n    - _acces_piscine_ : pour la gestion des dates et heures d'ouvertures des badges verts\n    - _temps_ouverture_ : pour gérer le temps d'ouverture si on entre/sort de la piscine\n 4. Les formulaires sont pré-remplis avec les valeurs actuelles en fonction du topic\n\n Lorsqu'on soumet le formulaire les données saisies sont récupérées et transmises\n le traitement s'éffectue dans la section : **2.Mise à jour du fichier de paramètres**",
-        "x": 110,
+        "info": "## Étapes du Flux\n\n1. **Récupération des paramètres** :  \n   Le fichier contenant les paramètres est récupéré au format JSON.\n\n2. **Conversion en objet JavaScript** :  \n   Les données JSON sont transformées en objet manipulable pour le traitement.\n\n3. **Traitement des jeux de paramètres** :  \n   Chaque jeu de paramètres est traité individuellement et possède son propre formulaire :\n   - **_acces_piscine_** : Gestion des dates et heures d'ouverture des badges verts.  \n   - **_temps_ouverture_** : Gestion du temps d'ouverture pour entrer/sortir de la piscine.  \n\n4. **Pré-remplissage des formulaires** :  \n   Les formulaires sont automatiquement pré-remplis avec les valeurs actuelles récupérées en fonction du topic associé.\n\n---\n\n### Soumission des données\nLors de la soumission du formulaire, les données saisies sont récupérées et transmises pour traitement.  \nLe traitement est effectué dans la section suivante :  \n**2. Mise à jour du fichier de paramètres**\n",
+        "x": 90,
         "y": 80,
         "wires": []
     },
@@ -4184,8 +4807,8 @@
         "z": "2bda734229a070eb",
         "g": "653da2730ee03df8",
         "name": "Aide",
-        "info": "les étapes du flux sont les suivantes :\n\n 1. Le topic est récupéré afin d'identifier quel formulaire soumet les données reçues. Ces données sont mises de cotés pour plus tard au moment où on mettra à jour les paramètres.\n 2. On récupère tous les paramètres actuels du fichier JSON.\n 3. Le fichier décomposé et ré-assemblé en remplaçant les section qui ont été modifiées par les données reçues du formulaire.\n 4. Le fichier est écrasé avec les nouvelles valeurs.\n\n Lorsqu'on soumet un formulaire les données saisies sont effacées\n On renvoie un signal pour repeupler les forulaires avec les paramètres à jour.",
-        "x": 110,
+        "info": "## Étapes du Flux\n\n1. **Récupération du topic** :  \n   Le topic est analysé pour identifier quel formulaire a soumis les données. Ces données sont temporairement stockées pour être utilisées lors de la mise à jour des paramètres.\n\n2. **Lecture des paramètres actuels** :  \n   Tous les paramètres actuels sont récupérés à partir du fichier JSON.\n\n3. **Mise à jour des sections modifiées** :  \n   Le fichier est décomposé en sections, puis réassemblé en remplaçant les sections modifiées par les nouvelles données reçues du formulaire.\n\n4. **Mise à jour du fichier** :  \n   Le fichier JSON est écrasé avec les nouvelles valeurs.\n\n---\n\n### Soumission des données\nLorsqu'un formulaire est soumis :  \n- Les données saisies sont effacées après traitement.  \n- Un signal est renvoyé pour repeupler les formulaires avec les paramètres mis à jour.  \n",
+        "x": 90,
         "y": 280,
         "wires": []
     },
@@ -4201,7 +4824,7 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "utf8",
-        "x": 1020,
+        "x": 1000,
         "y": 320,
         "wires": [
             [
@@ -4226,7 +4849,7 @@
         "className": "",
         "topic": "",
         "name": "Notification",
-        "x": 1350,
+        "x": 1330,
         "y": 320,
         "wires": []
     },
@@ -4250,12 +4873,394 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1200,
+        "x": 1180,
         "y": 320,
         "wires": [
             [
                 "ab73f302936e1e51"
             ]
         ]
+    },
+    {
+        "id": "set-system-time",
+        "type": "exec",
+        "z": "2bda734229a070eb",
+        "d": true,
+        "g": "5a391963a7287350",
+        "command": "sudo date -s ",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Définir heure système",
+        "x": 1100,
+        "y": 720,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "becf941b1a8de637",
+        "type": "ui_form",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "",
+        "label": "Réglage date et heure",
+        "group": "2fc761fc214b7ca9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Date",
+                "value": "Date",
+                "type": "date",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Heure",
+                "value": "Heure",
+                "type": "time",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Date": "",
+            "Heure": ""
+        },
+        "payload": "",
+        "submit": "Définir",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "className": "",
+        "x": 460,
+        "y": 660,
+        "wires": [
+            [
+                "format-date-time"
+            ]
+        ]
+    },
+    {
+        "id": "format-date-time",
+        "type": "function",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "Concat Date/Heure",
+        "func": "var date = new Date(msg.payload.Date);\nvar time = new Date(msg.payload.Heure);\n\n// Extraire la partie date\nvar year = date.getFullYear();\nvar month = (date.getMonth() + 1).toString().padStart(2, '0');\nvar day = date.getDate().toString().padStart(2, '0');\n\n// Extraire la partie heure\nvar hours = time.getHours().toString().padStart(2, '0');\nvar minutes = time.getMinutes().toString().padStart(2, '0');\nvar seconds = time.getSeconds().toString().padStart(2, '0');\n\n// Combiner en chaîne formatée\nvar formattedDateTime = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n\nmsg.payload = formattedDateTime;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 660,
+        "wires": [
+            [
+                "fc52c7a5b42d6d93"
+            ]
+        ]
+    },
+    {
+        "id": "798f8938cab8d653",
+        "type": "inject",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "Timestamp",
+        "props": [
+            {
+                "p": "payload.timestamp",
+                "v": "",
+                "vt": "date"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 190,
+        "y": 840,
+        "wires": [
+            [
+                "248e24b72cc80b9b",
+                "9fb2a73cd4792475"
+            ]
+        ]
+    },
+    {
+        "id": "3692e410e43961cd",
+        "type": "ui_text",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "group": "de61be64d46e4941",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Date",
+        "label": "",
+        "format": "{{msg.payload.datetime}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 530,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "248e24b72cc80b9b",
+        "type": "moment",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "Format Jour",
+        "topic": "",
+        "input": "payload.timestamp",
+        "inputType": "msg",
+        "inTz": "Europe/Paris",
+        "adjAmount": "0",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "dddd",
+        "locale": "fr-FR",
+        "output": "payload.day",
+        "outputType": "msg",
+        "outTz": "Europe/Paris",
+        "x": 370,
+        "y": 820,
+        "wires": [
+            [
+                "080297b2478bcc19"
+            ]
+        ]
+    },
+    {
+        "id": "9fb2a73cd4792475",
+        "type": "moment",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "Format Date",
+        "topic": "",
+        "input": "payload.timestamp",
+        "inputType": "msg",
+        "inTz": "Europe/Paris",
+        "adjAmount": "0",
+        "adjType": "hours",
+        "adjDir": "add",
+        "format": "DD/MM/yyyy HH:mm:ss",
+        "locale": "fr-FR",
+        "output": "payload.datetime",
+        "outputType": "msg",
+        "outTz": "Europe/Paris",
+        "x": 370,
+        "y": 860,
+        "wires": [
+            [
+                "3692e410e43961cd"
+            ]
+        ]
+    },
+    {
+        "id": "080297b2478bcc19",
+        "type": "ui_text",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "group": "de61be64d46e4941",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Jour",
+        "label": "",
+        "format": "{{msg.payload.day}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 530,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "4b6a23c6150c579a",
+        "type": "comment",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "Affichage de l'heure",
+        "info": "Affichage de l'heure sur la page d'accueil",
+        "x": 170,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "a6fd6480f60f1efb",
+        "type": "comment",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "Réglage de l'heure",
+        "info": "",
+        "x": 470,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "b3832d375286d59e",
+        "type": "ui_ui_control",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "",
+        "events": "all",
+        "x": 100,
+        "y": 660,
+        "wires": [
+            [
+                "8ad750ef08bb7665"
+            ]
+        ]
+    },
+    {
+        "id": "8ad750ef08bb7665",
+        "type": "function",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "Formatage",
+        "func": "var date = new Date();\n\n// Récupérer uniquement les heures et les minutes\nvar heures = date.getHours();\nvar minutes = date.getMinutes();\n\nif (heures < 10) {\n    heures = '0' + heures;\n}\n\n// Ajouter un 0 devant les minutes si elles sont inférieures à 10 (format HH:mm)\nif (minutes < 10) {\n    minutes = '0' + minutes;\n}\n\nmsg.payload = {\n    Date: date, // Formater la date en chaîne lisible\n    Heure: heures + \":\" + minutes + \" :00\" // Formater l'heure en HH:mm :00\n    // Attention l'espace avant les secondes est important, sinon le time picker affiche --:--\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 660,
+        "wires": [
+            [
+                "becf941b1a8de637"
+            ]
+        ]
+    },
+    {
+        "id": "89b65951d548a3f6",
+        "type": "comment",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "Pré-remplissage du formulaire",
+        "info": "",
+        "x": 180,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "fc52c7a5b42d6d93",
+        "type": "moment",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "",
+        "topic": "",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "Europe/Paris",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "",
+        "locale": "fr-FR@euro",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "Europe/Paris",
+        "x": 900,
+        "y": 660,
+        "wires": [
+            [
+                "bc176d9dc4165081"
+            ]
+        ]
+    },
+    {
+        "id": "bc176d9dc4165081",
+        "type": "mqtt out",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "",
+        "topic": "CtrlAccess/Rtc",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "631cc1e4eb5c5735",
+        "x": 1120,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "51a010616a1a2b65",
+        "type": "link in",
+        "z": "2bda734229a070eb",
+        "g": "8da2d3af0c18bd9f",
+        "name": "Param_Update_Arduino",
+        "links": [
+            "3f43fdfde31db126"
+        ],
+        "x": 65,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "adbad85229010494",
+        "type": "comment",
+        "z": "2bda734229a070eb",
+        "g": "8da2d3af0c18bd9f",
+        "name": "Aide",
+        "info": "les étapes du flux sont les suivantes :\n\n 1. Le topic est récupéré afin d'identifier quel formulaire soumet les données reçues. Ces données sont mises de cotés pour plus tard au moment où on mettra à jour les paramètres.\n 2. On récupère tous les paramètres actuels du fichier JSON.\n 3. Le fichier décomposé et ré-assemblé en remplaçant les section qui ont été modifiées par les données reçues du formulaire.\n 4. Le fichier est écrasé avec les nouvelles valeurs.\n\n Lorsqu'on soumet un formulaire les données saisies sont effacées\n On renvoie un signal pour repeupler les forulaires avec les paramètres à jour.",
+        "x": 90,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c1ab756bcd256b8f",
+        "type": "mqtt out",
+        "z": "2bda734229a070eb",
+        "g": "8da2d3af0c18bd9f",
+        "name": "",
+        "topic": "CtrlAccess/Param",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "631cc1e4eb5c5735",
+        "x": 1050,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "104cbd5487291ad2",
+        "type": "comment",
+        "z": "2bda734229a070eb",
+        "g": "5a391963a7287350",
+        "name": "Aide",
+        "info": "## Description du Flux : Réglage de la Date et de l'Heure Système\n\n### Objectif :\nCe flux permet de configurer l'heure et la date du système via un formulaire et de synchroniser ces paramètres avec un module RTC connecté à un Arduino. L'Arduino est configuré comme serveur NTP, permettant au système Raspberry Pi de récupérer l'heure à jour.\n\n---\n\n### Étapes du Flux :\n\n1. **Saisie utilisateur** :  \n   Un formulaire dans l'interface utilisateur permet à l'utilisateur de définir une date et une heure. Ces données sont envoyées au flux via un **node UI Form**.\n\n2. **Formatage des données** :  \n   Une fonction combine la date et l'heure saisies en une chaîne unique au format `AAAA-MM-JJ HH:MM:SS`.\n\n3. **Transmission MQTT** :  \n   - La date et l'heure formatées sont transmises via le protocole **MQTT** à l'Arduino.  \n   - L'Arduino met à jour le module RTC pour refléter ces nouvelles valeurs.\n   - Le module RTC possède une pile permettant de garder son heure à jour lorsque le système est hors tension.\n\n4. **Configuration du serveur NTP** :  \n   L'Arduino, configuré comme serveur NTP, fournit l'heure actuelle au Raspberry Pi lorsque ce dernier l'interroge.\n\n5. **Mise à jour et affichage** :  \n   - Le système met à jour l'heure système locale à partir des informations reçues.  \n   - L'heure actuelle est affichée dynamiquement sur la page d'accueil de l'interface utilisateur.\n\n---\n\n### Points Clés :\n- **MQTT** est utilisé pour la communication entre le Raspberry Pi et l'Arduino.  \n- L'Arduino agit comme une source de temps de référence (serveur NTP).  \n- La date et l'heure sont constamment synchronisées entre le module RTC, l'Arduino et le système.  \n\nCe flux garantit une synchronisation précise et centralisée de la date et de l'heure entre tous les composants du système.\n",
+        "x": 630,
+        "y": 760,
+        "wires": []
     }
 ]
