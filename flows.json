@@ -48,6 +48,14 @@
         "env": []
     },
     {
+        "id": "2bda734229a070eb",
+        "type": "tab",
+        "label": "Flux 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "03abf3d3ef281a57",
         "type": "group",
         "z": "0401eb93d584c99a",
@@ -367,14 +375,70 @@
             "5cd69b99726aeee1",
             "b6c7e6c16a2aec3f",
             "62e05b89f6b12354",
-            "be3535c3eb8a8f3d",
             "c07bf0d2236c4427",
             "8c486ffe2a3019e8"
         ],
-        "x": 94,
-        "y": 279,
-        "w": 972,
+        "x": 294,
+        "y": 379,
+        "w": 692,
         "h": 142
+    },
+    {
+        "id": "5712cf90b1da71a0",
+        "type": "group",
+        "z": "2bda734229a070eb",
+        "name": "1.Remplissage des formulaires de paramétrage",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#ffffbf",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "8c129268cf06fa26",
+            "form_piscine",
+            "form_ouverture",
+            "2c269f3c13f30ce8",
+            "3bb512e35f78fe32",
+            "split_keys",
+            "route_keys",
+            "918073b321fb1666",
+            "d04a035bf1a5d153",
+            "5dd6483293b45783",
+            "d8c3b3d7be81b28f"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 1242,
+        "h": 162
+    },
+    {
+        "id": "653da2730ee03df8",
+        "type": "group",
+        "z": "2bda734229a070eb",
+        "name": "2.Mise à jour du fichier de paramètres",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#bfdbef",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "caa64d86486e0c34",
+            "582a858c3f44d407",
+            "handle_dynamic_form",
+            "merge_dynamic_json",
+            "3f43fdfde31db126",
+            "4294cbb75e704dcd",
+            "73de6374571858aa",
+            "b0cc9c632e5568e7"
+        ],
+        "x": 34,
+        "y": 239,
+        "w": 1132,
+        "h": 162
     },
     {
         "id": "2af2e23a3cac9b4d",
@@ -3712,28 +3776,11 @@
         "z": "5bab6ada0af81ef8",
         "name": "Param_In",
         "links": [],
-        "x": 115,
-        "y": 60,
+        "x": 45,
+        "y": 200,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "d6b041eff7f4ab10",
-        "type": "debug",
-        "z": "5bab6ada0af81ef8",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1140,
-        "y": 60,
-        "wires": []
     },
     {
         "id": "a2bc741b89ed8091",
@@ -3756,12 +3803,10 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 100,
+        "x": 110,
+        "y": 240,
         "wires": [
-            [
-                "743a7b716d76cc7d"
-            ]
+            []
         ]
     },
     {
@@ -3775,9 +3820,9 @@
         "appendNewline": false,
         "createDir": false,
         "overwriteFile": "true",
-        "encoding": "none",
-        "x": 920,
-        "y": 380,
+        "encoding": "utf8",
+        "x": 840,
+        "y": 480,
         "wires": [
             []
         ]
@@ -3786,6 +3831,7 @@
         "id": "b6c7e6c16a2aec3f",
         "type": "ui_form",
         "z": "5bab6ada0af81ef8",
+        "d": true,
         "g": "a9faafd56d192f4c",
         "name": "Réglage des acces",
         "label": "Période d'accès piscine",
@@ -3836,8 +3882,8 @@
         "topicType": "str",
         "splitLayout": false,
         "className": "",
-        "x": 650,
-        "y": 320,
+        "x": 570,
+        "y": 420,
         "wires": [
             [
                 "62e05b89f6b12354"
@@ -3857,26 +3903,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
-        "y": 380,
+        "x": 610,
+        "y": 480,
         "wires": [
             [
                 "5cd69b99726aeee1"
-            ]
-        ]
-    },
-    {
-        "id": "be3535c3eb8a8f3d",
-        "type": "ui_ui_control",
-        "z": "5bab6ada0af81ef8",
-        "g": "a9faafd56d192f4c",
-        "name": "",
-        "events": "all",
-        "x": 180,
-        "y": 320,
-        "wires": [
-            [
-                "743a7b716d76cc7d"
             ]
         ]
     },
@@ -3893,8 +3924,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 460,
-        "y": 380,
+        "x": 380,
+        "y": 480,
         "wires": []
     },
     {
@@ -3910,7 +3941,52 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
+        "x": 410,
+        "y": 420,
+        "wires": [
+            [
+                "b6c7e6c16a2aec3f"
+            ]
+        ]
+    },
+    {
+        "id": "b072f73e283e0b69",
+        "type": "ui_form",
+        "z": "5bab6ada0af81ef8",
+        "name": "",
+        "label": "Temps d'ouverture",
+        "group": "8d754f839da525fc",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "options": [
+            {
+                "label": "Entrée (sec)",
+                "value": "entree",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Sortie (sec)",
+                "value": "sortie",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "entree": "",
+            "sortie": ""
+        },
+        "payload": "",
+        "submit": "Appliquer",
+        "cancel": "",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": true,
+        "className": "",
+        "x": 930,
         "y": 320,
         "wires": [
             []
@@ -3921,7 +3997,7 @@
         "type": "ui_form",
         "z": "5bab6ada0af81ef8",
         "name": "",
-        "label": "Paramètres d'accès",
+        "label": "Plage d'accès",
         "group": "8d754f839da525fc",
         "order": 0,
         "width": "0",
@@ -3954,29 +4030,13 @@
                 "type": "text",
                 "required": true,
                 "rows": null
-            },
-            {
-                "label": "Temps d'ouverture entrée (sec)",
-                "value": "temps_ouverture_entree",
-                "type": "text",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Temps d'ouverture sortie (sec)",
-                "value": "temps_ouverture_sortie",
-                "type": "text",
-                "required": true,
-                "rows": null
             }
         ],
         "formValue": {
             "date_debut": "",
             "date_fin": "",
             "heure_debut": "",
-            "heure_fin": "",
-            "temps_ouverture_entree": "",
-            "temps_ouverture_sortie": ""
+            "heure_fin": ""
         },
         "payload": "",
         "submit": "Appliquer",
@@ -3985,12 +4045,11 @@
         "topicType": "str",
         "splitLayout": true,
         "className": "",
-        "x": 670,
-        "y": 60,
+        "x": 940,
+        "y": 80,
         "wires": [
             [
-                "823152d71a0076a1",
-                "d6b041eff7f4ab10"
+                "cce97116581c053a"
             ]
         ]
     },
@@ -4013,12 +4072,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
-        "y": 100,
+        "x": 720,
+        "y": 80,
         "wires": [
             [
                 "a137ba9570f26ea4",
-                "d6b041eff7f4ab10"
+                "0efac362e514ed42"
             ]
         ]
     },
@@ -4028,13 +4087,13 @@
         "z": "5bab6ada0af81ef8",
         "name": "",
         "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 890,
-        "y": 100,
+        "action": "",
+        "pretty": true,
+        "x": 1070,
+        "y": 160,
         "wires": [
             [
-                "d6b041eff7f4ab10"
+                "e53b812cf51d4b03"
             ]
         ]
     },
@@ -4045,16 +4104,574 @@
         "name": "Paramètres.json",
         "filename": "/home/pi/Documents/ControleAcces/Parametres.json",
         "filenameType": "str",
-        "format": "",
+        "format": "utf8",
         "sendError": true,
-        "encoding": "none",
+        "encoding": "utf8",
         "allProps": false,
-        "x": 340,
-        "y": 220,
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "2dc5d0645e5a8599"
+            ]
+        ]
+    },
+    {
+        "id": "2dc5d0645e5a8599",
+        "type": "json",
+        "z": "5bab6ada0af81ef8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 570,
+        "y": 80,
         "wires": [
             [
                 "0c9abe6325775d84"
             ]
         ]
+    },
+    {
+        "id": "cce97116581c053a",
+        "type": "change",
+        "z": "5bab6ada0af81ef8",
+        "name": "msg.form",
+        "rules": [
+            {
+                "t": "set",
+                "p": "form",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 80,
+        "wires": [
+            [
+                "743a7b716d76cc7d"
+            ]
+        ]
+    },
+    {
+        "id": "78fa1140d1bd295b",
+        "type": "change",
+        "z": "5bab6ada0af81ef8",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.acces_piscine",
+                "pt": "msg",
+                "to": "form",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 200,
+        "wires": [
+            [
+                "823152d71a0076a1"
+            ]
+        ]
+    },
+    {
+        "id": "0efac362e514ed42",
+        "type": "switch",
+        "z": "5bab6ada0af81ef8",
+        "name": "",
+        "property": "form",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 140,
+        "wires": [
+            [
+                "78fa1140d1bd295b"
+            ]
+        ]
+    },
+    {
+        "id": "e53b812cf51d4b03",
+        "type": "debug",
+        "z": "5bab6ada0af81ef8",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "be3535c3eb8a8f3d",
+        "type": "ui_ui_control",
+        "z": "5bab6ada0af81ef8",
+        "name": "",
+        "events": "all",
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "743a7b716d76cc7d"
+            ]
+        ]
+    },
+    {
+        "id": "form_piscine",
+        "type": "ui_form",
+        "z": "2bda734229a070eb",
+        "g": "5712cf90b1da71a0",
+        "name": "Accès piscine",
+        "label": "Plage d'accès",
+        "group": "de61be64d46e4941",
+        "width": "",
+        "height": "",
+        "options": [
+            {
+                "label": "Date début",
+                "value": "date_debut",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Date fin",
+                "value": "date_fin",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Heure début",
+                "value": "heure_debut",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Heure fin",
+                "value": "heure_fin",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "date_debut": "",
+            "date_fin": "",
+            "heure_debut": "",
+            "heure_fin": ""
+        },
+        "submit": "Appliquer",
+        "cancel": "",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 1060,
+        "y": 100,
+        "wires": [
+            [
+                "d04a035bf1a5d153"
+            ]
+        ]
+    },
+    {
+        "id": "form_ouverture",
+        "type": "ui_form",
+        "z": "2bda734229a070eb",
+        "g": "5712cf90b1da71a0",
+        "name": "Temps ouverture",
+        "label": "Temps d'ouverture",
+        "group": "de61be64d46e4941",
+        "width": "",
+        "height": "",
+        "options": [
+            {
+                "label": "Entrée (sec)",
+                "value": "entree",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Sorite (sec)",
+                "value": "sortie",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "entree": "",
+            "sortie": ""
+        },
+        "submit": "Appliquer",
+        "cancel": "",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 1070,
+        "y": 140,
+        "wires": [
+            [
+                "d04a035bf1a5d153"
+            ]
+        ]
+    },
+    {
+        "id": "2c269f3c13f30ce8",
+        "type": "file in",
+        "z": "2bda734229a070eb",
+        "g": "5712cf90b1da71a0",
+        "name": "1.Paramètres.json",
+        "filename": "/home/pi/Documents/ControleAcces/Parametres.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "sendError": true,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 290,
+        "y": 120,
+        "wires": [
+            [
+                "3bb512e35f78fe32"
+            ]
+        ],
+        "info": "Lecture du fichier contenant les paramètres"
+    },
+    {
+        "id": "8c129268cf06fa26",
+        "type": "ui_ui_control",
+        "z": "2bda734229a070eb",
+        "g": "5712cf90b1da71a0",
+        "name": "",
+        "events": "all",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "2c269f3c13f30ce8"
+            ]
+        ],
+        "info": "Exécute le flux lorsque la page web :\r\n -  Se charge à l'ouverture\r\n -  Est actualisée"
+    },
+    {
+        "id": "3bb512e35f78fe32",
+        "type": "json",
+        "z": "2bda734229a070eb",
+        "g": "5712cf90b1da71a0",
+        "name": "2.Json",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 470,
+        "y": 120,
+        "wires": [
+            [
+                "split_keys"
+            ]
+        ],
+        "info": "Conversion des données Json en objet javascript (objet utilisé par Node-RED)"
+    },
+    {
+        "id": "split_keys",
+        "type": "split",
+        "z": "2bda734229a070eb",
+        "g": "5712cf90b1da71a0",
+        "name": "3.Diviser par Clé",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "topic",
+        "property": "payload",
+        "x": 640,
+        "y": 120,
+        "wires": [
+            [
+                "route_keys",
+                "918073b321fb1666"
+            ]
+        ],
+        "info": "Les paramètres sont regroupés dans le JSON\r\nUn groupe est géré par un seul formulaire\r\n\r\npour relier le bon groupe de paramètres à leur formulaire respectif,\r\non doit récupérer la clé regroupant les paramètres.\r\n\r\nCette clé est stockée dans le topic du message"
+    },
+    {
+        "id": "route_keys",
+        "type": "switch",
+        "z": "2bda734229a070eb",
+        "g": "5712cf90b1da71a0",
+        "name": "4.Routage topic",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "acces_piscine",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "temps_ouverture",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 840,
+        "y": 140,
+        "wires": [
+            [
+                "form_piscine"
+            ],
+            [
+                "form_ouverture"
+            ],
+            []
+        ],
+        "info": "En fonction de la valeur du topic,\r\non affecte les données au formulaire adéquat"
+    },
+    {
+        "id": "caa64d86486e0c34",
+        "type": "debug",
+        "z": "2bda734229a070eb",
+        "g": "653da2730ee03df8",
+        "name": "Debug ré-assemblage",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "582a858c3f44d407",
+        "type": "file in",
+        "z": "2bda734229a070eb",
+        "g": "653da2730ee03df8",
+        "name": "2.Paramètres.json",
+        "filename": "/home/pi/Documents/ControleAcces/Parametres.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "sendError": true,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 490,
+        "y": 320,
+        "wires": [
+            [
+                "merge_dynamic_json"
+            ]
+        ],
+        "info": "On récupère tous les paramètres actuels du fichier JSON"
+    },
+    {
+        "id": "handle_dynamic_form",
+        "type": "function",
+        "z": "2bda734229a070eb",
+        "g": "653da2730ee03df8",
+        "name": "1.Associer la clé dynamique",
+        "func": "// Vérifiez que msg.topic contient la clé cible\nif (!msg.topic) {\n    node.error(\"La clé cible (msg.topic) est manquante.\");\n    return null;\n}\n\n// Associer la clé dynamique avec les données du formulaire\nlet dynamicUpdate = {};\ndynamicUpdate[msg.topic] = msg.payload;\nmsg.dynamicUpdate = dynamicUpdate;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 320,
+        "wires": [
+            [
+                "582a858c3f44d407"
+            ]
+        ],
+        "info": "Le topic est récupéré afin d'identifier quel formulaire soumet les données reçues.\r\nCes données sont mises de cotés pour plus tard au moment où on mettra à jour les paramètres."
+    },
+    {
+        "id": "merge_dynamic_json",
+        "type": "function",
+        "z": "2bda734229a070eb",
+        "g": "653da2730ee03df8",
+        "name": "3.Fusionner JSON dynamique",
+        "func": "// Charger le JSON existant\nvar existingJson = JSON.parse(msg.payload);\n\n// Fusionner dynamiquement avec les nouvelles données\nObject.assign(existingJson, msg.dynamicUpdate);\n\n// Retourner le JSON mis à jour\nmsg.payload = JSON.stringify(existingJson, null, 2);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 320,
+        "wires": [
+            [
+                "caa64d86486e0c34",
+                "3f43fdfde31db126",
+                "b0cc9c632e5568e7"
+            ]
+        ],
+        "info": "Le fichier décomposé et ré-assemblé en remplaçant les section qui ont été modifiées par les données reçues du formulaire"
+    },
+    {
+        "id": "918073b321fb1666",
+        "type": "debug",
+        "z": "2bda734229a070eb",
+        "g": "5712cf90b1da71a0",
+        "name": "Debug Msg",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d04a035bf1a5d153",
+        "type": "link out",
+        "z": "2bda734229a070eb",
+        "g": "5712cf90b1da71a0",
+        "name": "Param_Form_Submit",
+        "mode": "link",
+        "links": [
+            "4294cbb75e704dcd"
+        ],
+        "x": 1235,
+        "y": 120,
+        "wires": [],
+        "info": "Redirection vers la validation des formumaires"
+    },
+    {
+        "id": "3f43fdfde31db126",
+        "type": "link out",
+        "z": "2bda734229a070eb",
+        "g": "653da2730ee03df8",
+        "name": "Param_JSON_Updated",
+        "mode": "link",
+        "links": [
+            "5dd6483293b45783"
+        ],
+        "x": 935,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "5dd6483293b45783",
+        "type": "link in",
+        "z": "2bda734229a070eb",
+        "g": "5712cf90b1da71a0",
+        "name": "Param_Re-populate_Forms",
+        "links": [
+            "3f43fdfde31db126"
+        ],
+        "x": 365,
+        "y": 160,
+        "wires": [
+            [
+                "3bb512e35f78fe32"
+            ]
+        ]
+    },
+    {
+        "id": "4294cbb75e704dcd",
+        "type": "link in",
+        "z": "2bda734229a070eb",
+        "g": "653da2730ee03df8",
+        "name": "Param_Update_JSON",
+        "links": [
+            "d04a035bf1a5d153"
+        ],
+        "x": 85,
+        "y": 320,
+        "wires": [
+            [
+                "handle_dynamic_form"
+            ]
+        ]
+    },
+    {
+        "id": "d8c3b3d7be81b28f",
+        "type": "comment",
+        "z": "2bda734229a070eb",
+        "g": "5712cf90b1da71a0",
+        "name": "Aide",
+        "info": "les étapes du flux sont les suivantes :\n\n 1. On récupère le fichier contenant les paramètres au format JSON\n 2. Les données JSON sont converties en objet javascript\n 3. Chaque jeu de paramètres est traité individuellement et possède son formulaire\n    - _acces_piscine_ : pour la gestion des dates et heures d'ouvertures des badges verts\n    - _temps_ouverture_ : pour gérer le temps d'ouverture si on entre/sort de la piscine\n 4. Les formulaires sont pré-remplis avec les valeurs actuelles en fonction du topic\n\n Lorsqu'on soumet le formulaire les données saisies sont récupérées et transmises\n le traitement s'éffectue dans la section : **2.Mise à jour du fichier de paramètres**",
+        "x": 110,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "73de6374571858aa",
+        "type": "comment",
+        "z": "2bda734229a070eb",
+        "g": "653da2730ee03df8",
+        "name": "Aide",
+        "info": "les étapes du flux sont les suivantes :\n\n 1. Le topic est récupéré afin d'identifier quel formulaire soumet les données reçues. Ces données sont mises de cotés pour plus tard au moment où on mettra à jour les paramètres.\n 2. On récupère tous les paramètres actuels du fichier JSON.\n 3. Le fichier décomposé et ré-assemblé en remplaçant les section qui ont été modifiées par les données reçues du formulaire.\n 4. Le fichier est écrasé avec les nouvelles valeurs.\n\n Lorsqu'on soumet un formulaire les données saisies sont effacées\n On renvoie un signal pour repeupler les forulaires avec les paramètres à jour.",
+        "x": 110,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b0cc9c632e5568e7",
+        "type": "file",
+        "z": "2bda734229a070eb",
+        "g": "653da2730ee03df8",
+        "name": "4.Maj des paramètres",
+        "filename": "/home/pi/Documents/ControleAcces/Parametres.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 1020,
+        "y": 320,
+        "wires": [
+            []
+        ],
+        "info": "Le fichier est écrasé avec les nouvelles valeurs."
     }
 ]
