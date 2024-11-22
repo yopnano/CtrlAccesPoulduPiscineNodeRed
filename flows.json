@@ -69,7 +69,7 @@
         "id": "6ae47d635703e4eb",
         "type": "group",
         "z": "0401eb93d584c99a",
-        "name": "Recherche du badge lu dans le fichier csv (contenant tous les badges)",
+        "name": "Recherche du badge lu dans le fichier csv (fichier contenant tous les badges)",
         "style": {
             "stroke": "#3f3f3f",
             "fill": "#dbcbe7",
@@ -84,12 +84,14 @@
             "533786b989e49c4b",
             "e468a557ba55eab8",
             "e685f8dc9885ee8b",
-            "e47d6d7ececec8b0"
+            "e47d6d7ececec8b0",
+            "a5d6f6074df2ce9b",
+            "bb345c14feaa11f3"
         ],
         "x": 54,
         "y": 159,
         "w": 1002,
-        "h": 102
+        "h": 122
     },
     {
         "id": "ab13c8a209213fdb",
@@ -116,10 +118,11 @@
             "329d668a16c6b1e4",
             "f0ce225c397959d5",
             "8e57d5a6527160a6",
-            "ac7637cdb85568cd"
+            "ac7637cdb85568cd",
+            "71e38fc8ce81be16"
         ],
         "x": 54,
-        "y": 359,
+        "y": 299,
         "w": 1022,
         "h": 242
     },
@@ -127,7 +130,7 @@
         "id": "08523bcc635d9f44",
         "type": "group",
         "z": "f99f61d176d88850",
-        "name": "Point d'accès WiFi activé par badge configuration se désactive au bout d' 1/2 h",
+        "name": "Gestion du point d'accès W-Fi",
         "style": {
             "stroke": "#3f3f3f",
             "fill": "#bfdbef",
@@ -187,16 +190,18 @@
             "color": "#3f3f3f"
         },
         "nodes": [
-            "53e4d97e846b8932",
             "9d7108206de36d72",
             "377f56af49bc3b6c",
             "6be108f6c54f7f4d",
-            "959ab5871d0d2368"
+            "959ab5871d0d2368",
+            "78854bcb29ee6538",
+            "abdc29633cede91b",
+            "a570e08cc71571cf"
         ],
-        "x": 54,
-        "y": 639,
-        "w": 712,
-        "h": 122
+        "x": 74,
+        "y": 559,
+        "w": 992,
+        "h": 142
     },
     {
         "id": "5444c772b7bef63c",
@@ -226,8 +231,8 @@
             "3031944d6dea631e",
             "9926e8fc24a9d1f3"
         ],
-        "x": 44,
-        "y": 519,
+        "x": 24,
+        "y": 459,
         "w": 942,
         "h": 202
     },
@@ -279,8 +284,8 @@
             "cdc669b609c0032f",
             "07cbe2e7971d840e"
         ],
-        "x": 54,
-        "y": 119,
+        "x": 14,
+        "y": 79,
         "w": 1332,
         "h": 362
     },
@@ -288,7 +293,7 @@
         "id": "ecc3d44747b5a6e4",
         "type": "group",
         "z": "f99f61d176d88850",
-        "name": "Redémarrage",
+        "name": "Redémarrage du système",
         "style": {
             "stroke": "#3f3f3f",
             "fill": "#ffefbf",
@@ -314,7 +319,7 @@
         "id": "2473d132d401207a",
         "type": "group",
         "z": "f99f61d176d88850",
-        "name": "Arrêt",
+        "name": "Arrêt du système",
         "style": {
             "stroke": "#3f3f3f",
             "fill": "#ffbfbf",
@@ -352,17 +357,16 @@
             "8c129268cf06fa26",
             "form_piscine",
             "form_ouverture",
-            "2c269f3c13f30ce8",
-            "3bb512e35f78fe32",
             "split_keys",
             "route_keys",
             "918073b321fb1666",
             "d04a035bf1a5d153",
             "5dd6483293b45783",
-            "d8c3b3d7be81b28f"
+            "d8c3b3d7be81b28f",
+            "0e9d63e074df1cc8"
         ],
         "x": 14,
-        "y": 39,
+        "y": 79,
         "w": 1242,
         "h": 162
     },
@@ -388,10 +392,11 @@
             "73de6374571858aa",
             "b0cc9c632e5568e7",
             "ab73f302936e1e51",
-            "d01648807342866a"
+            "d01648807342866a",
+            "703d03dc2970af4b"
         ],
         "x": 14,
-        "y": 239,
+        "y": 279,
         "w": 1412,
         "h": 162
     },
@@ -426,7 +431,7 @@
             "104cbd5487291ad2"
         ],
         "x": 14,
-        "y": 619,
+        "y": 679,
         "w": 1212,
         "h": 282
     },
@@ -486,12 +491,43 @@
         "nodes": [
             "51a010616a1a2b65",
             "adbad85229010494",
-            "c1ab756bcd256b8f"
+            "c1ab756bcd256b8f",
+            "413b7f85a50b09f0",
+            "9b2bda38afb34204",
+            "52aea6fbe6cdc28b",
+            "9b3028a96953aa74",
+            "22a4d126a7b3577a"
         ],
         "x": 14,
-        "y": 439,
-        "w": 1152,
-        "h": 122
+        "y": 479,
+        "w": 952,
+        "h": 162
+    },
+    {
+        "id": "0011e81b7c31bd01",
+        "type": "group",
+        "z": "0401eb93d584c99a",
+        "name": "Pilotage du buzzer",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#e3f3d3",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "b12f129bdae72d5f",
+            "3a3ec17fe7f6a1aa",
+            "a03c13440fecb56e",
+            "59fbb270a12c7e8f",
+            "1008f636f4a91260",
+            "5df89e9f24a4d0a7",
+            "829a7bf0d0c0c05e"
+        ],
+        "x": 64,
+        "y": 739,
+        "w": 982,
+        "h": 202
     },
     {
         "id": "2af2e23a3cac9b4d",
@@ -803,34 +839,6 @@
         "info": "Formatage de l'UID reçu sous forme décimale en chaine \r\nde caractère représentant la valeur en hexadécimal\r\n\r\nL'ordre des octets est inversée pour correpondre\r\nà la valeur inscrite sur le badge"
     },
     {
-        "id": "53e4d97e846b8932",
-        "type": "change",
-        "z": "0401eb93d584c99a",
-        "g": "6236bcedb5ad3ed2",
-        "name": "Temps d'ouverture",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "5000",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 470,
-        "y": 700,
-        "wires": [
-            [
-                "959ab5871d0d2368"
-            ]
-        ]
-    },
-    {
         "id": "92e181a1ce7fe4e8",
         "type": "link out",
         "z": "0401eb93d584c99a",
@@ -974,8 +982,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
-        "y": 720,
+        "x": 170,
+        "y": 660,
         "wires": [
             [
                 "6be108f6c54f7f4d"
@@ -992,8 +1000,8 @@
             "329d668a16c6b1e4",
             "93647590fdfecef8"
         ],
-        "x": 185,
-        "y": 680,
+        "x": 135,
+        "y": 620,
         "wires": [
             [
                 "6be108f6c54f7f4d"
@@ -1030,8 +1038,7 @@
                 "e47d6d7ececec8b0"
             ],
             [
-                "b12f129bdae72d5f",
-                "3a3ec17fe7f6a1aa"
+                "bb345c14feaa11f3"
             ]
         ]
     },
@@ -1056,11 +1063,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 300,
-        "y": 700,
+        "x": 320,
+        "y": 620,
         "wires": [
             [
-                "53e4d97e846b8932"
+                "abdc29633cede91b"
             ]
         ]
     },
@@ -1074,7 +1081,7 @@
             "533786b989e49c4b"
         ],
         "x": 95,
-        "y": 460,
+        "y": 400,
         "wires": [
             [
                 "5cc76e319a5ee2b9",
@@ -1097,7 +1104,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 230,
-        "y": 400,
+        "y": 340,
         "wires": []
     },
     {
@@ -1129,7 +1136,7 @@
         "repair": false,
         "outputs": 3,
         "x": 220,
-        "y": 520,
+        "y": 460,
         "wires": [
             [
                 "b8d398a96cc4d34a"
@@ -1153,7 +1160,7 @@
             "377f56af49bc3b6c"
         ],
         "x": 355,
-        "y": 520,
+        "y": 460,
         "wires": []
     },
     {
@@ -1167,7 +1174,7 @@
             "14f8c8471f2fcf03"
         ],
         "x": 355,
-        "y": 560,
+        "y": 500,
         "wires": []
     },
     {
@@ -1183,7 +1190,7 @@
         "encoding": "none",
         "allProps": false,
         "x": 420,
-        "y": 460,
+        "y": 400,
         "wires": [
             [
                 "309962c378d3d1c4"
@@ -1200,7 +1207,7 @@
         "action": "obj",
         "pretty": false,
         "x": 590,
-        "y": 460,
+        "y": 400,
         "wires": [
             [
                 "50bf8a8f2b0c039c"
@@ -1221,7 +1228,7 @@
         "finalize": "",
         "libs": [],
         "x": 750,
-        "y": 460,
+        "y": 400,
         "wires": [
             [
                 "2cf05a948962d114"
@@ -1248,14 +1255,13 @@
         "repair": false,
         "outputs": 2,
         "x": 930,
-        "y": 460,
+        "y": 400,
         "wires": [
             [
                 "329d668a16c6b1e4"
             ],
             [
-                "1008f636f4a91260",
-                "b12f129bdae72d5f"
+                "71e38fc8ce81be16"
             ]
         ]
     },
@@ -1270,7 +1276,7 @@
             "377f56af49bc3b6c"
         ],
         "x": 1035,
-        "y": 440,
+        "y": 380,
         "wires": []
     },
     {
@@ -1281,7 +1287,7 @@
         "name": "Contrôle date et heure pour les badges simple",
         "info": "",
         "x": 570,
-        "y": 420,
+        "y": 360,
         "wires": []
     },
     {
@@ -1292,7 +1298,7 @@
         "name": "Ouverture badge rouge",
         "info": "",
         "x": 480,
-        "y": 520,
+        "y": 460,
         "wires": []
     },
     {
@@ -1303,7 +1309,7 @@
         "name": "Activation WiFi badge configuration",
         "info": "",
         "x": 520,
-        "y": 560,
+        "y": 500,
         "wires": []
     },
     {
@@ -1355,8 +1361,7 @@
                 "533786b989e49c4b"
             ],
             [
-                "b12f129bdae72d5f",
-                "3a3ec17fe7f6a1aa"
+                "a5d6f6074df2ce9b"
             ]
         ]
     },
@@ -1397,14 +1402,15 @@
         "correl": "",
         "expiry": "",
         "broker": "631cc1e4eb5c5735",
-        "x": 660,
-        "y": 700,
+        "x": 920,
+        "y": 640,
         "wires": []
     },
     {
         "id": "b12f129bdae72d5f",
         "type": "change",
         "z": "0401eb93d584c99a",
+        "g": "0011e81b7c31bd01",
         "name": "ON",
         "rules": [
             {
@@ -1420,8 +1426,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1170,
-        "y": 320,
+        "x": 670,
+        "y": 780,
         "wires": [
             [
                 "59fbb270a12c7e8f"
@@ -1432,6 +1438,7 @@
         "id": "3a3ec17fe7f6a1aa",
         "type": "delay",
         "z": "0401eb93d584c99a",
+        "g": "0011e81b7c31bd01",
         "name": "",
         "pauseType": "delay",
         "timeout": "500",
@@ -1445,8 +1452,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1030,
-        "y": 260,
+        "x": 470,
+        "y": 900,
         "wires": [
             [
                 "a03c13440fecb56e"
@@ -1457,6 +1464,7 @@
         "id": "a03c13440fecb56e",
         "type": "change",
         "z": "0401eb93d584c99a",
+        "g": "0011e81b7c31bd01",
         "name": "Off",
         "rules": [
             {
@@ -1472,8 +1480,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1170,
-        "y": 280,
+        "x": 670,
+        "y": 880,
         "wires": [
             [
                 "59fbb270a12c7e8f"
@@ -1484,6 +1492,7 @@
         "id": "59fbb270a12c7e8f",
         "type": "mqtt out",
         "z": "0401eb93d584c99a",
+        "g": "0011e81b7c31bd01",
         "name": "",
         "topic": "CtrlAccess/Buzzer",
         "qos": "2",
@@ -1494,14 +1503,15 @@
         "correl": "",
         "expiry": "",
         "broker": "631cc1e4eb5c5735",
-        "x": 1350,
-        "y": 300,
+        "x": 930,
+        "y": 840,
         "wires": []
     },
     {
         "id": "1008f636f4a91260",
         "type": "delay",
         "z": "0401eb93d584c99a",
+        "g": "0011e81b7c31bd01",
         "name": "",
         "pauseType": "delay",
         "timeout": "150",
@@ -1515,13 +1525,151 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1030,
-        "y": 300,
+        "x": 470,
+        "y": 860,
         "wires": [
             [
                 "a03c13440fecb56e"
             ]
         ]
+    },
+    {
+        "id": "78854bcb29ee6538",
+        "type": "template",
+        "z": "0401eb93d584c99a",
+        "g": "6236bcedb5ad3ed2",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.temps_ouverture.entree}}",
+        "output": "str",
+        "x": 720,
+        "y": 620,
+        "wires": [
+            [
+                "a570e08cc71571cf",
+                "959ab5871d0d2368"
+            ]
+        ]
+    },
+    {
+        "id": "abdc29633cede91b",
+        "type": "link call",
+        "z": "0401eb93d584c99a",
+        "g": "6236bcedb5ad3ed2",
+        "name": "Paramètres",
+        "links": [
+            "0124b39cabcd3cd4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 510,
+        "y": 620,
+        "wires": [
+            [
+                "78854bcb29ee6538"
+            ]
+        ]
+    },
+    {
+        "id": "a570e08cc71571cf",
+        "type": "debug",
+        "z": "0401eb93d584c99a",
+        "g": "6236bcedb5ad3ed2",
+        "name": "Temps d'ouverture",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "5df89e9f24a4d0a7",
+        "type": "link in",
+        "z": "0401eb93d584c99a",
+        "g": "0011e81b7c31bd01",
+        "name": "Short_Beep",
+        "links": [
+            "71e38fc8ce81be16"
+        ],
+        "x": 105,
+        "y": 780,
+        "wires": [
+            [
+                "b12f129bdae72d5f",
+                "1008f636f4a91260"
+            ]
+        ]
+    },
+    {
+        "id": "829a7bf0d0c0c05e",
+        "type": "link in",
+        "z": "0401eb93d584c99a",
+        "g": "0011e81b7c31bd01",
+        "name": "Medium_Beep",
+        "links": [
+            "a5d6f6074df2ce9b",
+            "bb345c14feaa11f3",
+            "3c46ab6cc54b41fe"
+        ],
+        "x": 105,
+        "y": 820,
+        "wires": [
+            [
+                "b12f129bdae72d5f",
+                "3a3ec17fe7f6a1aa"
+            ]
+        ]
+    },
+    {
+        "id": "71e38fc8ce81be16",
+        "type": "link out",
+        "z": "0401eb93d584c99a",
+        "g": "ab13c8a209213fdb",
+        "name": "Badge_simple_pas_autorisé",
+        "mode": "link",
+        "links": [
+            "5df89e9f24a4d0a7"
+        ],
+        "x": 1035,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "a5d6f6074df2ce9b",
+        "type": "link out",
+        "z": "0401eb93d584c99a",
+        "g": "6ae47d635703e4eb",
+        "name": "Badge_Lu_Désactivé",
+        "mode": "link",
+        "links": [
+            "829a7bf0d0c0c05e"
+        ],
+        "x": 1015,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "bb345c14feaa11f3",
+        "type": "link out",
+        "z": "0401eb93d584c99a",
+        "g": "6ae47d635703e4eb",
+        "name": "Badge_Lu_Introuvable",
+        "mode": "link",
+        "links": [
+            "829a7bf0d0c0c05e"
+        ],
+        "x": 855,
+        "y": 240,
+        "wires": []
     },
     {
         "id": "e306ac211462d63b",
@@ -2352,7 +2500,7 @@
         "type": "switch",
         "z": "f99f61d176d88850",
         "g": "08523bcc635d9f44",
-        "name": "",
+        "name": "DefCom",
         "property": "DefCom",
         "propertyType": "global",
         "rules": [
@@ -2713,8 +2861,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 230,
-        "y": 60,
+        "x": 140,
+        "y": 40,
         "wires": [
             [
                 "f1b989b616a3c2b8"
@@ -2727,8 +2875,8 @@
         "z": "b7fb87140232fe9d",
         "name": "Recup_Badges_In",
         "links": [],
-        "x": 125,
-        "y": 60,
+        "x": 35,
+        "y": 40,
         "wires": [
             [
                 "bf529392d7957bf4"
@@ -2751,8 +2899,8 @@
         "strings": true,
         "include_empty_strings": false,
         "include_null_values": false,
-        "x": 450,
-        "y": 240,
+        "x": 410,
+        "y": 200,
         "wires": [
             [
                 "prepare-badge-list"
@@ -2772,8 +2920,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
-        "y": 200,
+        "x": 570,
+        "y": 160,
         "wires": [
             [
                 "ui-table"
@@ -2842,8 +2990,8 @@
         "topicType": "str",
         "splitLayout": false,
         "className": "",
-        "x": 990,
-        "y": 200,
+        "x": 950,
+        "y": 160,
         "wires": [
             [
                 "5195e03d72347812",
@@ -2864,8 +3012,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
-        "y": 620,
+        "x": 390,
+        "y": 560,
         "wires": [
             [
                 "write-updated-csv"
@@ -2884,8 +3032,8 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 790,
-        "y": 660,
+        "x": 770,
+        "y": 600,
         "wires": [
             [
                 "6c65b544c9dba5ad"
@@ -2905,8 +3053,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
-        "y": 680,
+        "x": 390,
+        "y": 620,
         "wires": [
             [
                 "write-updated-csv"
@@ -2977,8 +3125,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 810,
-        "y": 200,
+        "x": 770,
+        "y": 160,
         "wires": [
             [
                 "add-badge",
@@ -2993,8 +3141,8 @@
         "g": "6fb40bcfcadc177b",
         "name": "",
         "events": "all",
-        "x": 140,
-        "y": 320,
+        "x": 100,
+        "y": 280,
         "wires": [
             [
                 "d70e0a76ad116354",
@@ -3015,8 +3163,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1190,
-        "y": 200,
+        "x": 1150,
+        "y": 160,
         "wires": [
             []
         ]
@@ -3039,8 +3187,8 @@
         "color": "",
         "bgcolor": "green",
         "icon": "add",
-        "x": 1120,
-        "y": 320,
+        "x": 1080,
+        "y": 280,
         "wires": [
             [
                 "a8b8abe0dbb89d01"
@@ -3065,8 +3213,8 @@
         "color": "",
         "bgcolor": "",
         "icon": "",
-        "x": 1120,
-        "y": 380,
+        "x": 1080,
+        "y": 340,
         "wires": [
             [
                 "8315cb0b37bf2360"
@@ -3091,8 +3239,8 @@
         "color": "",
         "bgcolor": "red",
         "icon": "delete",
-        "x": 1230,
-        "y": 440,
+        "x": 1190,
+        "y": 400,
         "wires": [
             [
                 "3223507d3cfa6ef0"
@@ -3119,8 +3267,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 880,
-        "y": 320,
+        "x": 840,
+        "y": 280,
         "wires": [
             [
                 "430b8d717d649def",
@@ -3146,8 +3294,8 @@
         "strings": false,
         "include_empty_strings": false,
         "include_null_values": "",
-        "x": 410,
-        "y": 400,
+        "x": 370,
+        "y": 360,
         "wires": [
             [
                 "73f87137ca42f812"
@@ -3167,8 +3315,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
-        "y": 400,
+        "x": 530,
+        "y": 360,
         "wires": [
             [
                 "de1e94ac57e14e9b",
@@ -3187,8 +3335,8 @@
             "f8e161c6df3483ee",
             "89be4880b3ec336f"
         ],
-        "x": 1115,
-        "y": 240,
+        "x": 1075,
+        "y": 200,
         "wires": []
     },
     {
@@ -3200,8 +3348,8 @@
         "links": [
             "c0ed11991259f947"
         ],
-        "x": 125,
-        "y": 400,
+        "x": 85,
+        "y": 360,
         "wires": [
             [
                 "be51f9118da183d6"
@@ -3228,8 +3376,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 740,
-        "y": 400,
+        "x": 700,
+        "y": 360,
         "wires": [
             [
                 "5b3a2cbf42ca0f61"
@@ -3255,8 +3403,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 880,
-        "y": 400,
+        "x": 840,
+        "y": 360,
         "wires": [
             [
                 "430b8d717d649def"
@@ -3278,8 +3426,8 @@
             "6c65b544c9dba5ad",
             "c0ed11991259f947"
         ],
-        "x": 785,
-        "y": 320,
+        "x": 745,
+        "y": 280,
         "wires": [
             [
                 "d70e0a76ad116354"
@@ -3296,8 +3444,8 @@
         "links": [
             "cbebc005f2e85a7d"
         ],
-        "x": 1225,
-        "y": 320,
+        "x": 1185,
+        "y": 280,
         "wires": []
     },
     {
@@ -3310,8 +3458,8 @@
         "links": [
             "c9a6d29df5ef2a8b"
         ],
-        "x": 1225,
-        "y": 380,
+        "x": 1185,
+        "y": 340,
         "wires": []
     },
     {
@@ -3325,8 +3473,8 @@
             "5201f1bc8e4e41e5",
             "0dd4a1227a3644e8"
         ],
-        "x": 1345,
-        "y": 440,
+        "x": 1305,
+        "y": 400,
         "wires": []
     },
     {
@@ -3342,8 +3490,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
-        "y": 560,
+        "x": 390,
+        "y": 500,
         "wires": [
             [
                 "9926e8fc24a9d1f3"
@@ -3362,8 +3510,8 @@
         "createDir": false,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 810,
-        "y": 620,
+        "x": 790,
+        "y": 560,
         "wires": [
             [
                 "6c65b544c9dba5ad"
@@ -3379,8 +3527,8 @@
         "links": [
             "a8b8abe0dbb89d01"
         ],
-        "x": 85,
-        "y": 560,
+        "x": 65,
+        "y": 500,
         "wires": [
             [
                 "a306b64fd90323a8"
@@ -3407,8 +3555,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 740,
-        "y": 360,
+        "x": 700,
+        "y": 320,
         "wires": [
             [
                 "e4a7312f36a25dd0"
@@ -3434,8 +3582,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 880,
-        "y": 360,
+        "x": 840,
+        "y": 320,
         "wires": [
             [
                 "430b8d717d649def"
@@ -3455,8 +3603,8 @@
         "links": [
             "8315cb0b37bf2360"
         ],
-        "x": 85,
-        "y": 620,
+        "x": 65,
+        "y": 560,
         "wires": [
             [
                 "48fe8ebc4af5cd6b"
@@ -3476,8 +3624,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1010,
-        "y": 160,
+        "x": 970,
+        "y": 120,
         "wires": [
             [
                 "07cbe2e7971d840e"
@@ -3493,8 +3641,8 @@
         "links": [
             "3223507d3cfa6ef0"
         ],
-        "x": 85,
-        "y": 680,
+        "x": 65,
+        "y": 620,
         "wires": [
             [
                 "e81743050a9f376b"
@@ -3512,8 +3660,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 250,
-        "y": 400,
+        "x": 210,
+        "y": 360,
         "wires": [
             [
                 "982e71bcc423b51e"
@@ -3531,8 +3679,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 210,
-        "y": 620,
+        "x": 190,
+        "y": 560,
         "wires": [
             [
                 "update-csv"
@@ -3550,8 +3698,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 210,
-        "y": 680,
+        "x": 190,
+        "y": 620,
         "wires": [
             [
                 "delete-from-csv"
@@ -3565,8 +3713,8 @@
         "g": "6fb40bcfcadc177b",
         "name": "Gestion de l'affichage des boutons (ajout / modification / suppression)",
         "info": "",
-        "x": 690,
-        "y": 440,
+        "x": 650,
+        "y": 400,
         "wires": []
     },
     {
@@ -3576,8 +3724,8 @@
         "g": "6fb40bcfcadc177b",
         "name": "Affichage de la liste des badges dans un tableau",
         "info": "",
-        "x": 700,
-        "y": 160,
+        "x": 660,
+        "y": 120,
         "wires": []
     },
     {
@@ -3587,8 +3735,8 @@
         "name": "Recup_Badges_Out",
         "mode": "return",
         "links": [],
-        "x": 335,
-        "y": 60,
+        "x": 245,
+        "y": 40,
         "wires": []
     },
     {
@@ -3602,8 +3750,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 290,
-        "y": 280,
+        "x": 250,
+        "y": 240,
         "wires": [
             [
                 "parse-csv"
@@ -3621,8 +3769,8 @@
             "89be4880b3ec336f",
             "beaa458f9661cf23"
         ],
-        "x": 925,
-        "y": 640,
+        "x": 905,
+        "y": 580,
         "wires": []
     },
     {
@@ -3634,8 +3782,8 @@
         "links": [
             "6c65b544c9dba5ad"
         ],
-        "x": 145,
-        "y": 280,
+        "x": 105,
+        "y": 240,
         "wires": [
             [
                 "a29b7c7115c54d1d"
@@ -3651,8 +3799,8 @@
         "links": [
             "92e181a1ce7fe4e8"
         ],
-        "x": 665,
-        "y": 240,
+        "x": 625,
+        "y": 200,
         "wires": [
             [
                 "428593e904c3f9e3"
@@ -3668,8 +3816,8 @@
         "links": [
             "3223507d3cfa6ef0"
         ],
-        "x": 665,
-        "y": 280,
+        "x": 625,
+        "y": 240,
         "wires": [
             [
                 "01bd06a552790404"
@@ -3697,8 +3845,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 280,
+        "x": 740,
+        "y": 240,
         "wires": [
             [
                 "add-badge"
@@ -3718,8 +3866,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 810,
-        "y": 240,
+        "x": 770,
+        "y": 200,
         "wires": [
             [
                 "add-badge"
@@ -3739,8 +3887,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1050,
-        "y": 440,
+        "x": 1010,
+        "y": 400,
         "wires": [
             [
                 "8319687c46b92b91"
@@ -3757,8 +3905,8 @@
         "links": [
             "89be4880b3ec336f"
         ],
-        "x": 1135,
-        "y": 160,
+        "x": 1095,
+        "y": 120,
         "wires": []
     },
     {
@@ -3772,8 +3920,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 210,
-        "y": 560,
+        "x": 190,
+        "y": 500,
         "wires": [
             [
                 "b4193616c42bd034"
@@ -3796,8 +3944,8 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 870,
-        "y": 560,
+        "x": 850,
+        "y": 500,
         "wires": []
     },
     {
@@ -3821,8 +3969,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 580,
-        "y": 560,
+        "x": 560,
+        "y": 500,
         "wires": [
             [
                 "3031944d6dea631e",
@@ -3884,7 +4032,9 @@
         "z": "591abc7ecc8a82dd",
         "name": "MQTT_Online",
         "mode": "link",
-        "links": [],
+        "links": [
+            "413b7f85a50b09f0"
+        ],
         "x": 285,
         "y": 440,
         "wires": []
@@ -4449,7 +4599,7 @@
         "splitLayout": true,
         "className": "",
         "x": 1040,
-        "y": 100,
+        "y": 140,
         "wires": [
             [
                 "d04a035bf1a5d153"
@@ -4494,33 +4644,12 @@
         "splitLayout": true,
         "className": "",
         "x": 1050,
-        "y": 140,
+        "y": 180,
         "wires": [
             [
                 "d04a035bf1a5d153"
             ]
         ]
-    },
-    {
-        "id": "2c269f3c13f30ce8",
-        "type": "file in",
-        "z": "2bda734229a070eb",
-        "g": "5712cf90b1da71a0",
-        "name": "1.Paramètres.json",
-        "filename": "/home/pi/Documents/ControleAcces/Parametres.json",
-        "filenameType": "str",
-        "format": "utf8",
-        "sendError": true,
-        "encoding": "utf8",
-        "allProps": false,
-        "x": 270,
-        "y": 120,
-        "wires": [
-            [
-                "3bb512e35f78fe32"
-            ]
-        ],
-        "info": "Lecture du fichier contenant les paramètres"
     },
     {
         "id": "8c129268cf06fa26",
@@ -4530,31 +4659,13 @@
         "name": "",
         "events": "all",
         "x": 100,
-        "y": 120,
+        "y": 160,
         "wires": [
             [
-                "2c269f3c13f30ce8"
+                "0e9d63e074df1cc8"
             ]
         ],
         "info": "Exécute le flux lorsque la page web :\r\n -  Se charge à l'ouverture\r\n -  Est actualisée"
-    },
-    {
-        "id": "3bb512e35f78fe32",
-        "type": "json",
-        "z": "2bda734229a070eb",
-        "g": "5712cf90b1da71a0",
-        "name": "2.Json",
-        "property": "payload",
-        "action": "",
-        "pretty": true,
-        "x": 450,
-        "y": 120,
-        "wires": [
-            [
-                "split_keys"
-            ]
-        ],
-        "info": "Conversion des données Json en objet javascript (objet utilisé par Node-RED)"
     },
     {
         "id": "split_keys",
@@ -4569,8 +4680,8 @@
         "stream": false,
         "addname": "topic",
         "property": "payload",
-        "x": 620,
-        "y": 120,
+        "x": 560,
+        "y": 160,
         "wires": [
             [
                 "route_keys",
@@ -4605,8 +4716,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 3,
-        "x": 820,
-        "y": 140,
+        "x": 800,
+        "y": 180,
         "wires": [
             [
                 "form_piscine"
@@ -4624,7 +4735,7 @@
         "z": "2bda734229a070eb",
         "g": "653da2730ee03df8",
         "name": "Debug ré-assemblage",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4633,7 +4744,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1000,
-        "y": 280,
+        "y": 320,
         "wires": []
     },
     {
@@ -4649,7 +4760,7 @@
         "encoding": "utf8",
         "allProps": false,
         "x": 470,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "merge_dynamic_json"
@@ -4671,7 +4782,7 @@
         "finalize": "",
         "libs": [],
         "x": 220,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "582a858c3f44d407"
@@ -4693,12 +4804,12 @@
         "finalize": "",
         "libs": [],
         "x": 730,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "caa64d86486e0c34",
-                "3f43fdfde31db126",
-                "b0cc9c632e5568e7"
+                "b0cc9c632e5568e7",
+                "703d03dc2970af4b"
             ]
         ],
         "info": "Le fichier décomposé et ré-assemblé en remplaçant les section qui ont été modifiées par les données reçues du formulaire"
@@ -4717,8 +4828,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 810,
-        "y": 100,
+        "x": 790,
+        "y": 140,
         "wires": []
     },
     {
@@ -4732,7 +4843,7 @@
             "4294cbb75e704dcd"
         ],
         "x": 1215,
-        "y": 120,
+        "y": 160,
         "wires": [],
         "info": "Redirection vers la validation des formumaires"
     },
@@ -4747,8 +4858,8 @@
             "5dd6483293b45783",
             "51a010616a1a2b65"
         ],
-        "x": 915,
-        "y": 360,
+        "x": 1045,
+        "y": 400,
         "wires": []
     },
     {
@@ -4760,11 +4871,11 @@
         "links": [
             "3f43fdfde31db126"
         ],
-        "x": 345,
-        "y": 160,
+        "x": 135,
+        "y": 200,
         "wires": [
             [
-                "3bb512e35f78fe32"
+                "0e9d63e074df1cc8"
             ]
         ]
     },
@@ -4778,7 +4889,7 @@
             "d04a035bf1a5d153"
         ],
         "x": 65,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "handle_dynamic_form"
@@ -4793,7 +4904,7 @@
         "name": "Aide",
         "info": "## Étapes du Flux\n\n1. **Récupération des paramètres** :  \n   Le fichier contenant les paramètres est récupéré au format JSON.\n\n2. **Conversion en objet JavaScript** :  \n   Les données JSON sont transformées en objet manipulable pour le traitement.\n\n3. **Traitement des jeux de paramètres** :  \n   Chaque jeu de paramètres est traité individuellement et possède son propre formulaire :\n   - **_acces_piscine_** : Gestion des dates et heures d'ouverture des badges verts.  \n   - **_temps_ouverture_** : Gestion du temps d'ouverture pour entrer/sortir de la piscine.  \n\n4. **Pré-remplissage des formulaires** :  \n   Les formulaires sont automatiquement pré-remplis avec les valeurs actuelles récupérées en fonction du topic associé.\n\n---\n\n### Soumission des données\nLors de la soumission du formulaire, les données saisies sont récupérées et transmises pour traitement.  \nLe traitement est effectué dans la section suivante :  \n**2. Mise à jour du fichier de paramètres**\n",
         "x": 90,
-        "y": 80,
+        "y": 120,
         "wires": []
     },
     {
@@ -4804,7 +4915,7 @@
         "name": "Aide",
         "info": "## Étapes du Flux\n\n1. **Récupération du topic** :  \n   Le topic est analysé pour identifier quel formulaire a soumis les données. Ces données sont temporairement stockées pour être utilisées lors de la mise à jour des paramètres.\n\n2. **Lecture des paramètres actuels** :  \n   Tous les paramètres actuels sont récupérés à partir du fichier JSON.\n\n3. **Mise à jour des sections modifiées** :  \n   Le fichier est décomposé en sections, puis réassemblé en remplaçant les sections modifiées par les nouvelles données reçues du formulaire.\n\n4. **Mise à jour du fichier** :  \n   Le fichier JSON est écrasé avec les nouvelles valeurs.\n\n---\n\n### Soumission des données\nLorsqu'un formulaire est soumis :  \n- Les données saisies sont effacées après traitement.  \n- Un signal est renvoyé pour repeupler les formulaires avec les paramètres mis à jour.  \n",
         "x": 90,
-        "y": 280,
+        "y": 320,
         "wires": []
     },
     {
@@ -4820,7 +4931,7 @@
         "overwriteFile": "true",
         "encoding": "utf8",
         "x": 1000,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "d01648807342866a"
@@ -4845,7 +4956,7 @@
         "topic": "",
         "name": "Notification",
         "x": 1330,
-        "y": 320,
+        "y": 360,
         "wires": []
     },
     {
@@ -4869,7 +4980,7 @@
         "to": "",
         "reg": false,
         "x": 1180,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "ab73f302936e1e51"
@@ -4891,7 +5002,7 @@
         "oldrc": false,
         "name": "Définir heure système",
         "x": 1100,
-        "y": 720,
+        "y": 780,
         "wires": [
             [],
             [],
@@ -4937,7 +5048,7 @@
         "splitLayout": false,
         "className": "",
         "x": 460,
-        "y": 660,
+        "y": 720,
         "wires": [
             [
                 "format-date-time"
@@ -4958,7 +5069,7 @@
         "finalize": "",
         "libs": [],
         "x": 670,
-        "y": 660,
+        "y": 720,
         "wires": [
             [
                 "fc52c7a5b42d6d93"
@@ -4984,7 +5095,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 190,
-        "y": 840,
+        "y": 900,
         "wires": [
             [
                 "248e24b72cc80b9b",
@@ -5011,7 +5122,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 530,
-        "y": 860,
+        "y": 920,
         "wires": []
     },
     {
@@ -5033,7 +5144,7 @@
         "outputType": "msg",
         "outTz": "Europe/Paris",
         "x": 370,
-        "y": 820,
+        "y": 880,
         "wires": [
             [
                 "080297b2478bcc19"
@@ -5059,7 +5170,7 @@
         "outputType": "msg",
         "outTz": "Europe/Paris",
         "x": 370,
-        "y": 860,
+        "y": 920,
         "wires": [
             [
                 "3692e410e43961cd"
@@ -5085,7 +5196,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 530,
-        "y": 820,
+        "y": 880,
         "wires": []
     },
     {
@@ -5096,7 +5207,7 @@
         "name": "Affichage de l'heure",
         "info": "Affichage de l'heure sur la page d'accueil",
         "x": 170,
-        "y": 800,
+        "y": 860,
         "wires": []
     },
     {
@@ -5107,7 +5218,7 @@
         "name": "Réglage de l'heure",
         "info": "",
         "x": 470,
-        "y": 700,
+        "y": 760,
         "wires": []
     },
     {
@@ -5118,7 +5229,7 @@
         "name": "",
         "events": "all",
         "x": 100,
-        "y": 660,
+        "y": 720,
         "wires": [
             [
                 "8ad750ef08bb7665"
@@ -5139,7 +5250,7 @@
         "finalize": "",
         "libs": [],
         "x": 250,
-        "y": 660,
+        "y": 720,
         "wires": [
             [
                 "becf941b1a8de637"
@@ -5154,7 +5265,7 @@
         "name": "Pré-remplissage du formulaire",
         "info": "",
         "x": 180,
-        "y": 700,
+        "y": 760,
         "wires": []
     },
     {
@@ -5176,7 +5287,7 @@
         "outputType": "msg",
         "outTz": "Europe/Paris",
         "x": 900,
-        "y": 660,
+        "y": 720,
         "wires": [
             [
                 "bc176d9dc4165081"
@@ -5199,7 +5310,7 @@
         "expiry": "",
         "broker": "631cc1e4eb5c5735",
         "x": 1120,
-        "y": 660,
+        "y": 720,
         "wires": []
     },
     {
@@ -5211,10 +5322,12 @@
         "links": [
             "3f43fdfde31db126"
         ],
-        "x": 65,
+        "x": 395,
         "y": 520,
         "wires": [
-            []
+            [
+                "52aea6fbe6cdc28b"
+            ]
         ]
     },
     {
@@ -5223,9 +5336,9 @@
         "z": "2bda734229a070eb",
         "g": "8da2d3af0c18bd9f",
         "name": "Aide",
-        "info": "les étapes du flux sont les suivantes :\n\n 1. Le topic est récupéré afin d'identifier quel formulaire soumet les données reçues. Ces données sont mises de cotés pour plus tard au moment où on mettra à jour les paramètres.\n 2. On récupère tous les paramètres actuels du fichier JSON.\n 3. Le fichier décomposé et ré-assemblé en remplaçant les section qui ont été modifiées par les données reçues du formulaire.\n 4. Le fichier est écrasé avec les nouvelles valeurs.\n\n Lorsqu'on soumet un formulaire les données saisies sont effacées\n On renvoie un signal pour repeupler les forulaires avec les paramètres à jour.",
+        "info": "les étapes du flux sont les suivantes :\n\n 1. Le paramètres actuels sont récupéré du fichier JSON.\n 2. Le JSON est parsé en objet JavaScript.\n 3. Chaque paramètres est extrait et enoyé dans un message clé=valeur.\n",
         "x": 90,
-        "y": 480,
+        "y": 520,
         "wires": []
     },
     {
@@ -5243,8 +5356,8 @@
         "correl": "",
         "expiry": "",
         "broker": "631cc1e4eb5c5735",
-        "x": 1050,
-        "y": 500,
+        "x": 830,
+        "y": 540,
         "wires": []
     },
     {
@@ -5255,7 +5368,212 @@
         "name": "Aide",
         "info": "## Description du Flux : Réglage de la Date et de l'Heure Système\n\n### Objectif :\nCe flux permet de configurer l'heure et la date du système via un formulaire et de synchroniser ces paramètres avec un module RTC connecté à un Arduino. L'Arduino est configuré comme serveur NTP, permettant au système Raspberry Pi de récupérer l'heure à jour.\n\n---\n\n### Étapes du Flux :\n\n1. **Saisie utilisateur** :  \n   Un formulaire dans l'interface utilisateur permet à l'utilisateur de définir une date et une heure. Ces données sont envoyées au flux via un **node UI Form**.\n\n2. **Formatage des données** :  \n   Une fonction combine la date et l'heure saisies en une chaîne unique au format `AAAA-MM-JJ HH:MM:SS`.\n\n3. **Transmission MQTT** :  \n   - La date et l'heure formatées sont transmises via le protocole **MQTT** à l'Arduino.  \n   - L'Arduino met à jour le module RTC pour refléter ces nouvelles valeurs.\n   - Le module RTC possède une pile permettant de garder son heure à jour lorsque le système est hors tension.\n\n4. **Configuration du serveur NTP** :  \n   L'Arduino, configuré comme serveur NTP, fournit l'heure actuelle au Raspberry Pi lorsque ce dernier l'interroge.\n\n5. **Mise à jour et affichage** :  \n   - Le système met à jour l'heure système locale à partir des informations reçues.  \n   - L'heure actuelle est affichée dynamiquement sur la page d'accueil de l'interface utilisateur.\n\n---\n\n### Points Clés :\n- **MQTT** est utilisé pour la communication entre le Raspberry Pi et l'Arduino.  \n- L'Arduino agit comme une source de temps de référence (serveur NTP).  \n- La date et l'heure sont constamment synchronisées entre le module RTC, l'Arduino et le système.  \n\nCe flux garantit une synchronisation précise et centralisée de la date et de l'heure entre tous les composants du système.\n",
         "x": 630,
-        "y": 760,
+        "y": 820,
         "wires": []
+    },
+    {
+        "id": "413b7f85a50b09f0",
+        "type": "link in",
+        "z": "2bda734229a070eb",
+        "g": "8da2d3af0c18bd9f",
+        "name": "Param_Update_Arduino_Online",
+        "links": [
+            "d2273536d7b960a9"
+        ],
+        "x": 65,
+        "y": 560,
+        "wires": [
+            [
+                "22a4d126a7b3577a"
+            ]
+        ]
+    },
+    {
+        "id": "9b2bda38afb34204",
+        "type": "debug",
+        "z": "2bda734229a070eb",
+        "g": "8da2d3af0c18bd9f",
+        "name": "Debug send param",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "52aea6fbe6cdc28b",
+        "type": "function",
+        "z": "2bda734229a070eb",
+        "g": "8da2d3af0c18bd9f",
+        "name": "Extraction Param",
+        "func": "function traverse(obj, path) {\n    let messages = [];\n    for (const key in obj) {\n        const value = obj[key];\n        const newPath = path ? `${path}/${key}` : key;\n        if (typeof value === \"object\" && value !== null) {\n            // Récursion pour les objets imbriqués\n            messages = messages.concat(traverse(value, newPath));\n        } else {\n            // Ajouter chaque clé=valeur au tableau des messages\n            messages.push({ payload: `${newPath}=${value}` });\n        }\n    }\n    return messages;\n}\n\n// Récupérer le JSON dans msg.payload\nconst json = msg.payload;\n\n// Obtenir tous les messages formatés\nconst messages = traverse(json, \"\");\n\n// Envoyer les messages un par un\nmessages.forEach(message => node.send(message));\n\n// Arrêter le flux pour éviter des erreurs supplémentaires\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 560,
+        "wires": [
+            [
+                "c1ab756bcd256b8f",
+                "9b2bda38afb34204"
+            ]
+        ]
+    },
+    {
+        "id": "9b3028a96953aa74",
+        "type": "inject",
+        "z": "2bda734229a070eb",
+        "g": "8da2d3af0c18bd9f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 600,
+        "wires": [
+            [
+                "22a4d126a7b3577a"
+            ]
+        ]
+    },
+    {
+        "id": "0124b39cabcd3cd4",
+        "type": "link in",
+        "z": "2bda734229a070eb",
+        "name": "Recup_Param_In",
+        "links": [],
+        "x": 45,
+        "y": 40,
+        "wires": [
+            [
+                "36a84b4087f3f2b7"
+            ]
+        ]
+    },
+    {
+        "id": "bac5438d9cc58133",
+        "type": "link out",
+        "z": "2bda734229a070eb",
+        "name": "Recup_Param_Out",
+        "mode": "return",
+        "links": [],
+        "x": 465,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "36a84b4087f3f2b7",
+        "type": "file in",
+        "z": "2bda734229a070eb",
+        "name": "1.Paramètres.json",
+        "filename": "/home/pi/Documents/ControleAcces/Parametres.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "sendError": true,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 190,
+        "y": 40,
+        "wires": [
+            [
+                "cf07924a26b03587"
+            ]
+        ],
+        "info": "Lecture du fichier contenant les paramètres"
+    },
+    {
+        "id": "cf07924a26b03587",
+        "type": "json",
+        "z": "2bda734229a070eb",
+        "name": "2.Json",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 370,
+        "y": 40,
+        "wires": [
+            [
+                "bac5438d9cc58133"
+            ]
+        ],
+        "info": "Conversion des données Json en objet javascript (objet utilisé par Node-RED)"
+    },
+    {
+        "id": "0e9d63e074df1cc8",
+        "type": "link call",
+        "z": "2bda734229a070eb",
+        "g": "5712cf90b1da71a0",
+        "name": "Paramètres",
+        "links": [
+            "0124b39cabcd3cd4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 290,
+        "y": 160,
+        "wires": [
+            [
+                "split_keys"
+            ]
+        ]
+    },
+    {
+        "id": "22a4d126a7b3577a",
+        "type": "link call",
+        "z": "2bda734229a070eb",
+        "g": "8da2d3af0c18bd9f",
+        "name": "Paramètres",
+        "links": [
+            "0124b39cabcd3cd4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 310,
+        "y": 560,
+        "wires": [
+            [
+                "52aea6fbe6cdc28b"
+            ]
+        ]
+    },
+    {
+        "id": "703d03dc2970af4b",
+        "type": "json",
+        "z": "2bda734229a070eb",
+        "g": "653da2730ee03df8",
+        "name": "2.Json",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 950,
+        "y": 400,
+        "wires": [
+            [
+                "3f43fdfde31db126"
+            ]
+        ],
+        "info": "Conversion des données Json en objet javascript (objet utilisé par Node-RED)"
     }
 ]
