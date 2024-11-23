@@ -1617,8 +1617,7 @@
         "name": "Medium_Beep",
         "links": [
             "a5d6f6074df2ce9b",
-            "bb345c14feaa11f3",
-            "3c46ab6cc54b41fe"
+            "bb345c14feaa11f3"
         ],
         "x": 105,
         "y": 820,
@@ -2848,6 +2847,335 @@
         "x": 510,
         "y": 180,
         "wires": []
+    },
+    {
+        "id": "a5007556f23ea3ef",
+        "type": "rpi-gpio in",
+        "z": "f99f61d176d88850",
+        "name": "Alimentation Etat",
+        "pin": "4",
+        "intype": "up",
+        "debounce": "200",
+        "read": true,
+        "bcm": true,
+        "x": 200,
+        "y": 900,
+        "wires": [
+            [
+                "ae31fec40099e219"
+            ]
+        ]
+    },
+    {
+        "id": "0b3133aedd88273e",
+        "type": "debug",
+        "z": "f99f61d176d88850",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "b66c6ab9aeba59b9",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Alimentation",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Défaut d'alimentation, fonctionnement sur batterie",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 920,
+        "wires": [
+            [
+                "9433913b02703e35",
+                "0b3133aedd88273e"
+            ]
+        ]
+    },
+    {
+        "id": "9433913b02703e35",
+        "type": "ui_toast",
+        "z": "f99f61d176d88850",
+        "position": "top right",
+        "displayTime": "10",
+        "highlight": "RED",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "Oui",
+        "cancel": "Annuler",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Avertissement",
+        "x": 960,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "ae31fec40099e219",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "name": "Booléen",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "num",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "DefAlim",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 900,
+        "wires": [
+            [
+                "fb07dd801a0da2cd"
+            ]
+        ]
+    },
+    {
+        "id": "fb07dd801a0da2cd",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "name": "Choix",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 550,
+        "y": 900,
+        "wires": [
+            [
+                "8b6c2fc8a4cf2d75",
+                "a5218aea095da7bc"
+            ],
+            [
+                "b66c6ab9aeba59b9"
+            ]
+        ]
+    },
+    {
+        "id": "8b6c2fc8a4cf2d75",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Alimentation",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Système correctement alimenté",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 880,
+        "wires": [
+            [
+                "9433913b02703e35",
+                "0b3133aedd88273e"
+            ]
+        ]
+    },
+    {
+        "id": "79a903e8d5e1195e",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Alimentation",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Problème alimentation, arrêt immédiat",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 800,
+        "wires": [
+            [
+                "9433913b02703e35",
+                "0b3133aedd88273e"
+            ]
+        ]
+    },
+    {
+        "id": "cbd62722f0d838dc",
+        "type": "inject",
+        "z": "f99f61d176d88850",
+        "name": "ft1s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 190,
+        "y": 820,
+        "wires": [
+            [
+                "ac94056f1d5b909d"
+            ]
+        ]
+    },
+    {
+        "id": "ac94056f1d5b909d",
+        "type": "function",
+        "z": "f99f61d176d88850",
+        "name": "Gestion tempo",
+        "func": "let tempo = flow.get(\"TempoAlim\");\nlet defAlim = flow.get(\"DefAlim\");\n\nif (tempo > 0 && defAlim === true)\n{\n    tempo = tempo - 1;\n    flow.set(\"TempoAlim\", tempo);\n}\nmsg.payload = tempo;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 820,
+        "wires": [
+            [
+                "b7049679b6722877"
+            ]
+        ]
+    },
+    {
+        "id": "a5218aea095da7bc",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "name": "RAZ Tempo",
+        "rules": [
+            {
+                "t": "set",
+                "p": "TempoAlim",
+                "pt": "flow",
+                "to": "60",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7049679b6722877",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "name": "Temps écoulé",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 1,
+        "x": 540,
+        "y": 820,
+        "wires": [
+            [
+                "79a903e8d5e1195e",
+                "a5218aea095da7bc"
+            ]
+        ]
     },
     {
         "id": "bf529392d7957bf4",
