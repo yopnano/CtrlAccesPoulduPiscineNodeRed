@@ -530,17 +530,6 @@
         "h": 202
     },
     {
-        "id": "2af2e23a3cac9b4d",
-        "type": "ui_group",
-        "name": "Contrôle / Commandes",
-        "tab": "a14588abf773c2cf",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "a14588abf773c2cf",
         "type": "ui_tab",
         "name": "Accueil",
@@ -690,17 +679,6 @@
         "className": ""
     },
     {
-        "id": "fb8ef8df1ea1ad74",
-        "type": "ui_group",
-        "name": "Gestion badges",
-        "tab": "0774bc01ee11c4d3",
-        "order": 3,
-        "disp": true,
-        "width": "7",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "0774bc01ee11c4d3",
         "type": "ui_tab",
         "name": "Badges",
@@ -769,6 +747,28 @@
         "order": 3,
         "disp": true,
         "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2af2e23a3cac9b4d",
+        "type": "ui_group",
+        "name": "Contrôle / Commandes",
+        "tab": "a14588abf773c2cf",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fb8ef8df1ea1ad74",
+        "type": "ui_group",
+        "name": "Gestion badges",
+        "tab": "0774bc01ee11c4d3",
+        "order": 3,
+        "disp": true,
+        "width": "7",
         "collapse": false,
         "className": ""
     },
@@ -2853,7 +2853,7 @@
         "type": "rpi-gpio in",
         "z": "f99f61d176d88850",
         "name": "Alimentation Etat",
-        "pin": "4",
+        "pin": "14",
         "intype": "up",
         "debounce": "200",
         "read": true,
