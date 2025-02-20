@@ -554,7 +554,8 @@
             "77a92e80ac3347cf",
             "075151fe1959e373",
             "2eac42c64376737e",
-            "40db8ad1da3e68fb"
+            "40db8ad1da3e68fb",
+            "1da37258dace598c"
         ],
         "x": 34,
         "y": 379,
@@ -3531,7 +3532,8 @@
         "wires": [
             [
                 "20dbb0dca0f7b992",
-                "075151fe1959e373"
+                "075151fe1959e373",
+                "1da37258dace598c"
             ]
         ]
     },
@@ -3563,6 +3565,33 @@
             [
                 "77a92e80ac3347cf"
             ]
+        ]
+    },
+    {
+        "id": "1da37258dace598c",
+        "type": "ui_numeric",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "2af2e23a3cac9b4d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 840,
+        "y": 540,
+        "wires": [
+            []
         ]
     },
     {
