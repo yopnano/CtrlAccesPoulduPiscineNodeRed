@@ -546,7 +546,6 @@
             "18e19961830cb422",
             "77a92e80ac3347cf",
             "075151fe1959e373",
-            "40db8ad1da3e68fb",
             "2acc780f667d9935",
             "b4a6f608a2d5c216",
             "9e807d893b733054",
@@ -559,16 +558,21 @@
             "69617daa390db277",
             "5e1c90ee08ed828a",
             "f99f65ecd51b0674",
-            "a82bbb5baf9053f1",
             "f7798d34c5497d69",
             "dc33e0934e4fcc37",
             "851225d6382973bc",
-            "40e1c58cc35f37d2"
+            "40e1c58cc35f37d2",
+            "a0cd10cfc650656e",
+            "1a21dab6bededd94",
+            "50707c177d932162",
+            "9378fba89f3bbbe7",
+            "473cf66c4f3ba1ec",
+            "b18be167e2df3715"
         ],
         "x": 34,
-        "y": 399,
-        "w": 1912,
-        "h": 249.5
+        "y": 419,
+        "w": 1472,
+        "h": 242
     },
     {
         "id": "a14588abf773c2cf",
@@ -3247,7 +3251,7 @@
         "animate": false,
         "className": "",
         "x": 550,
-        "y": 580,
+        "y": 540,
         "wires": [
             [
                 "6bd3a8347ef136ce"
@@ -3262,7 +3266,7 @@
         "name": "",
         "events": "all",
         "x": 120,
-        "y": 580,
+        "y": 560,
         "wires": [
             [
                 "40e1c58cc35f37d2"
@@ -3306,39 +3310,9 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1820,
-        "y": 440,
+        "x": 920,
+        "y": 620,
         "wires": []
-    },
-    {
-        "id": "40db8ad1da3e68fb",
-        "type": "inject",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 910,
-        "y": 460,
-        "wires": [
-            [
-                "851225d6382973bc"
-            ]
-        ]
     },
     {
         "id": "2acc780f667d9935",
@@ -3353,8 +3327,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Enable overlay",
-        "x": 900,
-        "y": 520,
+        "x": 920,
+        "y": 480,
         "wires": [
             [
                 "851225d6382973bc"
@@ -3376,8 +3350,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Disable overlay",
-        "x": 900,
-        "y": 600,
+        "x": 920,
+        "y": 540,
         "wires": [
             [
                 "851225d6382973bc"
@@ -3450,7 +3424,8 @@
         "wires": [
             [
                 "dc33e0934e4fcc37",
-                "5e1c90ee08ed828a"
+                "5e1c90ee08ed828a",
+                "20dbb0dca0f7b992"
             ]
         ]
     },
@@ -3459,7 +3434,7 @@
         "type": "switch",
         "z": "f99f61d176d88850",
         "g": "55bdfefc3ec401d1",
-        "name": "Bascule",
+        "name": "Application",
         "property": "payload",
         "propertyType": "msg",
         "rules": [
@@ -3473,8 +3448,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 720,
-        "y": 560,
+        "x": 730,
+        "y": 520,
         "wires": [
             [
                 "2acc780f667d9935"
@@ -3497,8 +3472,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Etat overlay",
-        "x": 1250,
-        "y": 500,
+        "x": 1130,
+        "y": 560,
         "wires": [
             [
                 "ee2b8e4d0f09d144"
@@ -3518,11 +3493,11 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1420,
-        "y": 520,
+        "x": 1300,
+        "y": 500,
         "wires": [
             [
-                "69617daa390db277"
+                "473cf66c4f3ba1ec"
             ]
         ]
     },
@@ -3549,15 +3524,13 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1580,
-        "y": 520,
+        "x": 1360,
+        "y": 620,
         "wires": [
             [
-                "f99f65ecd51b0674"
+                "a0cd10cfc650656e"
             ],
-            [
-                "a82bbb5baf9053f1"
-            ]
+            []
         ]
     },
     {
@@ -3580,12 +3553,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 530,
-        "y": 520,
+        "x": 550,
+        "y": 500,
         "wires": [
-            [
-                "20dbb0dca0f7b992"
-            ]
+            []
         ]
     },
     {
@@ -3593,13 +3564,13 @@
         "type": "change",
         "z": "f99f61d176d88850",
         "g": "55bdfefc3ec401d1",
-        "name": "",
+        "name": "Message",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Reboot",
+                "to": "Vous devez redémarrer l'installation pour appliquer les changements.",
                 "tot": "str"
             }
         ],
@@ -3608,39 +3579,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1770,
-        "y": 500,
+        "x": 180,
+        "y": 620,
         "wires": [
             [
-                "075151fe1959e373"
-            ]
-        ]
-    },
-    {
-        "id": "a82bbb5baf9053f1",
-        "type": "change",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Pas reboot",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1770,
-        "y": 540,
-        "wires": [
-            [
-                "075151fe1959e373"
+                "50707c177d932162"
             ]
         ]
     },
@@ -3667,8 +3610,8 @@
         "name": "Maj_Etat_Overlay_Out",
         "mode": "return",
         "links": [],
-        "x": 475,
-        "y": 480,
+        "x": 485,
+        "y": 460,
         "wires": []
     },
     {
@@ -3701,10 +3644,151 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 300,
-        "y": 580,
+        "x": 320,
+        "y": 560,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "a0cd10cfc650656e",
+        "type": "link out",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "Bascule_Overlay",
+        "mode": "link",
+        "links": [
+            "1a21dab6bededd94"
+        ],
+        "x": 1465,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "1a21dab6bededd94",
+        "type": "link in",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "Confirmation_Bascule_Overlay",
+        "links": [
+            "a0cd10cfc650656e"
+        ],
+        "x": 75,
+        "y": 620,
+        "wires": [
+            [
+                "f99f65ecd51b0674"
+            ]
+        ]
+    },
+    {
+        "id": "50707c177d932162",
+        "type": "ui_toast",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Oui",
+        "cancel": "Annuler l'action",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Confirmation",
+        "x": 350,
+        "y": 620,
+        "wires": [
+            [
+                "9378fba89f3bbbe7"
+            ]
+        ]
+    },
+    {
+        "id": "9378fba89f3bbbe7",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "Choix",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Oui",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 620,
+        "wires": [
+            [
+                "b18be167e2df3715"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "473cf66c4f3ba1ec",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "Memo_now",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Overlay_Now",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1350,
+        "y": 560,
+        "wires": [
+            [
+                "69617daa390db277"
+            ]
+        ]
+    },
+    {
+        "id": "b18be167e2df3715",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Overlay_Now",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 580,
+        "wires": [
+            [
+                "075151fe1959e373"
+            ]
         ]
     },
     {
