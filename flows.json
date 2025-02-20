@@ -3701,13 +3701,13 @@
         "type": "link call",
         "z": "f99f61d176d88850",
         "g": "55bdfefc3ec401d1",
-        "name": "",
+        "name": "Config",
         "links": [
             "f7798d34c5497d69"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1140,
+        "x": 1090,
         "y": 500,
         "wires": [
             [
