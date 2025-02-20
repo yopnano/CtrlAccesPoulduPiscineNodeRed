@@ -560,11 +560,12 @@
             "b4a6f608a2d5c216",
             "38a08c00508cde68",
             "2c5fbaadb4a98414",
-            "8e52ae78cb7c5384"
+            "8e52ae78cb7c5384",
+            "68ac9b39f7b05adc"
         ],
         "x": 34,
         "y": 379,
-        "w": 1132,
+        "w": 1152,
         "h": 329.5
     },
     {
@@ -3476,7 +3477,8 @@
         "y": 620,
         "wires": [
             [
-                "38a08c00508cde68"
+                "38a08c00508cde68",
+                "68ac9b39f7b05adc"
             ],
             [],
             []
@@ -3496,8 +3498,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1040,
-        "y": 520,
+        "x": 1060,
+        "y": 600,
         "wires": []
     },
     {
@@ -3693,9 +3695,7 @@
         "x": 870,
         "y": 580,
         "wires": [
-            [
-                "075151fe1959e373"
-            ]
+            []
         ]
     },
     {
@@ -3720,6 +3720,25 @@
         "reg": false,
         "x": 880,
         "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "68ac9b39f7b05adc",
+        "type": "function",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "Booleen",
+        "func": "let payload = msg.payload;\n\n// Si message non vide on envoie 1 sinon 0\nmsg.payload = (payload.contain(\"0\")) ? true : false;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 660,
         "wires": [
             [
                 "075151fe1959e373"
