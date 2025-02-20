@@ -3669,12 +3669,10 @@
         "g": "55bdfefc3ec401d1",
         "name": "Maj_Etat_Overlay_In2",
         "links": [],
-        "x": 395,
-        "y": 460,
+        "x": 285,
+        "y": 600,
         "wires": [
-            [
-                "0b9edfe2380e542f"
-            ]
+            []
         ]
     },
     {
