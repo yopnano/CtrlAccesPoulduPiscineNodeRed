@@ -547,9 +547,7 @@
             "77a92e80ac3347cf",
             "075151fe1959e373",
             "40db8ad1da3e68fb",
-            "8dc12b424496c4ab",
             "2acc780f667d9935",
-            "edcb7cc43a9d7777",
             "b4a6f608a2d5c216",
             "9e807d893b733054",
             "3a722ea287d68fcf",
@@ -3330,41 +3328,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
-        "y": 540,
+        "x": 1030,
+        "y": 420,
         "wires": [
             [
-                "77a92e80ac3347cf"
-            ]
-        ]
-    },
-    {
-        "id": "8dc12b424496c4ab",
-        "type": "inject",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 850,
-        "y": 480,
-        "wires": [
-            [
-                "2acc780f667d9935"
+                "dcffbb1111cf47d3"
             ]
         ]
     },
@@ -3390,36 +3358,6 @@
             ],
             [],
             []
-        ]
-    },
-    {
-        "id": "edcb7cc43a9d7777",
-        "type": "inject",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 850,
-        "y": 560,
-        "wires": [
-            [
-                "b4a6f608a2d5c216"
-            ]
         ]
     },
     {
