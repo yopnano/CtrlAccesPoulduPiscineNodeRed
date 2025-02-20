@@ -558,14 +558,11 @@
             "2acc780f667d9935",
             "edcb7cc43a9d7777",
             "b4a6f608a2d5c216",
-            "38a08c00508cde68",
-            "2c5fbaadb4a98414",
-            "8e52ae78cb7c5384",
             "68ac9b39f7b05adc"
         ],
         "x": 34,
         "y": 379,
-        "w": 1152,
+        "w": 1072,
         "h": 329.5
     },
     {
@@ -3439,8 +3436,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 570,
-        "y": 540,
+        "x": 910,
+        "y": 640,
         "wires": [
             []
         ]
@@ -3477,7 +3474,6 @@
         "y": 620,
         "wires": [
             [
-                "38a08c00508cde68",
                 "68ac9b39f7b05adc"
             ],
             [],
@@ -3498,7 +3494,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1060,
+        "x": 920,
         "y": 600,
         "wires": []
     },
@@ -3639,92 +3635,6 @@
         ]
     },
     {
-        "id": "38a08c00508cde68",
-        "type": "switch",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "0",
-                "vt": "str"
-            },
-            {
-                "t": "cont",
-                "v": "1",
-                "vt": "str"
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 2,
-        "x": 720,
-        "y": 600,
-        "wires": [
-            [
-                "2c5fbaadb4a98414"
-            ],
-            [
-                "8e52ae78cb7c5384"
-            ]
-        ]
-    },
-    {
-        "id": "2c5fbaadb4a98414",
-        "type": "change",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "Activé",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 870,
-        "y": 580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8e52ae78cb7c5384",
-        "type": "change",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "Désactivé",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 880,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "68ac9b39f7b05adc",
         "type": "function",
         "z": "f99f61d176d88850",
@@ -3737,11 +3647,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 660,
+        "x": 720,
+        "y": 620,
         "wires": [
             [
-                "075151fe1959e373"
+                "075151fe1959e373",
+                "20dbb0dca0f7b992"
             ]
         ]
     },
