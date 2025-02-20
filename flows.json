@@ -3508,8 +3508,8 @@
                 "pt": "msg",
                 "from": "1",
                 "fromt": "str",
-                "to": "false",
-                "tot": "bool"
+                "to": "0",
+                "tot": "num"
             },
             {
                 "t": "change",
@@ -3517,8 +3517,8 @@
                 "pt": "msg",
                 "from": "0",
                 "fromt": "str",
-                "to": "true",
-                "tot": "bool"
+                "to": "1",
+                "tot": "num"
             }
         ],
         "action": "",
