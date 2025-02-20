@@ -3436,8 +3436,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 650,
-        "y": 500,
+        "x": 570,
+        "y": 540,
         "wires": [
             []
         ]
@@ -3449,8 +3449,8 @@
         "g": "55bdfefc3ec401d1",
         "name": "",
         "events": "all",
-        "x": 120,
-        "y": 500,
+        "x": 360,
+        "y": 580,
         "wires": [
             [
                 "77a92e80ac3347cf"
@@ -3470,10 +3470,12 @@
         "winHide": false,
         "oldrc": false,
         "name": "Etat overlay",
-        "x": 290,
-        "y": 500,
+        "x": 550,
+        "y": 620,
         "wires": [
-            [],
+            [
+                "075151fe1959e373"
+            ],
             [],
             []
         ]
@@ -3492,8 +3494,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 660,
-        "y": 540,
+        "x": 800,
+        "y": 620,
         "wires": []
     },
     {
@@ -3527,12 +3529,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 560,
+        "x": 790,
+        "y": 580,
         "wires": [
-            [
-                "075151fe1959e373"
-            ]
+            []
         ]
     },
     {
@@ -3558,7 +3558,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 540,
+        "y": 620,
         "wires": [
             [
                 "77a92e80ac3347cf"
@@ -3588,7 +3588,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 600,
+        "y": 540,
         "wires": [
             [
                 "2acc780f667d9935"
@@ -3609,9 +3609,11 @@
         "oldrc": false,
         "name": "Enable overlay",
         "x": 340,
-        "y": 600,
+        "y": 540,
         "wires": [
-            [],
+            [
+                "77a92e80ac3347cf"
+            ],
             [],
             []
         ]
@@ -3662,7 +3664,9 @@
         "x": 340,
         "y": 660,
         "wires": [
-            [],
+            [
+                "77a92e80ac3347cf"
+            ],
             [],
             []
         ]
