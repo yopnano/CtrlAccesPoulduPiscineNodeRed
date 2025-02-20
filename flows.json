@@ -2854,7 +2854,7 @@
         "z": "f99f61d176d88850",
         "name": "Alimentation Etat",
         "pin": "14",
-        "intype": "up",
+        "intype": "down",
         "debounce": "200",
         "read": true,
         "bcm": true,
