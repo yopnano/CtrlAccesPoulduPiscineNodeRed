@@ -553,7 +553,6 @@
             "3a722ea287d68fcf",
             "68ac9b39f7b05adc",
             "0f251e54d533b756",
-            "cee6052ce15b9087",
             "6bd3a8347ef136ce",
             "dcffbb1111cf47d3",
             "ee2b8e4d0f09d144",
@@ -561,8 +560,8 @@
             "5e1c90ee08ed828a",
             "f99f65ecd51b0674",
             "a82bbb5baf9053f1",
-            "8b29534567fef2d1",
-            "0b9edfe2380e542f"
+            "0b9edfe2380e542f",
+            "f7798d34c5497d69"
         ],
         "x": 34,
         "y": 399,
@@ -3447,21 +3446,6 @@
         ]
     },
     {
-        "id": "cee6052ce15b9087",
-        "type": "link in",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "Maj_Etat_Overlay_In",
-        "links": [],
-        "x": 75,
-        "y": 500,
-        "wires": [
-            [
-                "77a92e80ac3347cf"
-            ]
-        ]
-    },
-    {
         "id": "6bd3a8347ef136ce",
         "type": "switch",
         "z": "f99f61d176d88850",
@@ -3652,18 +3636,6 @@
         ]
     },
     {
-        "id": "8b29534567fef2d1",
-        "type": "link out",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "Maj_Etat_Overlay_Out",
-        "mode": "return",
-        "links": [],
-        "x": 665,
-        "y": 440,
-        "wires": []
-    },
-    {
         "id": "0b9edfe2380e542f",
         "type": "change",
         "z": "f99f61d176d88850",
@@ -3686,9 +3658,20 @@
         "x": 530,
         "y": 460,
         "wires": [
-            [
-                "8b29534567fef2d1"
-            ]
+            []
+        ]
+    },
+    {
+        "id": "f7798d34c5497d69",
+        "type": "link in",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "Maj_Etat_Overlay_In2",
+        "links": [],
+        "x": 275,
+        "y": 560,
+        "wires": [
+            []
         ]
     },
     {
