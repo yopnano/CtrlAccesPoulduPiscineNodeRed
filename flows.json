@@ -563,7 +563,7 @@
             "f7798d34c5497d69",
             "dc33e0934e4fcc37",
             "851225d6382973bc",
-            "ea704dba7f8136b9"
+            "40e1c58cc35f37d2"
         ],
         "x": 34,
         "y": 399,
@@ -3265,7 +3265,7 @@
         "y": 580,
         "wires": [
             [
-                "ea704dba7f8136b9"
+                "40e1c58cc35f37d2"
             ]
         ]
     },
@@ -3693,18 +3693,21 @@
         ]
     },
     {
-        "id": "ea704dba7f8136b9",
-        "type": "link out",
+        "id": "40e1c58cc35f37d2",
+        "type": "link call",
         "z": "f99f61d176d88850",
         "g": "55bdfefc3ec401d1",
-        "name": "link out 1",
-        "mode": "link",
+        "name": "",
         "links": [
             "f7798d34c5497d69"
         ],
-        "x": 225,
+        "linkType": "static",
+        "timeout": "30",
+        "x": 300,
         "y": 580,
-        "wires": []
+        "wires": [
+            []
+        ]
     },
     {
         "id": "bf529392d7957bf4",
