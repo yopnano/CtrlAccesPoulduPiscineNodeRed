@@ -3520,7 +3520,7 @@
         "type": "exec",
         "z": "f99f61d176d88850",
         "g": "55bdfefc3ec401d1",
-        "command": "sudo raspi-config nonint get_overlay_conf",
+        "command": "sudo raspi-config nonint get_overlay_now",
         "addpay": "",
         "append": "",
         "useSpawn": "false",
@@ -3612,7 +3612,7 @@
         "to": "",
         "reg": false,
         "x": 670,
-        "y": 560,
+        "y": 540,
         "wires": [
             []
         ]
