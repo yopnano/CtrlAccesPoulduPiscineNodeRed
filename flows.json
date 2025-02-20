@@ -3730,7 +3730,7 @@
         "z": "f99f61d176d88850",
         "g": "55bdfefc3ec401d1",
         "name": "Booleen",
-        "func": "let payload = msg.payload;\n\n// Si message non vide on envoie 1 sinon 0\nmsg.payload = (payload.contain(\"0\")) ? true : false;\nreturn msg;",
+        "func": "let payload = msg.payload.trim();\n\n// Si message non vide on envoie 1 sinon 0\nmsg.payload = (payload == '0') ? true : false;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
