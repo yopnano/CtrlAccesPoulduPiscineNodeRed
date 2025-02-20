@@ -566,9 +566,9 @@
             "851225d6382973bc"
         ],
         "x": 34,
-        "y": 379,
+        "y": 399,
         "w": 1912,
-        "h": 269.5
+        "h": 249.5
     },
     {
         "id": "a14588abf773c2cf",
@@ -3282,8 +3282,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Conf overlay",
-        "x": 190,
-        "y": 520,
+        "x": 310,
+        "y": 560,
         "wires": [
             [],
             [],
@@ -3443,8 +3443,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 480,
-        "y": 420,
+        "x": 400,
+        "y": 480,
         "wires": [
             [
                 "dc33e0934e4fcc37"
@@ -3648,8 +3648,8 @@
         "g": "55bdfefc3ec401d1",
         "name": "Maj_Etat_Overlay_In2",
         "links": [],
-        "x": 145,
-        "y": 420,
+        "x": 75,
+        "y": 500,
         "wires": [
             [
                 "9e3a1fc9cad7f92b"
@@ -3664,8 +3664,8 @@
         "name": "Maj_Etat_Overlay_Out2",
         "mode": "return",
         "links": [],
-        "x": 755,
-        "y": 460,
+        "x": 505,
+        "y": 480,
         "wires": []
     },
     {
@@ -3688,8 +3688,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 290,
-        "y": 420,
+        "x": 210,
+        "y": 500,
         "wires": [
             [
                 "0f251e54d533b756"
