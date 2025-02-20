@@ -308,12 +308,13 @@
             "42bf7d4dce6fc68b",
             "3e98501042490dc4",
             "eeb2b765754f01b8",
-            "653ed643d71f86fe"
+            "653ed643d71f86fe",
+            "745cd382c136fa23"
         ],
         "x": 34,
         "y": 719,
         "w": 1072,
-        "h": 129.5
+        "h": 142
     },
     {
         "id": "2473d132d401207a",
@@ -571,7 +572,7 @@
         ],
         "x": 34,
         "y": 419,
-        "w": 1472,
+        "w": 1382,
         "h": 242
     },
     {
@@ -2803,7 +2804,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Redémarrage du système en cours, vous allez être déconnecté",
+                "to": "Redémarrage du système en cours, le système sera temporairement indisponible et vous allez être déconnecté",
                 "tot": "str"
             }
         ],
@@ -3327,7 +3328,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "Enable overlay",
-        "x": 920,
+        "x": 960,
         "y": 480,
         "wires": [
             [
@@ -3350,7 +3351,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "Disable overlay",
-        "x": 920,
+        "x": 960,
         "y": 540,
         "wires": [
             [
@@ -3448,7 +3449,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 730,
+        "x": 750,
         "y": 520,
         "wires": [
             [
@@ -3472,8 +3473,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Etat overlay",
-        "x": 1130,
-        "y": 560,
+        "x": 1190,
+        "y": 500,
         "wires": [
             [
                 "ee2b8e4d0f09d144"
@@ -3493,8 +3494,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1300,
-        "y": 500,
+        "x": 1180,
+        "y": 540,
         "wires": [
             [
                 "473cf66c4f3ba1ec"
@@ -3524,7 +3525,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1360,
+        "x": 1260,
         "y": 620,
         "wires": [
             [
@@ -3625,8 +3626,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1090,
-        "y": 500,
+        "x": 1150,
+        "y": 460,
         "wires": [
             [
                 "dcffbb1111cf47d3"
@@ -3660,7 +3661,7 @@
         "links": [
             "1a21dab6bededd94"
         ],
-        "x": 1465,
+        "x": 1375,
         "y": 620,
         "wires": []
     },
@@ -3755,8 +3756,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1350,
-        "y": 560,
+        "x": 1230,
+        "y": 580,
         "wires": [
             [
                 "69617daa390db277"
@@ -3768,7 +3769,7 @@
         "type": "change",
         "z": "f99f61d176d88850",
         "g": "55bdfefc3ec401d1",
-        "name": "",
+        "name": "Annulation",
         "rules": [
             {
                 "t": "set",
@@ -3783,11 +3784,28 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 690,
+        "x": 670,
         "y": 580,
         "wires": [
             [
-                "075151fe1959e373"
+                "075151fe1959e373",
+                "6bd3a8347ef136ce"
+            ]
+        ]
+    },
+    {
+        "id": "745cd382c136fa23",
+        "type": "link in",
+        "z": "f99f61d176d88850",
+        "g": "ecc3d44747b5a6e4",
+        "name": "link in 1",
+        "links": [],
+        "x": 655,
+        "y": 820,
+        "wires": [
+            [
+                "52060a56fc94b130",
+                "eeb2b765754f01b8"
             ]
         ]
     },
