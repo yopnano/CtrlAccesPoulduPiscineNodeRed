@@ -568,7 +568,7 @@
         "x": 34,
         "y": 379,
         "w": 2092,
-        "h": 209.5
+        "h": 242
     },
     {
         "id": "a14588abf773c2cf",
@@ -3246,8 +3246,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 690,
-        "y": 460,
+        "x": 550,
+        "y": 540,
         "wires": [
             [
                 "6bd3a8347ef136ce"
@@ -3377,7 +3377,7 @@
         "oldrc": false,
         "name": "Disable overlay",
         "x": 900,
-        "y": 540,
+        "y": 560,
         "wires": [
             [
                 "77039cdeb07e9bd4"
@@ -3449,7 +3449,8 @@
         "y": 460,
         "wires": [
             [
-                "5e1c90ee08ed828a"
+                "5e1c90ee08ed828a",
+                "01348252ac42b19a"
             ]
         ]
     },
@@ -3480,8 +3481,8 @@
         "links": [
             "cee6052ce15b9087"
         ],
-        "x": 395,
-        "y": 540,
+        "x": 105,
+        "y": 580,
         "wires": []
     },
     {
@@ -3503,7 +3504,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 700,
+        "x": 720,
         "y": 520,
         "wires": [
             [
@@ -3610,11 +3611,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
-        "y": 460,
+        "x": 530,
+        "y": 480,
         "wires": [
             [
-                "01348252ac42b19a",
                 "20dbb0dca0f7b992"
             ]
         ]
@@ -3683,8 +3683,8 @@
         "name": "Maj_Etat_Overlay_Out",
         "mode": "return",
         "links": [],
-        "x": 635,
-        "y": 420,
+        "x": 475,
+        "y": 440,
         "wires": []
     },
     {
