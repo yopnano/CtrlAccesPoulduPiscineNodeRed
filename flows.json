@@ -553,16 +553,18 @@
             "18e19961830cb422",
             "77a92e80ac3347cf",
             "075151fe1959e373",
-            "2eac42c64376737e",
             "40db8ad1da3e68fb",
             "8dc12b424496c4ab",
             "2acc780f667d9935",
             "edcb7cc43a9d7777",
-            "b4a6f608a2d5c216"
+            "b4a6f608a2d5c216",
+            "38a08c00508cde68",
+            "2c5fbaadb4a98414",
+            "8e52ae78cb7c5384"
         ],
         "x": 34,
         "y": 379,
-        "w": 1092,
+        "w": 1172,
         "h": 329.5
     },
     {
@@ -3474,7 +3476,7 @@
         "y": 620,
         "wires": [
             [
-                "2eac42c64376737e"
+                "38a08c00508cde68"
             ],
             [],
             []
@@ -3494,48 +3496,9 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1000,
-        "y": 620,
+        "x": 1080,
+        "y": 580,
         "wires": []
-    },
-    {
-        "id": "2eac42c64376737e",
-        "type": "change",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "Etat >> Bool",
-        "rules": [
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "1",
-                "fromt": "str",
-                "to": "0",
-                "tot": "num"
-            },
-            {
-                "t": "change",
-                "p": "payload",
-                "pt": "msg",
-                "from": "0",
-                "fromt": "str",
-                "to": "1",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 730,
-        "y": 600,
-        "wires": [
-            [
-                "075151fe1959e373"
-            ]
-        ]
     },
     {
         "id": "40db8ad1da3e68fb",
@@ -3671,6 +3634,96 @@
             ],
             [],
             []
+        ]
+    },
+    {
+        "id": "38a08c00508cde68",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 720,
+        "y": 600,
+        "wires": [
+            [
+                "2c5fbaadb4a98414"
+            ],
+            [
+                "8e52ae78cb7c5384"
+            ]
+        ]
+    },
+    {
+        "id": "2c5fbaadb4a98414",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "Activé",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 870,
+        "y": 560,
+        "wires": [
+            [
+                "075151fe1959e373"
+            ]
+        ]
+    },
+    {
+        "id": "8e52ae78cb7c5384",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "Désactivé",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 600,
+        "wires": [
+            [
+                "075151fe1959e373"
+            ]
         ]
     },
     {
