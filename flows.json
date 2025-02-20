@@ -3647,12 +3647,12 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "eq",
+                "t": "cont",
                 "v": "0",
                 "vt": "str"
             },
             {
-                "t": "eq",
+                "t": "cont",
                 "v": "1",
                 "vt": "str"
             }
