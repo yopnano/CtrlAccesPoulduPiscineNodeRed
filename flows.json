@@ -559,11 +559,13 @@
             "dcffbb1111cf47d3",
             "ee2b8e4d0f09d144",
             "69617daa390db277",
-            "5e1c90ee08ed828a"
+            "5e1c90ee08ed828a",
+            "f99f65ecd51b0674",
+            "a82bbb5baf9053f1"
         ],
         "x": 24,
         "y": 379,
-        "w": 1702,
+        "w": 2102,
         "h": 229.5
     },
     {
@@ -3302,8 +3304,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1600,
-        "y": 420,
+        "x": 2000,
+        "y": 480,
         "wires": []
     },
     {
@@ -3551,8 +3553,7 @@
         "y": 480,
         "wires": [
             [
-                "69617daa390db277",
-                "075151fe1959e373"
+                "69617daa390db277"
             ]
         ]
     },
@@ -3566,12 +3567,12 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "eq",
+                "t": "neq",
                 "v": "Overlay_Conf",
                 "vt": "flow"
             },
             {
-                "t": "neq",
+                "t": "eq",
                 "v": "Overlay_Conf",
                 "vt": "flow"
             }
@@ -3582,8 +3583,12 @@
         "x": 1580,
         "y": 480,
         "wires": [
-            [],
-            []
+            [
+                "f99f65ecd51b0674"
+            ],
+            [
+                "a82bbb5baf9053f1"
+            ]
         ]
     },
     {
@@ -3610,6 +3615,62 @@
         "y": 560,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "f99f65ecd51b0674",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Reboot",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1770,
+        "y": 460,
+        "wires": [
+            [
+                "075151fe1959e373"
+            ]
+        ]
+    },
+    {
+        "id": "a82bbb5baf9053f1",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Pas reboot",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1770,
+        "y": 500,
+        "wires": [
+            [
+                "075151fe1959e373"
+            ]
         ]
     },
     {
