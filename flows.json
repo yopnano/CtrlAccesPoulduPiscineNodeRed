@@ -554,7 +554,6 @@
             "68ac9b39f7b05adc",
             "0f251e54d533b756",
             "cee6052ce15b9087",
-            "4cfb06879356adbf",
             "6bd3a8347ef136ce",
             "dcffbb1111cf47d3",
             "ee2b8e4d0f09d144",
@@ -568,7 +567,7 @@
         "x": 34,
         "y": 359,
         "w": 1912,
-        "h": 262
+        "h": 249.5
     },
     {
         "id": "a14588abf773c2cf",
@@ -3449,7 +3448,8 @@
         "y": 460,
         "wires": [
             [
-                "01348252ac42b19a"
+                "01348252ac42b19a",
+                "5e1c90ee08ed828a"
             ]
         ]
     },
@@ -3469,20 +3469,6 @@
                 "77a92e80ac3347cf"
             ]
         ]
-    },
-    {
-        "id": "4cfb06879356adbf",
-        "type": "link out",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "Bascule_Etat_Overlay",
-        "mode": "link",
-        "links": [
-            "cee6052ce15b9087"
-        ],
-        "x": 105,
-        "y": 580,
-        "wires": []
     },
     {
         "id": "6bd3a8347ef136ce",
