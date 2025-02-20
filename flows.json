@@ -232,7 +232,7 @@
             "9926e8fc24a9d1f3"
         ],
         "x": 24,
-        "y": 459,
+        "y": 519,
         "w": 942,
         "h": 202
     },
@@ -285,7 +285,7 @@
             "07cbe2e7971d840e"
         ],
         "x": 14,
-        "y": 79,
+        "y": 139,
         "w": 1332,
         "h": 362
     },
@@ -312,7 +312,7 @@
             "745cd382c136fa23"
         ],
         "x": 34,
-        "y": 679,
+        "y": 759,
         "w": 1072,
         "h": 142
     },
@@ -339,7 +339,7 @@
             "3847267b4923ef9c"
         ],
         "x": 28,
-        "y": 839,
+        "y": 919,
         "w": 1078,
         "h": 368
     },
@@ -569,12 +569,15 @@
             "9378fba89f3bbbe7",
             "473cf66c4f3ba1ec",
             "b18be167e2df3715",
-            "0f81b8053dae08d2"
+            "0f81b8053dae08d2",
+            "bc5a4ea7360d3fb0",
+            "1935b7ba37d53883",
+            "28d2f5fee338284f"
         ],
         "x": 24,
         "y": 399,
-        "w": 1392,
-        "h": 242
+        "w": 1302,
+        "h": 322
     },
     {
         "id": "3847267b4923ef9c",
@@ -605,9 +608,54 @@
             "b7049679b6722877"
         ],
         "x": 54,
-        "y": 979,
+        "y": 1059,
         "w": 992,
         "h": 202
+    },
+    {
+        "id": "579eb13fa60b1170",
+        "type": "group",
+        "z": "b7fb87140232fe9d",
+        "name": "Gestion de l'overlay FS",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#e3f3d3",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "f0ea57d16512e5dd",
+            "5d1c88cbcf93be66",
+            "dc8eb0dc6cbee7cb",
+            "685de5bb7920ba18",
+            "f3ce0c6b33c01fc0",
+            "3036cdcb864dc98b",
+            "7c7143b7801f2f91",
+            "3a0e532f8c2cc468",
+            "41029917e84e9418",
+            "dadbf528dc812520",
+            "bd1fb948469337f0",
+            "9a8b4ffc3ba60110",
+            "d9aab79f73c46066",
+            "430c7997dfdfd675",
+            "2702b894611659ac",
+            "977db28d136d1fe9",
+            "65bbf21f2296c958",
+            "d9d3715065b943e1",
+            "e8f273895de589dd",
+            "28ab7c8d58300301",
+            "33f3ebe67fdc65c3",
+            "5b3eccc8010f1074",
+            "c5201fa37cea5cfe",
+            "8bd7dd1c8f903637",
+            "1a10c4e753c33760",
+            "3c72da901260cc2f"
+        ],
+        "x": 24,
+        "y": 759,
+        "w": 1392,
+        "h": 242
     },
     {
         "id": "a14588abf773c2cf",
@@ -2100,7 +2148,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 130,
-        "y": 740,
+        "y": 820,
         "wires": [
             [
                 "0a1b5d6b91c62d0b"
@@ -2121,7 +2169,7 @@
         "oldrc": false,
         "name": "",
         "x": 870,
-        "y": 760,
+        "y": 840,
         "wires": [
             [],
             [],
@@ -2142,7 +2190,7 @@
         "oldrc": false,
         "name": "",
         "x": 980,
-        "y": 940,
+        "y": 1020,
         "wires": [
             [],
             [],
@@ -2620,7 +2668,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 110,
-        "y": 880,
+        "y": 960,
         "wires": [
             [
                 "b227e619e3daa05a"
@@ -2644,7 +2692,7 @@
         "topic": "",
         "name": "Confirmation",
         "x": 470,
-        "y": 880,
+        "y": 960,
         "wires": [
             [
                 "d5a56c3e54241e69"
@@ -2679,7 +2727,7 @@
         "to": "",
         "reg": false,
         "x": 300,
-        "y": 880,
+        "y": 960,
         "wires": [
             [
                 "00e10551be067ba2"
@@ -2703,7 +2751,7 @@
         "topic": "",
         "name": "Notification",
         "x": 1010,
-        "y": 880,
+        "y": 960,
         "wires": []
     },
     {
@@ -2734,7 +2782,7 @@
         "to": "",
         "reg": false,
         "x": 840,
-        "y": 880,
+        "y": 960,
         "wires": [
             [
                 "89bd908fa4185299"
@@ -2769,7 +2817,7 @@
         "to": "",
         "reg": false,
         "x": 300,
-        "y": 740,
+        "y": 820,
         "wires": [
             [
                 "42bf7d4dce6fc68b"
@@ -2793,7 +2841,7 @@
         "topic": "",
         "name": "Confirmation",
         "x": 470,
-        "y": 740,
+        "y": 820,
         "wires": [
             [
                 "653ed643d71f86fe"
@@ -2817,7 +2865,7 @@
         "topic": "",
         "name": "Notification",
         "x": 1010,
-        "y": 720,
+        "y": 800,
         "wires": []
     },
     {
@@ -2848,7 +2896,7 @@
         "to": "",
         "reg": false,
         "x": 840,
-        "y": 720,
+        "y": 800,
         "wires": [
             [
                 "3e98501042490dc4"
@@ -2877,7 +2925,7 @@
         "repair": false,
         "outputs": 2,
         "x": 630,
-        "y": 740,
+        "y": 820,
         "wires": [
             [
                 "eeb2b765754f01b8",
@@ -2908,7 +2956,7 @@
         "repair": false,
         "outputs": 2,
         "x": 630,
-        "y": 880,
+        "y": 960,
         "wires": [
             [
                 "2de3d6d6cea2f8fc",
@@ -2940,7 +2988,7 @@
         "read": true,
         "bcm": true,
         "x": 160,
-        "y": 1120,
+        "y": 1200,
         "wires": [
             [
                 "ae31fec40099e219"
@@ -2961,7 +3009,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 940,
-        "y": 1080,
+        "y": 1160,
         "wires": []
     },
     {
@@ -2992,7 +3040,7 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 1140,
+        "y": 1220,
         "wires": [
             [
                 "9433913b02703e35",
@@ -3017,7 +3065,7 @@
         "topic": "",
         "name": "Avertissement",
         "x": 920,
-        "y": 1080,
+        "y": 1160,
         "wires": []
     },
     {
@@ -3059,7 +3107,7 @@
         "to": "",
         "reg": false,
         "x": 360,
-        "y": 1120,
+        "y": 1200,
         "wires": [
             [
                 "fb07dd801a0da2cd"
@@ -3086,7 +3134,7 @@
         "repair": false,
         "outputs": 2,
         "x": 510,
-        "y": 1120,
+        "y": 1200,
         "wires": [
             [
                 "8b6c2fc8a4cf2d75",
@@ -3125,7 +3173,7 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 1100,
+        "y": 1180,
         "wires": [
             [
                 "9433913b02703e35",
@@ -3161,7 +3209,7 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 1020,
+        "y": 1100,
         "wires": [
             [
                 "9433913b02703e35",
@@ -3188,7 +3236,7 @@
         "payload": "1",
         "payloadType": "str",
         "x": 150,
-        "y": 1040,
+        "y": 1120,
         "wires": [
             [
                 "ac94056f1d5b909d"
@@ -3209,7 +3257,7 @@
         "finalize": "",
         "libs": [],
         "x": 300,
-        "y": 1040,
+        "y": 1120,
         "wires": [
             [
                 "b7049679b6722877"
@@ -3237,7 +3285,7 @@
         "to": "",
         "reg": false,
         "x": 710,
-        "y": 1060,
+        "y": 1140,
         "wires": [
             []
         ]
@@ -3261,7 +3309,7 @@
         "repair": false,
         "outputs": 1,
         "x": 500,
-        "y": 1040,
+        "y": 1120,
         "wires": [
             [
                 "79a903e8d5e1195e",
@@ -3313,7 +3361,7 @@
         "name": "",
         "events": "all",
         "x": 120,
-        "y": 540,
+        "y": 600,
         "wires": [
             [
                 "40e1c58cc35f37d2"
@@ -3452,7 +3500,6 @@
         "y": 480,
         "wires": [
             [
-                "dc33e0934e4fcc37",
                 "5e1c90ee08ed828a",
                 "20dbb0dca0f7b992"
             ]
@@ -3501,8 +3548,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Etat overlay",
-        "x": 1190,
-        "y": 480,
+        "x": 190,
+        "y": 540,
         "wires": [
             [
                 "ee2b8e4d0f09d144"
@@ -3522,8 +3569,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1180,
-        "y": 520,
+        "x": 360,
+        "y": 540,
         "wires": [
             [
                 "473cf66c4f3ba1ec"
@@ -3553,7 +3600,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1260,
+        "x": 1160,
         "y": 600,
         "wires": [
             [
@@ -3582,10 +3629,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
-        "y": 480,
+        "x": 530,
+        "y": 460,
         "wires": [
-            []
+            [
+                "dc33e0934e4fcc37"
+            ]
         ]
     },
     {
@@ -3609,7 +3658,7 @@
         "to": "",
         "reg": false,
         "x": 180,
-        "y": 600,
+        "y": 660,
         "wires": [
             [
                 "50707c177d932162"
@@ -3621,7 +3670,7 @@
         "type": "link in",
         "z": "f99f61d176d88850",
         "g": "55bdfefc3ec401d1",
-        "name": "Maj_Etat_Overlay_In",
+        "name": "Maj_Conf_Overlay_In",
         "links": [],
         "x": 65,
         "y": 480,
@@ -3636,11 +3685,11 @@
         "type": "link out",
         "z": "f99f61d176d88850",
         "g": "55bdfefc3ec401d1",
-        "name": "Maj_Etat_Overlay_Out",
+        "name": "Maj_Conf_Overlay_Out",
         "mode": "return",
         "links": [],
-        "x": 495,
-        "y": 440,
+        "x": 645,
+        "y": 460,
         "wires": []
     },
     {
@@ -3655,10 +3704,10 @@
         "linkType": "static",
         "timeout": "30",
         "x": 1150,
-        "y": 440,
+        "y": 480,
         "wires": [
             [
-                "dcffbb1111cf47d3"
+                "28d2f5fee338284f"
             ]
         ]
     },
@@ -3674,7 +3723,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 320,
-        "y": 540,
+        "y": 600,
         "wires": [
             []
         ]
@@ -3689,7 +3738,7 @@
         "links": [
             "1a21dab6bededd94"
         ],
-        "x": 1375,
+        "x": 1285,
         "y": 600,
         "wires": []
     },
@@ -3702,8 +3751,8 @@
         "links": [
             "a0cd10cfc650656e"
         ],
-        "x": 65,
-        "y": 600,
+        "x": 75,
+        "y": 660,
         "wires": [
             [
                 "f99f65ecd51b0674"
@@ -3727,7 +3776,7 @@
         "topic": "",
         "name": "Confirmation",
         "x": 350,
-        "y": 600,
+        "y": 660,
         "wires": [
             [
                 "9378fba89f3bbbe7"
@@ -3756,7 +3805,7 @@
         "repair": false,
         "outputs": 2,
         "x": 510,
-        "y": 600,
+        "y": 660,
         "wires": [
             [
                 "b18be167e2df3715"
@@ -3786,11 +3835,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1230,
-        "y": 560,
+        "x": 530,
+        "y": 580,
         "wires": [
             [
-                "69617daa390db277"
+                "1935b7ba37d53883"
             ]
         ]
     },
@@ -3815,7 +3864,7 @@
         "to": "",
         "reg": false,
         "x": 670,
-        "y": 560,
+        "y": 640,
         "wires": [
             [
                 "6bd3a8347ef136ce"
@@ -3829,10 +3878,11 @@
         "g": "ecc3d44747b5a6e4",
         "name": "link in 1",
         "links": [
-            "0f81b8053dae08d2"
+            "0f81b8053dae08d2",
+            "3c72da901260cc2f"
         ],
         "x": 655,
-        "y": 780,
+        "y": 860,
         "wires": [
             [
                 "52060a56fc94b130",
@@ -3851,8 +3901,54 @@
             "745cd382c136fa23"
         ],
         "x": 615,
-        "y": 600,
+        "y": 680,
         "wires": []
+    },
+    {
+        "id": "bc5a4ea7360d3fb0",
+        "type": "link in",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "Maj_Etat_Overlay_In",
+        "links": [],
+        "x": 65,
+        "y": 540,
+        "wires": [
+            [
+                "dcffbb1111cf47d3"
+            ]
+        ]
+    },
+    {
+        "id": "1935b7ba37d53883",
+        "type": "link out",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "Maj_Etat_Overlay_Out",
+        "mode": "return",
+        "links": [],
+        "x": 645,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "28d2f5fee338284f",
+        "type": "link call",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "Etat",
+        "links": [
+            "bc5a4ea7360d3fb0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1150,
+        "y": 540,
+        "wires": [
+            [
+                "69617daa390db277"
+            ]
+        ]
     },
     {
         "id": "bf529392d7957bf4",
@@ -3866,7 +3962,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 140,
+        "x": 430,
         "y": 40,
         "wires": [
             [
@@ -3884,7 +3980,7 @@
         "y": 40,
         "wires": [
             [
-                "bf529392d7957bf4"
+                "0f4dd6a43470ed40"
             ]
         ]
     },
@@ -3905,7 +4001,7 @@
         "include_empty_strings": false,
         "include_null_values": false,
         "x": 410,
-        "y": 200,
+        "y": 260,
         "wires": [
             [
                 "prepare-badge-list"
@@ -3926,7 +4022,7 @@
         "finalize": "",
         "libs": [],
         "x": 570,
-        "y": 160,
+        "y": 220,
         "wires": [
             [
                 "ui-table"
@@ -3996,7 +4092,7 @@
         "splitLayout": false,
         "className": "",
         "x": 950,
-        "y": 160,
+        "y": 220,
         "wires": [
             [
                 "5195e03d72347812",
@@ -4018,7 +4114,7 @@
         "finalize": "",
         "libs": [],
         "x": 390,
-        "y": 560,
+        "y": 620,
         "wires": [
             [
                 "write-updated-csv"
@@ -4038,7 +4134,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 770,
-        "y": 600,
+        "y": 660,
         "wires": [
             [
                 "6c65b544c9dba5ad"
@@ -4059,7 +4155,7 @@
         "finalize": "",
         "libs": [],
         "x": 390,
-        "y": 620,
+        "y": 680,
         "wires": [
             [
                 "write-updated-csv"
@@ -4131,7 +4227,7 @@
         "outputs": 1,
         "cts": true,
         "x": 770,
-        "y": 160,
+        "y": 220,
         "wires": [
             [
                 "add-badge",
@@ -4147,7 +4243,7 @@
         "name": "",
         "events": "all",
         "x": 100,
-        "y": 280,
+        "y": 340,
         "wires": [
             [
                 "d70e0a76ad116354",
@@ -4169,7 +4265,7 @@
         "finalize": "",
         "libs": [],
         "x": 1150,
-        "y": 160,
+        "y": 220,
         "wires": [
             []
         ]
@@ -4193,7 +4289,7 @@
         "bgcolor": "green",
         "icon": "add",
         "x": 1080,
-        "y": 280,
+        "y": 340,
         "wires": [
             [
                 "a8b8abe0dbb89d01"
@@ -4219,7 +4315,7 @@
         "bgcolor": "",
         "icon": "",
         "x": 1080,
-        "y": 340,
+        "y": 400,
         "wires": [
             [
                 "8315cb0b37bf2360"
@@ -4245,7 +4341,7 @@
         "bgcolor": "red",
         "icon": "delete",
         "x": 1190,
-        "y": 400,
+        "y": 460,
         "wires": [
             [
                 "3223507d3cfa6ef0"
@@ -4273,7 +4369,7 @@
         "to": "",
         "reg": false,
         "x": 840,
-        "y": 280,
+        "y": 340,
         "wires": [
             [
                 "430b8d717d649def",
@@ -4300,7 +4396,7 @@
         "include_empty_strings": false,
         "include_null_values": "",
         "x": 370,
-        "y": 360,
+        "y": 420,
         "wires": [
             [
                 "73f87137ca42f812"
@@ -4321,7 +4417,7 @@
         "finalize": "",
         "libs": [],
         "x": 530,
-        "y": 360,
+        "y": 420,
         "wires": [
             [
                 "de1e94ac57e14e9b",
@@ -4341,7 +4437,7 @@
             "89be4880b3ec336f"
         ],
         "x": 1075,
-        "y": 200,
+        "y": 260,
         "wires": []
     },
     {
@@ -4354,7 +4450,7 @@
             "c0ed11991259f947"
         ],
         "x": 85,
-        "y": 360,
+        "y": 420,
         "wires": [
             [
                 "be51f9118da183d6"
@@ -4382,7 +4478,7 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 360,
+        "y": 420,
         "wires": [
             [
                 "5b3a2cbf42ca0f61"
@@ -4409,7 +4505,7 @@
         "repair": false,
         "outputs": 2,
         "x": 840,
-        "y": 360,
+        "y": 420,
         "wires": [
             [
                 "430b8d717d649def"
@@ -4432,7 +4528,7 @@
             "c0ed11991259f947"
         ],
         "x": 745,
-        "y": 280,
+        "y": 340,
         "wires": [
             [
                 "d70e0a76ad116354"
@@ -4450,7 +4546,7 @@
             "cbebc005f2e85a7d"
         ],
         "x": 1185,
-        "y": 280,
+        "y": 340,
         "wires": []
     },
     {
@@ -4464,7 +4560,7 @@
             "c9a6d29df5ef2a8b"
         ],
         "x": 1185,
-        "y": 340,
+        "y": 400,
         "wires": []
     },
     {
@@ -4479,7 +4575,7 @@
             "0dd4a1227a3644e8"
         ],
         "x": 1305,
-        "y": 400,
+        "y": 460,
         "wires": []
     },
     {
@@ -4496,7 +4592,7 @@
         "finalize": "",
         "libs": [],
         "x": 390,
-        "y": 500,
+        "y": 560,
         "wires": [
             [
                 "9926e8fc24a9d1f3"
@@ -4516,7 +4612,7 @@
         "overwriteFile": "false",
         "encoding": "none",
         "x": 790,
-        "y": 560,
+        "y": 620,
         "wires": [
             [
                 "6c65b544c9dba5ad"
@@ -4533,7 +4629,7 @@
             "a8b8abe0dbb89d01"
         ],
         "x": 65,
-        "y": 500,
+        "y": 560,
         "wires": [
             [
                 "a306b64fd90323a8"
@@ -4561,7 +4657,7 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 320,
+        "y": 380,
         "wires": [
             [
                 "e4a7312f36a25dd0"
@@ -4588,7 +4684,7 @@
         "repair": false,
         "outputs": 2,
         "x": 840,
-        "y": 320,
+        "y": 380,
         "wires": [
             [
                 "430b8d717d649def"
@@ -4609,7 +4705,7 @@
             "8315cb0b37bf2360"
         ],
         "x": 65,
-        "y": 560,
+        "y": 620,
         "wires": [
             [
                 "48fe8ebc4af5cd6b"
@@ -4630,7 +4726,7 @@
         "finalize": "",
         "libs": [],
         "x": 970,
-        "y": 120,
+        "y": 180,
         "wires": [
             [
                 "07cbe2e7971d840e"
@@ -4647,7 +4743,7 @@
             "3223507d3cfa6ef0"
         ],
         "x": 65,
-        "y": 620,
+        "y": 680,
         "wires": [
             [
                 "e81743050a9f376b"
@@ -4666,7 +4762,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 210,
-        "y": 360,
+        "y": 420,
         "wires": [
             [
                 "982e71bcc423b51e"
@@ -4685,7 +4781,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 190,
-        "y": 560,
+        "y": 620,
         "wires": [
             [
                 "update-csv"
@@ -4704,7 +4800,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 190,
-        "y": 620,
+        "y": 680,
         "wires": [
             [
                 "delete-from-csv"
@@ -4719,7 +4815,7 @@
         "name": "Gestion de l'affichage des boutons (ajout / modification / suppression)",
         "info": "",
         "x": 650,
-        "y": 400,
+        "y": 460,
         "wires": []
     },
     {
@@ -4730,7 +4826,7 @@
         "name": "Affichage de la liste des badges dans un tableau",
         "info": "",
         "x": 660,
-        "y": 120,
+        "y": 180,
         "wires": []
     },
     {
@@ -4740,7 +4836,7 @@
         "name": "Recup_Badges_Out",
         "mode": "return",
         "links": [],
-        "x": 245,
+        "x": 665,
         "y": 40,
         "wires": []
     },
@@ -4756,7 +4852,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 250,
-        "y": 240,
+        "y": 300,
         "wires": [
             [
                 "parse-csv"
@@ -4775,7 +4871,7 @@
             "beaa458f9661cf23"
         ],
         "x": 905,
-        "y": 580,
+        "y": 640,
         "wires": []
     },
     {
@@ -4788,7 +4884,7 @@
             "6c65b544c9dba5ad"
         ],
         "x": 105,
-        "y": 240,
+        "y": 300,
         "wires": [
             [
                 "a29b7c7115c54d1d"
@@ -4805,7 +4901,7 @@
             "92e181a1ce7fe4e8"
         ],
         "x": 625,
-        "y": 200,
+        "y": 260,
         "wires": [
             [
                 "428593e904c3f9e3"
@@ -4822,7 +4918,7 @@
             "3223507d3cfa6ef0"
         ],
         "x": 625,
-        "y": 240,
+        "y": 300,
         "wires": [
             [
                 "01bd06a552790404"
@@ -4851,7 +4947,7 @@
         "to": "",
         "reg": false,
         "x": 740,
-        "y": 240,
+        "y": 300,
         "wires": [
             [
                 "add-badge"
@@ -4872,7 +4968,7 @@
         "finalize": "",
         "libs": [],
         "x": 770,
-        "y": 200,
+        "y": 260,
         "wires": [
             [
                 "add-badge"
@@ -4893,7 +4989,7 @@
         "finalize": "",
         "libs": [],
         "x": 1010,
-        "y": 400,
+        "y": 460,
         "wires": [
             [
                 "8319687c46b92b91"
@@ -4911,7 +5007,7 @@
             "89be4880b3ec336f"
         ],
         "x": 1095,
-        "y": 120,
+        "y": 180,
         "wires": []
     },
     {
@@ -4926,7 +5022,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 190,
-        "y": 500,
+        "y": 560,
         "wires": [
             [
                 "b4193616c42bd034"
@@ -4950,7 +5046,7 @@
         "topic": "",
         "name": "",
         "x": 850,
-        "y": 500,
+        "y": 560,
         "wires": []
     },
     {
@@ -4975,7 +5071,7 @@
         "repair": false,
         "outputs": 2,
         "x": 560,
-        "y": 500,
+        "y": 560,
         "wires": [
             [
                 "3031944d6dea631e",
@@ -4984,6 +5080,646 @@
             [
                 "c18097db6ea8c49a"
             ]
+        ]
+    },
+    {
+        "id": "f0ea57d16512e5dd",
+        "type": "ui_switch",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "",
+        "label": "Overlay FS",
+        "tooltip": "",
+        "group": "2af2e23a3cac9b4d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 550,
+        "y": 880,
+        "wires": [
+            [
+                "dadbf528dc812520"
+            ]
+        ]
+    },
+    {
+        "id": "5d1c88cbcf93be66",
+        "type": "ui_ui_control",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "",
+        "events": "all",
+        "x": 120,
+        "y": 900,
+        "wires": [
+            [
+                "e8f273895de589dd"
+            ]
+        ]
+    },
+    {
+        "id": "dc8eb0dc6cbee7cb",
+        "type": "exec",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "command": "sudo raspi-config nonint get_overlay_conf",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Conf overlay",
+        "x": 190,
+        "y": 840,
+        "wires": [
+            [
+                "41029917e84e9418"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "685de5bb7920ba18",
+        "type": "exec",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "command": "sudo raspi-config nonint enable_overlayfs",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Enable overlay",
+        "x": 960,
+        "y": 820,
+        "wires": [
+            [
+                "d9d3715065b943e1"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f3ce0c6b33c01fc0",
+        "type": "exec",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "command": "sudo raspi-config nonint disable_overlayfs",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Disable overlay",
+        "x": 960,
+        "y": 880,
+        "wires": [
+            [
+                "d9d3715065b943e1"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3036cdcb864dc98b",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Etat_OverlayFS_In",
+        "links": [],
+        "x": 65,
+        "y": 800,
+        "wires": [
+            [
+                "3a0e532f8c2cc468"
+            ]
+        ]
+    },
+    {
+        "id": "7c7143b7801f2f91",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Etat_OverlayFS_Out",
+        "mode": "return",
+        "links": [],
+        "x": 285,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "3a0e532f8c2cc468",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Booleen",
+        "func": "let payload = msg.payload.trim();\n\n// Si message non vide on envoie 1 sinon 0\nmsg.payload = (payload == '0') ? true : false;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 800,
+        "wires": [
+            [
+                "7c7143b7801f2f91"
+            ]
+        ]
+    },
+    {
+        "id": "41029917e84e9418",
+        "type": "link call",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Etat Bool",
+        "links": [
+            "3036cdcb864dc98b"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 360,
+        "y": 840,
+        "wires": [
+            [
+                "65bbf21f2296c958",
+                "430c7997dfdfd675",
+                "f0ea57d16512e5dd"
+            ]
+        ]
+    },
+    {
+        "id": "dadbf528dc812520",
+        "type": "switch",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Application",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 860,
+        "wires": [
+            [
+                "685de5bb7920ba18"
+            ],
+            [
+                "f3ce0c6b33c01fc0"
+            ]
+        ]
+    },
+    {
+        "id": "bd1fb948469337f0",
+        "type": "exec",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "command": "sudo raspi-config nonint get_overlay_now",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Etat overlay",
+        "x": 1190,
+        "y": 840,
+        "wires": [
+            [
+                "9a8b4ffc3ba60110"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9a8b4ffc3ba60110",
+        "type": "link call",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Etat Bool",
+        "links": [
+            "3036cdcb864dc98b"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1180,
+        "y": 880,
+        "wires": [
+            [
+                "8bd7dd1c8f903637"
+            ]
+        ]
+    },
+    {
+        "id": "d9aab79f73c46066",
+        "type": "switch",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Compare",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Overlay_Conf",
+                "vt": "flow"
+            },
+            {
+                "t": "eq",
+                "v": "Overlay_Conf",
+                "vt": "flow"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1260,
+        "y": 960,
+        "wires": [
+            [
+                "28ab7c8d58300301"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "430c7997dfdfd675",
+        "type": "change",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Memo_conf",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Overlay_Conf",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2702b894611659ac",
+        "type": "change",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Vous devez redémarrer l'installation pour appliquer les changements.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 180,
+        "y": 960,
+        "wires": [
+            [
+                "5b3eccc8010f1074"
+            ]
+        ]
+    },
+    {
+        "id": "977db28d136d1fe9",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Maj_Etat_Overlay_In",
+        "links": [],
+        "x": 65,
+        "y": 840,
+        "wires": [
+            [
+                "dc8eb0dc6cbee7cb"
+            ]
+        ]
+    },
+    {
+        "id": "65bbf21f2296c958",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Maj_Etat_Overlay_Out",
+        "mode": "return",
+        "links": [],
+        "x": 495,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "d9d3715065b943e1",
+        "type": "link call",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Config",
+        "links": [
+            "977db28d136d1fe9"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1150,
+        "y": 800,
+        "wires": [
+            [
+                "bd1fb948469337f0"
+            ]
+        ]
+    },
+    {
+        "id": "e8f273895de589dd",
+        "type": "link call",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "",
+        "links": [
+            "977db28d136d1fe9"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 320,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28ab7c8d58300301",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Bascule_Overlay",
+        "mode": "link",
+        "links": [
+            "33f3ebe67fdc65c3"
+        ],
+        "x": 1375,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "33f3ebe67fdc65c3",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Confirmation_Bascule_Overlay",
+        "links": [
+            "28ab7c8d58300301"
+        ],
+        "x": 65,
+        "y": 960,
+        "wires": [
+            [
+                "2702b894611659ac"
+            ]
+        ]
+    },
+    {
+        "id": "5b3eccc8010f1074",
+        "type": "ui_toast",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Oui",
+        "cancel": "Annuler l'action",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Confirmation",
+        "x": 350,
+        "y": 960,
+        "wires": [
+            [
+                "c5201fa37cea5cfe"
+            ]
+        ]
+    },
+    {
+        "id": "c5201fa37cea5cfe",
+        "type": "switch",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Choix",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Oui",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 960,
+        "wires": [
+            [
+                "1a10c4e753c33760"
+            ],
+            [
+                "3c72da901260cc2f"
+            ]
+        ]
+    },
+    {
+        "id": "8bd7dd1c8f903637",
+        "type": "change",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Memo_now",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Overlay_Now",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1230,
+        "y": 920,
+        "wires": [
+            [
+                "d9aab79f73c46066"
+            ]
+        ]
+    },
+    {
+        "id": "1a10c4e753c33760",
+        "type": "change",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Annulation",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Overlay_Now",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 920,
+        "wires": [
+            [
+                "dadbf528dc812520"
+            ]
+        ]
+    },
+    {
+        "id": "3c72da901260cc2f",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "579eb13fa60b1170",
+        "name": "Redemarrage_Application_Overlay",
+        "mode": "link",
+        "links": [
+            "745cd382c136fa23"
+        ],
+        "x": 615,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "0f4dd6a43470ed40",
+        "type": "link call",
+        "z": "b7fb87140232fe9d",
+        "name": "",
+        "links": [
+            "bc5a4ea7360d3fb0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 200,
+        "y": 40,
+        "wires": [
+            [
+                "bf529392d7957bf4",
+                "cef450aafd293de7"
+            ]
+        ]
+    },
+    {
+        "id": "cef450aafd293de7",
+        "type": "change",
+        "z": "b7fb87140232fe9d",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Persistance des données non activée",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Attention :  vous n'avez pas désactivé l'overlay FS, vos modifications seront perdues après un redémarrage",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "1f29d63a567c6bfb"
+            ]
+        ]
+    },
+    {
+        "id": "1f29d63a567c6bfb",
+        "type": "ui_toast",
+        "z": "b7fb87140232fe9d",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "j'ai compris",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "ConfirmationOverlay",
+        "x": 620,
+        "y": 80,
+        "wires": [
+            []
         ]
     },
     {
