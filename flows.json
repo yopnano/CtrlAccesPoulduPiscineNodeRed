@@ -311,7 +311,7 @@
             "653ed643d71f86fe"
         ],
         "x": 34,
-        "y": 599,
+        "y": 719,
         "w": 1072,
         "h": 129.5
     },
@@ -337,7 +337,7 @@
             "d5a56c3e54241e69"
         ],
         "x": 34,
-        "y": 759,
+        "y": 879,
         "w": 1072,
         "h": 149.5
     },
@@ -555,12 +555,15 @@
             "075151fe1959e373",
             "2eac42c64376737e",
             "40db8ad1da3e68fb",
-            "1da37258dace598c"
+            "8dc12b424496c4ab",
+            "2acc780f667d9935",
+            "edcb7cc43a9d7777",
+            "b4a6f608a2d5c216"
         ],
         "x": 34,
         "y": 379,
         "w": 1072,
-        "h": 202
+        "h": 329.5
     },
     {
         "id": "a14588abf773c2cf",
@@ -2053,7 +2056,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 130,
-        "y": 660,
+        "y": 780,
         "wires": [
             [
                 "0a1b5d6b91c62d0b"
@@ -2074,7 +2077,7 @@
         "oldrc": false,
         "name": "",
         "x": 870,
-        "y": 680,
+        "y": 800,
         "wires": [
             [],
             [],
@@ -2095,7 +2098,7 @@
         "oldrc": false,
         "name": "",
         "x": 980,
-        "y": 860,
+        "y": 980,
         "wires": [
             [],
             [],
@@ -2573,7 +2576,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 110,
-        "y": 800,
+        "y": 920,
         "wires": [
             [
                 "b227e619e3daa05a"
@@ -2597,7 +2600,7 @@
         "topic": "",
         "name": "Confirmation",
         "x": 470,
-        "y": 800,
+        "y": 920,
         "wires": [
             [
                 "d5a56c3e54241e69"
@@ -2632,7 +2635,7 @@
         "to": "",
         "reg": false,
         "x": 300,
-        "y": 800,
+        "y": 920,
         "wires": [
             [
                 "00e10551be067ba2"
@@ -2656,7 +2659,7 @@
         "topic": "",
         "name": "Notification",
         "x": 1010,
-        "y": 800,
+        "y": 920,
         "wires": []
     },
     {
@@ -2687,7 +2690,7 @@
         "to": "",
         "reg": false,
         "x": 840,
-        "y": 800,
+        "y": 920,
         "wires": [
             [
                 "89bd908fa4185299"
@@ -2722,7 +2725,7 @@
         "to": "",
         "reg": false,
         "x": 300,
-        "y": 660,
+        "y": 780,
         "wires": [
             [
                 "42bf7d4dce6fc68b"
@@ -2746,7 +2749,7 @@
         "topic": "",
         "name": "Confirmation",
         "x": 470,
-        "y": 660,
+        "y": 780,
         "wires": [
             [
                 "653ed643d71f86fe"
@@ -2770,7 +2773,7 @@
         "topic": "",
         "name": "Notification",
         "x": 1010,
-        "y": 640,
+        "y": 760,
         "wires": []
     },
     {
@@ -2801,7 +2804,7 @@
         "to": "",
         "reg": false,
         "x": 840,
-        "y": 640,
+        "y": 760,
         "wires": [
             [
                 "3e98501042490dc4"
@@ -2830,7 +2833,7 @@
         "repair": false,
         "outputs": 2,
         "x": 630,
-        "y": 660,
+        "y": 780,
         "wires": [
             [
                 "eeb2b765754f01b8",
@@ -2861,7 +2864,7 @@
         "repair": false,
         "outputs": 2,
         "x": 630,
-        "y": 800,
+        "y": 920,
         "wires": [
             [
                 "2de3d6d6cea2f8fc",
@@ -2892,7 +2895,7 @@
         "read": true,
         "bcm": true,
         "x": 220,
-        "y": 1100,
+        "y": 1220,
         "wires": [
             [
                 "ae31fec40099e219"
@@ -2912,7 +2915,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1000,
-        "y": 1060,
+        "y": 1180,
         "wires": []
     },
     {
@@ -2942,7 +2945,7 @@
         "to": "",
         "reg": false,
         "x": 760,
-        "y": 1120,
+        "y": 1240,
         "wires": [
             [
                 "9433913b02703e35",
@@ -2966,7 +2969,7 @@
         "topic": "",
         "name": "Avertissement",
         "x": 980,
-        "y": 1060,
+        "y": 1180,
         "wires": []
     },
     {
@@ -3007,7 +3010,7 @@
         "to": "",
         "reg": false,
         "x": 420,
-        "y": 1100,
+        "y": 1220,
         "wires": [
             [
                 "fb07dd801a0da2cd"
@@ -3033,7 +3036,7 @@
         "repair": false,
         "outputs": 2,
         "x": 570,
-        "y": 1100,
+        "y": 1220,
         "wires": [
             [
                 "8b6c2fc8a4cf2d75",
@@ -3071,7 +3074,7 @@
         "to": "",
         "reg": false,
         "x": 760,
-        "y": 1080,
+        "y": 1200,
         "wires": [
             [
                 "9433913b02703e35",
@@ -3106,7 +3109,7 @@
         "to": "",
         "reg": false,
         "x": 760,
-        "y": 1000,
+        "y": 1120,
         "wires": [
             [
                 "9433913b02703e35",
@@ -3132,7 +3135,7 @@
         "payload": "1",
         "payloadType": "str",
         "x": 210,
-        "y": 1020,
+        "y": 1140,
         "wires": [
             [
                 "ac94056f1d5b909d"
@@ -3152,7 +3155,7 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 1020,
+        "y": 1140,
         "wires": [
             [
                 "b7049679b6722877"
@@ -3179,7 +3182,7 @@
         "to": "",
         "reg": false,
         "x": 770,
-        "y": 1040,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -3202,7 +3205,7 @@
         "repair": false,
         "outputs": 1,
         "x": 560,
-        "y": 1020,
+        "y": 1140,
         "wires": [
             [
                 "79a903e8d5e1195e",
@@ -3470,10 +3473,7 @@
         "x": 290,
         "y": 500,
         "wires": [
-            [
-                "2eac42c64376737e",
-                "075151fe1959e373"
-            ],
+            [],
             [],
             []
         ]
@@ -3528,12 +3528,10 @@
         "to": "",
         "reg": false,
         "x": 470,
-        "y": 500,
+        "y": 560,
         "wires": [
             [
-                "20dbb0dca0f7b992",
-                "075151fe1959e373",
-                "1da37258dace598c"
+                "075151fe1959e373"
             ]
         ]
     },
@@ -3568,29 +3566,104 @@
         ]
     },
     {
-        "id": "1da37258dace598c",
-        "type": "ui_numeric",
+        "id": "8dc12b424496c4ab",
+        "type": "inject",
         "z": "f99f61d176d88850",
         "g": "55bdfefc3ec401d1",
         "name": "",
-        "label": "numeric",
-        "tooltip": "",
-        "group": "2af2e23a3cac9b4d",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "format": "{{value}}",
-        "min": 0,
-        "max": 10,
-        "step": 1,
-        "className": "",
-        "x": 840,
-        "y": 540,
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 600,
         "wires": [
+            [
+                "2acc780f667d9935"
+            ]
+        ]
+    },
+    {
+        "id": "2acc780f667d9935",
+        "type": "exec",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "command": "sudo raspi-config nonint enable_overlayfs",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Enable overlay",
+        "x": 340,
+        "y": 600,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "edcb7cc43a9d7777",
+        "type": "inject",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 660,
+        "wires": [
+            [
+                "b4a6f608a2d5c216"
+            ]
+        ]
+    },
+    {
+        "id": "b4a6f608a2d5c216",
+        "type": "exec",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "command": "sudo raspi-config nonint disable_overlayfs",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Disable overlay",
+        "x": 340,
+        "y": 660,
+        "wires": [
+            [],
+            [],
             []
         ]
     },
