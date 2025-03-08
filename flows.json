@@ -4119,7 +4119,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1280,
+        "x": 900,
         "y": 1440,
         "wires": [
             []
@@ -4150,23 +4150,23 @@
         "y": 1440,
         "wires": [
             [
-                "709d013407ab5d39"
+                "45d357f3962dc5ea"
             ]
         ]
     },
     {
-        "id": "709d013407ab5d39",
-        "type": "split",
+        "id": "45d357f3962dc5ea",
+        "type": "function",
         "z": "f99f61d176d88850",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "property": "payload",
-        "x": 830,
+        "name": "function 1",
+        "func": "// Initialiser le tableau de stockage s'il n'existe pas encore\nvar buffer = context.get(\"buffer\") || [];\n\n// Ajouter le nouveau message au tampon\nbuffer.push(msg.payload);\n\n// Garder seulement les 50 derniers messages\nif (buffer.length > 50) {\n    buffer.shift();\n}\n\n// Sauvegarder le tampon dans le contexte\ncontext.set(\"buffer\", buffer);\n\n// Construire un message pour l'affichage\nmsg.payload = buffer.join(\"\\n\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
         "y": 1440,
         "wires": [
             [
