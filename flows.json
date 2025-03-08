@@ -4013,7 +4013,9 @@
             [
                 "45d357f3962dc5ea"
             ],
-            [],
+            [
+                "22dc0f9ef3ff804e"
+            ],
             []
         ]
     },
@@ -4204,7 +4206,7 @@
         "to": "",
         "reg": false,
         "x": 300,
-        "y": 1520,
+        "y": 1540,
         "wires": [
             [
                 "51ef47107bcb28e5"
@@ -4220,14 +4222,77 @@
         "highlight": "",
         "sendall": false,
         "outputs": 1,
-        "ok": "Continuer",
-        "cancel": "Abandonner",
+        "ok": "OK",
+        "cancel": "",
         "raw": false,
         "className": "",
         "topic": "",
         "name": "Confirmation",
         "x": 470,
-        "y": 1520,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "51e6eda2cc6ab22b",
+        "type": "catch",
+        "z": "f99f61d176d88850",
+        "name": "",
+        "scope": [
+            "6ce113d125a338e9"
+        ],
+        "uncaught": false,
+        "x": 140,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22dc0f9ef3ff804e",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Erreur lors de la sauvegarde ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 1500,
+        "wires": [
+            [
+                "3605c82620d35cfe"
+            ]
+        ]
+    },
+    {
+        "id": "3605c82620d35cfe",
+        "type": "ui_toast",
+        "z": "f99f61d176d88850",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Confirmation",
+        "x": 630,
+        "y": 1500,
         "wires": [
             []
         ]
