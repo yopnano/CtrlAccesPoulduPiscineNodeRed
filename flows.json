@@ -5121,7 +5121,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Attention :  Vous la persistance des données n'est pas activée, les modifications apportées ne seront pas sauvegardées, veuillez désactiver l'overlay FS pour conserver les modifications",
+                "to": "Attention :  La persistance des données n'est pas activée, les modifications apportées ne seront pas sauvegardées, veuillez désactiver l'overlay FS pour conserver les modifications",
                 "tot": "str"
             }
         ],
