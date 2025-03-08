@@ -3927,6 +3927,63 @@
         "x": 150,
         "y": 1360,
         "wires": [
+            [
+                "1e70446861b72795"
+            ]
+        ]
+    },
+    {
+        "id": "1e70446861b72795",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Préparation à la sauvegarde",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Veuillez connecter le support de sauvegarde sur un des ports USB, assurez vous qu'il n'y ai pas d'autre support au quel cas leurs données seront effacées !",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 1360,
+        "wires": [
+            [
+                "f6d01392433f96a3"
+            ]
+        ]
+    },
+    {
+        "id": "f6d01392433f96a3",
+        "type": "ui_toast",
+        "z": "f99f61d176d88850",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Oui",
+        "cancel": "Annuler",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Confirmation",
+        "x": 530,
+        "y": 1360,
+        "wires": [
             []
         ]
     },
