@@ -4119,10 +4119,12 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 900,
+        "x": 1020,
         "y": 1440,
         "wires": [
-            []
+            [
+                "af940478657f7509"
+            ]
         ]
     },
     {
@@ -4173,6 +4175,27 @@
                 "6ae9595f6861b96e"
             ]
         ]
+    },
+    {
+        "id": "af940478657f7509",
+        "type": "ui_text",
+        "z": "f99f61d176d88850",
+        "group": "2af2e23a3cac9b4d",
+        "order": 6,
+        "width": "6",
+        "height": "7",
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1190,
+        "y": 1440,
+        "wires": []
     },
     {
         "id": "bf529392d7957bf4",
