@@ -3833,8 +3833,7 @@
         "g": "ecc3d44747b5a6e4",
         "name": "link in 1",
         "links": [
-            "0f81b8053dae08d2",
-            "3c72da901260cc2f"
+            "0f81b8053dae08d2"
         ],
         "x": 655,
         "y": 860,
@@ -3903,6 +3902,32 @@
             [
                 "69617daa390db277"
             ]
+        ]
+    },
+    {
+        "id": "dbabb5e702dc4941",
+        "type": "ui_button",
+        "z": "f99f61d176d88850",
+        "name": "",
+        "group": "2af2e23a3cac9b4d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Sauvegarde USB",
+        "tooltip": "",
+        "color": "BLACK",
+        "bgcolor": "BLUE",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 1360,
+        "wires": [
+            []
         ]
     },
     {
