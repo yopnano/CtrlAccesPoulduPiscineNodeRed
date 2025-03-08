@@ -4116,7 +4116,7 @@
         "name": "",
         "order": 7,
         "width": "6",
-        "height": "2",
+        "height": "5",
         "format": "<div id=\"debugMessages\" style=\"height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 5px;\">\n    <span ng-bind-html=\"msg.payload\"></span>\n</div>\n\n<script>\n    // Observer les changements pour déclencher le défilement\n    (function() {\n        var elem = document.getElementById('debugMessages');\n        var observer = new MutationObserver(() => {\n            if (elem) {\n                setTimeout(() => { elem.scrollTop = elem.scrollHeight; }, 100);\n            }\n        });\n\n        observer.observe(elem, { childList: true, subtree: true });\n    })();\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
