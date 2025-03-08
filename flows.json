@@ -4163,10 +4163,10 @@
         "spltType": "str",
         "arraySplt": 1,
         "arraySpltType": "len",
-        "stream": true,
+        "stream": false,
         "addname": "",
         "property": "payload",
-        "x": 750,
+        "x": 830,
         "y": 1440,
         "wires": [
             [
