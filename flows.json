@@ -611,6 +611,40 @@
         "h": 202
     },
     {
+        "id": "72d8a25691f036aa",
+        "type": "group",
+        "z": "f99f61d176d88850",
+        "name": "Sauvegarde (manuelle)",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#dbcbe7",
+            "label": true,
+            "label-position": "n",
+            "color": "#000000"
+        },
+        "nodes": [
+            "dbabb5e702dc4941",
+            "1e70446861b72795",
+            "f6d01392433f96a3",
+            "91c6cb4a6150d065",
+            "6ce113d125a338e9",
+            "ddaad0ad579a37cf",
+            "eca8a48f8e9ec8d1",
+            "177144c83549d01d",
+            "bf6081453272a9a9",
+            "6ae9595f6861b96e",
+            "45d357f3962dc5ea",
+            "044c26a64ef9a625",
+            "51ef47107bcb28e5",
+            "ec5ece38a7e0f659",
+            "394bcbfa64d4c0ae"
+        ],
+        "x": 34,
+        "y": 1319,
+        "w": 1132,
+        "h": 282
+    },
+    {
         "id": "a14588abf773c2cf",
         "type": "ui_tab",
         "name": "Accueil",
@@ -3885,6 +3919,7 @@
         "id": "dbabb5e702dc4941",
         "type": "ui_button",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "name": "",
         "group": "2af2e23a3cac9b4d",
         "order": 5,
@@ -3902,7 +3937,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 150,
-        "y": 1360,
+        "y": 1380,
         "wires": [
             [
                 "eca8a48f8e9ec8d1"
@@ -3913,6 +3948,7 @@
         "id": "1e70446861b72795",
         "type": "change",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "name": "Message",
         "rules": [
             {
@@ -3936,7 +3972,7 @@
         "to": "",
         "reg": false,
         "x": 760,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
                 "f6d01392433f96a3"
@@ -3947,6 +3983,7 @@
         "id": "f6d01392433f96a3",
         "type": "ui_toast",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -3959,7 +3996,7 @@
         "topic": "",
         "name": "Confirmation",
         "x": 930,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
                 "91c6cb4a6150d065"
@@ -3970,6 +4007,7 @@
         "id": "91c6cb4a6150d065",
         "type": "switch",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "name": "Choix",
         "property": "payload",
         "propertyType": "msg",
@@ -3987,7 +4025,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1090,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
                 "6ce113d125a338e9"
@@ -3999,6 +4037,7 @@
         "id": "6ce113d125a338e9",
         "type": "exec",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "command": "sudo rpi-clone -v -u sda",
         "addpay": "",
         "append": "",
@@ -4008,7 +4047,7 @@
         "oldrc": false,
         "name": "",
         "x": 290,
-        "y": 1460,
+        "y": 1480,
         "wires": [
             [
                 "45d357f3962dc5ea"
@@ -4025,6 +4064,7 @@
         "id": "ddaad0ad579a37cf",
         "type": "change",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "name": "Message",
         "rules": [
             {
@@ -4048,7 +4088,7 @@
         "to": "",
         "reg": false,
         "x": 760,
-        "y": 1340,
+        "y": 1360,
         "wires": [
             [
                 "bf6081453272a9a9"
@@ -4059,6 +4099,7 @@
         "id": "eca8a48f8e9ec8d1",
         "type": "link call",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "name": "",
         "links": [
             "bc5a4ea7360d3fb0"
@@ -4066,7 +4107,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 380,
-        "y": 1360,
+        "y": 1380,
         "wires": [
             [
                 "177144c83549d01d"
@@ -4077,6 +4118,7 @@
         "id": "177144c83549d01d",
         "type": "switch",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "name": "Compare",
         "property": "payload",
         "propertyType": "msg",
@@ -4092,7 +4134,7 @@
         "repair": false,
         "outputs": 2,
         "x": 580,
-        "y": 1360,
+        "y": 1380,
         "wires": [
             [
                 "ddaad0ad579a37cf"
@@ -4106,6 +4148,7 @@
         "id": "bf6081453272a9a9",
         "type": "ui_toast",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -4118,7 +4161,7 @@
         "topic": "",
         "name": "ConfirmationOverlay",
         "x": 960,
-        "y": 1340,
+        "y": 1360,
         "wires": [
             []
         ]
@@ -4127,6 +4170,7 @@
         "id": "6ae9595f6861b96e",
         "type": "ui_template",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "group": "82bbeaedab2dd32c",
         "name": "",
         "order": 6,
@@ -4139,7 +4183,7 @@
         "templateScope": "local",
         "className": "",
         "x": 880,
-        "y": 1460,
+        "y": 1480,
         "wires": [
             []
         ]
@@ -4148,6 +4192,7 @@
         "id": "45d357f3962dc5ea",
         "type": "function",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "name": "Tampon de message",
         "func": "// Initialiser le tableau de stockage s'il n'existe pas encore\nvar buffer = context.get(\"buffer\") || [];\n\n// Ajouter le nouveau message au tampon\nbuffer.push(msg.payload);\n\n// Garder seulement les 50 derniers messages\nif (buffer.length > 50) {\n    buffer.shift();\n}\n\n// Sauvegarder le tampon dans le contexte\ncontext.set(\"buffer\", buffer);\n\n// Ajoute un saut de ligne HTML pour un affichage correct\nmsg.payload = buffer.join(\"<br>\");\n\nreturn msg;",
         "outputs": 1,
@@ -4157,7 +4202,7 @@
         "finalize": "",
         "libs": [],
         "x": 660,
-        "y": 1460,
+        "y": 1480,
         "wires": [
             [
                 "6ae9595f6861b96e"
@@ -4168,6 +4213,7 @@
         "id": "044c26a64ef9a625",
         "type": "change",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "name": "Message",
         "rules": [
             {
@@ -4191,7 +4237,7 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 1500,
+        "y": 1520,
         "wires": [
             [
                 "51ef47107bcb28e5"
@@ -4202,6 +4248,7 @@
         "id": "51ef47107bcb28e5",
         "type": "ui_toast",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -4214,7 +4261,7 @@
         "topic": "",
         "name": "Notification",
         "x": 890,
-        "y": 1520,
+        "y": 1540,
         "wires": [
             []
         ]
@@ -4223,6 +4270,7 @@
         "id": "ec5ece38a7e0f659",
         "type": "switch",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -4240,7 +4288,7 @@
         "repair": false,
         "outputs": 2,
         "x": 520,
-        "y": 1520,
+        "y": 1540,
         "wires": [
             [
                 "044c26a64ef9a625"
@@ -4254,6 +4302,7 @@
         "id": "394bcbfa64d4c0ae",
         "type": "change",
         "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
         "name": "Message",
         "rules": [
             {
@@ -4277,7 +4326,7 @@
         "to": "",
         "reg": false,
         "x": 700,
-        "y": 1540,
+        "y": 1560,
         "wires": [
             [
                 "51ef47107bcb28e5"
