@@ -3876,7 +3876,7 @@
         "z": "f99f61d176d88850",
         "name": "",
         "group": "2af2e23a3cac9b4d",
-        "order": 4,
+        "order": 5,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -4110,7 +4110,7 @@
         "z": "f99f61d176d88850",
         "group": "2af2e23a3cac9b4d",
         "name": "",
-        "order": 5,
+        "order": 7,
         "width": "6",
         "height": "9",
         "format": "<div ng-bind-html=\"msg.payload\"></div>",
@@ -4119,12 +4119,10 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1020,
-        "y": 1440,
+        "x": 900,
+        "y": 1500,
         "wires": [
-            [
-                "af940478657f7509"
-            ]
+            []
         ]
     },
     {
@@ -4172,7 +4170,7 @@
         "y": 1440,
         "wires": [
             [
-                "6ae9595f6861b96e"
+                "af940478657f7509"
             ]
         ]
     },
@@ -4183,7 +4181,7 @@
         "group": "2af2e23a3cac9b4d",
         "order": 6,
         "width": "6",
-        "height": "7",
+        "height": "3",
         "name": "",
         "label": "text",
         "format": "{{msg.payload}}",
@@ -4193,7 +4191,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1190,
+        "x": 890,
         "y": 1440,
         "wires": []
     },
