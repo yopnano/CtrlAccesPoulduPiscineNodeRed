@@ -3978,7 +3978,9 @@
         "x": 1090,
         "y": 1380,
         "wires": [
-            [],
+            [
+                "6ce113d125a338e9"
+            ],
             []
         ]
     },
@@ -3994,10 +3996,12 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 1300,
-        "y": 1380,
+        "x": 280,
+        "y": 1460,
         "wires": [
-            [],
+            [
+                "45d357f3962dc5ea"
+            ],
             [],
             []
         ]
@@ -4119,39 +4123,10 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1000,
-        "y": 1440,
+        "x": 780,
+        "y": 1460,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "7038478122199f3f",
-        "type": "inject",
-        "z": "f99f61d176d88850",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 570,
-        "y": 1440,
-        "wires": [
-            [
-                "45d357f3962dc5ea"
-            ]
         ]
     },
     {
@@ -4166,12 +4141,84 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 1440,
+        "x": 560,
+        "y": 1460,
         "wires": [
             [
                 "6ae9595f6861b96e"
             ]
+        ]
+    },
+    {
+        "id": "1fa5cf3caa274b6d",
+        "type": "complete",
+        "z": "f99f61d176d88850",
+        "name": "",
+        "scope": [
+            "6ce113d125a338e9"
+        ],
+        "uncaught": false,
+        "x": 140,
+        "y": 1520,
+        "wires": [
+            [
+                "044c26a64ef9a625"
+            ]
+        ]
+    },
+    {
+        "id": "044c26a64ef9a625",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Sauvegarde terminée",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "La sauvegarde est achevée, vous pouvez retirer le support de sauvegarde",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 1520,
+        "wires": [
+            [
+                "51ef47107bcb28e5"
+            ]
+        ]
+    },
+    {
+        "id": "51ef47107bcb28e5",
+        "type": "ui_toast",
+        "z": "f99f61d176d88850",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Continuer",
+        "cancel": "Abandonner",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Confirmation",
+        "x": 470,
+        "y": 1520,
+        "wires": [
+            []
         ]
     },
     {
