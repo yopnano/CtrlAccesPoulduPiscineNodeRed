@@ -3314,7 +3314,7 @@
         "z": "f99f61d176d88850",
         "g": "55bdfefc3ec401d1",
         "name": "",
-        "events": "all",
+        "events": "connect",
         "x": 120,
         "y": 600,
         "wires": [
