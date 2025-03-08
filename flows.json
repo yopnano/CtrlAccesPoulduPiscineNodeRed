@@ -3894,7 +3894,7 @@
         "y": 1360,
         "wires": [
             [
-                "1e70446861b72795"
+                "eca8a48f8e9ec8d1"
             ]
         ]
     },
@@ -3924,8 +3924,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 360,
-        "y": 1360,
+        "x": 760,
+        "y": 1380,
         "wires": [
             [
                 "f6d01392433f96a3"
@@ -3941,14 +3941,188 @@
         "highlight": "",
         "sendall": false,
         "outputs": 1,
-        "ok": "Oui",
-        "cancel": "Annuler",
+        "ok": "Continuer",
+        "cancel": "Abandonner",
         "raw": false,
         "className": "",
         "topic": "",
         "name": "Confirmation",
-        "x": 530,
+        "x": 930,
+        "y": 1380,
+        "wires": [
+            [
+                "91c6cb4a6150d065"
+            ]
+        ]
+    },
+    {
+        "id": "91c6cb4a6150d065",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "name": "Choix",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Continuer",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 1090,
+        "y": 1380,
+        "wires": [
+            [
+                "6ae9595f6861b96e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6ce113d125a338e9",
+        "type": "exec",
+        "z": "f99f61d176d88850",
+        "command": "sudo rpi-clone -u sda",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1300,
+        "y": 1380,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ddaad0ad579a37cf",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Persistance des données désactivée",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Une sauvegarde ne peut être réaslisée seulement si l'Overlay FS est désactivé",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 1340,
+        "wires": [
+            [
+                "bf6081453272a9a9"
+            ]
+        ]
+    },
+    {
+        "id": "eca8a48f8e9ec8d1",
+        "type": "link call",
+        "z": "f99f61d176d88850",
+        "name": "",
+        "links": [
+            "bc5a4ea7360d3fb0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 380,
         "y": 1360,
+        "wires": [
+            [
+                "177144c83549d01d"
+            ]
+        ]
+    },
+    {
+        "id": "177144c83549d01d",
+        "type": "switch",
+        "z": "f99f61d176d88850",
+        "name": "Compare",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 580,
+        "y": 1360,
+        "wires": [
+            [
+                "ddaad0ad579a37cf"
+            ],
+            [
+                "1e70446861b72795"
+            ]
+        ]
+    },
+    {
+        "id": "bf6081453272a9a9",
+        "type": "ui_toast",
+        "z": "f99f61d176d88850",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "j'ai compris",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "ConfirmationOverlay",
+        "x": 960,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ae9595f6861b96e",
+        "type": "ui_template",
+        "z": "f99f61d176d88850",
+        "group": "2af2e23a3cac9b4d",
+        "name": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1280,
+        "y": 1440,
         "wires": [
             []
         ]
@@ -5200,7 +5374,7 @@
         "randomFirst": "1",
         "randomLast": "5",
         "randomUnits": "seconds",
-        "drop": false,
+        "drop": true,
         "allowrate": false,
         "outputs": 1,
         "x": 180,
