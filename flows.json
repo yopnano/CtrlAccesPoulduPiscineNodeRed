@@ -4150,7 +4150,7 @@
         "y": 1440,
         "wires": [
             [
-                "fe56b4b227ab1b5e"
+                "709d013407ab5d39"
             ]
         ]
     },
@@ -4175,11 +4175,31 @@
         "reduceInit": "",
         "reduceInitType": "num",
         "reduceFixup": "",
-        "x": 830,
+        "x": 930,
         "y": 1440,
         "wires": [
             [
                 "6ae9595f6861b96e"
+            ]
+        ]
+    },
+    {
+        "id": "709d013407ab5d39",
+        "type": "split",
+        "z": "f99f61d176d88850",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": true,
+        "addname": "",
+        "property": "payload",
+        "x": 750,
+        "y": 1440,
+        "wires": [
+            [
+                "fe56b4b227ab1b5e"
             ]
         ]
     },
