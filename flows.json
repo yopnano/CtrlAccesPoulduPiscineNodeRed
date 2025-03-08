@@ -5114,14 +5114,14 @@
                 "t": "set",
                 "p": "topic",
                 "pt": "msg",
-                "to": "Persistance des données non activée",
+                "to": "Persistance des données désactivée",
                 "tot": "str"
             },
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Attention :  vous n'avez pas désactivé l'overlay FS, vos modifications seront perdues après un redémarrage",
+                "to": "Attention :  Vous la persistance des données n'est pas activée, les modifications apportées ne seront pas sauvegardées, veuillez désactiver l'overlay FS pour conserver les modifications",
                 "tot": "str"
             }
         ],
