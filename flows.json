@@ -28,7 +28,6 @@
         "type": "tab",
         "label": "Communication",
         "disabled": false,
-        "locked": true,
         "info": "",
         "env": []
     },
@@ -170,7 +169,8 @@
             "71778f27525cd34a",
             "bdba2b4f959a87a0",
             "70e930a250435c8a",
-            "7120fb30ecfc74af"
+            "7120fb30ecfc74af",
+            "91f121d8e4fc121f"
         ],
         "x": 24,
         "y": 19,
@@ -229,7 +229,8 @@
             "6c65b544c9dba5ad",
             "a306b64fd90323a8",
             "3031944d6dea631e",
-            "9926e8fc24a9d1f3"
+            "9926e8fc24a9d1f3",
+            "795a1cc065d2ef21"
         ],
         "x": 24,
         "y": 519,
@@ -309,11 +310,13 @@
             "3e98501042490dc4",
             "eeb2b765754f01b8",
             "653ed643d71f86fe",
-            "745cd382c136fa23"
+            "745cd382c136fa23",
+            "aa1fbc099d5980f6",
+            "b1b6d2fc329b3e14"
         ],
         "x": 34,
         "y": 759,
-        "w": 1072,
+        "w": 1092,
         "h": 142
     },
     {
@@ -336,7 +339,8 @@
             "89bd908fa4185299",
             "2de3d6d6cea2f8fc",
             "d5a56c3e54241e69",
-            "3847267b4923ef9c"
+            "3847267b4923ef9c",
+            "1b6ba12b75413107"
         ],
         "x": 28,
         "y": 919,
@@ -395,7 +399,8 @@
             "b0cc9c632e5568e7",
             "ab73f302936e1e51",
             "d01648807342866a",
-            "703d03dc2970af4b"
+            "703d03dc2970af4b",
+            "5f6101dd43ef9c59"
         ],
         "x": 14,
         "y": 279,
@@ -570,12 +575,13 @@
             "0f81b8053dae08d2",
             "bc5a4ea7360d3fb0",
             "1935b7ba37d53883",
-            "28d2f5fee338284f"
+            "28d2f5fee338284f",
+            "b7180b8e2364fd5b"
         ],
         "x": 24,
         "y": 399,
         "w": 1302,
-        "h": 322
+        "h": 342
     },
     {
         "id": "3847267b4923ef9c",
@@ -603,7 +609,8 @@
             "cbd62722f0d838dc",
             "ac94056f1d5b909d",
             "a5218aea095da7bc",
-            "b7049679b6722877"
+            "b7049679b6722877",
+            "161486e9bfed07d1"
         ],
         "x": 54,
         "y": 1059,
@@ -2543,7 +2550,8 @@
         "wires": [
             [
                 "905dfca79840796c",
-                "71778f27525cd34a"
+                "71778f27525cd34a",
+                "91f121d8e4fc121f"
             ]
         ]
     },
@@ -2572,7 +2580,8 @@
         "wires": [
             [
                 "905dfca79840796c",
-                "71778f27525cd34a"
+                "71778f27525cd34a",
+                "91f121d8e4fc121f"
             ]
         ]
     },
@@ -2729,7 +2738,8 @@
         "y": 960,
         "wires": [
             [
-                "00e10551be067ba2"
+                "00e10551be067ba2",
+                "1b6ba12b75413107"
             ]
         ]
     },
@@ -2819,7 +2829,8 @@
         "y": 820,
         "wires": [
             [
-                "42bf7d4dce6fc68b"
+                "42bf7d4dce6fc68b",
+                "b1b6d2fc329b3e14"
             ]
         ]
     },
@@ -2898,7 +2909,8 @@
         "y": 800,
         "wires": [
             [
-                "3e98501042490dc4"
+                "3e98501042490dc4",
+                "aa1fbc099d5980f6"
             ]
         ]
     },
@@ -3043,7 +3055,8 @@
         "wires": [
             [
                 "9433913b02703e35",
-                "0b3133aedd88273e"
+                "0b3133aedd88273e",
+                "161486e9bfed07d1"
             ]
         ]
     },
@@ -3176,7 +3189,8 @@
         "wires": [
             [
                 "9433913b02703e35",
-                "0b3133aedd88273e"
+                "0b3133aedd88273e",
+                "161486e9bfed07d1"
             ]
         ]
     },
@@ -3212,7 +3226,8 @@
         "wires": [
             [
                 "9433913b02703e35",
-                "0b3133aedd88273e"
+                "0b3133aedd88273e",
+                "161486e9bfed07d1"
             ]
         ]
     },
@@ -3645,7 +3660,8 @@
         "y": 660,
         "wires": [
             [
-                "50707c177d932162"
+                "50707c177d932162",
+                "b7180b8e2364fd5b"
             ]
         ]
     },
@@ -4350,6 +4366,84 @@
         "wires": []
     },
     {
+        "id": "161486e9bfed07d1",
+        "type": "ui_audio",
+        "z": "f99f61d176d88850",
+        "g": "3847267b4923ef9c",
+        "name": "",
+        "group": "2af2e23a3cac9b4d",
+        "voice": "Microsoft Hortense - French (France)",
+        "always": true,
+        "x": 900,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "aa1fbc099d5980f6",
+        "type": "ui_audio",
+        "z": "f99f61d176d88850",
+        "g": "ecc3d44747b5a6e4",
+        "name": "",
+        "group": "2af2e23a3cac9b4d",
+        "voice": "Microsoft Hortense - French (France)",
+        "always": true,
+        "x": 1040,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "b1b6d2fc329b3e14",
+        "type": "ui_audio",
+        "z": "f99f61d176d88850",
+        "g": "ecc3d44747b5a6e4",
+        "name": "",
+        "group": "2af2e23a3cac9b4d",
+        "voice": "Microsoft Hortense - French (France)",
+        "always": true,
+        "x": 460,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "1b6ba12b75413107",
+        "type": "ui_audio",
+        "z": "f99f61d176d88850",
+        "g": "2473d132d401207a",
+        "name": "",
+        "group": "2af2e23a3cac9b4d",
+        "voice": "Microsoft Hortense - French (France)",
+        "always": true,
+        "x": 460,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "b7180b8e2364fd5b",
+        "type": "ui_audio",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "",
+        "group": "2af2e23a3cac9b4d",
+        "voice": "Microsoft Hortense - French (France)",
+        "always": true,
+        "x": 340,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "91f121d8e4fc121f",
+        "type": "ui_audio",
+        "z": "f99f61d176d88850",
+        "g": "08523bcc635d9f44",
+        "name": "",
+        "group": "2af2e23a3cac9b4d",
+        "voice": "Microsoft Hortense - French (France)",
+        "always": true,
+        "x": 1220,
+        "y": 180,
+        "wires": []
+    },
+    {
         "id": "bf529392d7957bf4",
         "type": "file in",
         "z": "b7fb87140232fe9d",
@@ -4534,7 +4628,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 770,
-        "y": 660,
+        "y": 680,
         "wires": [
             [
                 "6c65b544c9dba5ad"
@@ -5012,7 +5106,7 @@
         "overwriteFile": "false",
         "encoding": "none",
         "x": 790,
-        "y": 620,
+        "y": 640,
         "wires": [
             [
                 "6c65b544c9dba5ad"
@@ -5271,7 +5365,7 @@
             "beaa458f9661cf23"
         ],
         "x": 905,
-        "y": 640,
+        "y": 660,
         "wires": []
     },
     {
@@ -5475,7 +5569,8 @@
         "wires": [
             [
                 "3031944d6dea631e",
-                "6c65b544c9dba5ad"
+                "6c65b544c9dba5ad",
+                "795a1cc065d2ef21"
             ],
             [
                 "c18097db6ea8c49a"
@@ -5606,6 +5701,19 @@
                 "0f4dd6a43470ed40"
             ]
         ]
+    },
+    {
+        "id": "795a1cc065d2ef21",
+        "type": "ui_audio",
+        "z": "b7fb87140232fe9d",
+        "g": "5444c772b7bef63c",
+        "name": "",
+        "group": "2af2e23a3cac9b4d",
+        "voice": "Microsoft Hortense - French (France)",
+        "always": true,
+        "x": 860,
+        "y": 600,
+        "wires": []
     },
     {
         "id": "78bc32fd489261d1",
@@ -6609,7 +6717,8 @@
         "y": 360,
         "wires": [
             [
-                "ab73f302936e1e51"
+                "ab73f302936e1e51",
+                "5f6101dd43ef9c59"
             ]
         ]
     },
@@ -7201,5 +7310,18 @@
             ]
         ],
         "info": "Conversion des données Json en objet javascript (objet utilisé par Node-RED)"
+    },
+    {
+        "id": "5f6101dd43ef9c59",
+        "type": "ui_audio",
+        "z": "2bda734229a070eb",
+        "g": "653da2730ee03df8",
+        "name": "",
+        "group": "2af2e23a3cac9b4d",
+        "voice": "Microsoft Hortense - French (France)",
+        "always": true,
+        "x": 1340,
+        "y": 400,
+        "wires": []
     }
 ]
