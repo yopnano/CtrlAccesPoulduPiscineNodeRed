@@ -4155,35 +4155,6 @@
         ]
     },
     {
-        "id": "fe56b4b227ab1b5e",
-        "type": "join",
-        "z": "f99f61d176d88850",
-        "name": "",
-        "mode": "auto",
-        "build": "object",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "useparts": false,
-        "accumulate": true,
-        "timeout": "",
-        "count": "",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "num",
-        "reduceFixup": "",
-        "x": 930,
-        "y": 1440,
-        "wires": [
-            [
-                "6ae9595f6861b96e"
-            ]
-        ]
-    },
-    {
         "id": "709d013407ab5d39",
         "type": "split",
         "z": "f99f61d176d88850",
@@ -4199,7 +4170,7 @@
         "y": 1440,
         "wires": [
             [
-                "fe56b4b227ab1b5e"
+                "6ae9595f6861b96e"
             ]
         ]
     },
