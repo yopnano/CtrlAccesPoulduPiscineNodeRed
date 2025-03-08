@@ -4,6 +4,7 @@
         "type": "tab",
         "label": "Contrôle d'accès",
         "disabled": false,
+        "locked": true,
         "info": "",
         "env": []
     },
@@ -12,6 +13,7 @@
         "type": "tab",
         "label": "Interface",
         "disabled": false,
+        "locked": true,
         "info": "",
         "env": []
     },
@@ -20,6 +22,7 @@
         "type": "tab",
         "label": "CSV Badges",
         "disabled": false,
+        "locked": true,
         "info": "",
         "env": []
     },
@@ -28,6 +31,7 @@
         "type": "tab",
         "label": "Communication",
         "disabled": false,
+        "locked": true,
         "info": "",
         "env": []
     },
@@ -36,6 +40,7 @@
         "type": "tab",
         "label": "Parametres",
         "disabled": false,
+        "locked": true,
         "info": "Gestion des fichier de paramétrage\r\n\r\nCe flux permet de modifier les paramètres avec les formulaires disponible sur l'interface web graphique",
         "env": []
     },
