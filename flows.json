@@ -2614,7 +2614,7 @@
         "passthru": false,
         "label": "Arrêter",
         "tooltip": "",
-        "color": "BLACK",
+        "color": "WHITE",
         "bgcolor": "RED",
         "className": "",
         "icon": "",
