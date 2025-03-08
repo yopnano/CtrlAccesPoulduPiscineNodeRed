@@ -4119,7 +4119,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 940,
+        "x": 1000,
         "y": 1440,
         "wires": [
             []
@@ -4158,7 +4158,7 @@
         "id": "45d357f3962dc5ea",
         "type": "function",
         "z": "f99f61d176d88850",
-        "name": "function 1",
+        "name": "Tampon de message",
         "func": "// Initialiser le tableau de stockage s'il n'existe pas encore\nvar buffer = context.get(\"buffer\") || [];\n\n// Ajouter le nouveau message au tampon\nbuffer.push(msg.payload);\n\n// Garder seulement les 50 derniers messages\nif (buffer.length > 50) {\n    buffer.shift();\n}\n\n// Sauvegarder le tampon dans le contexte\ncontext.set(\"buffer\", buffer);\n\n// Ajoute un saut de ligne HTML pour un affichage correct\nmsg.payload = buffer.join(\"<br>\");\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -4166,7 +4166,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
+        "x": 800,
         "y": 1440,
         "wires": [
             [
