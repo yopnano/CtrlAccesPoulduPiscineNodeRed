@@ -4014,7 +4014,6 @@
                 "45d357f3962dc5ea"
             ],
             [
-                "22dc0f9ef3ff804e",
                 "45d357f3962dc5ea"
             ],
             []
@@ -4172,7 +4171,7 @@
             "6ce113d125a338e9"
         ],
         "uncaught": false,
-        "x": 140,
+        "x": 320,
         "y": 1520,
         "wires": [
             [
@@ -4190,14 +4189,14 @@
                 "t": "set",
                 "p": "topic",
                 "pt": "msg",
-                "to": "Sauvegarde terminée",
+                "to": "Fin de la sauvegarde",
                 "tot": "str"
             },
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "La sauvegarde est achevée, vous pouvez retirer le support de sauvegarde",
+                "to": "Arrêt de la tâche de sauvegarde veuillez consulter le statut",
                 "tot": "str"
             }
         ],
@@ -4207,7 +4206,7 @@
         "to": "",
         "reg": false,
         "x": 480,
-        "y": 1540,
+        "y": 1520,
         "wires": [
             [
                 "51ef47107bcb28e5"
@@ -4230,72 +4229,7 @@
         "topic": "",
         "name": "Confirmation",
         "x": 650,
-        "y": 1540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "51e6eda2cc6ab22b",
-        "type": "catch",
-        "z": "f99f61d176d88850",
-        "name": "",
-        "scope": [
-            "6ce113d125a338e9"
-        ],
-        "uncaught": false,
-        "x": 140,
-        "y": 1560,
-        "wires": [
-            [
-                "22dc0f9ef3ff804e"
-            ]
-        ]
-    },
-    {
-        "id": "22dc0f9ef3ff804e",
-        "type": "change",
-        "z": "f99f61d176d88850",
-        "name": "Message",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "Erreur lors de la sauvegarde ",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 480,
-        "y": 1500,
-        "wires": [
-            [
-                "3605c82620d35cfe"
-            ]
-        ]
-    },
-    {
-        "id": "3605c82620d35cfe",
-        "type": "ui_toast",
-        "z": "f99f61d176d88850",
-        "position": "dialog",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": false,
-        "outputs": 1,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "Confirmation",
-        "x": 630,
-        "y": 1500,
+        "y": 1520,
         "wires": [
             []
         ]
