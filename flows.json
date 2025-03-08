@@ -545,7 +545,6 @@
         },
         "nodes": [
             "20dbb0dca0f7b992",
-            "18e19961830cb422",
             "77a92e80ac3347cf",
             "2acc780f667d9935",
             "b4a6f608a2d5c216",
@@ -562,7 +561,6 @@
             "f7798d34c5497d69",
             "dc33e0934e4fcc37",
             "851225d6382973bc",
-            "40e1c58cc35f37d2",
             "a0cd10cfc650656e",
             "1a21dab6bededd94",
             "50707c177d932162",
@@ -3309,21 +3307,6 @@
         ]
     },
     {
-        "id": "18e19961830cb422",
-        "type": "ui_ui_control",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "",
-        "events": "connect",
-        "x": 120,
-        "y": 600,
-        "wires": [
-            [
-                "40e1c58cc35f37d2"
-            ]
-        ]
-    },
-    {
         "id": "77a92e80ac3347cf",
         "type": "exec",
         "z": "f99f61d176d88850",
@@ -3664,23 +3647,6 @@
             [
                 "28d2f5fee338284f"
             ]
-        ]
-    },
-    {
-        "id": "40e1c58cc35f37d2",
-        "type": "link call",
-        "z": "f99f61d176d88850",
-        "g": "55bdfefc3ec401d1",
-        "name": "",
-        "links": [
-            "f7798d34c5497d69"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 320,
-        "y": 600,
-        "wires": [
-            []
         ]
     },
     {
