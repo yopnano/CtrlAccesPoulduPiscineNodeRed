@@ -4176,7 +4176,8 @@
         "y": 1520,
         "wires": [
             [
-                "044c26a64ef9a625"
+                "044c26a64ef9a625",
+                "6a0fe4fc13afee52"
             ]
         ]
     },
@@ -4206,7 +4207,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 300,
+        "x": 480,
         "y": 1540,
         "wires": [
             [
@@ -4229,7 +4230,7 @@
         "className": "",
         "topic": "",
         "name": "Confirmation",
-        "x": 470,
+        "x": 650,
         "y": 1540,
         "wires": [
             []
@@ -4297,6 +4298,22 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "6a0fe4fc13afee52",
+        "type": "debug",
+        "z": "f99f61d176d88850",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 1600,
+        "wires": []
     },
     {
         "id": "bf529392d7957bf4",
