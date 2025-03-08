@@ -3999,7 +3999,7 @@
         "id": "6ce113d125a338e9",
         "type": "exec",
         "z": "f99f61d176d88850",
-        "command": "sudo rpi-clone -vu sda",
+        "command": "sudo rpi-clone -V -u sda",
         "addpay": "",
         "append": "",
         "useSpawn": "true",
@@ -4007,7 +4007,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 280,
+        "x": 290,
         "y": 1460,
         "wires": [
             [
