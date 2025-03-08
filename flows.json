@@ -3916,7 +3916,7 @@
         "passthru": false,
         "label": "Sauvegarde USB",
         "tooltip": "",
-        "color": "BLACK",
+        "color": "WHITE",
         "bgcolor": "BLUE",
         "className": "",
         "icon": "",
