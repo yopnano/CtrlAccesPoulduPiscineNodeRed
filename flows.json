@@ -3978,12 +3978,8 @@
         "x": 1090,
         "y": 1380,
         "wires": [
-            [
-                "6ae9595f6861b96e"
-            ],
-            [
-                "6ae9595f6861b96e"
-            ]
+            [],
+            []
         ]
     },
     {
@@ -4037,7 +4033,7 @@
         "wires": [
             [
                 "bf6081453272a9a9",
-                "6ae9595f6861b96e"
+                "ae5f63537f95463a"
             ]
         ]
     },
@@ -4128,6 +4124,40 @@
         "y": 1440,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "ae5f63537f95463a",
+        "type": "change",
+        "z": "f99f61d176d88850",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Persistance des données désactivée",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo aliquet lacus vitae gravida. Nam vel augue vitae enim malesuada pretium vel eget justo. Sed mollis sagittis nulla eget porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In varius, est sagittis auctor pharetra, metus lorem sollicitudin mi, nec egestas purus est id velit. Duis pellentesque rutrum nunc eu imperdiet. Nunc at posuere nulla, maximus tincidunt metus.  Pellentesque sollicitudin tortor vel nulla faucibus pretium. Quisque dolor sem, tempus rutrum varius a, fermentum ac erat. Aliquam scelerisque a eros et commodo. Quisque facilisis quis massa venenatis venenatis. Nullam suscipit nisi euismod, accumsan quam sed, dapibus felis. Vivamus egestas urna at neque ultricies ultricies. Donec faucibus nulla in nulla mollis rhoncus. Phasellus sit amet purus ultricies, venenatis eros cursus, pharetra dolor. Mauris a lacinia nulla, vitae eleifend neque. Curabitur eu dolor faucibus, ullamcorper nibh nec, pretium eros. Phasellus mauris nunc, lobortis sed diam non, tempor feugiat urna. Phasellus dapibus diam nulla, a dignissim risus convallis quis.  Praesent in nisl vel ante suscipit ornare efficitur et leo. Vestibulum ultrices dui ac orci auctor, eu maximus sem volutpat. Mauris iaculis dapibus erat, eget lobortis sapien semper vel. Pellentesque sed pellentesque tortor, sed imperdiet urna. Ut at pulvinar nisi. Etiam ut orci posuere, porta velit vitae, lacinia sem. Maecenas molestie luctus est, non placerat augue tempus sit amet. Integer a risus orci. Ut tellus sapien, venenatis finibus porttitor sit amet, vestibulum vel metus. Praesent efficitur bibendum cursus. Nunc sit amet ligula varius, finibus est nec, hendrerit dui. Morbi faucibus pellentesque nibh non aliquet. Nullam accumsan, ipsum non consectetur semper, libero sapien finibus augue, non lacinia ligula ex in dolor. Pellentesque sed neque nibh. Aenean quis euismod nisi, id fringilla lorem. Ut venenatis odio purus, eu viverra nisi vulputate ut.  Aenean vel erat et quam tristique tincidunt. Curabitur dictum diam urna, in tempor tortor porttitor ut. Nullam non metus nec quam aliquam congue eget quis risus. Vestibulum tincidunt libero non blandit rutrum. Integer ac ex vel leo consequat tristique non non nisl. Donec accumsan, ligula sed dignissim commodo, ante dolor suscipit nibh, nec vehicula ipsum nibh ac nulla. Sed aliquam sem vitae libero rutrum, id lacinia nisi cursus. Curabitur sapien nibh, elementum quis varius nec, malesuada a arcu. Quisque pulvinar augue tellus, id ornare eros cursus a.  Mauris fermentum libero at ipsum luctus vulputate. Mauris at tortor libero. Donec maximus ultrices tellus, nec volutpat ex fermentum id. Morbi fringilla ultricies molestie. Quisque iaculis gravida urna, a luctus lectus suscipit ac. Pellentesque lacinia varius molestie. Quisque lacus sapien, euismod eu diam rhoncus, tempus tempus metus.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 1440,
+        "wires": [
+            [
+                "6ae9595f6861b96e"
+            ]
         ]
     },
     {
