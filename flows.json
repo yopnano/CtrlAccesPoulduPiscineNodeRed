@@ -4014,10 +4014,11 @@
                 "45d357f3962dc5ea"
             ],
             [
-                "45d357f3962dc5ea",
-                "22dc0f9ef3ff804e"
+                "45d357f3962dc5ea"
             ],
-            []
+            [
+                "ec5ece38a7e0f659"
+            ]
         ]
     },
     {
@@ -4137,7 +4138,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 780,
+        "x": 880,
         "y": 1460,
         "wires": [
             []
@@ -4155,28 +4156,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 560,
+        "x": 660,
         "y": 1460,
         "wires": [
             [
                 "6ae9595f6861b96e"
-            ]
-        ]
-    },
-    {
-        "id": "1fa5cf3caa274b6d",
-        "type": "complete",
-        "z": "f99f61d176d88850",
-        "name": "",
-        "scope": [
-            "6ce113d125a338e9"
-        ],
-        "uncaught": false,
-        "x": 320,
-        "y": 1540,
-        "wires": [
-            [
-                "044c26a64ef9a625"
             ]
         ]
     },
@@ -4190,14 +4174,14 @@
                 "t": "set",
                 "p": "topic",
                 "pt": "msg",
-                "to": "Fin de la sauvegarde",
+                "to": "Sauvegarde effectuée",
                 "tot": "str"
             },
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Arrêt de la tâche de sauvegarde veuillez consulter le statut",
+                "to": "Sauvegarde terminée vous pouvez retirer le support de sauvegarde",
                 "tot": "str"
             }
         ],
@@ -4206,8 +4190,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 480,
-        "y": 1540,
+        "x": 700,
+        "y": 1500,
         "wires": [
             [
                 "51ef47107bcb28e5"
@@ -4228,36 +4212,46 @@
         "raw": false,
         "className": "",
         "topic": "",
-        "name": "Confirmation",
-        "x": 650,
-        "y": 1540,
+        "name": "Notification",
+        "x": 890,
+        "y": 1520,
         "wires": [
             []
         ]
     },
     {
-        "id": "3605c82620d35cfe",
-        "type": "ui_toast",
+        "id": "ec5ece38a7e0f659",
+        "type": "switch",
         "z": "f99f61d176d88850",
-        "position": "dialog",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": false,
-        "outputs": 1,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "Confirmation",
-        "x": 650,
-        "y": 1500,
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 520,
+        "y": 1520,
         "wires": [
-            []
+            [
+                "044c26a64ef9a625"
+            ],
+            [
+                "394bcbfa64d4c0ae"
+            ]
         ]
     },
     {
-        "id": "22dc0f9ef3ff804e",
+        "id": "394bcbfa64d4c0ae",
         "type": "change",
         "z": "f99f61d176d88850",
         "name": "Message",
@@ -4266,7 +4260,14 @@
                 "t": "set",
                 "p": "topic",
                 "pt": "msg",
-                "to": "Erreur lors de la sauvegarde ",
+                "to": "Echec de la sauvegarde",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Echec de la sauvegarde veuillez consulter le statut",
                 "tot": "str"
             }
         ],
@@ -4275,11 +4276,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 480,
-        "y": 1500,
+        "x": 700,
+        "y": 1540,
         "wires": [
             [
-                "3605c82620d35cfe"
+                "51ef47107bcb28e5"
             ]
         ]
     },
