@@ -4113,14 +4113,14 @@
         "order": 7,
         "width": "6",
         "height": "9",
-        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "format": "<div id=\"debugMessages\" style=\"height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 5px;\">\n    <span ng-bind-html=\"msg.payload\"></span>\n</div>\n\n<script>\n    // Fonction pour défiler vers le bas à chaque mise à jour\n    (function() {\n        var elem = document.getElementById('debugMessages');\n        if (elem) {\n            setTimeout(() => { elem.scrollTop = elem.scrollHeight; }, 100);\n        }\n    })();\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 900,
-        "y": 1500,
+        "x": 940,
+        "y": 1440,
         "wires": [
             []
         ]
@@ -4170,30 +4170,9 @@
         "y": 1440,
         "wires": [
             [
-                "af940478657f7509"
+                "6ae9595f6861b96e"
             ]
         ]
-    },
-    {
-        "id": "af940478657f7509",
-        "type": "ui_text",
-        "z": "f99f61d176d88850",
-        "group": "2af2e23a3cac9b4d",
-        "order": 6,
-        "width": "6",
-        "height": "3",
-        "name": "",
-        "label": "text",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 890,
-        "y": 1440,
-        "wires": []
     },
     {
         "id": "bf529392d7957bf4",
