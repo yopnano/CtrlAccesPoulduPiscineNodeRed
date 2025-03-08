@@ -4274,7 +4274,7 @@
         "z": "f99f61d176d88850",
         "g": "72d8a25691f036aa",
         "name": "",
-        "property": "payload",
+        "property": "payload.code",
         "propertyType": "msg",
         "rules": [
             {
