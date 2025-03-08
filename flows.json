@@ -13,7 +13,6 @@
         "type": "tab",
         "label": "Interface",
         "disabled": false,
-        "locked": true,
         "info": "",
         "env": []
     },
@@ -581,46 +580,14 @@
             "bc5a4ea7360d3fb0",
             "1935b7ba37d53883",
             "28d2f5fee338284f",
-            "b7180b8e2364fd5b"
+            "b7180b8e2364fd5b",
+            "56dce06d6b9ccf91",
+            "1cb7f047769237a0"
         ],
         "x": 24,
         "y": 399,
         "w": 1302,
         "h": 342
-    },
-    {
-        "id": "3847267b4923ef9c",
-        "type": "group",
-        "z": "f99f61d176d88850",
-        "g": "2473d132d401207a",
-        "name": "Arrêt automatique (sur coupure de courant)",
-        "style": {
-            "stroke": "none",
-            "stroke-opacity": "0.2",
-            "fill": "#ffffff",
-            "fill-opacity": "0.6",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "a5007556f23ea3ef",
-            "0b3133aedd88273e",
-            "b66c6ab9aeba59b9",
-            "9433913b02703e35",
-            "ae31fec40099e219",
-            "fb07dd801a0da2cd",
-            "8b6c2fc8a4cf2d75",
-            "79a903e8d5e1195e",
-            "cbd62722f0d838dc",
-            "ac94056f1d5b909d",
-            "a5218aea095da7bc",
-            "b7049679b6722877",
-            "161486e9bfed07d1"
-        ],
-        "x": 54,
-        "y": 1059,
-        "w": 992,
-        "h": 202
     },
     {
         "id": "72d8a25691f036aa",
@@ -656,6 +623,40 @@
         "y": 1319,
         "w": 1132,
         "h": 302
+    },
+    {
+        "id": "3847267b4923ef9c",
+        "type": "group",
+        "z": "f99f61d176d88850",
+        "g": "2473d132d401207a",
+        "name": "Arrêt automatique (sur coupure de courant)",
+        "style": {
+            "stroke": "none",
+            "stroke-opacity": "0.2",
+            "fill": "#ffffff",
+            "fill-opacity": "0.6",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "a5007556f23ea3ef",
+            "0b3133aedd88273e",
+            "b66c6ab9aeba59b9",
+            "9433913b02703e35",
+            "ae31fec40099e219",
+            "fb07dd801a0da2cd",
+            "8b6c2fc8a4cf2d75",
+            "79a903e8d5e1195e",
+            "cbd62722f0d838dc",
+            "ac94056f1d5b909d",
+            "a5218aea095da7bc",
+            "b7049679b6722877",
+            "161486e9bfed07d1"
+        ],
+        "x": 54,
+        "y": 1059,
+        "w": 992,
+        "h": 202
     },
     {
         "id": "a14588abf773c2cf",
@@ -4446,6 +4447,38 @@
         "x": 1220,
         "y": 180,
         "wires": []
+    },
+    {
+        "id": "56dce06d6b9ccf91",
+        "type": "ui_ui_control",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "",
+        "events": "all",
+        "x": 160,
+        "y": 600,
+        "wires": [
+            [
+                "1cb7f047769237a0"
+            ]
+        ]
+    },
+    {
+        "id": "1cb7f047769237a0",
+        "type": "link call",
+        "z": "f99f61d176d88850",
+        "g": "55bdfefc3ec401d1",
+        "name": "Config",
+        "links": [
+            "f7798d34c5497d69"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 310,
+        "y": 600,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "bf529392d7957bf4",
