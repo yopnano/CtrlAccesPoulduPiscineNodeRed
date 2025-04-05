@@ -7435,8 +7435,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 690,
-        "y": 60,
+        "x": 750,
+        "y": 200,
         "wires": [
             []
         ]
@@ -7448,8 +7448,12 @@
         "name": "Mettre à jour CSV",
         "func": "let data = flow.get(\"csvData\") || [];\nlet updated = msg.payload;\n\nfor (let i = 0; i < data.length; i++) {\n    if (data[i].UID === updated.UID) {\n        data[i] = updated;\n        break;\n    }\n}\n\nflow.set(\"csvData\", data);\nmsg.payload = data;\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
-        "x": 1080,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
         "y": 120,
         "wires": [
             [
@@ -7560,7 +7564,7 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 890,
+        "x": 710,
         "y": 120,
         "wires": [
             [
@@ -7580,8 +7584,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
-        "y": 180,
+        "x": 720,
+        "y": 240,
         "wires": []
     },
     {
@@ -7600,8 +7604,7 @@
         "y": 120,
         "wires": [
             [
-                "6e832b57bc1d6d16",
-                "231bf483b6bc7348"
+                "6e832b57bc1d6d16"
             ]
         ]
     }
