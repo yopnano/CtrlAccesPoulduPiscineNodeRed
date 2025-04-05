@@ -4531,7 +4531,7 @@
         "wires": [
             [
                 "f1b989b616a3c2b8",
-                "e7f828a134bdfe5d"
+                "96bf4d6b76488f0e"
             ]
         ]
     },
@@ -5735,10 +5735,30 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 360,
+        "x": 520,
         "y": 60,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "96bf4d6b76488f0e",
+        "type": "split",
+        "z": "b7fb87140232fe9d",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 350,
+        "y": 60,
+        "wires": [
+            [
+                "e7f828a134bdfe5d"
+            ]
         ]
     },
     {
