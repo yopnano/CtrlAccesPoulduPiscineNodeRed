@@ -7501,7 +7501,8 @@
         "y": 160,
         "wires": [
             [
-                "switch_action"
+                "switch_action",
+                "a8a70f7c9ecfb301"
             ]
         ]
     },
@@ -7565,5 +7566,21 @@
             [],
             []
         ]
+    },
+    {
+        "id": "a8a70f7c9ecfb301",
+        "type": "debug",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 120,
+        "wires": []
     }
 ]
