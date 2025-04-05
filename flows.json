@@ -7415,8 +7415,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
-        "y": 80,
+        "x": 730,
+        "y": 100,
         "wires": [
             []
         ]
@@ -7519,8 +7519,7 @@
         "y": 120,
         "wires": [
             [
-                "6e832b57bc1d6d16",
-                "f4c5d055aa2cc4c2"
+                "6e832b57bc1d6d16"
             ]
         ]
     },
@@ -7630,7 +7629,8 @@
         "y": 260,
         "wires": [
             [
-                "ac97fcd7225fceca"
+                "ac97fcd7225fceca",
+                "a8a70f7c9ecfb301"
             ]
         ]
     },
