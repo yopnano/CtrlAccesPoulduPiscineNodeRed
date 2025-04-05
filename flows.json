@@ -7434,8 +7434,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
-        "y": 160,
+        "x": 710,
+        "y": 200,
         "wires": [
             []
         ]
@@ -7561,18 +7561,8 @@
                 }
             },
             {
-                "field": "bpEnable",
-                "title": "Activer / desactiver",
-                "width": "5%",
-                "align": "left",
-                "formatter": "html",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "bpDelete",
-                "title": "Supprimer",
+                "field": "Action",
+                "title": "Actions",
                 "width": "5%",
                 "align": "left",
                 "formatter": "html",
@@ -7616,7 +7606,7 @@
         "type": "function",
         "z": "ca1ccaf40a3d0a3c",
         "name": "Prepare Badge List",
-        "func": "msg.payload = msg.payload.map(badge => ({\n    UID: badge.UID,\n    FirstName: badge.FirstName,\n    LastName: badge.LastName,\n    Group: badge.Group,\n    Active: badge.Active,\n    bpEnable: \"<button>enable</button>\",\n    bpDelete: \"<button>delete</button>\"\n}));\n\nreturn msg;",
+        "func": "msg.payload = msg.payload.map(badge => ({\n    UID: badge.UID,\n    FirstName: badge.FirstName,\n    LastName: badge.LastName,\n    Group: badge.Group,\n    Active: badge.Active,\n    Action: '<button class=\"editBtn\">✏️</button> <button class=\"deleteBtn\">🗑️</button>'\n}));\n\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -7627,25 +7617,8 @@
         "y": 40,
         "wires": [
             [
-                "01df9c8c0a7b7d97",
-                "ac16ff3c48511240"
+                "01df9c8c0a7b7d97"
             ]
         ]
-    },
-    {
-        "id": "ac16ff3c48511240",
-        "type": "debug",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 60,
-        "wires": []
     }
 ]
