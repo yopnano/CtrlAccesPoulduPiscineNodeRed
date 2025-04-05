@@ -42,6 +42,13 @@
         "env": []
     },
     {
+        "id": "ca1ccaf40a3d0a3c",
+        "type": "tab",
+        "label": "CSV Dashboard Editor",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "03abf3d3ef281a57",
         "type": "group",
         "z": "0401eb93d584c99a",
@@ -918,6 +925,25 @@
         "width": 12,
         "collapse": true,
         "className": ""
+    },
+    {
+        "id": "d899ba71b8352df4",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d7771fcfb8b9b3fc",
+        "type": "ui_group",
+        "name": "CSV Editor",
+        "tab": "d899ba71b8352df4",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
     },
     {
         "id": "db65c9d28895a6c5",
@@ -7352,5 +7378,198 @@
         "x": 1340,
         "y": 400,
         "wires": []
+    },
+    {
+        "id": "1e42b4ebaf05364f",
+        "type": "inject",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Charger CSV",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "2",
+        "topic": "",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "1564d88c78e58b64"
+            ]
+        ]
+    },
+    {
+        "id": "1564d88c78e58b64",
+        "type": "file in",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Lire data.csv",
+        "filename": "/tmp/data.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "sendError": false,
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "6e832b57bc1d6d16"
+            ]
+        ]
+    },
+    {
+        "id": "6e832b57bc1d6d16",
+        "type": "csv",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "CSV → JSON",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 480,
+        "y": 120,
+        "wires": [
+            [
+                "f4c5d055aa2cc4c2"
+            ]
+        ]
+    },
+    {
+        "id": "f4c5d055aa2cc4c2",
+        "type": "function",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Stocker dans flow",
+        "func": "flow.set(\"csvData\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 660,
+        "y": 120,
+        "wires": [
+            [
+                "c54164098dc716a7"
+            ]
+        ]
+    },
+    {
+        "id": "c54164098dc716a7",
+        "type": "ui_table",
+        "z": "ca1ccaf40a3d0a3c",
+        "group": "d7771fcfb8b9b3fc",
+        "name": "Éditeur CSV",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 860,
+        "y": 120,
+        "wires": [
+            [
+                "4c128e28b7de4281"
+            ]
+        ]
+    },
+    {
+        "id": "4c128e28b7de4281",
+        "type": "function",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Mettre à jour CSV",
+        "func": "let data = flow.get(\"csvData\") || [];\nlet updated = msg.payload;\n\nfor (let i = 0; i < data.length; i++) {\n    if (data[i].UID === updated.UID) {\n        data[i] = updated;\n        break;\n    }\n}\n\nflow.set(\"csvData\", data);\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1080,
+        "y": 120,
+        "wires": [
+            [
+                "be2e00b23b38fc3c"
+            ]
+        ]
+    },
+    {
+        "id": "be2e00b23b38fc3c",
+        "type": "csv",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "JSON → CSV",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "all",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 1270,
+        "y": 120,
+        "wires": [
+            [
+                "96aeef7990cb4de3"
+            ]
+        ]
+    },
+    {
+        "id": "96aeef7990cb4de3",
+        "type": "file",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Écrire CSV (MAJ)",
+        "filename": "/tmp/data.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1470,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c00884b4c0e1008",
+        "type": "file",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Écrire data.csv",
+        "filename": "/tmp/data.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 350,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "725ef7e4b981cf10",
+        "type": "inject",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Init CSV",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "UID,FirstName,LastName,Group,Active20727FD2,JEAN-CLAUDE / FLORENCE,HERLEDAN,1,true207F4602,JEAN-CLAUDE / FLORENCE,HERLEDAN,1,true23B0991C,JEAN-CLAUDE / FLORENCE,HERLEDAN,2,true206EB252,HERVE,GUEGANNO,1,true207A0A32,HERVE,GUEGANNO,1,true76A8234C,HERVE,GUEGANNO,1,true20709E52,CLAUDE,DANET,1,true206C4CA2,CLAUDE,DANET,1,true20736DF2,THIERRY,BAUTHAMY,1,true20829C32,THIERRY,BAUTHAMY,1,true2063E362,MARTIAL,LE BRAS,1,true",
+        "payloadType": "str",
+        "x": 140,
+        "y": 60,
+        "wires": [
+            [
+                "8c00884b4c0e1008"
+            ]
+        ]
     }
 ]
