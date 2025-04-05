@@ -943,7 +943,7 @@
         "z": "0401eb93d584c99a",
         "g": "03abf3d3ef281a57",
         "name": "RFID",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
