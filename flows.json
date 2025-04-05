@@ -4752,7 +4752,7 @@
             {
                 "field": "uid",
                 "title": "Code",
-                "width": "20px",
+                "width": "15px",
                 "align": "center",
                 "formatter": "plaintext",
                 "formatterParams": {
