@@ -7407,11 +7407,12 @@
         "filenameType": "str",
         "format": "utf8",
         "sendError": false,
-        "x": 320,
+        "x": 310,
         "y": 120,
         "wires": [
             [
-                "6e832b57bc1d6d16"
+                "6e832b57bc1d6d16",
+                "231bf483b6bc7348"
             ]
         ]
     },
@@ -7445,8 +7446,12 @@
         "name": "Stocker dans flow",
         "func": "flow.set(\"csvData\", msg.payload);\nreturn msg;",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
-        "x": 660,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
         "y": 120,
         "wires": [
             [
@@ -7622,5 +7627,21 @@
                 "4c128e28b7de4281"
             ]
         ]
+    },
+    {
+        "id": "231bf483b6bc7348",
+        "type": "debug",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 160,
+        "wires": []
     }
 ]
