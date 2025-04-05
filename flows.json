@@ -7616,7 +7616,7 @@
         "type": "function",
         "z": "ca1ccaf40a3d0a3c",
         "name": "Prepare Badge List",
-        "func": "msg.payload = msg.payload.map(badge => ({\n    badge,\n    bpEnable: \"<button>enable</button>\",\n    bpDelete: \"<button>delete</button>\"\n}));\n\nreturn msg;",
+        "func": "msg.payload = msg.payload.map(({\n    bpEnable: \"<button>enable</button>\",\n    bpDelete: \"<button>delete</button>\"\n}));\n\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
