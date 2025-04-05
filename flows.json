@@ -4772,7 +4772,7 @@
             {
                 "field": "lastname",
                 "title": "Nom",
-                "width": "25%",
+                "width": "35%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
