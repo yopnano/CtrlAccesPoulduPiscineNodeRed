@@ -7418,8 +7418,7 @@
         "wires": [
             [
                 "f4c5d055aa2cc4c2",
-                "231bf483b6bc7348",
-                "01df9c8c0a7b7d97"
+                "c7240eaa003606d3"
             ]
         ]
     },
@@ -7435,8 +7434,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 750,
-        "y": 200,
+        "x": 730,
+        "y": 160,
         "wires": [
             []
         ]
@@ -7544,7 +7543,7 @@
             {
                 "field": "LastName",
                 "title": "Nom",
-                "width": "32%",
+                "width": "28%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -7554,9 +7553,29 @@
             {
                 "field": "FirstName",
                 "title": "Prénom",
-                "width": "36%",
+                "width": "32%",
                 "align": "left",
                 "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "bpEnable",
+                "title": "Activer / desactiver",
+                "width": "5%",
+                "align": "left",
+                "formatter": "html",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "bpDelete",
+                "title": "Supprimer",
+                "width": "5%",
+                "align": "left",
+                "formatter": "html",
                 "formatterParams": {
                     "target": "_blank"
                 }
@@ -7564,29 +7583,13 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 710,
+        "x": 730,
         "y": 120,
         "wires": [
             [
                 "4c128e28b7de4281"
             ]
         ]
-    },
-    {
-        "id": "231bf483b6bc7348",
-        "type": "debug",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 240,
-        "wires": []
     },
     {
         "id": "127f70c84c4bdfc1",
@@ -7605,6 +7608,26 @@
         "wires": [
             [
                 "6e832b57bc1d6d16"
+            ]
+        ]
+    },
+    {
+        "id": "c7240eaa003606d3",
+        "type": "function",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Prepare Badge List",
+        "func": "msg.payload = msg.payload + \n{\n    bpEnable: \"<button>enable</button>\",\n    bpDelete: \"<button>delete</button>\"\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 80,
+        "wires": [
+            [
+                "01df9c8c0a7b7d97"
             ]
         ]
     }
