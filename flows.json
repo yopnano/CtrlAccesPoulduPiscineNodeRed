@@ -915,7 +915,7 @@
         "tab": "0774bc01ee11c4d3",
         "order": 3,
         "disp": true,
-        "width": 39,
+        "width": "20",
         "collapse": true,
         "className": ""
     },
@@ -5731,7 +5731,7 @@
         "name": "",
         "label": "CSV",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "col-center",
         "className": "",
         "style": false,
         "font": "",
