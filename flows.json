@@ -7449,7 +7449,9 @@
         "x": 660,
         "y": 120,
         "wires": [
-            []
+            [
+                "01df9c8c0a7b7d97"
+            ]
         ]
     },
     {
@@ -7547,6 +7549,77 @@
         "wires": [
             [
                 "8c00884b4c0e1008"
+            ]
+        ]
+    },
+    {
+        "id": "01df9c8c0a7b7d97",
+        "type": "ui_table",
+        "z": "ca1ccaf40a3d0a3c",
+        "group": "d7771fcfb8b9b3fc",
+        "name": "Éditeur CSV",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "active",
+                "title": "Activé",
+                "width": "10%",
+                "align": "center",
+                "formatter": "tickCross",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "uid",
+                "title": "Code",
+                "width": "10%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "group",
+                "title": "Type accès",
+                "width": "12%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "lastname",
+                "title": "Nom",
+                "width": "32%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "firstname",
+                "title": "Prénom",
+                "width": "36%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 870,
+        "y": 120,
+        "wires": [
+            [
+                "4c128e28b7de4281"
             ]
         ]
     }
