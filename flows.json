@@ -7675,7 +7675,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
+        "x": 880,
         "y": 260,
         "wires": [
             [
