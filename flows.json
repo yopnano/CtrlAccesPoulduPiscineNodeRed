@@ -7504,8 +7504,8 @@
         "group": "d7771fcfb8b9b3fc",
         "name": "Éditeur CSV",
         "order": 0,
-        "width": 0,
-        "height": 0,
+        "width": "12",
+        "height": "22",
         "columns": [
             {
                 "field": "active",
@@ -7561,7 +7561,7 @@
         "outputs": 1,
         "cts": true,
         "x": 890,
-        "y": 100,
+        "y": 120,
         "wires": [
             [
                 "4c128e28b7de4281"
