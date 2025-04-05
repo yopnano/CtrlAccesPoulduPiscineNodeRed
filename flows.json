@@ -22,7 +22,6 @@
         "type": "tab",
         "label": "CSV Badges",
         "disabled": false,
-        "locked": true,
         "info": "",
         "env": []
     },
@@ -288,7 +287,8 @@
             "01bd06a552790404",
             "428593e904c3f9e3",
             "cdc669b609c0032f",
-            "07cbe2e7971d840e"
+            "07cbe2e7971d840e",
+            "30ad2a8bf4f6fb01"
         ],
         "x": 14,
         "y": 139,
@@ -4799,7 +4799,9 @@
         "x": 1150,
         "y": 220,
         "wires": [
-            []
+            [
+                "30ad2a8bf4f6fb01"
+            ]
         ]
     },
     {
@@ -5751,6 +5753,23 @@
         "always": true,
         "x": 860,
         "y": 600,
+        "wires": []
+    },
+    {
+        "id": "30ad2a8bf4f6fb01",
+        "type": "debug",
+        "z": "b7fb87140232fe9d",
+        "g": "6fb40bcfcadc177b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 280,
         "wires": []
     },
     {
