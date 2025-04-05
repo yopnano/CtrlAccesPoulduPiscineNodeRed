@@ -7615,7 +7615,9 @@
             [
                 "c983179ea7df87da"
             ],
-            []
+            [
+                "3c2f75bccaecc07f"
+            ]
         ]
     },
     {
@@ -7754,5 +7756,41 @@
                 "9bca9ee71771d830"
             ]
         ]
+    },
+    {
+        "id": "3c2f75bccaecc07f",
+        "type": "function",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Modification du CSV",
+        "func": "const rawCsv = flow.get(\"csvRaw\");\nconst updatedRow = flow.get(\"csvJson\")?.row;\n\nif (!rawCsv || !updatedRow || updatedRow.ID === undefined) {\n    node.error(\"Données manquantes ou ID invalide.\");\n    return null;\n}\n\n// 1. Séparer le CSV brut en lignes\nlet lines = rawCsv.split(/\\r?\\n/);\n\n// 2. La première ligne est l'en-tête\nconst headers = lines[0].split(\",\");\n\n// 3. Reconstruire les lignes, en remplaçant celle avec le bon ID\nlet updatedLines = [lines[0]]; // Commence par l'entête\nfor (let i = 1; i < lines.length; i++) {\n    const line = lines[i];\n    if (!line.trim()) continue; // ignore lignes vides\n\n    const values = line.split(\",\");\n    const rowObj = {};\n    headers.forEach((key, idx) => {\n        rowObj[key] = values[idx];\n    });\n\n    if (String(rowObj.ID) === String(updatedRow.ID)) {\n        // Remplace par la ligne mise à jour\n        const newLine = headers.map(h => updatedRow[h] ?? \"\").join(\",\");\n        updatedLines.push(newLine);\n    } else {\n        updatedLines.push(line);\n    }\n}\n\n// 4. Génère le nouveau CSV\nconst newCsv = updatedLines.join(\"\\n\");\n\n// Retourne le CSV mis à jour\nmsg.payload = newCsv;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 300,
+        "wires": [
+            [
+                "2b377951c5ca07c7"
+            ]
+        ]
+    },
+    {
+        "id": "2b377951c5ca07c7",
+        "type": "debug",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 300,
+        "wires": []
     }
 ]
