@@ -819,7 +819,7 @@
         "tab": "0774bc01ee11c4d3",
         "order": 2,
         "disp": true,
-        "width": 29,
+        "width": 30,
         "collapse": true,
         "className": ""
     },
@@ -4603,7 +4603,7 @@
         "name": "Form Badge",
         "label": "Edition d'un badge",
         "group": "fb8ef8df1ea1ad74",
-        "order": 4,
+        "order": 1,
         "width": 0,
         "height": 0,
         "options": [
@@ -4845,7 +4845,7 @@
         "actionType": "msg",
         "name": "Ajouter",
         "group": "fb8ef8df1ea1ad74",
-        "order": 1,
+        "order": 4,
         "width": 0,
         "height": 0,
         "passthru": false,
