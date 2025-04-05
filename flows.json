@@ -4,7 +4,6 @@
         "type": "tab",
         "label": "Contrôle d'accès",
         "disabled": false,
-        "locked": true,
         "info": "",
         "env": []
     },
@@ -287,8 +286,7 @@
             "01bd06a552790404",
             "428593e904c3f9e3",
             "cdc669b609c0032f",
-            "07cbe2e7971d840e",
-            "30ad2a8bf4f6fb01"
+            "07cbe2e7971d840e"
         ],
         "x": 14,
         "y": 139,
@@ -1499,7 +1497,8 @@
         "y": 200,
         "wires": [
             [
-                "533786b989e49c4b"
+                "533786b989e49c4b",
+                "a5d6f6074df2ce9b"
             ],
             [
                 "a5d6f6074df2ce9b"
@@ -5147,8 +5146,7 @@
         "y": 640,
         "wires": [
             [
-                "6c65b544c9dba5ad",
-                "30ad2a8bf4f6fb01"
+                "6c65b544c9dba5ad"
             ]
         ]
     },
@@ -5752,23 +5750,6 @@
         "always": true,
         "x": 860,
         "y": 600,
-        "wires": []
-    },
-    {
-        "id": "30ad2a8bf4f6fb01",
-        "type": "debug",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1240,
-        "y": 280,
         "wires": []
     },
     {
