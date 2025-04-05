@@ -4531,7 +4531,7 @@
         "wires": [
             [
                 "f1b989b616a3c2b8",
-                "2223ed27de9cd20d"
+                "326e46d0d5eb5b7c"
             ]
         ]
     },
@@ -5737,9 +5737,32 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 350,
+        "x": 530,
         "y": 60,
         "wires": []
+    },
+    {
+        "id": "326e46d0d5eb5b7c",
+        "type": "csv",
+        "z": "b7fb87140232fe9d",
+        "name": "Parse CSV",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "obj",
+        "temp": "",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 370,
+        "y": 60,
+        "wires": [
+            [
+                "2223ed27de9cd20d"
+            ]
+        ]
     },
     {
         "id": "78bc32fd489261d1",
