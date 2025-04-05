@@ -4603,7 +4603,7 @@
         "name": "Form Badge",
         "label": "Edition d'un badge",
         "group": "fb8ef8df1ea1ad74",
-        "order": 4,
+        "order": 1,
         "width": 0,
         "height": 0,
         "options": [
@@ -4737,7 +4737,7 @@
         "name": "Liste des badges",
         "order": 1,
         "width": 23,
-        "height": 11,
+        "height": 10,
         "columns": [
             {
                 "field": "active",
@@ -4897,7 +4897,7 @@
         "actionType": "msg",
         "name": "Supprimer",
         "group": "fb8ef8df1ea1ad74",
-        "order": 1,
+        "order": 4,
         "width": 0,
         "height": 0,
         "passthru": false,
