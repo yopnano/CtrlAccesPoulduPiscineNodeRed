@@ -4742,7 +4742,7 @@
             {
                 "field": "active",
                 "title": "Activé",
-                "width": "15%",
+                "width": "3%",
                 "align": "center",
                 "formatter": "tickCross",
                 "formatterParams": {
@@ -4752,7 +4752,7 @@
             {
                 "field": "uid",
                 "title": "Code",
-                "width": "15%",
+                "width": "5%",
                 "align": "center",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -4762,7 +4762,7 @@
             {
                 "field": "group",
                 "title": "Type accès",
-                "width": "15%",
+                "width": "5%",
                 "align": "center",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -4772,7 +4772,7 @@
             {
                 "field": "lastname",
                 "title": "Nom",
-                "width": "35%",
+                "width": "27%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
