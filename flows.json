@@ -4531,7 +4531,7 @@
         "wires": [
             [
                 "f1b989b616a3c2b8",
-                "326e46d0d5eb5b7c"
+                "e7f828a134bdfe5d"
             ]
         ]
     },
@@ -5721,47 +5721,24 @@
         ]
     },
     {
-        "id": "2223ed27de9cd20d",
-        "type": "ui_text",
+        "id": "e7f828a134bdfe5d",
+        "type": "ui_template",
         "z": "b7fb87140232fe9d",
-        "group": "1fc36ff59a0aba4d",
-        "order": 1,
-        "width": 0,
-        "height": 0,
+        "group": "82bbeaedab2dd32c",
         "name": "",
-        "label": "CSV",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
+        "order": 6,
+        "width": "0",
+        "height": "0",
+        "format": "<div id=\"csvfile\" style=\"height: 600px; overflow-y: auto; border: 1px solid #ccc; padding: 5px;\">\n    <span ng-bind-html=\"msg.payload\"></span>\n</div>\n\n<script>\n    // Observer les changements pour déclencher le défilement\n    (function() {\n        var elem = document.getElementById('csvfile');\n        var observer = new MutationObserver(() => {\n            if (elem) {\n                setTimeout(() => { elem.scrollTop = elem.scrollHeight; }, 100);\n            }\n        });\n\n        observer.observe(elem, { childList: true, subtree: true });\n    })();\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
         "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 530,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "326e46d0d5eb5b7c",
-        "type": "csv",
-        "z": "b7fb87140232fe9d",
-        "name": "Parse CSV",
-        "sep": ",",
-        "hdrin": true,
-        "hdrout": "none",
-        "multi": "mult",
-        "ret": "obj",
-        "temp": "",
-        "skip": "0",
-        "strings": false,
-        "include_empty_strings": false,
-        "include_null_values": false,
-        "x": 370,
+        "x": 360,
         "y": 60,
         "wires": [
-            [
-                "2223ed27de9cd20d"
-            ]
+            []
         ]
     },
     {
