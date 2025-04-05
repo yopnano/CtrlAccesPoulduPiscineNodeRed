@@ -4562,7 +4562,8 @@
         "y": 260,
         "wires": [
             [
-                "prepare-badge-list"
+                "prepare-badge-list",
+                "6bf95101e61b4d63"
             ]
         ]
     },
@@ -4695,8 +4696,7 @@
         "y": 680,
         "wires": [
             [
-                "6c65b544c9dba5ad",
-                "6bf95101e61b4d63"
+                "6c65b544c9dba5ad"
             ]
         ]
     },
