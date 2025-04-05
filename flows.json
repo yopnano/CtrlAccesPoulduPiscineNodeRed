@@ -4572,7 +4572,7 @@
         "z": "b7fb87140232fe9d",
         "g": "6fb40bcfcadc177b",
         "name": "Prepare Badge List",
-        "func": "msg.payload = msg.payload.map(badge => ({\n    uid: badge.UID,\n    firstname: badge.FirstName,\n    lastname: badge.LastName,\n    group: badge.Group,\n    active: badge.Active === 'true'\n}));\nreturn msg;",
+        "func": "msg.payload = msg.payload.map(badge => ({\n    uid: badge.UID,\n    firstname: badge.FirstName,\n    lastname: badge.LastName,\n    group: Number(badge.Group),\n    active: badge.Active === 'true'\n}));\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
