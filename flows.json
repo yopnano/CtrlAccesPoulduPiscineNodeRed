@@ -7646,8 +7646,9 @@
                 "t": "set",
                 "p": "rowData",
                 "pt": "flow",
-                "to": "msg.payload.row",
-                "tot": "str"
+                "to": "payload.row",
+                "tot": "msg",
+                "dc": true
             }
         ],
         "action": "",
