@@ -915,7 +915,7 @@
         "tab": "0774bc01ee11c4d3",
         "order": 3,
         "disp": true,
-        "width": "20",
+        "width": 12,
         "collapse": true,
         "className": ""
     },
@@ -4603,7 +4603,7 @@
         "name": "Form Badge",
         "label": "Edition d'un badge",
         "group": "fb8ef8df1ea1ad74",
-        "order": 4,
+        "order": 1,
         "width": 0,
         "height": 0,
         "options": [
@@ -4736,8 +4736,8 @@
         "group": "59fa5f21b1f59787",
         "name": "Liste des badges",
         "order": 1,
-        "width": 11,
-        "height": 5,
+        "width": 0,
+        "height": 0,
         "columns": [
             {
                 "field": "active",
@@ -4897,7 +4897,7 @@
         "actionType": "msg",
         "name": "Supprimer",
         "group": "fb8ef8df1ea1ad74",
-        "order": 1,
+        "order": 4,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -5725,7 +5725,7 @@
         "type": "ui_text",
         "z": "b7fb87140232fe9d",
         "group": "1fc36ff59a0aba4d",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
         "name": "",
