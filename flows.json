@@ -1830,9 +1830,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "207A0A32",
+        "payload": "code:\"207A0A32\"",
         "payloadType": "str",
-        "x": 120,
+        "x": 140,
         "y": 140,
         "wires": [
             [
