@@ -7394,26 +7394,7 @@
         "y": 120,
         "wires": [
             [
-                "1564d88c78e58b64"
-            ]
-        ]
-    },
-    {
-        "id": "1564d88c78e58b64",
-        "type": "file in",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "Lire data.csv",
-        "filename": "/tmp/data.csv",
-        "filenameType": "str",
-        "format": "utf8",
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 310,
-        "y": 120,
-        "wires": [
-            [
-                "6e832b57bc1d6d16"
+                "127f70c84c4bdfc1"
             ]
         ]
     },
@@ -7514,48 +7495,6 @@
         "y": 120,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "8c00884b4c0e1008",
-        "type": "file",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "Écrire data.csv",
-        "filename": "/tmp/data.csv",
-        "filenameType": "str",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 360,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "725ef7e4b981cf10",
-        "type": "inject",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "Init CSV",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "UID,FirstName,LastName,Group,Active20727FD2,JEAN-CLAUDE / FLORENCE,HERLEDAN,1,true207F4602,JEAN-CLAUDE / FLORENCE,HERLEDAN,1,true23B0991C,JEAN-CLAUDE / FLORENCE,HERLEDAN,2,true206EB252,HERVE,GUEGANNO,1,true207A0A32,HERVE,GUEGANNO,1,true76A8234C,HERVE,GUEGANNO,1,true20709E52,CLAUDE,DANET,1,true206C4CA2,CLAUDE,DANET,1,true20736DF2,THIERRY,BAUTHAMY,1,true20829C32,THIERRY,BAUTHAMY,1,true2063E362,MARTIAL,LE BRAS,1,true",
-        "payloadType": "str",
-        "x": 140,
-        "y": 60,
-        "wires": [
-            [
-                "8c00884b4c0e1008"
-            ]
         ]
     },
     {
@@ -7662,6 +7601,26 @@
         "wires": [
             [
                 "01df9c8c0a7b7d97"
+            ]
+        ]
+    },
+    {
+        "id": "127f70c84c4bdfc1",
+        "type": "file in",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Badges.csv",
+        "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 310,
+        "y": 120,
+        "wires": [
+            [
+                "6e832b57bc1d6d16"
             ]
         ]
     }
