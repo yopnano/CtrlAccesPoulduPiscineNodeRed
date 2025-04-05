@@ -7436,7 +7436,7 @@
         "finalize": "",
         "libs": [],
         "x": 710,
-        "y": 200,
+        "y": 120,
         "wires": [
             []
         ]
@@ -7574,12 +7574,10 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 730,
-        "y": 120,
+        "x": 1070,
+        "y": 60,
         "wires": [
-            [
-                "4c128e28b7de4281"
-            ]
+            []
         ]
     },
     {
@@ -7614,7 +7612,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
+        "x": 510,
         "y": 40,
         "wires": [
             []
@@ -7662,14 +7660,14 @@
         "order": 2,
         "width": "30",
         "height": "9",
-        "format": "<link href=\"https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css\" rel=\"stylesheet\">\n<script src=\"https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js\"></script>\n\n<div id=\"csv-table\"></div>\n\n<script>\n(function(scope) {\n    let table;\n\n    function buildTable(data) {\n        table = new Tabulator(\"#csv-table\", {\n            data: data,\n            layout: \"fitColumns\",\n            columns: [\n                { title: \"Activé\", field: \"Active\", formatter: \"tickCross\", hozAlign: \"center\" },\n                { title: \"Code\", field: \"UID\", hozAlign: \"center\" },\n                { title: \"Type accès\", field: \"Group\", hozAlign: \"center\" },\n                { title: \"Nom\", field: \"LastName\" },\n                { title: \"Prénom\", field: \"FirstName\" },\n                { title: \"Actions\", field: \"UID\", formatter: (cell) => {\n                    const uid = cell.getValue();\n                    return `\n                        <button onclick=\\\"sendAction('edit','${uid}')\\\">✏️</button>\n                        <button onclick=\\\"sendAction('delete','${uid}')\\\">🗑️</button>\n                    `;\n                }, hozAlign: \"center\" }\n            ]\n        });\n    }\n\n    scope.sendAction = function(action, uid) {\n        scope.send({ payload: { action: action, uid: uid }});\n    }\n\n    scope.$watch('msg', function(msg) {\n        if(msg && msg.payload && Array.isArray(msg.payload)) {\n            if(table) table.replaceData(msg.payload);\n            else buildTable(msg.payload);\n        }\n    });\n})(scope);\n</script>",
+        "format": "<!-- <link href=\"https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css\" rel=\"stylesheet\"> -->\n<script src=\"https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js\"></script>\n\n<div id=\"csv-table\"></div>\n\n<script>\n(function(scope) {\n    let table;\n\n    function buildTable(data) {\n        table = new Tabulator(\"#csv-table\", {\n            data: data,\n            layout: \"fitColumns\",\n            columns: [\n                { title: \"Activé\", field: \"Active\", formatter: \"tickCross\", hozAlign: \"center\" },\n                { title: \"Code\", field: \"UID\", hozAlign: \"center\" },\n                { title: \"Type accès\", field: \"Group\", hozAlign: \"center\" },\n                { title: \"Nom\", field: \"LastName\" },\n                { title: \"Prénom\", field: \"FirstName\" },\n                { title: \"Actions\", field: \"UID\", formatter: (cell) => {\n                    const uid = cell.getValue();\n                    return `\n                        <button onclick=\\\"sendAction('edit','${uid}')\\\">✏️</button>\n                        <button onclick=\\\"sendAction('delete','${uid}')\\\">🗑️</button>\n                    `;\n                }, hozAlign: \"center\" }\n            ]\n        });\n    }\n\n    scope.sendAction = function(action, uid) {\n        scope.send({ payload: { action: action, uid: uid }});\n    }\n\n    scope.$watch('msg', function(msg) {\n        if(msg && msg.payload && Array.isArray(msg.payload)) {\n            if(table) table.replaceData(msg.payload);\n            else buildTable(msg.payload);\n        }\n    });\n})(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 750,
-        "y": 80,
+        "x": 690,
+        "y": 260,
         "wires": [
             [
                 "0677bcc4b0fd9a2d",
