@@ -4782,7 +4782,7 @@
             {
                 "field": "firstname",
                 "title": "Prénom",
-                "width": "32%",
+                "width": "33%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
