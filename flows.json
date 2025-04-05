@@ -1234,7 +1234,7 @@
         "z": "0401eb93d584c99a",
         "g": "ab13c8a209213fdb",
         "name": "Info badge",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
