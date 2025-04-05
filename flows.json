@@ -7483,22 +7483,6 @@
         ]
     },
     {
-        "id": "0677bcc4b0fd9a2d",
-        "type": "debug",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 120,
-        "wires": []
-    },
-    {
         "id": "1234567890abcdef",
         "type": "ui_template",
         "z": "ca1ccaf40a3d0a3c",
@@ -7517,7 +7501,7 @@
         "y": 160,
         "wires": [
             [
-                "0677bcc4b0fd9a2d"
+                "switch_action"
             ]
         ]
     },
@@ -7552,5 +7536,70 @@
                 "9bca9ee71771d830"
             ]
         ]
+    },
+    {
+        "id": "switch_action",
+        "type": "switch",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Action ?",
+        "property": "payload.action",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "edit",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "delete",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 970,
+        "y": 200,
+        "wires": [
+            [
+                "debug_edit"
+            ],
+            [
+                "debug_delete"
+            ]
+        ]
+    },
+    {
+        "id": "debug_edit",
+        "type": "debug",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Éditer",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "debug_delete",
+        "type": "debug",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Supprimer",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1150,
+        "y": 220,
+        "wires": []
     }
 ]
