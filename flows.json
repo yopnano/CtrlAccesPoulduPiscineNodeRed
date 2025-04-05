@@ -7418,7 +7418,6 @@
         "wires": [
             [
                 "f4c5d055aa2cc4c2",
-                "c7240eaa003606d3",
                 "1234567890abcdef"
             ]
         ]
@@ -7435,8 +7434,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 710,
-        "y": 120,
+        "x": 730,
+        "y": 80,
         "wires": [
             []
         ]
@@ -7522,24 +7521,6 @@
         ]
     },
     {
-        "id": "c7240eaa003606d3",
-        "type": "function",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "Prepare Badge List",
-        "func": "msg.payload = msg.payload.map(badge => ({\n    UID: badge.UID,\n    FirstName: badge.FirstName,\n    LastName: badge.LastName,\n    Group: badge.Group,\n    Active: badge.Active,\n    Action: '<button class=\"editBtn\">✏️</button> <button class=\"deleteBtn\">🗑️</button>'\n}));\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 510,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "0677bcc4b0fd9a2d",
         "type": "debug",
         "z": "ca1ccaf40a3d0a3c",
@@ -7551,8 +7532,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1000,
-        "y": 180,
+        "x": 980,
+        "y": 120,
         "wires": []
     },
     {
@@ -7571,28 +7552,11 @@
         "templateScope": "local",
         "className": "",
         "x": 750,
-        "y": 180,
+        "y": 160,
         "wires": [
             [
                 "0677bcc4b0fd9a2d"
             ]
         ]
-    },
-    {
-        "id": "0528018fd882d070",
-        "type": "ui_table",
-        "z": "ca1ccaf40a3d0a3c",
-        "d": true,
-        "group": "d7771fcfb8b9b3fc",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "columns": [],
-        "outputs": 0,
-        "cts": false,
-        "x": 750,
-        "y": 60,
-        "wires": []
     }
 ]
