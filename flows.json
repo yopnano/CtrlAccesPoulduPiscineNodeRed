@@ -7399,7 +7399,8 @@
         "y": 120,
         "wires": [
             [
-                "1234567890abcdef"
+                "1234567890abcdef",
+                "f4c5d055aa2cc4c2"
             ]
         ]
     },
@@ -7408,14 +7409,14 @@
         "type": "function",
         "z": "ca1ccaf40a3d0a3c",
         "name": "Stocker dans flow",
-        "func": "flow.set(\"csvData\", msg.payload);\nreturn msg;",
+        "func": "flow.set(\"csvJson\", msg.payload);\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
+        "x": 730,
         "y": 80,
         "wires": [
             []
@@ -7520,7 +7521,7 @@
         "wires": [
             [
                 "6e832b57bc1d6d16",
-                "f4c5d055aa2cc4c2"
+                "962a375e4d9fd177"
             ]
         ]
     },
@@ -7619,7 +7620,7 @@
         "type": "function",
         "z": "ca1ccaf40a3d0a3c",
         "name": "New ID",
-        "func": "let csvData = flow.get(\"csvData\") || [];\n\n// Récupère tous les IDs numériques existants\nlet usedIDs = csvData\n    .map(row => parseInt(row.ID))\n    .filter(ID => !isNaN(ID))\n    .sort((a, b) => a - b);\n\n// Trouve le plus petit ID libre\nlet newID = 0;\nfor (let i = 0; i < usedIDs.length; i++) {\n    if (usedIDs[i] !== i) {\n        newID = i;\n        break;\n    }\n    newID = i + 1;\n}\n\nmsg.payload = { newID };\nreturn msg;\n",
+        "func": "let csvData = flow.get(\"csvJson\") || [];\n\n// Récupère tous les IDs numériques existants\nlet usedIDs = csvData\n    .map(row => parseInt(row.ID))\n    .filter(ID => !isNaN(ID))\n    .sort((a, b) => a - b);\n\n// Trouve le plus petit ID libre\nlet newID = 0;\nfor (let i = 0; i < usedIDs.length; i++) {\n    if (usedIDs[i] !== i) {\n        newID = i;\n        break;\n    }\n    newID = i + 1;\n}\n\nmsg.payload = { newID };\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7667,19 +7668,37 @@
         "type": "function",
         "z": "ca1ccaf40a3d0a3c",
         "name": "Ajout au CSV",
-        "func": "let newID = msg.payload;\nlet csvData = String(flow.get(\"csvData\"));\nlet csvLines = csvData.split('\\n'); // Diviser par ligne\n\nconst rowData = flow.get('rowData');  // La ligne à ajouter\n\n// Concatène les valeurs de l'objet en une ligne CSV\n// Tu peux ajuster l'ordre et le délimiteur en fonction de tes besoins.\nlet csvLine = `${newID},${rowData.UID},${rowData.FirstName},${rowData.LastName},${rowData.Group},${rowData.Active}`;\n\n// Écrire cette ligne dans msg.payload pour l'enregistrer dans un fichier\nmsg.payload = csvLine + \"\\n\";  // Ajoute un retour à la ligne à la fin\n\nreturn msg;",
+        "func": "let newID = msg.payload;\nlet csvData = flow.get(\"csvRaw\");\nlet csvLines = csvData.split('\\n'); // Diviser par ligne\n\nconst rowData = flow.get('rowData');  // La ligne à ajouter\n\n// Concatène les valeurs de l'objet en une ligne CSV\n// Tu peux ajuster l'ordre et le délimiteur en fonction de tes besoins.\nlet csvLine = `${newID},${rowData.UID},${rowData.FirstName},${rowData.LastName},${rowData.Group},${rowData.Active}`;\n\n// Écrire cette ligne dans msg.payload pour l'enregistrer dans un fichier\nmsg.payload = csvLine + \"\\n\";  // Ajoute un retour à la ligne à la fin\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
+        "x": 980,
         "y": 260,
         "wires": [
             [
                 "a8a70f7c9ecfb301"
             ]
+        ]
+    },
+    {
+        "id": "962a375e4d9fd177",
+        "type": "function",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Stocker dans flow",
+        "func": "flow.set(\"csvRaw\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 80,
+        "wires": [
+            []
         ]
     }
 ]
