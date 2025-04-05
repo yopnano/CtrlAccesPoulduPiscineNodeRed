@@ -7413,7 +7413,7 @@
         "strings": false,
         "include_empty_strings": false,
         "include_null_values": false,
-        "x": 480,
+        "x": 500,
         "y": 120,
         "wires": [
             [
@@ -7436,7 +7436,7 @@
         "finalize": "",
         "libs": [],
         "x": 690,
-        "y": 80,
+        "y": 60,
         "wires": [
             []
         ]
@@ -7585,24 +7585,6 @@
         "wires": []
     },
     {
-        "id": "b564f68a36896e8e",
-        "type": "function",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "Prepare Badge List",
-        "func": "msg.payload = msg.payload.map(badge => ({\n    uid: badge.UID,\n    firstname: badge.FirstName,\n    lastname: badge.LastName,\n    group: Number(badge.Group),\n    active: badge.Active === 'true'\n}));\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 910,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "127f70c84c4bdfc1",
         "type": "file in",
         "z": "ca1ccaf40a3d0a3c",
@@ -7618,7 +7600,8 @@
         "y": 120,
         "wires": [
             [
-                "6e832b57bc1d6d16"
+                "6e832b57bc1d6d16",
+                "231bf483b6bc7348"
             ]
         ]
     }
