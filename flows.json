@@ -7508,7 +7508,7 @@
         "height": "9",
         "columns": [
             {
-                "field": "active",
+                "field": "Active",
                 "title": "Activé",
                 "width": "10%",
                 "align": "center",
@@ -7528,7 +7528,7 @@
                 }
             },
             {
-                "field": "group",
+                "field": "Group",
                 "title": "Type accès",
                 "width": "12%",
                 "align": "center",
@@ -7538,7 +7538,7 @@
                 }
             },
             {
-                "field": "lastname",
+                "field": "LastName",
                 "title": "Nom",
                 "width": "32%",
                 "align": "left",
@@ -7548,7 +7548,7 @@
                 }
             },
             {
-                "field": "firstname",
+                "field": "FirstName",
                 "title": "Prénom",
                 "width": "36%",
                 "align": "left",
