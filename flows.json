@@ -4531,7 +4531,7 @@
         "wires": [
             [
                 "f1b989b616a3c2b8",
-                "d89bb8c21fb093d8"
+                "6e4b4b8b5815a5b4"
             ]
         ]
     },
@@ -5721,21 +5721,24 @@
         ]
     },
     {
-        "id": "d89bb8c21fb093d8",
-        "type": "ui_template",
+        "id": "6e4b4b8b5815a5b4",
+        "type": "ui_text_input",
         "z": "b7fb87140232fe9d",
-        "group": "1fc36ff59a0aba4d",
         "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "1fc36ff59a0aba4d",
         "order": 0,
         "width": 0,
         "height": 0,
-        "format": "<link href=\"https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css\" rel=\"stylesheet\">\n<script src=\"https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js\"></script>\n\n<div id=\"csvTable\"></div>\n\n<script>\n    (function(scope) {\n    let table;\n\n    scope.$watch('msg.payload', function(data) {\n        if (!Array.isArray(data)) return;\n\n        // Crée les colonnes à partir des clés\n        const columns = Object.keys(data[0] || {}).map(key => ({\n            title: key, field: key, editor: \"input\"\n        }));\n\n        // Créer ou mettre à jour la table\n        if (!table) {\n            table = new Tabulator(\"#csvTable\", {\n                data: data,\n                columns: columns,\n                layout: \"fitColumns\",\n                cellEdited: function(cell) {\n                    const newData = table.getData();\n                    scope.send({ payload: newData });\n                }\n            });\n        } else {\n            table.setData(data);\n        }\n    });\n})(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
         "className": "",
-        "x": 360,
+        "topicType": "msg",
+        "x": 330,
         "y": 60,
         "wires": [
             []
