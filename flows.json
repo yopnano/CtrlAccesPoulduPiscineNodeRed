@@ -7407,6 +7407,8 @@
         "filenameType": "str",
         "format": "utf8",
         "sendError": false,
+        "encoding": "none",
+        "allProps": false,
         "x": 310,
         "y": 120,
         "wires": [
@@ -7523,10 +7525,10 @@
         "filename": "/tmp/data.csv",
         "filenameType": "str",
         "appendNewline": true,
-        "createDir": false,
+        "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 350,
+        "x": 360,
         "y": 60,
         "wires": [
             []
