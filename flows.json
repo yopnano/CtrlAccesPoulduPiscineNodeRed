@@ -4562,7 +4562,8 @@
         "y": 260,
         "wires": [
             [
-                "prepare-badge-list"
+                "prepare-badge-list",
+                "bc667b7579a5ab7a"
             ]
         ]
     },
@@ -5777,6 +5778,22 @@
         "always": true,
         "x": 860,
         "y": 600,
+        "wires": []
+    },
+    {
+        "id": "bc667b7579a5ab7a",
+        "type": "debug",
+        "z": "b7fb87140232fe9d",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 120,
         "wires": []
     },
     {
