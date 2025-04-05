@@ -12,7 +12,6 @@
         "type": "tab",
         "label": "Interface",
         "disabled": false,
-        "locked": true,
         "info": "",
         "env": []
     },
@@ -3369,8 +3368,7 @@
         "wires": [
             [
                 "79a903e8d5e1195e",
-                "a5218aea095da7bc",
-                "2a321425f18897f0"
+                "a5218aea095da7bc"
             ]
         ]
     },
