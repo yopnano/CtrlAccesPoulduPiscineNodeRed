@@ -7380,29 +7380,11 @@
         "wires": []
     },
     {
-        "id": "1e42b4ebaf05364f",
-        "type": "inject",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "Charger CSV",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "2",
-        "topic": "",
-        "x": 120,
-        "y": 120,
-        "wires": [
-            [
-                "127f70c84c4bdfc1"
-            ]
-        ]
-    },
-    {
         "id": "6e832b57bc1d6d16",
         "type": "csv",
         "z": "ca1ccaf40a3d0a3c",
         "name": "CSV → JSON",
+        "spec": "rfc",
         "sep": ",",
         "hdrin": true,
         "hdrout": "none",
@@ -7501,26 +7483,6 @@
         ]
     },
     {
-        "id": "127f70c84c4bdfc1",
-        "type": "file in",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "Badges.csv",
-        "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 310,
-        "y": 120,
-        "wires": [
-            [
-                "6e832b57bc1d6d16"
-            ]
-        ]
-    },
-    {
         "id": "0677bcc4b0fd9a2d",
         "type": "debug",
         "z": "ca1ccaf40a3d0a3c",
@@ -7556,6 +7518,38 @@
         "wires": [
             [
                 "0677bcc4b0fd9a2d"
+            ]
+        ]
+    },
+    {
+        "id": "9bca9ee71771d830",
+        "type": "link call",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "",
+        "links": [
+            "d2ce0b8ca3f408a5"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 290,
+        "y": 120,
+        "wires": [
+            [
+                "6e832b57bc1d6d16"
+            ]
+        ]
+    },
+    {
+        "id": "b7420d0133515e59",
+        "type": "ui_ui_control",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "",
+        "events": "all",
+        "x": 100,
+        "y": 120,
+        "wires": [
+            [
+                "9bca9ee71771d830"
             ]
         ]
     }
