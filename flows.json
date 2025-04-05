@@ -7437,7 +7437,8 @@
         "wires": [
             [
                 "f4c5d055aa2cc4c2",
-                "231bf483b6bc7348"
+                "231bf483b6bc7348",
+                "b564f68a36896e8e"
             ]
         ]
     },
@@ -7453,12 +7454,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
-        "y": 120,
+        "x": 690,
+        "y": 80,
         "wires": [
-            [
-                "01df9c8c0a7b7d97"
-            ]
+            []
         ]
     },
     {
@@ -7622,8 +7621,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 870,
-        "y": 120,
+        "x": 890,
+        "y": 100,
         "wires": [
             [
                 "4c128e28b7de4281"
@@ -7645,5 +7644,25 @@
         "x": 700,
         "y": 180,
         "wires": []
+    },
+    {
+        "id": "b564f68a36896e8e",
+        "type": "function",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Prepare Badge List",
+        "func": "msg.payload = msg.payload.map(badge => ({\n    uid: badge.UID,\n    firstname: badge.FirstName,\n    lastname: badge.LastName,\n    group: Number(badge.Group),\n    active: badge.Active === 'true'\n}));\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 120,
+        "wires": [
+            [
+                "01df9c8c0a7b7d97"
+            ]
+        ]
     }
 ]
