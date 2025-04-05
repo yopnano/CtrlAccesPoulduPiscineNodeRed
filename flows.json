@@ -230,14 +230,11 @@
             "48fe8ebc4af5cd6b",
             "e81743050a9f376b",
             "6c65b544c9dba5ad",
-            "a306b64fd90323a8",
-            "3031944d6dea631e",
-            "9926e8fc24a9d1f3",
-            "795a1cc065d2ef21"
+            "a306b64fd90323a8"
         ],
         "x": 24,
         "y": 519,
-        "w": 942,
+        "w": 842,
         "h": 202
     },
     {
@@ -4533,7 +4530,8 @@
         "y": 20,
         "wires": [
             [
-                "f1b989b616a3c2b8"
+                "f1b989b616a3c2b8",
+                "2223ed27de9cd20d"
             ]
         ]
     },
@@ -4701,8 +4699,8 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 770,
-        "y": 680,
+        "x": 670,
+        "y": 640,
         "wires": [
             [
                 "6c65b544c9dba5ad"
@@ -5163,7 +5161,7 @@
         "y": 560,
         "wires": [
             [
-                "9926e8fc24a9d1f3"
+                "c18097db6ea8c49a"
             ]
         ]
     },
@@ -5179,8 +5177,8 @@
         "createDir": false,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 790,
-        "y": 640,
+        "x": 690,
+        "y": 560,
         "wires": [
             [
                 "6c65b544c9dba5ad"
@@ -5438,8 +5436,8 @@
             "89be4880b3ec336f",
             "beaa458f9661cf23"
         ],
-        "x": 905,
-        "y": 660,
+        "x": 825,
+        "y": 600,
         "wires": []
     },
     {
@@ -5598,60 +5596,6 @@
         ]
     },
     {
-        "id": "3031944d6dea631e",
-        "type": "ui_toast",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "",
-        "x": 850,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "9926e8fc24a9d1f3",
-        "type": "switch",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "Anti. doublons",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "cont",
-                "v": "Doublon detecté",
-                "vt": "str"
-            },
-            {
-                "t": "nempty"
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 2,
-        "x": 560,
-        "y": 560,
-        "wires": [
-            [
-                "3031944d6dea631e",
-                "6c65b544c9dba5ad",
-                "795a1cc065d2ef21"
-            ],
-            [
-                "c18097db6ea8c49a"
-            ]
-        ]
-    },
-    {
         "id": "0f4dd6a43470ed40",
         "type": "link call",
         "z": "b7fb87140232fe9d",
@@ -5777,16 +5721,24 @@
         ]
     },
     {
-        "id": "795a1cc065d2ef21",
-        "type": "ui_audio",
+        "id": "2223ed27de9cd20d",
+        "type": "ui_text",
         "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
+        "group": "1fc36ff59a0aba4d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
         "name": "",
-        "group": "2af2e23a3cac9b4d",
-        "voice": "Microsoft Hortense - French (France)",
-        "always": true,
-        "x": 860,
-        "y": 600,
+        "label": "CSV",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 350,
+        "y": 60,
         "wires": []
     },
     {
