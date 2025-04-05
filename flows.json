@@ -7619,7 +7619,7 @@
         "type": "function",
         "z": "ca1ccaf40a3d0a3c",
         "name": "New ID",
-        "func": "// Récupération du tableau JSON depuis le flow\nlet csvData = flow.get(\"csvData\") || [];\n\n// Recherche de l'ID max\nlet maxId = 0;\ncsvData.forEach(row => {\n    if (row.ID !== undefined && !isNaN(row.ID)) {\n        let ID = parseInt(row.iID);\n        if (ID > maxId) {\n            maxId = ID;\n        }\n    }\n});\n\n// Création d'un nouvel ID\nlet newId = maxId + 1;\n\nmsg.payload = { newId };\nreturn msg;\n",
+        "func": "let csvData = flow.get(\"csvData\") || [];\n\n// Récupère tous les IDs numériques existants\nlet usedIDs = csvData\n    .map(row => parseInt(row.ID))\n    .filter(ID => !isNaN(ID))\n    .sort((a, b) => a - b);\n\n// Trouve le plus petit ID libre\nlet newID = 0;\nfor (let i = 0; i < usedIDs.length; i++) {\n    if (usedIDs[i] !== i) {\n        newID = i;\n        break;\n    }\n    newID = i + 1;\n}\n\nmsg.payload = { newID };\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
