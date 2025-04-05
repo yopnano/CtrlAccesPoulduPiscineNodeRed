@@ -7453,8 +7453,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
-        "y": 120,
+        "x": 380,
+        "y": 440,
         "wires": [
             [
                 "be2e00b23b38fc3c"
@@ -7476,8 +7476,8 @@
         "strings": true,
         "include_empty_strings": false,
         "include_null_values": false,
-        "x": 1270,
-        "y": 120,
+        "x": 600,
+        "y": 440,
         "wires": [
             [
                 "96aeef7990cb4de3"
@@ -7495,8 +7495,8 @@
         "createDir": false,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1470,
-        "y": 120,
+        "x": 800,
+        "y": 440,
         "wires": [
             []
         ]
@@ -7551,7 +7551,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 960,
+        "x": 1000,
         "y": 180,
         "wires": []
     },
