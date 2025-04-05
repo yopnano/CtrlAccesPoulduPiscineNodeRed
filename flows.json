@@ -942,7 +942,7 @@
         "tab": "d899ba71b8352df4",
         "order": 1,
         "disp": true,
-        "width": "12",
+        "width": 30,
         "collapse": false
     },
     {
@@ -7503,9 +7503,9 @@
         "z": "ca1ccaf40a3d0a3c",
         "group": "d7771fcfb8b9b3fc",
         "name": "Éditeur CSV",
-        "order": 0,
-        "width": "12",
-        "height": "22",
+        "order": 1,
+        "width": "30",
+        "height": "9",
         "columns": [
             {
                 "field": "active",
