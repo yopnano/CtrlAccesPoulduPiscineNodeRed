@@ -4675,7 +4675,8 @@
         "y": 620,
         "wires": [
             [
-                "write-updated-csv"
+                "write-updated-csv",
+                "6bf95101e61b4d63"
             ]
         ]
     },
@@ -4979,8 +4980,7 @@
         "wires": [
             [
                 "de1e94ac57e14e9b",
-                "12daa1d853407168",
-                "6bf95101e61b4d63"
+                "12daa1d853407168"
             ]
         ]
     },
@@ -5154,8 +5154,7 @@
         "y": 560,
         "wires": [
             [
-                "9926e8fc24a9d1f3",
-                "6bf95101e61b4d63"
+                "9926e8fc24a9d1f3"
             ]
         ]
     },
@@ -5793,8 +5792,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
-        "y": 640,
+        "x": 660,
+        "y": 760,
         "wires": []
     },
     {
