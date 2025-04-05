@@ -7630,25 +7630,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 920,
+        "x": 960,
         "y": 180,
-        "wires": []
-    },
-    {
-        "id": "dcebd1cea4cebdc1",
-        "type": "debug",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "topic",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 920,
-        "y": 220,
         "wires": []
     },
     {
@@ -7666,12 +7649,11 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 690,
-        "y": 260,
+        "x": 750,
+        "y": 180,
         "wires": [
             [
-                "0677bcc4b0fd9a2d",
-                "dcebd1cea4cebdc1"
+                "0677bcc4b0fd9a2d"
             ]
         ]
     }
