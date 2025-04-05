@@ -4583,7 +4583,8 @@
         "y": 220,
         "wires": [
             [
-                "ui-table"
+                "ui-table",
+                "96dbdf8a25babd13"
             ]
         ]
     },
@@ -5777,6 +5778,22 @@
         "always": true,
         "x": 860,
         "y": 600,
+        "wires": []
+    },
+    {
+        "id": "96dbdf8a25babd13",
+        "type": "debug",
+        "z": "b7fb87140232fe9d",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 120,
         "wires": []
     },
     {
