@@ -4675,8 +4675,7 @@
         "y": 620,
         "wires": [
             [
-                "write-updated-csv",
-                "6bf95101e61b4d63"
+                "write-updated-csv"
             ]
         ]
     },
@@ -5343,7 +5342,8 @@
         "y": 620,
         "wires": [
             [
-                "update-csv"
+                "update-csv",
+                "6bf95101e61b4d63"
             ]
         ]
     },
