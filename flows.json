@@ -7570,7 +7570,9 @@
             [
                 "d605467a73140d03"
             ],
-            []
+            [
+                "e9623cd640a14435"
+            ]
         ]
     },
     {
@@ -7769,7 +7771,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 680,
+        "x": 760,
         "y": 300,
         "wires": [
             [
@@ -7793,6 +7795,81 @@
         "wires": [
             [
                 "3849a00f85e52cfb"
+            ]
+        ]
+    },
+    {
+        "id": "576a35a8d1734be8",
+        "type": "function",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Suppression du CSV",
+        "func": "const rawCsv = flow.get(\"csvRaw\");\nconst rowToDelete = flow.get(\"rowData\").row;\n\nif (!rawCsv || !rowToDelete || rowToDelete.ID === undefined) {\n    node.error(\"Données manquantes ou ID invalide.\");\n    return null;\n}\n\n// 1. Séparer le CSV brut en lignes\nlet lines = rawCsv.split(/\\r?\\n/);\n\n// 2. La première ligne est l'en-tête\nconst headers = lines[0].split(\",\");\n\n// 3. Construit le nouveau CSV sans la ligne à supprimer\nlet updatedLines = [lines[0]]; // Conserver l'en-tête\nfor (let i = 1; i < lines.length; i++) {\n    const line = lines[i];\n    if (!line.trim()) continue;\n\n    const values = line.split(\",\");\n    const rowObj = {};\n    headers.forEach((key, idx) => {\n        rowObj[key] = values[idx];\n    });\n\n    if (String(rowObj.ID) !== String(rowToDelete.ID)) {\n        updatedLines.push(line);\n    }\n}\n\n// 4. Génère le nouveau CSV\nconst newCsv = updatedLines.join(\"\\n\");\n\n// Retourne le CSV mis à jour\nmsg.payload = newCsv;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c5d9ce7281f55fb",
+        "type": "ui_toast",
+        "z": "ca1ccaf40a3d0a3c",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Oui",
+        "cancel": "Annuler",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Confirmation",
+        "x": 510,
+        "y": 340,
+        "wires": [
+            [
+                "576a35a8d1734be8"
+            ]
+        ]
+    },
+    {
+        "id": "e9623cd640a14435",
+        "type": "change",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Arrêt du système",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Êtes-vous sûr de vouloir arrêter l'installation ? Le système pourra être mis hors tension en toute sécurité",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 340,
+        "wires": [
+            [
+                "1c5d9ce7281f55fb"
             ]
         ]
     }
