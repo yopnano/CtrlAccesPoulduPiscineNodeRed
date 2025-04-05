@@ -1031,8 +1031,7 @@
         "y": 220,
         "wires": [
             [
-                "1b9c9329f5b78ac0",
-                "ed75c4f5883816c0"
+                "1b9c9329f5b78ac0"
             ]
         ]
     },
@@ -1844,7 +1843,7 @@
         "type": "debug",
         "z": "0401eb93d584c99a",
         "name": "debug 1",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
