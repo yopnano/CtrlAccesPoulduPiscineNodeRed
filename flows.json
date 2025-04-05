@@ -7449,29 +7449,7 @@
         "x": 660,
         "y": 120,
         "wires": [
-            [
-                "c54164098dc716a7"
-            ]
-        ]
-    },
-    {
-        "id": "c54164098dc716a7",
-        "type": "ui_table",
-        "z": "ca1ccaf40a3d0a3c",
-        "group": "d7771fcfb8b9b3fc",
-        "name": "Éditeur CSV",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "columns": [],
-        "outputs": 1,
-        "cts": true,
-        "x": 860,
-        "y": 120,
-        "wires": [
-            [
-                "4c128e28b7de4281"
-            ]
+            []
         ]
     },
     {
