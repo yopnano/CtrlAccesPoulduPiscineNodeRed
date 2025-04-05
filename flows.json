@@ -60,12 +60,13 @@
             "92e181a1ce7fe4e8",
             "af6ae15c6f3eed6c",
             "f32ba09408f3c256",
-            "e84bd0b3f880aafe"
+            "e84bd0b3f880aafe",
+            "b86b319c84fdbb3d"
         ],
-        "x": 54,
+        "x": 14,
         "y": 19,
-        "w": 852,
-        "h": 122
+        "w": 892,
+        "h": 162
     },
     {
         "id": "6ae47d635703e4eb",
@@ -1810,6 +1811,32 @@
         "x": 855,
         "y": 240,
         "wires": []
+    },
+    {
+        "id": "b86b319c84fdbb3d",
+        "type": "inject",
+        "z": "0401eb93d584c99a",
+        "g": "03abf3d3ef281a57",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "207A0A32",
+        "payloadType": "str",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "599740772563d9fe"
+            ]
+        ]
     },
     {
         "id": "e306ac211462d63b",
