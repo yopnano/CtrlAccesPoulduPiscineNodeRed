@@ -7714,7 +7714,7 @@
         "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
         "filenameType": "str",
         "appendNewline": false,
-        "createDir": false,
+        "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
         "x": 1040,
@@ -7772,7 +7772,28 @@
         "x": 680,
         "y": 300,
         "wires": [
-            []
+            [
+                "298a9a54374c8799"
+            ]
+        ]
+    },
+    {
+        "id": "298a9a54374c8799",
+        "type": "file",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Write Updated CSV",
+        "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1030,
+        "y": 320,
+        "wires": [
+            [
+                "3849a00f85e52cfb"
+            ]
         ]
     }
 ]
