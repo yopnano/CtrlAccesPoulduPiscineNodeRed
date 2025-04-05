@@ -1822,7 +1822,9 @@
         "name": "",
         "props": [
             {
-                "p": "payload"
+                "p": "payload.code",
+                "v": "207A0A32",
+                "vt": "str"
             }
         ],
         "repeat": "",
@@ -1830,9 +1832,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "code:\"207A0A32\"",
-        "payloadType": "str",
-        "x": 140,
+        "x": 110,
         "y": 140,
         "wires": [
             [
