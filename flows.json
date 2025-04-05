@@ -7858,7 +7858,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "\"Êtes-vous sûr de vouloir supprimer $(msg.payload.row.UID) ?\"",
+                "to": "`Êtes-vous sûr de vouloir supprimer $(msg.payload.row.UID) ?`",
                 "tot": "jsonata"
             }
         ],
