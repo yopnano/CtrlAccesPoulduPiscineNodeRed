@@ -4967,7 +4967,7 @@
         "z": "b7fb87140232fe9d",
         "g": "6fb40bcfcadc177b",
         "name": "Recherche",
-        "func": "let scannedUID = flow.get(\"form_data.uid\");\n\nnode.info(scannedUID);\n\n// Table des badges provenant du CSV\nlet badges = msg.payload;\n\n// Rechercher le badge correspondant à l'UID scanné\nlet foundBadge = badges.find(badge => badge.UID == scannedUID);\n\nif (foundBadge) {\n    // Badge trouvé, renvoyer les informations\n    msg.payload = {\n        trouve: true,\n        message: \"Badge trouvé\",\n        badge: foundBadge\n    };\n} else {\n    // Badge non trouvé\n    msg.payload = {\n        trouve: false,\n        UID: scannedUID,\n        message: \"Badge non trouvé\"\n    };\n}\n\nreturn msg;\n",
+        "func": "let scannedUID = flow.get(\"form_data.uid\");\n\n// node.warn(scannedUID);\n\n// Table des badges provenant du CSV\nlet badges = msg.payload;\n\n// Rechercher le badge correspondant à l'UID scanné\nlet foundBadge = badges.find(badge => badge.UID == scannedUID);\n\nif (foundBadge) {\n    // Badge trouvé, renvoyer les informations\n    msg.payload = {\n        trouve: true,\n        message: \"Badge trouvé\",\n        badge: foundBadge\n    };\n} else {\n    // Badge non trouvé\n    msg.payload = {\n        trouve: false,\n        UID: scannedUID,\n        message: \"Badge non trouvé\"\n    };\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4979,7 +4979,8 @@
         "wires": [
             [
                 "de1e94ac57e14e9b",
-                "12daa1d853407168"
+                "12daa1d853407168",
+                "6bf95101e61b4d63"
             ]
         ]
     },
