@@ -7578,9 +7578,7 @@
         "y": 120,
         "wires": [
             [
-                "4c128e28b7de4281",
-                "0677bcc4b0fd9a2d",
-                "dcebd1cea4cebdc1"
+                "4c128e28b7de4281"
             ]
         ]
     },
@@ -7673,7 +7671,10 @@
         "x": 750,
         "y": 80,
         "wires": [
-            []
+            [
+                "0677bcc4b0fd9a2d",
+                "dcebd1cea4cebdc1"
+            ]
         ]
     }
 ]
