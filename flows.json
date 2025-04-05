@@ -1838,22 +1838,6 @@
         ]
     },
     {
-        "id": "ed75c4f5883816c0",
-        "type": "debug",
-        "z": "0401eb93d584c99a",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1180,
-        "y": 300,
-        "wires": []
-    },
-    {
         "id": "e306ac211462d63b",
         "type": "inject",
         "z": "f99f61d176d88850",
@@ -5158,7 +5142,7 @@
         "z": "b7fb87140232fe9d",
         "g": "5444c772b7bef63c",
         "name": "Format CSV",
-        "func": "let csvContent = msg.payload; // Contenu du fichier CSV chargé\nlet csvLines = csvContent.split('\\n'); // Diviser par ligne\nlet notif = \"\";\n\nconst form_data = flow.get('form_data');  // La nouvelle ligne que tu souhaites ajouter\n\n// Fonction pour convertir une ligne CSV en objet\nconst csvLineToObject = (line) => {\n    let [uid, firstname, lastname, group, active] = line.split(',');\n    return { uid, firstname, lastname, group, active };\n};\n\n// Variable pour indiquer s'il y a un doublon\nlet duplicateFound = false;\n\n// Parcourir les lignes du CSV pour vérifier les doublons\nfor (let i = 0; i < csvLines.length; i++) {\n    let existingEntry = csvLineToObject(csvLines[i]);\n\n    // Vérifier si un couple nom-prénom ou un uid est déjà présent\n    if (existingEntry.firstname === form_data.firstname && existingEntry.lastname === form_data.lastname) {\n        duplicateFound = true;\n        notif = \"Doublon detecté pour nom et prénom.\"\n        break;  // Sortir si un doublon est trouvé\n    }\n\n    if (existingEntry.uid === form_data.uid) {\n        duplicateFound = true;\n        notif = \"Doublon detecté pour UID.\"        \n        break;  // Sortir si un doublon est trouvé\n    }\n}\n\n// Si aucun doublon n'est trouvé, ajouter la nouvelle ligne\nif (!duplicateFound) {\n    // Concatène les valeurs de l'objet en une ligne CSV\n    // Tu peux ajuster l'ordre et le délimiteur en fonction de tes besoins.\n    let csvLine = `${form_data.uid},${form_data.firstname},${form_data.lastname},${form_data.group},${form_data.active}`;\n\n    // Écrire cette ligne dans msg.payload pour l'enregistrer dans un fichier\n    msg.payload = csvLine + \"\\n\";  // Ajoute un retour à la ligne à la fin\n\n} else {\n    node.warn(notif);\n    msg.payload = notif\n}\nreturn msg;",
+        "func": "let csvContent = msg.payload; // Contenu du fichier CSV chargé\nlet csvLines = csvContent.split('\\n'); // Diviser par ligne\nlet notif = \"\";\n\nconst form_data = flow.get('form_data');  // La nouvelle ligne que tu souhaites ajouter\n\n// Fonction pour convertir une ligne CSV en objet\nconst csvLineToObject = (line) => {\n    let [uid, firstname, lastname, group, active] = line.split(',');\n    return { uid, firstname, lastname, group, active };\n};\n\n// Variable pour indiquer s'il y a un doublon\nlet duplicateFound = false;\n\n// Parcourir les lignes du CSV pour vérifier les doublons\nfor (let i = 0; i < csvLines.length; i++) {\n    let existingEntry = csvLineToObject(csvLines[i]);\n\n    // Vérifier si un couple nom-prénom ou un uid est déjà présent\n    if (existingEntry.firstname === form_data.firstname && existingEntry.lastname === form_data.lastname) {\n        // duplicateFound = true; // 05/04/2025 on autorise plusieurs fois les noms+prenom\n        notif = \"Doublon detecté pour nom et prénom.\"\n        break;  // Sortir si un doublon est trouvé\n    }\n\n    if (existingEntry.uid === form_data.uid) {\n        duplicateFound = true;\n        notif = \"Doublon detecté pour UID.\"        \n        break;  // Sortir si un doublon est trouvé\n    }\n}\n\n// Si aucun doublon n'est trouvé, ajouter la nouvelle ligne\nif (!duplicateFound) {\n    // Concatène les valeurs de l'objet en une ligne CSV\n    // Tu peux ajuster l'ordre et le délimiteur en fonction de tes besoins.\n    let csvLine = `${form_data.uid},${form_data.firstname},${form_data.lastname},${form_data.group},${form_data.active}`;\n\n    // Écrire cette ligne dans msg.payload pour l'enregistrer dans un fichier\n    msg.payload = csvLine + \"\\n\";  // Ajoute un retour à la ligne à la fin\n\n} else {\n    node.warn(notif);\n    msg.payload = notif\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
