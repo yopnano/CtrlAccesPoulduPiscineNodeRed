@@ -4531,7 +4531,7 @@
         "wires": [
             [
                 "f1b989b616a3c2b8",
-                "96bf4d6b76488f0e"
+                "e7f828a134bdfe5d"
             ]
         ]
     },
@@ -5729,7 +5729,7 @@
         "order": 6,
         "width": "0",
         "height": "0",
-        "format": "<div id=\"csvfile\" style=\"height: 600px; overflow-y: auto; border: 1px solid #ccc; padding: 5px;\">\n    <span ng-bind-html=\"msg.payload\"></span>\n</div>\n\n<script>\n    // Observer les changements pour déclencher le défilement\n    (function() {\n        var elem = document.getElementById('csvfile');\n        var observer = new MutationObserver(() => {\n            if (elem) {\n                setTimeout(() => { elem.scrollTop = elem.scrollHeight; }, 100);\n            }\n        });\n\n        observer.observe(elem, { childList: true, subtree: true });\n    })();\n</script>",
+        "format": "<link href=\"https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css\" rel=\"stylesheet\">\n<script src=\"https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js\"></script>\n\n<div id=\"csvTable\"></div>\n\n<script>\n    (function(scope) {\n    let table;\n\n    scope.$watch('msg.payload', function(data) {\n        if (!Array.isArray(data)) return;\n\n        // Crée les colonnes à partir des clés\n        const columns = Object.keys(data[0] || {}).map(key => ({\n            title: key, field: key, editor: \"input\"\n        }));\n\n        // Créer ou mettre à jour la table\n        if (!table) {\n            table = new Tabulator(\"#csvTable\", {\n                data: data,\n                columns: columns,\n                layout: \"fitColumns\",\n                cellEdited: function(cell) {\n                    const newData = table.getData();\n                    scope.send({ payload: newData });\n                }\n            });\n        } else {\n            table.setData(data);\n        }\n    });\n})(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -5739,26 +5739,6 @@
         "y": 60,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "96bf4d6b76488f0e",
-        "type": "split",
-        "z": "b7fb87140232fe9d",
-        "name": "",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "property": "payload",
-        "x": 350,
-        "y": 60,
-        "wires": [
-            [
-                "e7f828a134bdfe5d"
-            ]
         ]
     },
     {
