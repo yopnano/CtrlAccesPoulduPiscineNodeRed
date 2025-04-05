@@ -7679,7 +7679,7 @@
         "y": 260,
         "wires": [
             [
-                "a8a70f7c9ecfb301"
+                "b11e3d34efab2077"
             ]
         ]
     },
@@ -7697,6 +7697,23 @@
         "libs": [],
         "x": 510,
         "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b11e3d34efab2077",
+        "type": "file",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Ajout au fichier",
+        "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1040,
+        "y": 260,
         "wires": [
             []
         ]
