@@ -8043,7 +8043,7 @@
                 "value": "csv",
                 "type": "multiline",
                 "required": true,
-                "rows": 4
+                "rows": 100
             }
         ],
         "formValue": {
