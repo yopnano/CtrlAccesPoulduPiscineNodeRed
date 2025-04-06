@@ -8084,8 +8084,7 @@
                 "p": "payload.csv",
                 "pt": "msg",
                 "to": "payload",
-                "tot": "msg",
-                "dc": true
+                "tot": "msg"
             }
         ],
         "action": "",
