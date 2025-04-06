@@ -13,6 +13,7 @@
         "type": "tab",
         "label": "Interface",
         "disabled": false,
+        "locked": true,
         "info": "",
         "env": []
     },
@@ -3325,7 +3326,6 @@
         "id": "b7049679b6722877",
         "type": "switch",
         "z": "f99f61d176d88850",
-        "d": true,
         "g": "3847267b4923ef9c",
         "name": "Temps écoulé",
         "property": "payload",
