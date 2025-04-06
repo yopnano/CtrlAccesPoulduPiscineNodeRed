@@ -3347,8 +3347,8 @@
         "type": "ui_switch",
         "z": "f99f61d176d88850",
         "g": "55bdfefc3ec401d1",
-        "name": "",
-        "label": "Overlay FS",
+        "name": "Overlay_FS",
+        "label": "Lecture seule",
         "tooltip": "",
         "group": "2af2e23a3cac9b4d",
         "order": 2,
@@ -3369,7 +3369,7 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 550,
+        "x": 530,
         "y": 520,
         "wires": [
             [
