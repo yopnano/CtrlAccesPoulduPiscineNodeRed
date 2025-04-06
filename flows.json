@@ -7938,7 +7938,7 @@
         "order": 2,
         "width": "30",
         "height": "9",
-        "format": "",
+        "format": "<div>msg.payload</div>",
         "storeOutMessages": true,
         "fwdInMessages": false,
         "resendOnRefresh": true,
