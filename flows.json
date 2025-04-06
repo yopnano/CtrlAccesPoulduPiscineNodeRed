@@ -706,7 +706,7 @@
         ],
         "x": 54,
         "y": 159,
-        "w": 1112,
+        "w": 1132,
         "h": 182
     },
     {
@@ -859,26 +859,6 @@
         "className": ""
     },
     {
-        "id": "0774bc01ee11c4d3",
-        "type": "ui_tab",
-        "name": "Badges_old",
-        "icon": "person",
-        "order": 3,
-        "disabled": true,
-        "hidden": true
-    },
-    {
-        "id": "59fa5f21b1f59787",
-        "type": "ui_group",
-        "name": "Liste badges",
-        "tab": "0774bc01ee11c4d3",
-        "order": 2,
-        "disp": true,
-        "width": 23,
-        "collapse": true,
-        "className": ""
-    },
-    {
         "id": "631cc1e4eb5c5735",
         "type": "mqtt-broker",
         "name": "",
@@ -942,17 +922,6 @@
         "className": ""
     },
     {
-        "id": "fb8ef8df1ea1ad74",
-        "type": "ui_group",
-        "name": "Edition badge",
-        "tab": "0774bc01ee11c4d3",
-        "order": 3,
-        "disp": true,
-        "width": 7,
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "82bbeaedab2dd32c",
         "type": "ui_group",
         "name": "Info",
@@ -964,22 +933,11 @@
         "className": ""
     },
     {
-        "id": "1fc36ff59a0aba4d",
-        "type": "ui_group",
-        "name": "CSV",
-        "tab": "0774bc01ee11c4d3",
-        "order": 3,
-        "disp": true,
-        "width": 12,
-        "collapse": true,
-        "className": ""
-    },
-    {
         "id": "d899ba71b8352df4",
         "type": "ui_tab",
         "name": "Badges",
         "icon": "person",
-        "order": 1,
+        "order": 3,
         "disabled": false,
         "hidden": false
     },
@@ -5236,15 +5194,16 @@
         "type": "debug",
         "z": "b7fb87140232fe9d",
         "g": "b6cfbfcba18ed7c0",
-        "name": "debug 2",
-        "active": true,
+        "name": "debug Tableau badge",
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1000,
+        "x": 1040,
         "y": 200,
         "wires": []
     },
