@@ -4,6 +4,7 @@
         "type": "tab",
         "label": "Contrôle d'accès",
         "disabled": false,
+        "locked": true,
         "info": "",
         "env": []
     },
