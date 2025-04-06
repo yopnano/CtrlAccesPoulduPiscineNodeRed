@@ -662,38 +662,6 @@
         "h": 202
     },
     {
-        "id": "bfb66a8ea5694501",
-        "type": "group",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "Tableau de gestion des badges",
-        "style": {
-            "stroke": "#3f3f3f",
-            "fill": "#e3f3d3",
-            "label": true,
-            "label-position": "n",
-            "color": "#3f3f3f"
-        },
-        "nodes": [
-            "6e832b57bc1d6d16",
-            "f4c5d055aa2cc4c2",
-            "1234567890abcdef",
-            "9bca9ee71771d830",
-            "b7420d0133515e59",
-            "a8a70f7c9ecfb301",
-            "117ce129db9e0ca2",
-            "962a375e4d9fd177",
-            "6e5e0738ae1a22ca",
-            "38ea4ae7c22d7227",
-            "401827deb2be5540",
-            "f6dca712937abd81",
-            "b8fbe34866f603f3"
-        ],
-        "x": 74,
-        "y": 39,
-        "w": 1112,
-        "h": 162
-    },
-    {
         "id": "7b7480533a396aab",
         "type": "group",
         "z": "ca1ccaf40a3d0a3c",
@@ -717,11 +685,46 @@
             "576a35a8d1734be8",
             "1c5d9ce7281f55fb",
             "e9623cd640a14435",
-            "edfc54fd5816c75a"
+            "edfc54fd5816c75a",
+            "b8fbe34866f603f3",
+            "fe1d4379dafa39e3",
+            "aeb85e9435a45c01",
+            "90a992f90aab4000"
         ],
         "x": 74,
         "y": 259,
         "w": 1162,
+        "h": 222
+    },
+    {
+        "id": "bfb66a8ea5694501",
+        "type": "group",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Tableau de gestion des badges",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#e3f3d3",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "6e832b57bc1d6d16",
+            "f4c5d055aa2cc4c2",
+            "1234567890abcdef",
+            "9bca9ee71771d830",
+            "b7420d0133515e59",
+            "a8a70f7c9ecfb301",
+            "117ce129db9e0ca2",
+            "962a375e4d9fd177",
+            "6e5e0738ae1a22ca",
+            "38ea4ae7c22d7227",
+            "401827deb2be5540",
+            "f6dca712937abd81"
+        ],
+        "x": 74,
+        "y": 39,
+        "w": 1112,
         "h": 162
     },
     {
@@ -7980,7 +7983,7 @@
         "id": "b8fbe34866f603f3",
         "type": "ui_button",
         "z": "ca1ccaf40a3d0a3c",
-        "g": "bfb66a8ea5694501",
+        "g": "7b7480533a396aab",
         "name": "",
         "group": "d7771fcfb8b9b3fc",
         "order": 1,
@@ -7997,12 +8000,84 @@
         "payloadType": "flow",
         "topic": "topic",
         "topicType": "msg",
-        "x": 800,
-        "y": 160,
+        "x": 240,
+        "y": 440,
         "wires": [
             [
-                "a8a70f7c9ecfb301"
+                "aeb85e9435a45c01"
             ]
         ]
+    },
+    {
+        "id": "fe1d4379dafa39e3",
+        "type": "switch",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
+        "name": "Verification",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "ID,UID,FirstName,LastName,Group,Active",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 440,
+        "wires": [
+            [
+                "90a992f90aab4000"
+            ]
+        ]
+    },
+    {
+        "id": "aeb85e9435a45c01",
+        "type": "change",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
+        "name": "Recup du flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "csvOverride",
+                "tot": "flow",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 440,
+        "wires": [
+            [
+                "fe1d4379dafa39e3"
+            ]
+        ]
+    },
+    {
+        "id": "90a992f90aab4000",
+        "type": "debug",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 440,
+        "wires": []
     }
 ]
