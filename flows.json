@@ -687,7 +687,8 @@
             "e9623cd640a14435",
             "edfc54fd5816c75a",
             "fe1d4379dafa39e3",
-            "569d1a54e418d8f4"
+            "569d1a54e418d8f4",
+            "3f26bd1f340c3216"
         ],
         "x": 74,
         "y": 259,
@@ -8064,11 +8065,11 @@
         "links": [
             "68c105dd86b3dcc6"
         ],
-        "x": 685,
+        "x": 495,
         "y": 420,
         "wires": [
             [
-                "fe1d4379dafa39e3"
+                "3f26bd1f340c3216"
             ]
         ]
     },
@@ -8088,5 +8089,33 @@
         "x": 1020,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "3f26bd1f340c3216",
+        "type": "change",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
+        "name": "Recopie saisie",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.csv",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 420,
+        "wires": [
+            [
+                "fe1d4379dafa39e3"
+            ]
+        ]
     }
 ]
