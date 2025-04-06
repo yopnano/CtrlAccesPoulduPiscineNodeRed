@@ -719,8 +719,8 @@
             "6e5e0738ae1a22ca",
             "38ea4ae7c22d7227",
             "d7d0db7044eb8354",
-            "3fbc5f0652a5e95d",
-            "7e4bfbee7ea662aa"
+            "7e4bfbee7ea662aa",
+            "873080e18287bf4c"
         ],
         "x": 74,
         "y": 39,
@@ -7535,7 +7535,7 @@
             [
                 "6e832b57bc1d6d16",
                 "962a375e4d9fd177",
-                "3fbc5f0652a5e95d"
+                "873080e18287bf4c"
             ]
         ]
     },
@@ -8073,25 +8073,18 @@
         ]
     },
     {
-        "id": "3fbc5f0652a5e95d",
-        "type": "change",
+        "id": "873080e18287bf4c",
+        "type": "function",
         "z": "ca1ccaf40a3d0a3c",
         "g": "bfb66a8ea5694501",
         "name": "Copie",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload.csv",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
+        "func": "let csv = msg.payload;\n\nmsg.payload = {\n\n    csv : csv\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 410,
         "y": 160,
         "wires": [
