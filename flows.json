@@ -7665,7 +7665,7 @@
         "z": "ca1ccaf40a3d0a3c",
         "g": "7b7480533a396aab",
         "name": "New ID",
-        "func": "let csvData = flow.get(\"csvJson\") || [];\n\n// Récupère tous les IDs numériques existants\nlet usedIDs = csvData\n    .map(row => parseInt(row.ID))\n    .filter(ID => !isNaN(ID))\n    .sort((a, b) => a - b);\n\n// Trouve le plus petit ID libre\nlet newID = 0;\nfor (let i = 0; i < usedIDs.length; i++) {\n    if (usedIDs[i] !== i) {\n        newID = i;\n        break;\n    }\n    newID = i + 1;\n}\n\nmsg.payload = newID;\nreturn msg;\n",
+        "func": "let csvData = flow.get(\"csvJson\") || [];\n\n// Récupère tous les IDs numériques existants\nlet usedIDs = csvData\n    .map(row => parseInt(row.ID))\n    .filter(ID => !isNaN(ID))\n    .sort((a, b) => a - b);\n\n// Trouve le plus petit ID libre à partir de 1\nlet newID = 1;\nfor (let i = 0; i < usedIDs.length; i++) {\n    if (usedIDs[i] !== i + 1) {\n        newID = i + 1;\n        break;\n    }\n    newID = usedIDs.length + 1;\n}\n\nmsg.payload = newID;\nreturn msg;\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
