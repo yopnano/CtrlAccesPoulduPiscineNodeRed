@@ -683,12 +683,13 @@
             "117ce129db9e0ca2",
             "962a375e4d9fd177",
             "6e5e0738ae1a22ca",
-            "38ea4ae7c22d7227"
+            "38ea4ae7c22d7227",
+            "7c357023e2ea894f"
         ],
         "x": 74,
         "y": 39,
-        "w": 1122,
-        "h": 182
+        "w": 1112,
+        "h": 162
     },
     {
         "id": "7b7480533a396aab",
@@ -7504,7 +7505,7 @@
         "templateScope": "local",
         "className": "",
         "x": 810,
-        "y": 160,
+        "y": 120,
         "wires": [
             [
                 "a8a70f7c9ecfb301",
@@ -7528,7 +7529,8 @@
         "wires": [
             [
                 "6e832b57bc1d6d16",
-                "962a375e4d9fd177"
+                "962a375e4d9fd177",
+                "7c357023e2ea894f"
             ]
         ]
     },
@@ -7595,7 +7597,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1020,
-        "y": 140,
+        "y": 80,
         "wires": []
     },
     {
@@ -7673,7 +7675,7 @@
         "to": "",
         "reg": false,
         "x": 1030,
-        "y": 180,
+        "y": 120,
         "wires": [
             [
                 "38ea4ae7c22d7227"
@@ -7905,8 +7907,8 @@
         "links": [
             "edfc54fd5816c75a"
         ],
-        "x": 1155,
-        "y": 180,
+        "x": 1145,
+        "y": 120,
         "wires": []
     },
     {
@@ -7924,6 +7926,28 @@
             [
                 "switch_action"
             ]
+        ]
+    },
+    {
+        "id": "7c357023e2ea894f",
+        "type": "ui_template",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
+        "group": "d7771fcfb8b9b3fc",
+        "name": "Fichier CSV",
+        "order": 2,
+        "width": "30",
+        "height": "9",
+        "format": "msg.payload;",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 570,
+        "y": 160,
+        "wires": [
+            []
         ]
     }
 ]
