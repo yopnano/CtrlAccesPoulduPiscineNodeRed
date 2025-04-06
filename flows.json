@@ -7802,14 +7802,14 @@
         "type": "file",
         "z": "ca1ccaf40a3d0a3c",
         "g": "7b7480533a396aab",
-        "name": "Modifier le fichier",
+        "name": "Mettre à jour le fichier",
         "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1030,
+        "x": 1020,
         "y": 360,
         "wires": [
             [
