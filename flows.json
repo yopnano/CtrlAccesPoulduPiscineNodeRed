@@ -7802,7 +7802,7 @@
         "type": "file",
         "z": "ca1ccaf40a3d0a3c",
         "g": "7b7480533a396aab",
-        "name": "Write Updated CSV",
+        "name": "Modifier le fichier",
         "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
         "filenameType": "str",
         "appendNewline": false,
@@ -7944,7 +7944,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 570,
+        "x": 550,
         "y": 160,
         "wires": [
             []
