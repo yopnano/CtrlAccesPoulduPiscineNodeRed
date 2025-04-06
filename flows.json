@@ -718,9 +718,9 @@
             "962a375e4d9fd177",
             "6e5e0738ae1a22ca",
             "38ea4ae7c22d7227",
-            "401827deb2be5540",
-            "f6dca712937abd81",
-            "d7d0db7044eb8354"
+            "d7d0db7044eb8354",
+            "3fbc5f0652a5e95d",
+            "7e4bfbee7ea662aa"
         ],
         "x": 74,
         "y": 39,
@@ -7535,7 +7535,7 @@
             [
                 "6e832b57bc1d6d16",
                 "962a375e4d9fd177",
-                "401827deb2be5540"
+                "3fbc5f0652a5e95d"
             ]
         ]
     },
@@ -7934,54 +7934,6 @@
         ]
     },
     {
-        "id": "401827deb2be5540",
-        "type": "ui_text_input",
-        "z": "ca1ccaf40a3d0a3c",
-        "g": "bfb66a8ea5694501",
-        "name": "",
-        "label": "Ecriture de masse",
-        "tooltip": "Coller le CSV généré par Excel",
-        "group": "d7771fcfb8b9b3fc",
-        "order": 1,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "mode": "text",
-        "delay": 300,
-        "topic": "topic",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "msg",
-        "x": 390,
-        "y": 160,
-        "wires": [
-            [
-                "f6dca712937abd81"
-            ]
-        ]
-    },
-    {
-        "id": "f6dca712937abd81",
-        "type": "function",
-        "z": "ca1ccaf40a3d0a3c",
-        "g": "bfb66a8ea5694501",
-        "name": "Stocker dans flow",
-        "func": "flow.set(\"csvOverride\", msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 610,
-        "y": 160,
-        "wires": [
-            [
-                "d7d0db7044eb8354"
-            ]
-        ]
-    },
-    {
         "id": "b8fbe34866f603f3",
         "type": "ui_button",
         "z": "ca1ccaf40a3d0a3c",
@@ -8078,8 +8030,75 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
+        "x": 1040,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "7e4bfbee7ea662aa",
+        "type": "ui_form",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
+        "name": "",
+        "label": "Ecriture de masse",
+        "group": "1fc36ff59a0aba4d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "csv",
+                "value": "csv",
+                "type": "multiline",
+                "required": true,
+                "rows": 12
+            }
+        ],
+        "formValue": {
+            "csv": ""
+        },
+        "payload": "",
+        "submit": "Réécrire le fichier",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 570,
+        "y": 160,
+        "wires": [
+            [
+                "d7d0db7044eb8354"
+            ]
+        ]
+    },
+    {
+        "id": "3fbc5f0652a5e95d",
+        "type": "change",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
+        "name": "Copie",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.csv",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "7e4bfbee7ea662aa"
+            ]
+        ]
     }
 ]
