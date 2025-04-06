@@ -688,7 +688,7 @@
             "edfc54fd5816c75a",
             "fe1d4379dafa39e3",
             "569d1a54e418d8f4",
-            "3f26bd1f340c3216"
+            "a6d1712d2bfd3fb2"
         ],
         "x": 74,
         "y": 259,
@@ -8069,7 +8069,7 @@
         "y": 420,
         "wires": [
             [
-                "3f26bd1f340c3216"
+                "a6d1712d2bfd3fb2"
             ]
         ]
     },
@@ -8091,26 +8091,19 @@
         "wires": []
     },
     {
-        "id": "3f26bd1f340c3216",
-        "type": "change",
+        "id": "a6d1712d2bfd3fb2",
+        "type": "function",
         "z": "ca1ccaf40a3d0a3c",
         "g": "7b7480533a396aab",
-        "name": "Recopie saisie",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.csv",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 620,
+        "name": "Copie",
+        "func": "let csv = msg.payload.csv;\n\nmsg.payload = csv;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
         "y": 420,
         "wires": [
             [
