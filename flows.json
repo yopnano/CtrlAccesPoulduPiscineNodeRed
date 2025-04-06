@@ -628,40 +628,6 @@
         "h": 302
     },
     {
-        "id": "3847267b4923ef9c",
-        "type": "group",
-        "z": "f99f61d176d88850",
-        "g": "2473d132d401207a",
-        "name": "Arrêt automatique (sur coupure de courant)",
-        "style": {
-            "stroke": "none",
-            "stroke-opacity": "0.2",
-            "fill": "#ffffff",
-            "fill-opacity": "0.6",
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "a5007556f23ea3ef",
-            "0b3133aedd88273e",
-            "b66c6ab9aeba59b9",
-            "9433913b02703e35",
-            "ae31fec40099e219",
-            "fb07dd801a0da2cd",
-            "8b6c2fc8a4cf2d75",
-            "79a903e8d5e1195e",
-            "cbd62722f0d838dc",
-            "ac94056f1d5b909d",
-            "a5218aea095da7bc",
-            "b7049679b6722877",
-            "161486e9bfed07d1"
-        ],
-        "x": 54,
-        "y": 1059,
-        "w": 992,
-        "h": 202
-    },
-    {
         "id": "7b7480533a396aab",
         "type": "group",
         "z": "ca1ccaf40a3d0a3c",
@@ -726,6 +692,40 @@
         "y": 39,
         "w": 1112,
         "h": 182
+    },
+    {
+        "id": "3847267b4923ef9c",
+        "type": "group",
+        "z": "f99f61d176d88850",
+        "g": "2473d132d401207a",
+        "name": "Arrêt automatique (sur coupure de courant)",
+        "style": {
+            "stroke": "none",
+            "stroke-opacity": "0.2",
+            "fill": "#ffffff",
+            "fill-opacity": "0.6",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "a5007556f23ea3ef",
+            "0b3133aedd88273e",
+            "b66c6ab9aeba59b9",
+            "9433913b02703e35",
+            "ae31fec40099e219",
+            "fb07dd801a0da2cd",
+            "8b6c2fc8a4cf2d75",
+            "79a903e8d5e1195e",
+            "cbd62722f0d838dc",
+            "ac94056f1d5b909d",
+            "a5218aea095da7bc",
+            "b7049679b6722877",
+            "161486e9bfed07d1"
+        ],
+        "x": 54,
+        "y": 1059,
+        "w": 992,
+        "h": 202
     },
     {
         "id": "a14588abf773c2cf",
@@ -7715,7 +7715,7 @@
         "z": "ca1ccaf40a3d0a3c",
         "g": "7b7480533a396aab",
         "name": "Ajout dans CSV",
-        "func": "let newID = msg.payload;\nlet rowData = flow.get('rowData');  // La ligne à ajouter\n\n// Concatène les valeurs de l'objet en une ligne CSV\n// Tu peux ajuster l'ordre et le délimiteur en fonction de tes besoins.\nlet csvLine = `${newID},${rowData.UID},${rowData.FirstName},${rowData.LastName},${rowData.Group},${rowData.Active}`;\n\n// Écrire cette ligne dans msg.payload pour l'enregistrer dans un fichier\nmsg.payload = csvLine + \"\\n\";  // Ajoute un retour à la ligne à la fin\n\nreturn msg;",
+        "func": "let newID = msg.payload;\nlet rowData = flow.get('rowData');  // La ligne à ajouter\n\n// Concatène les valeurs de l'objet en une ligne CSV\n// Tu peux ajuster l'ordre et le délimiteur en fonction de tes besoins.\nlet csvLine = `${newID},${rowData.UID},${rowData.FirstName},${rowData.LastName},${rowData.Group},${rowData.Active}`;\n\n// Écrire cette ligne dans msg.payload pour l'enregistrer dans un fichier\nmsg.payload = + \"\\n\" + csvLine;  // Ajoute un retour à la ligne à la fin\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
