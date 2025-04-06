@@ -4559,14 +4559,14 @@
                 "t": "set",
                 "p": "topic",
                 "pt": "msg",
-                "to": "Persistance des données désactivée",
+                "to": "Attention : Système en lecture seule",
                 "tot": "str"
             },
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Attention :  La persistance des données n'est pas activée, les modifications apportées ne seront pas sauvegardées, veuillez désactiver l'overlay FS pour conserver les modifications",
+                "to": "Le système est en lecture seule, aucune modification n'est possible dans ce mode, veuillez depuis l'écran d'accueil, désactiver la lecture seule puis redémarrer",
                 "tot": "str"
             }
         ],
