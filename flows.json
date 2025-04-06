@@ -22,6 +22,7 @@
         "type": "tab",
         "label": "CSV Badges",
         "disabled": false,
+        "locked": true,
         "info": "",
         "env": []
     },
