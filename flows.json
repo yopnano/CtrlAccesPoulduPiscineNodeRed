@@ -8081,5 +8081,21 @@
         "x": 780,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "64c519b5846d32d8",
+        "type": "ui_table",
+        "z": "ca1ccaf40a3d0a3c",
+        "group": "d7771fcfb8b9b3fc",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 370,
+        "y": 560,
+        "wires": []
     }
 ]
