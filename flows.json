@@ -861,11 +861,11 @@
     {
         "id": "0774bc01ee11c4d3",
         "type": "ui_tab",
-        "name": "Badges",
+        "name": "Badges_old",
         "icon": "person",
         "order": 3,
-        "disabled": false,
-        "hidden": false
+        "disabled": true,
+        "hidden": true
     },
     {
         "id": "59fa5f21b1f59787",
@@ -977,8 +977,8 @@
     {
         "id": "d899ba71b8352df4",
         "type": "ui_tab",
-        "name": "Dashboard",
-        "icon": "dashboard",
+        "name": "Badges",
+        "icon": "person",
         "order": 1,
         "disabled": false,
         "hidden": false
