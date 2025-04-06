@@ -720,12 +720,14 @@
             "6e5e0738ae1a22ca",
             "38ea4ae7c22d7227",
             "401827deb2be5540",
-            "f6dca712937abd81"
+            "f6dca712937abd81",
+            "abebc1442fbcb987",
+            "d7d0db7044eb8354"
         ],
         "x": 74,
         "y": 39,
         "w": 1112,
-        "h": 162
+        "h": 222
     },
     {
         "id": "a14588abf773c2cf",
@@ -7956,7 +7958,8 @@
         "y": 160,
         "wires": [
             [
-                "f6dca712937abd81"
+                "f6dca712937abd81",
+                "abebc1442fbcb987"
             ]
         ]
     },
@@ -7976,7 +7979,9 @@
         "x": 610,
         "y": 160,
         "wires": [
-            []
+            [
+                "d7d0db7044eb8354"
+            ]
         ]
     },
     {
@@ -8080,6 +8085,40 @@
         "statusType": "auto",
         "x": 680,
         "y": 520,
+        "wires": []
+    },
+    {
+        "id": "abebc1442fbcb987",
+        "type": "debug",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "d7d0db7044eb8354",
+        "type": "debug",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 180,
         "wires": []
     }
 ]
