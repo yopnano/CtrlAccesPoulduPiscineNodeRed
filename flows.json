@@ -7998,7 +7998,7 @@
                 "value": "csv",
                 "type": "multiline",
                 "required": true,
-                "rows": 15
+                "rows": 10
             }
         ],
         "formValue": {
