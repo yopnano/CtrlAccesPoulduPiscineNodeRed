@@ -21,7 +21,6 @@
         "type": "tab",
         "label": "CSV Badges",
         "disabled": false,
-        "locked": true,
         "info": "",
         "env": []
     },
@@ -599,12 +598,15 @@
             "1c9fc92971e1e350",
             "3313ca87ebe648a1",
             "2945d3477fdfbe5d",
-            "747c5582537284f4"
+            "747c5582537284f4",
+            "383c2b0caf439c25",
+            "4bbfc54d0ea955e8",
+            "e02747e0557dd875"
         ],
         "x": 54,
         "y": 379,
         "w": 1162,
-        "h": 202
+        "h": 242
     },
     {
         "id": "b6cfbfcba18ed7c0",
@@ -4794,7 +4796,8 @@
         "name": "Fichier_Badge_Modifié",
         "mode": "link",
         "links": [
-            "0a45dc10695af6d5"
+            "0a45dc10695af6d5",
+            "e02747e0557dd875"
         ],
         "x": 1175,
         "y": 460,
@@ -5277,6 +5280,71 @@
         "x": 745,
         "y": 300,
         "wires": []
+    },
+    {
+        "id": "383c2b0caf439c25",
+        "type": "change",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Accès mis à jour",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 580,
+        "wires": [
+            [
+                "4bbfc54d0ea955e8"
+            ]
+        ]
+    },
+    {
+        "id": "4bbfc54d0ea955e8",
+        "type": "ui_toast",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "position": "top right",
+        "displayTime": "5",
+        "highlight": "Green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Notification",
+        "x": 530,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e02747e0557dd875",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Message_Update",
+        "links": [
+            "6b0432544f452b75"
+        ],
+        "x": 95,
+        "y": 580,
+        "wires": [
+            [
+                "383c2b0caf439c25"
+            ]
+        ]
     },
     {
         "id": "78bc32fd489261d1",
