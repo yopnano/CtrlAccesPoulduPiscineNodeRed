@@ -686,7 +686,6 @@
             "1c5d9ce7281f55fb",
             "e9623cd640a14435",
             "edfc54fd5816c75a",
-            "b8fbe34866f603f3",
             "fe1d4379dafa39e3",
             "aeb85e9435a45c01"
         ],
@@ -1004,12 +1003,34 @@
     {
         "id": "d7771fcfb8b9b3fc",
         "type": "ui_group",
-        "name": "CSV Editor",
+        "name": "Liste des d'accès",
         "tab": "d899ba71b8352df4",
         "order": 1,
         "disp": true,
         "width": 30,
-        "collapse": false
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "b44e025e6360562c",
+        "type": "ui_spacer",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "spacer",
+        "group": "d7771fcfb8b9b3fc",
+        "order": 3,
+        "width": 27,
+        "height": 1
+    },
+    {
+        "id": "26d6c4e63959da4e",
+        "type": "ui_group",
+        "name": "Edition manuelle (Prudence)",
+        "tab": "d899ba71b8352df4",
+        "order": 2,
+        "disp": true,
+        "width": "30",
+        "collapse": true,
+        "className": ""
     },
     {
         "id": "db65c9d28895a6c5",
@@ -7501,8 +7522,8 @@
         "group": "d7771fcfb8b9b3fc",
         "name": "Tableau CSV avec actions",
         "order": 2,
-        "width": "30",
-        "height": "9",
+        "width": 30,
+        "height": 9,
         "format": "<link href=\"https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css\" rel=\"stylesheet\">\n<!-- <link href=\"ui-table/css/tabulator.min.css\" rel=\"stylesheet\" type=\"text/css\"> -->\n<div style=\"padding: 10px;\">\n    <button onclick=\"addRow()\">Ajouter un accès</button>\n</div>\n<div id=\"csv-table\" style=\"height: 100%; width: 100%; font-size: 14px;\"></div>\n<script src=\"https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js\"></script>\n\n<script>\n    (function(scope) {\n    let table;\n\n    // Fonction pour ajouter une ligne\n    window.addRow = function() {\n        const newRow = {\n            \"ID\": \"NEW\",\n            \"Active\": true,\n            \"UID\": \"Nouveau UID\",\n            \"Group\": \"Nouveau groupe\",\n            \"LastName\": \"Nom\",\n            \"FirstName\": \"Prénom\"\n        };\n        table.addRow(newRow);\n    }\n\n    window.sendAction = function(action, rowData) {\n        scope.send({ payload: { action: action, row: rowData } });\n    }\n\n    function buildTable(data) {\n        table = new Tabulator(\"#csv-table\", {\n            data: data,\n            layout: \"fitColumns\",\n            columns: [\n                { title: \"ID\", field: \"ID\", hozAlign: \"center\", width: 0 },\n                { title: \"Activé\", field: \"Active\", formatter: \"tickCross\", editor: true, hozAlign: \"center\", width: 100 },\n                { title: \"Code\", field: \"UID\", hozAlign: \"center\", editor: \"input\", widthGrow: 1 },\n                { title: \"Type accès\", field: \"Group\", editor: \"input\", hozAlign: \"center\", widthGrow: 1 },\n                { title: \"Nom\", field: \"LastName\", editor: \"input\", widthGrow: 2 },\n                { title: \"Prénom\", field: \"FirstName\", editor: \"input\", widthGrow: 2 },\n                {\n                    title: \"Actions\",\n                    field: \"ID\",\n                    hozAlign: \"center\",\n                    formatter: function(cell) {\n                        return `\n                            <button class=\"edit-btn\" style=\"border:none;background:none;cursor:pointer;\">✏️</button>\n                            <button class=\"delete-btn\" style=\"border:none;background:none;cursor:pointer;\">🗑️</button>\n                        `;\n                    },\n                    width: 100\n                }\n            ],\n            rowFormatter: function(row) {\n                const el = row.getElement();\n                const editBtn = el.querySelector(\".edit-btn\");\n                const deleteBtn = el.querySelector(\".delete-btn\");\n                if (editBtn && deleteBtn) {\n                    editBtn.addEventListener(\"click\", () => window.sendAction(\"edit\", row.getData()));\n                    deleteBtn.addEventListener(\"click\", () => window.sendAction(\"delete\", row.getData()));\n                }\n            }\n        });\n    }\n\n    scope.$watch(\"msg\", function(msg) {\n        if (msg && Array.isArray(msg.payload)) {\n            if (table) {\n                table.replaceData(msg.payload);\n                setTimeout(() => table.redraw(), 50);\n            } else {\n                buildTable(msg.payload);\n            }\n        }\n    });\n})(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": false,
@@ -7934,35 +7955,6 @@
         ]
     },
     {
-        "id": "b8fbe34866f603f3",
-        "type": "ui_button",
-        "z": "ca1ccaf40a3d0a3c",
-        "g": "7b7480533a396aab",
-        "name": "",
-        "group": "d7771fcfb8b9b3fc",
-        "order": 1,
-        "width": "3",
-        "height": "1",
-        "passthru": false,
-        "label": "Réécriture CSV",
-        "tooltip": "Le fichier sera entièrement remplacé",
-        "color": "",
-        "bgcolor": "RED",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 400,
-        "y": 420,
-        "wires": [
-            [
-                "aeb85e9435a45c01"
-            ]
-        ]
-    },
-    {
         "id": "fe1d4379dafa39e3",
         "type": "switch",
         "z": "ca1ccaf40a3d0a3c",
@@ -8041,7 +8033,7 @@
         "g": "bfb66a8ea5694501",
         "name": "",
         "label": "Ecriture de masse",
-        "group": "d7771fcfb8b9b3fc",
+        "group": "26d6c4e63959da4e",
         "order": 1,
         "width": 0,
         "height": 0,
