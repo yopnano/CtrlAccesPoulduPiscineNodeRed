@@ -21,6 +21,7 @@
         "type": "tab",
         "label": "CSV Badges",
         "disabled": false,
+        "locked": true,
         "info": "",
         "env": []
     },
@@ -2553,7 +2554,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Wi-Fi activé",
+                "to": "Wi-Fi activé.",
                 "tot": "str"
             }
         ],
@@ -2583,7 +2584,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Wi-Fi désactivé",
+                "to": "Wi-Fi désactivé.",
                 "tot": "str"
             }
         ],
@@ -2742,7 +2743,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Êtes-vous sûr de vouloir arrêter l'installation ? Le système pourra être mis hors tension en toute sécurité",
+                "to": "Êtes-vous sûr de vouloir arrêter l'installation ? Le système pourra être mis hors tension en toute sécurité.",
                 "tot": "str"
             }
         ],
@@ -2833,7 +2834,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Voulez-vous redémarrer l'installation ? Le système sera indisponible pendant 5 minutes",
+                "to": "Voulez-vous redémarrer l'installation ? Le système sera indisponible pendant 5 minutes.",
                 "tot": "str"
             }
         ],
@@ -3058,7 +3059,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Défaut d'alimentation, fonctionnement sur batterie",
+                "to": "Défaut d'alimentation, fonctionnement sur batterie.",
                 "tot": "str"
             }
         ],
@@ -3192,7 +3193,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Système correctement alimenté",
+                "to": "Système correctement alimenté.",
                 "tot": "str"
             }
         ],
@@ -3228,7 +3229,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Problème alimentation, arrêt immédiat",
+                "to": "Problème alimentation, arrêt immédiat.",
                 "tot": "str"
             }
         ],
@@ -4261,7 +4262,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Sauvegarde terminée vous pouvez retirer le support de sauvegarde",
+                "to": "Sauvegarde terminée vous pouvez retirer le support de sauvegarde.",
                 "tot": "str"
             }
         ],
@@ -4351,7 +4352,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Echec de la sauvegarde veuillez consulter le statut",
+                "to": "Echec de la sauvegarde veuillez consulter le statut.",
                 "tot": "str"
             }
         ],
@@ -5295,7 +5296,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Les accès ont été mis à jour",
+                "to": "Les accès ont été mis à jour.",
                 "tot": "str"
             }
         ],
@@ -5847,7 +5848,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Communication MQTT rétablie",
+                "to": "Communication MQTT rétablie.",
                 "tot": "str"
             }
         ],
@@ -5905,7 +5906,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Défaut de communication MQTT",
+                "to": "Défaut de communication MQTT.",
                 "tot": "str"
             }
         ],
@@ -6408,7 +6409,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Paramètres mis à jour",
+                "to": "Les paramètres ont été mis à jour.",
                 "tot": "str"
             }
         ],
