@@ -687,7 +687,7 @@
             "e9623cd640a14435",
             "edfc54fd5816c75a",
             "fe1d4379dafa39e3",
-            "aeb85e9435a45c01"
+            "569d1a54e418d8f4"
         ],
         "x": 74,
         "y": 259,
@@ -717,9 +717,9 @@
             "962a375e4d9fd177",
             "6e5e0738ae1a22ca",
             "38ea4ae7c22d7227",
-            "d7d0db7044eb8354",
             "7e4bfbee7ea662aa",
-            "873080e18287bf4c"
+            "873080e18287bf4c",
+            "68c105dd86b3dcc6"
         ],
         "x": 74,
         "y": 39,
@@ -7981,52 +7981,6 @@
         ]
     },
     {
-        "id": "aeb85e9435a45c01",
-        "type": "change",
-        "z": "ca1ccaf40a3d0a3c",
-        "g": "7b7480533a396aab",
-        "name": "Recup du flow",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "csvOverride",
-                "tot": "flow",
-                "dc": true
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 620,
-        "y": 420,
-        "wires": [
-            [
-                "fe1d4379dafa39e3"
-            ]
-        ]
-    },
-    {
-        "id": "d7d0db7044eb8354",
-        "type": "debug",
-        "z": "ca1ccaf40a3d0a3c",
-        "g": "bfb66a8ea5694501",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1040,
-        "y": 160,
-        "wires": []
-    },
-    {
         "id": "7e4bfbee7ea662aa",
         "type": "ui_form",
         "z": "ca1ccaf40a3d0a3c",
@@ -8043,7 +7997,7 @@
                 "value": "csv",
                 "type": "multiline",
                 "required": true,
-                "rows": 100
+                "rows": 15
             }
         ],
         "formValue": {
@@ -8060,7 +8014,7 @@
         "y": 160,
         "wires": [
             [
-                "d7d0db7044eb8354"
+                "68c105dd86b3dcc6"
             ]
         ]
     },
@@ -8082,6 +8036,37 @@
         "wires": [
             [
                 "7e4bfbee7ea662aa"
+            ]
+        ]
+    },
+    {
+        "id": "68c105dd86b3dcc6",
+        "type": "link out",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
+        "name": "Override_CSV",
+        "mode": "link",
+        "links": [
+            "569d1a54e418d8f4"
+        ],
+        "x": 695,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "569d1a54e418d8f4",
+        "type": "link in",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
+        "name": "Ecrasement_CSV",
+        "links": [
+            "68c105dd86b3dcc6"
+        ],
+        "x": 685,
+        "y": 420,
+        "wires": [
+            [
+                "fe1d4379dafa39e3"
             ]
         ]
     }
