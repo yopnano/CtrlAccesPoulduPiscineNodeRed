@@ -685,7 +685,8 @@
             "6e5e0738ae1a22ca",
             "38ea4ae7c22d7227",
             "401827deb2be5540",
-            "f6dca712937abd81"
+            "f6dca712937abd81",
+            "b8fbe34866f603f3"
         ],
         "x": 74,
         "y": 39,
@@ -7935,12 +7936,12 @@
         "z": "ca1ccaf40a3d0a3c",
         "g": "bfb66a8ea5694501",
         "name": "",
-        "label": "Ecraser le fichier CSV",
-        "tooltip": "Attention le fichier va être entièrement réécrit",
+        "label": "Ecriture de masse",
+        "tooltip": "Coller le CSV généré par Excel",
         "group": "d7771fcfb8b9b3fc",
         "order": 1,
-        "width": "9",
-        "height": "9",
+        "width": "0",
+        "height": "0",
         "passthru": false,
         "mode": "text",
         "delay": 300,
@@ -7948,7 +7949,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 400,
+        "x": 390,
         "y": 160,
         "wires": [
             [
@@ -7970,6 +7971,33 @@
         "finalize": "",
         "libs": [],
         "x": 610,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b8fbe34866f603f3",
+        "type": "ui_button",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
+        "name": "",
+        "group": "1fc36ff59a0aba4d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Réécriture CSV",
+        "tooltip": "Le fichier sre entièrement écrit",
+        "color": "",
+        "bgcolor": "RED",
+        "className": "",
+        "icon": "",
+        "payload": "csvOverride",
+        "payloadType": "flow",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 800,
         "y": 160,
         "wires": [
             []
