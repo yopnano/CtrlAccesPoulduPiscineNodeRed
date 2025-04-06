@@ -13,7 +13,6 @@
         "type": "tab",
         "label": "Interface",
         "disabled": false,
-        "locked": true,
         "info": "",
         "env": []
     },
