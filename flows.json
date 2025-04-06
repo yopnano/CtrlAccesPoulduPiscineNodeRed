@@ -662,6 +662,66 @@
         "h": 202
     },
     {
+        "id": "bfb66a8ea5694501",
+        "type": "group",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Tableau de gestion des badges",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#e3f3d3",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "6e832b57bc1d6d16",
+            "f4c5d055aa2cc4c2",
+            "1234567890abcdef",
+            "9bca9ee71771d830",
+            "b7420d0133515e59",
+            "a8a70f7c9ecfb301",
+            "117ce129db9e0ca2",
+            "962a375e4d9fd177",
+            "6e5e0738ae1a22ca",
+            "38ea4ae7c22d7227"
+        ],
+        "x": 74,
+        "y": 39,
+        "w": 1122,
+        "h": 182
+    },
+    {
+        "id": "7b7480533a396aab",
+        "type": "group",
+        "z": "ca1ccaf40a3d0a3c",
+        "name": "Gestion du fichier CSV",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#bfdbef",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "switch_action",
+            "d605467a73140d03",
+            "c983179ea7df87da",
+            "ac97fcd7225fceca",
+            "b11e3d34efab2077",
+            "3849a00f85e52cfb",
+            "3c2f75bccaecc07f",
+            "298a9a54374c8799",
+            "576a35a8d1734be8",
+            "1c5d9ce7281f55fb",
+            "e9623cd640a14435",
+            "edfc54fd5816c75a"
+        ],
+        "x": 74,
+        "y": 259,
+        "w": 1162,
+        "h": 162
+    },
+    {
         "id": "a14588abf773c2cf",
         "type": "ui_tab",
         "name": "Accueil",
@@ -7386,6 +7446,7 @@
         "id": "6e832b57bc1d6d16",
         "type": "csv",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
         "name": "CSV → JSON",
         "spec": "rfc",
         "sep": ",",
@@ -7398,7 +7459,7 @@
         "strings": false,
         "include_empty_strings": false,
         "include_null_values": false,
-        "x": 500,
+        "x": 560,
         "y": 120,
         "wires": [
             [
@@ -7411,6 +7472,7 @@
         "id": "f4c5d055aa2cc4c2",
         "type": "function",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
         "name": "Stocker dans flow",
         "func": "flow.set(\"csvJson\", msg.payload);\nreturn msg;",
         "outputs": 1,
@@ -7419,68 +7481,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
+        "x": 790,
         "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4c128e28b7de4281",
-        "type": "function",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "Mettre à jour CSV",
-        "func": "let data = flow.get(\"csvData\") || [];\nlet updated = msg.payload;\n\nfor (let i = 0; i < data.length; i++) {\n    if (data[i].ID === updated.ID) {\n        data[i] = updated;\n        break;\n    }\n}\n\nflow.set(\"csvData\", data);\nmsg.payload = data;\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 390,
-        "y": 440,
-        "wires": [
-            [
-                "be2e00b23b38fc3c"
-            ]
-        ]
-    },
-    {
-        "id": "be2e00b23b38fc3c",
-        "type": "csv",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "JSON → CSV",
-        "sep": ",",
-        "hdrin": false,
-        "hdrout": "all",
-        "multi": "one",
-        "ret": "\\n",
-        "temp": "",
-        "skip": "0",
-        "strings": true,
-        "include_empty_strings": false,
-        "include_null_values": false,
-        "x": 600,
-        "y": 440,
-        "wires": [
-            [
-                "96aeef7990cb4de3"
-            ]
-        ]
-    },
-    {
-        "id": "96aeef7990cb4de3",
-        "type": "file",
-        "z": "ca1ccaf40a3d0a3c",
-        "name": "Écrire CSV (MAJ)",
-        "filename": "/tmp/data.csv",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": false,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 800,
-        "y": 440,
         "wires": [
             []
         ]
@@ -7489,6 +7491,7 @@
         "id": "1234567890abcdef",
         "type": "ui_template",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
         "group": "d7771fcfb8b9b3fc",
         "name": "Tableau CSV avec actions",
         "order": 2,
@@ -7500,7 +7503,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 750,
+        "x": 810,
         "y": 160,
         "wires": [
             [
@@ -7513,13 +7516,14 @@
         "id": "9bca9ee71771d830",
         "type": "link call",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
         "name": "",
         "links": [
             "d2ce0b8ca3f408a5"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 290,
+        "x": 350,
         "y": 120,
         "wires": [
             [
@@ -7532,9 +7536,10 @@
         "id": "b7420d0133515e59",
         "type": "ui_ui_control",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
         "name": "",
         "events": "all",
-        "x": 100,
+        "x": 160,
         "y": 120,
         "wires": [
             [
@@ -7546,6 +7551,7 @@
         "id": "switch_action",
         "type": "switch",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
         "name": "Action ?",
         "property": "payload.action",
         "propertyType": "msg",
@@ -7564,8 +7570,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 180,
-        "y": 300,
+        "x": 220,
+        "y": 340,
         "wires": [
             [
                 "d605467a73140d03"
@@ -7579,6 +7585,7 @@
         "id": "a8a70f7c9ecfb301",
         "type": "debug",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
         "name": "debug 1",
         "active": true,
         "tosidebar": true,
@@ -7587,7 +7594,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 960,
+        "x": 1020,
         "y": 140,
         "wires": []
     },
@@ -7595,6 +7602,7 @@
         "id": "d605467a73140d03",
         "type": "switch",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
         "name": "Ajout ?",
         "property": "payload.row.ID",
         "propertyType": "msg",
@@ -7612,7 +7620,7 @@
         "repair": false,
         "outputs": 2,
         "x": 460,
-        "y": 280,
+        "y": 320,
         "wires": [
             [
                 "c983179ea7df87da"
@@ -7626,6 +7634,7 @@
         "id": "c983179ea7df87da",
         "type": "function",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
         "name": "New ID",
         "func": "let csvData = flow.get(\"csvJson\") || [];\n\n// Récupère tous les IDs numériques existants\nlet usedIDs = csvData\n    .map(row => parseInt(row.ID))\n    .filter(ID => !isNaN(ID))\n    .sort((a, b) => a - b);\n\n// Trouve le plus petit ID libre\nlet newID = 0;\nfor (let i = 0; i < usedIDs.length; i++) {\n    if (usedIDs[i] !== i) {\n        newID = i;\n        break;\n    }\n    newID = i + 1;\n}\n\nmsg.payload = newID;\nreturn msg;\n",
         "outputs": 1,
@@ -7635,7 +7644,7 @@
         "finalize": "",
         "libs": [],
         "x": 640,
-        "y": 260,
+        "y": 300,
         "wires": [
             [
                 "ac97fcd7225fceca"
@@ -7646,6 +7655,7 @@
         "id": "117ce129db9e0ca2",
         "type": "change",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
         "name": "Mémo saisie",
         "rules": [
             {
@@ -7662,11 +7672,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
+        "x": 1030,
         "y": 180,
         "wires": [
             [
-                "switch_action"
+                "38ea4ae7c22d7227"
             ]
         ]
     },
@@ -7674,7 +7684,8 @@
         "id": "ac97fcd7225fceca",
         "type": "function",
         "z": "ca1ccaf40a3d0a3c",
-        "name": "Création CSV",
+        "g": "7b7480533a396aab",
+        "name": "Ajout dans CSV",
         "func": "let newID = msg.payload;\nlet rowData = flow.get('rowData');  // La ligne à ajouter\n\n// Concatène les valeurs de l'objet en une ligne CSV\n// Tu peux ajuster l'ordre et le délimiteur en fonction de tes besoins.\nlet csvLine = `${newID},${rowData.UID},${rowData.FirstName},${rowData.LastName},${rowData.Group},${rowData.Active}`;\n\n// Écrire cette ligne dans msg.payload pour l'enregistrer dans un fichier\nmsg.payload = csvLine + \"\\n\";  // Ajoute un retour à la ligne à la fin\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -7683,7 +7694,7 @@
         "finalize": "",
         "libs": [],
         "x": 840,
-        "y": 260,
+        "y": 300,
         "wires": [
             [
                 "b11e3d34efab2077"
@@ -7694,6 +7705,7 @@
         "id": "962a375e4d9fd177",
         "type": "function",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
         "name": "Stocker dans flow",
         "func": "flow.set(\"csvRaw\", msg.payload);\nreturn msg;",
         "outputs": 1,
@@ -7702,7 +7714,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
+        "x": 570,
         "y": 80,
         "wires": [
             []
@@ -7712,6 +7724,7 @@
         "id": "b11e3d34efab2077",
         "type": "file",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
         "name": "Ajout au fichier",
         "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
         "filenameType": "str",
@@ -7720,7 +7733,7 @@
         "overwriteFile": "false",
         "encoding": "none",
         "x": 1040,
-        "y": 260,
+        "y": 300,
         "wires": [
             [
                 "3849a00f85e52cfb"
@@ -7731,6 +7744,7 @@
         "id": "3849a00f85e52cfb",
         "type": "link out",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
         "name": "Fichier_Badge_Modifié",
         "mode": "link",
         "links": [
@@ -7739,19 +7753,20 @@
             "6e5e0738ae1a22ca"
         ],
         "x": 1195,
-        "y": 300,
+        "y": 340,
         "wires": []
     },
     {
         "id": "6e5e0738ae1a22ca",
         "type": "link in",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
         "name": "Table_Update",
         "links": [
             "6c65b544c9dba5ad",
             "3849a00f85e52cfb"
         ],
-        "x": 145,
+        "x": 205,
         "y": 160,
         "wires": [
             [
@@ -7763,7 +7778,8 @@
         "id": "3c2f75bccaecc07f",
         "type": "function",
         "z": "ca1ccaf40a3d0a3c",
-        "name": "Modification du CSV",
+        "g": "7b7480533a396aab",
+        "name": "Modification dans CSV",
         "func": "const rawCsv = flow.get('csvRaw');\nconst updatedRow = msg.payload.row;\n\nif (!rawCsv || !updatedRow || updatedRow.ID === undefined) {\n    node.error(\"Données manquantes ou ID invalide.\");\n    return null;\n}\n\n// 1. Séparer le CSV brut en lignes\nlet lines = rawCsv.split(/\\r?\\n/);\n\n// 2. La première ligne est l'en-tête\nconst headers = lines[0].split(\",\");\n\n// 3. Reconstruire les lignes, en remplaçant celle avec le bon ID\nlet updatedLines = [lines[0]]; // Commence par l'entête\nfor (let i = 1; i < lines.length; i++) {\n    const line = lines[i];\n    if (!line.trim()) continue; // ignore lignes vides\n\n    const values = line.split(\",\");\n    const rowObj = {};\n    headers.forEach((key, idx) => {\n        rowObj[key] = values[idx];\n    });\n\n    if (String(rowObj.ID) === String(updatedRow.ID)) {\n        // Remplace par la ligne mise à jour\n        const newLine = headers.map(h => updatedRow[h] ?? \"\").join(\",\");\n        updatedLines.push(newLine);\n    } else {\n        updatedLines.push(line);\n    }\n}\n\n// 4. Génère le nouveau CSV\nconst newCsv = updatedLines.join(\"\\n\");\n\n// Retourne le CSV mis à jour\nmsg.payload = newCsv;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -7771,8 +7787,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
-        "y": 300,
+        "x": 780,
+        "y": 340,
         "wires": [
             [
                 "298a9a54374c8799"
@@ -7783,6 +7799,7 @@
         "id": "298a9a54374c8799",
         "type": "file",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
         "name": "Write Updated CSV",
         "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
         "filenameType": "str",
@@ -7791,7 +7808,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 1030,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "3849a00f85e52cfb"
@@ -7802,7 +7819,8 @@
         "id": "576a35a8d1734be8",
         "type": "function",
         "z": "ca1ccaf40a3d0a3c",
-        "name": "Suppression du CSV",
+        "g": "7b7480533a396aab",
+        "name": "Suppression dans CSV",
         "func": "const rawCsv = flow.get(\"csvRaw\");\nconst rowToDelete = flow.get(\"rowData\");\n\nif (!rawCsv || !rowToDelete || rowToDelete.ID === undefined) {\n    node.error(\"Données manquantes ou ID invalide.\");\n    return null;\n}\n\n// 1. Séparer le CSV brut en lignes\nlet lines = rawCsv.split(/\\r?\\n/);\n\n// 2. La première ligne est l'en-tête\nconst headers = lines[0].split(\",\");\n\n// 3. Construit le nouveau CSV sans la ligne à supprimer\nlet updatedLines = [lines[0]]; // Conserver l'en-tête\nfor (let i = 1; i < lines.length; i++) {\n    const line = lines[i];\n    if (!line.trim()) continue;\n\n    const values = line.split(\",\");\n    const rowObj = {};\n    headers.forEach((key, idx) => {\n        rowObj[key] = values[idx];\n    });\n\n    if (String(rowObj.ID) !== String(rowToDelete.ID)) {\n        updatedLines.push(line);\n    }\n}\n\n// 4. Génère le nouveau CSV\nconst newCsv = updatedLines.join(\"\\n\");\n\n// Retourne le CSV mis à jour\nmsg.payload = newCsv;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -7810,8 +7828,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
-        "y": 340,
+        "x": 770,
+        "y": 380,
         "wires": [
             [
                 "298a9a54374c8799"
@@ -7822,6 +7840,7 @@
         "id": "1c5d9ce7281f55fb",
         "type": "ui_toast",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -7834,7 +7853,7 @@
         "topic": "",
         "name": "Confirmation",
         "x": 550,
-        "y": 340,
+        "y": 380,
         "wires": [
             [
                 "576a35a8d1734be8"
@@ -7845,6 +7864,7 @@
         "id": "e9623cd640a14435",
         "type": "change",
         "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
         "name": "Message",
         "rules": [
             {
@@ -7868,10 +7888,41 @@
         "to": "",
         "reg": false,
         "x": 380,
-        "y": 340,
+        "y": 380,
         "wires": [
             [
                 "1c5d9ce7281f55fb"
+            ]
+        ]
+    },
+    {
+        "id": "38ea4ae7c22d7227",
+        "type": "link out",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
+        "name": "Tableau_Badge_Modifier",
+        "mode": "link",
+        "links": [
+            "edfc54fd5816c75a"
+        ],
+        "x": 1155,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "edfc54fd5816c75a",
+        "type": "link in",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "7b7480533a396aab",
+        "name": "Modifier_CSV",
+        "links": [
+            "38ea4ae7c22d7227"
+        ],
+        "x": 115,
+        "y": 340,
+        "wires": [
+            [
+                "switch_action"
             ]
         ]
     }
