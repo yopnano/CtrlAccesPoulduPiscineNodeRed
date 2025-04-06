@@ -7962,7 +7962,7 @@
         "z": "ca1ccaf40a3d0a3c",
         "g": "7b7480533a396aab",
         "name": "Verification",
-        "property": "payload.csv",
+        "property": "payload",
         "propertyType": "msg",
         "rules": [
             {
