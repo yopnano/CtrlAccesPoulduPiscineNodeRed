@@ -8039,11 +8039,11 @@
         "height": 0,
         "options": [
             {
-                "label": "csv",
+                "label": "",
                 "value": "csv",
                 "type": "multiline",
                 "required": true,
-                "rows": 8
+                "rows": 4
             }
         ],
         "formValue": {
