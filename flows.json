@@ -7715,7 +7715,7 @@
         "z": "ca1ccaf40a3d0a3c",
         "g": "7b7480533a396aab",
         "name": "Ajout dans CSV",
-        "func": "let newID = msg.payload;\nlet rowData = flow.get('rowData');  // La ligne à ajouter\n\n// Concatène les valeurs de l'objet en une ligne CSV\n// Tu peux ajuster l'ordre et le délimiteur en fonction de tes besoins.\nlet csvLine = `${newID},${rowData.UID},${rowData.FirstName},${rowData.LastName},${rowData.Group},${rowData.Active}`;\n\n// Écrire cette ligne dans msg.payload pour l'enregistrer dans un fichier\nmsg.payload = + \"\\n\" + csvLine;  // Ajoute un retour à la ligne à la fin\n\nreturn msg;",
+        "func": "let newID = msg.payload;\nlet rowData = flow.get('rowData');  // La ligne à ajouter\n\n// Concatène les valeurs de l'objet en une ligne CSV\n// Tu peux ajuster l'ordre et le délimiteur en fonction de tes besoins.\nlet csvLine = `${newID},${rowData.UID},${rowData.FirstName},${rowData.LastName},${rowData.Group},${rowData.Active}`;\n\n// Écrire cette ligne dans msg.payload pour l'enregistrer dans un fichier\nmsg.payload = + \"\\n\\r\\n\\r\" + csvLine;  // Ajoute un retour à la ligne à la fin\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
