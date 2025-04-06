@@ -45,7 +45,7 @@
         "id": "ca1ccaf40a3d0a3c",
         "type": "tab",
         "label": "CSV Dashboard Editor",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
@@ -212,90 +212,6 @@
         "y": 599,
         "w": 992,
         "h": 142
-    },
-    {
-        "id": "5444c772b7bef63c",
-        "type": "group",
-        "z": "b7fb87140232fe9d",
-        "name": "Mise à jour du fichier CSV",
-        "style": {
-            "stroke": "#3f3f3f",
-            "fill": "#bfdbef",
-            "label": true,
-            "label-position": "n",
-            "color": "#3f3f3f"
-        },
-        "nodes": [
-            "update-csv",
-            "write-updated-csv",
-            "delete-from-csv",
-            "b4193616c42bd034",
-            "c18097db6ea8c49a",
-            "cbebc005f2e85a7d",
-            "c9a6d29df5ef2a8b",
-            "5201f1bc8e4e41e5",
-            "48fe8ebc4af5cd6b",
-            "e81743050a9f376b",
-            "6c65b544c9dba5ad",
-            "a306b64fd90323a8"
-        ],
-        "x": 24,
-        "y": 519,
-        "w": 842,
-        "h": 202
-    },
-    {
-        "id": "6fb40bcfcadc177b",
-        "type": "group",
-        "z": "b7fb87140232fe9d",
-        "name": "Interface de gestion des badges",
-        "style": {
-            "stroke": "#3f3f3f",
-            "fill": "#e3f3d3",
-            "label": true,
-            "label-position": "n",
-            "color": "#3f3f3f"
-        },
-        "nodes": [
-            "parse-csv",
-            "prepare-badge-list",
-            "add-badge",
-            "ui-table",
-            "0713f52a4738adcf",
-            "5195e03d72347812",
-            "430b8d717d649def",
-            "0167bafd27ea1a58",
-            "8319687c46b92b91",
-            "d70e0a76ad116354",
-            "982e71bcc423b51e",
-            "73f87137ca42f812",
-            "c0ed11991259f947",
-            "f8e161c6df3483ee",
-            "de1e94ac57e14e9b",
-            "5b3a2cbf42ca0f61",
-            "89be4880b3ec336f",
-            "a8b8abe0dbb89d01",
-            "8315cb0b37bf2360",
-            "3223507d3cfa6ef0",
-            "12daa1d853407168",
-            "e4a7312f36a25dd0",
-            "ca0494bb7ee27c7b",
-            "be51f9118da183d6",
-            "1f52d09d7dfc537a",
-            "e3c2daa8b6415d3c",
-            "a29b7c7115c54d1d",
-            "beaa458f9661cf23",
-            "af9e52185c4c958b",
-            "0dd4a1227a3644e8",
-            "01bd06a552790404",
-            "428593e904c3f9e3",
-            "cdc669b609c0032f",
-            "07cbe2e7971d840e"
-        ],
-        "x": 14,
-        "y": 139,
-        "w": 1332,
-        "h": 362
     },
     {
         "id": "ecc3d44747b5a6e4",
@@ -726,6 +642,72 @@
         "y": 1059,
         "w": 992,
         "h": 202
+    },
+    {
+        "id": "575d895f6b230871",
+        "type": "group",
+        "z": "b7fb87140232fe9d",
+        "name": "Gestion du fichier CSV",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#bfdbef",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "efed0cc9daf8e52e",
+            "dd297373fe76f86b",
+            "aeb677d91cfd82c9",
+            "777f2ac226c23648",
+            "59540b46f3d7ca9e",
+            "6b0432544f452b75",
+            "8efca2fde607a68d",
+            "43f84b618083288c",
+            "80de99bb6bbca7b6",
+            "2f275904ba8dab1b",
+            "e40f53f8ea27e7b3",
+            "1c9fc92971e1e350",
+            "3313ca87ebe648a1",
+            "2945d3477fdfbe5d",
+            "747c5582537284f4"
+        ],
+        "x": 54,
+        "y": 379,
+        "w": 1162,
+        "h": 202
+    },
+    {
+        "id": "b6cfbfcba18ed7c0",
+        "type": "group",
+        "z": "b7fb87140232fe9d",
+        "name": "Tableau de gestion des badges",
+        "style": {
+            "stroke": "#3f3f3f",
+            "fill": "#e3f3d3",
+            "label": true,
+            "label-position": "n",
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "d3dfbc6a764c33c4",
+            "2e94c583f238963d",
+            "7df5559eee03f93f",
+            "99c67c3ba753208a",
+            "34e6e31d1fb1cefb",
+            "9118d957a056e497",
+            "2a22efb09aaa7ad8",
+            "33ccc9f399c4f4b0",
+            "0a45dc10695af6d5",
+            "eca119a785cac7a6",
+            "3177acf70e1108e9",
+            "064e82f8fc1ef2cc",
+            "a20bbe98d7949240"
+        ],
+        "x": 54,
+        "y": 159,
+        "w": 1112,
+        "h": 182
     },
     {
         "id": "a14588abf773c2cf",
@@ -4644,8 +4626,7 @@
         "y": 20,
         "wires": [
             [
-                "f1b989b616a3c2b8",
-                "6e4b4b8b5815a5b4"
+                "f1b989b616a3c2b8"
             ]
         ]
     },
@@ -4665,852 +4646,6 @@
         ]
     },
     {
-        "id": "parse-csv",
-        "type": "csv",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Parse CSV",
-        "sep": ",",
-        "hdrin": true,
-        "hdrout": "none",
-        "multi": "mult",
-        "ret": "obj",
-        "temp": "",
-        "skip": "0",
-        "strings": false,
-        "include_empty_strings": false,
-        "include_null_values": false,
-        "x": 410,
-        "y": 260,
-        "wires": [
-            [
-                "prepare-badge-list"
-            ]
-        ]
-    },
-    {
-        "id": "prepare-badge-list",
-        "type": "function",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Prepare Badge List",
-        "func": "msg.payload = msg.payload.map(badge => ({\n    id: badge.ID,\n    uid: badge.UID,\n    firstname: badge.FirstName,\n    lastname: badge.LastName,\n    group: Number(badge.Group),\n    active: badge.Active === 'true'\n}));\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 570,
-        "y": 220,
-        "wires": [
-            [
-                "ui-table"
-            ]
-        ]
-    },
-    {
-        "id": "add-badge",
-        "type": "ui_form",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Form Badge",
-        "label": "Edition d'un badge",
-        "group": "fb8ef8df1ea1ad74",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "label": "Code",
-                "value": "uid",
-                "type": "text",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Badge activé",
-                "value": "active",
-                "type": "switch",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Type d'accès",
-                "value": "group",
-                "type": "number",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Prénom",
-                "value": "firstname",
-                "type": "text",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Nom",
-                "value": "lastname",
-                "type": "text",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "uid": "",
-            "active": false,
-            "group": "",
-            "firstname": "",
-            "lastname": ""
-        },
-        "payload": "",
-        "submit": "Gérer le badge",
-        "cancel": "",
-        "topic": "",
-        "topicType": "str",
-        "splitLayout": false,
-        "className": "",
-        "x": 950,
-        "y": 220,
-        "wires": [
-            [
-                "5195e03d72347812",
-                "c0ed11991259f947"
-            ]
-        ]
-    },
-    {
-        "id": "update-csv",
-        "type": "function",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "Update CSV",
-        "func": "// Supposons que le contenu du fichier CSV est déjà chargé dans msg.payload\nlet csvContent = msg.payload; // Contenu du fichier CSV\nlet csvLines = csvContent.split('\\n'); // Diviser par ligne\n\nconst objectToCSVLine = (obj) => {\n    return `${obj.uid},${obj.firstname},${obj.lastname},${obj.group},${obj.active}`;\n};\n\nlet originalCSVLine = objectToCSVLine(flow.get('form_data_original'));\nlet newCSVLine = objectToCSVLine(flow.get('form_data'));\n\nlet updatedCSVLines = csvLines.map(line => {\n    return line === originalCSVLine ? newCSVLine : line; // Remplacer la ligne correspondante\n});\n\nlet updatedCSVContent = updatedCSVLines.join('\\n'); // Combiner les lignes en une seule chaîne\nmsg.payload = updatedCSVContent; // Mettre à jour le message pour écrire dans le fichier\n\nreturn msg; // Cette sortie sera envoyée à un noeud file out\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 390,
-        "y": 620,
-        "wires": [
-            [
-                "write-updated-csv"
-            ]
-        ]
-    },
-    {
-        "id": "write-updated-csv",
-        "type": "file",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "Write Updated CSV",
-        "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": false,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 670,
-        "y": 640,
-        "wires": [
-            [
-                "6c65b544c9dba5ad"
-            ]
-        ]
-    },
-    {
-        "id": "delete-from-csv",
-        "type": "function",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "Delete From CSV",
-        "func": "// Supposons que le contenu du fichier CSV est déjà chargé dans msg.payload\nlet csvContent = msg.payload; // Contenu du fichier CSV\nlet csvLines = csvContent.split('\\n'); // Diviser par ligne\n\n// Convertir form_data_original en chaîne CSV\nconst objectToCSVLine = (obj) => {\n    return `${obj.uid},${obj.firstname},${obj.lastname},${obj.group},${obj.active}`;\n};\n\nlet originalCSVLine = objectToCSVLine(flow.get('form_data_original'));\n\n// Filtrer le contenu CSV pour supprimer la ligne correspondante\nlet updatedCSVLines = csvLines.filter(line => line !== originalCSVLine); // Garder toutes les lignes sauf celle à supprimer\n\n// Combiner les lignes restantes en une seule chaîne\nlet updatedCSVContent = updatedCSVLines.join('\\n'); // Combiner les lignes restantes\nmsg.payload = updatedCSVContent; // Mettre à jour le message pour écrire dans le fichier\n\nreturn msg; // Cette sortie sera envoyée à un noeud file out\n",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 390,
-        "y": 680,
-        "wires": [
-            [
-                "write-updated-csv"
-            ]
-        ]
-    },
-    {
-        "id": "ui-table",
-        "type": "ui_table",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "group": "59fa5f21b1f59787",
-        "name": "Liste des badges",
-        "order": 1,
-        "width": 23,
-        "height": 10,
-        "columns": [
-            {
-                "field": "active",
-                "title": "Activé",
-                "width": "10%",
-                "align": "center",
-                "formatter": "tickCross",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "uid",
-                "title": "Code",
-                "width": "10%",
-                "align": "center",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "group",
-                "title": "Type accès",
-                "width": "12%",
-                "align": "center",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "lastname",
-                "title": "Nom",
-                "width": "32%",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "firstname",
-                "title": "Prénom",
-                "width": "36%",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 1,
-        "cts": true,
-        "x": 770,
-        "y": 220,
-        "wires": [
-            [
-                "add-badge",
-                "ca0494bb7ee27c7b"
-            ]
-        ]
-    },
-    {
-        "id": "0713f52a4738adcf",
-        "type": "ui_ui_control",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "",
-        "events": "all",
-        "x": 100,
-        "y": 340,
-        "wires": [
-            [
-                "d70e0a76ad116354",
-                "a29b7c7115c54d1d"
-            ]
-        ]
-    },
-    {
-        "id": "5195e03d72347812",
-        "type": "function",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Stocker Données",
-        "func": "flow.set('form_data', msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1150,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "430b8d717d649def",
-        "type": "ui_ui-button",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "action": "action",
-        "actionType": "msg",
-        "name": "Ajouter",
-        "group": "fb8ef8df1ea1ad74",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Ajouter",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "green",
-        "icon": "add",
-        "x": 1080,
-        "y": 340,
-        "wires": [
-            [
-                "a8b8abe0dbb89d01"
-            ]
-        ]
-    },
-    {
-        "id": "0167bafd27ea1a58",
-        "type": "ui_ui-button",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "action": "action",
-        "actionType": "msg",
-        "name": "Modifier",
-        "group": "fb8ef8df1ea1ad74",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Modifier",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "x": 1080,
-        "y": 400,
-        "wires": [
-            [
-                "8315cb0b37bf2360"
-            ]
-        ]
-    },
-    {
-        "id": "8319687c46b92b91",
-        "type": "ui_ui-button",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "action": "action",
-        "actionType": "msg",
-        "name": "Supprimer",
-        "group": "fb8ef8df1ea1ad74",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Supprimer",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "red",
-        "icon": "delete",
-        "x": 1190,
-        "y": 460,
-        "wires": [
-            [
-                "3223507d3cfa6ef0"
-            ]
-        ]
-    },
-    {
-        "id": "d70e0a76ad116354",
-        "type": "change",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Cacher",
-        "rules": [
-            {
-                "t": "set",
-                "p": "action",
-                "pt": "msg",
-                "to": "hide",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 840,
-        "y": 340,
-        "wires": [
-            [
-                "430b8d717d649def",
-                "8319687c46b92b91",
-                "0167bafd27ea1a58"
-            ]
-        ]
-    },
-    {
-        "id": "982e71bcc423b51e",
-        "type": "csv",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "",
-        "spec": "rfc",
-        "sep": ",",
-        "hdrin": true,
-        "hdrout": "none",
-        "multi": "mult",
-        "ret": "\\r\\n",
-        "temp": "",
-        "skip": "0",
-        "strings": false,
-        "include_empty_strings": false,
-        "include_null_values": "",
-        "x": 370,
-        "y": 420,
-        "wires": [
-            [
-                "73f87137ca42f812"
-            ]
-        ]
-    },
-    {
-        "id": "73f87137ca42f812",
-        "type": "function",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Recherche",
-        "func": "let scannedUID = flow.get(\"form_data.uid\");\n\n// node.warn(scannedUID);\n\n// Table des badges provenant du CSV\nlet badges = msg.payload;\n\n// Rechercher le badge correspondant à l'UID scanné\nlet foundBadge = badges.find(badge => badge.UID == scannedUID);\n\nif (foundBadge) {\n    // Badge trouvé, renvoyer les informations\n    msg.payload = {\n        trouve: true,\n        message: \"Badge trouvé\",\n        badge: foundBadge\n    };\n} else {\n    // Badge non trouvé\n    msg.payload = {\n        trouve: false,\n        UID: scannedUID,\n        message: \"Badge non trouvé\"\n    };\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 530,
-        "y": 420,
-        "wires": [
-            [
-                "de1e94ac57e14e9b",
-                "12daa1d853407168"
-            ]
-        ]
-    },
-    {
-        "id": "c0ed11991259f947",
-        "type": "link out",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Form_Badge_Submit",
-        "mode": "link",
-        "links": [
-            "f8e161c6df3483ee",
-            "89be4880b3ec336f"
-        ],
-        "x": 1075,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "f8e161c6df3483ee",
-        "type": "link in",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Form_Badge_Action",
-        "links": [
-            "c0ed11991259f947"
-        ],
-        "x": 85,
-        "y": 420,
-        "wires": [
-            [
-                "be51f9118da183d6"
-            ]
-        ]
-    },
-    {
-        "id": "de1e94ac57e14e9b",
-        "type": "change",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Afficher",
-        "rules": [
-            {
-                "t": "set",
-                "p": "action",
-                "pt": "msg",
-                "to": "show",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 700,
-        "y": 420,
-        "wires": [
-            [
-                "5b3a2cbf42ca0f61"
-            ]
-        ]
-    },
-    {
-        "id": "5b3a2cbf42ca0f61",
-        "type": "switch",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "",
-        "property": "payload.trouve",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "false"
-            },
-            {
-                "t": "true"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 840,
-        "y": 420,
-        "wires": [
-            [
-                "430b8d717d649def"
-            ],
-            [
-                "0167bafd27ea1a58",
-                "cdc669b609c0032f"
-            ]
-        ]
-    },
-    {
-        "id": "89be4880b3ec336f",
-        "type": "link in",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Form_Badge_Reset",
-        "links": [
-            "07cbe2e7971d840e",
-            "6c65b544c9dba5ad",
-            "c0ed11991259f947",
-            "3849a00f85e52cfb"
-        ],
-        "x": 745,
-        "y": 340,
-        "wires": [
-            [
-                "d70e0a76ad116354"
-            ]
-        ]
-    },
-    {
-        "id": "a8b8abe0dbb89d01",
-        "type": "link out",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Form_Badge_Ajouter",
-        "mode": "link",
-        "links": [
-            "cbebc005f2e85a7d"
-        ],
-        "x": 1185,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "8315cb0b37bf2360",
-        "type": "link out",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Form_Badge_Modifier",
-        "mode": "link",
-        "links": [
-            "c9a6d29df5ef2a8b"
-        ],
-        "x": 1185,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "3223507d3cfa6ef0",
-        "type": "link out",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Form_Badge_Supprimer",
-        "mode": "link",
-        "links": [
-            "5201f1bc8e4e41e5",
-            "0dd4a1227a3644e8"
-        ],
-        "x": 1305,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "b4193616c42bd034",
-        "type": "function",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "Format CSV",
-        "func": "let csvContent = msg.payload; // Contenu du fichier CSV chargé\nlet csvLines = csvContent.split('\\n'); // Diviser par ligne\n\nconst form_data = flow.get('form_data');  // La nouvelle ligne que tu souhaites ajouter\n\n// Fonction pour convertir une ligne CSV en objet\nconst csvLineToObject = (line) => {\n    let [uid, firstname, lastname, group, active] = line.split(',');\n    return { uid, firstname, lastname, group, active };\n};\n\n// Concatène les valeurs de l'objet en une ligne CSV\n// Tu peux ajuster l'ordre et le délimiteur en fonction de tes besoins.\nlet csvLine = `${form_data.uid},${form_data.firstname},${form_data.lastname},${form_data.group},${form_data.active}`;\n\n// Écrire cette ligne dans msg.payload pour l'enregistrer dans un fichier\nmsg.payload = csvLine + \"\\n\";  // Ajoute un retour à la ligne à la fin\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 390,
-        "y": 560,
-        "wires": [
-            [
-                "c18097db6ea8c49a"
-            ]
-        ]
-    },
-    {
-        "id": "c18097db6ea8c49a",
-        "type": "file",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "Write to CSV",
-        "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 690,
-        "y": 560,
-        "wires": [
-            [
-                "6c65b544c9dba5ad"
-            ]
-        ]
-    },
-    {
-        "id": "cbebc005f2e85a7d",
-        "type": "link in",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "Ajout_Badge",
-        "links": [
-            "a8b8abe0dbb89d01"
-        ],
-        "x": 65,
-        "y": 560,
-        "wires": [
-            [
-                "a306b64fd90323a8"
-            ]
-        ]
-    },
-    {
-        "id": "12daa1d853407168",
-        "type": "change",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Cacher",
-        "rules": [
-            {
-                "t": "set",
-                "p": "action",
-                "pt": "msg",
-                "to": "hide",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 700,
-        "y": 380,
-        "wires": [
-            [
-                "e4a7312f36a25dd0"
-            ]
-        ]
-    },
-    {
-        "id": "e4a7312f36a25dd0",
-        "type": "switch",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "",
-        "property": "payload.trouve",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "false"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 840,
-        "y": 380,
-        "wires": [
-            [
-                "430b8d717d649def"
-            ],
-            [
-                "0167bafd27ea1a58",
-                "8319687c46b92b91"
-            ]
-        ]
-    },
-    {
-        "id": "c9a6d29df5ef2a8b",
-        "type": "link in",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "Modifier_Badge",
-        "links": [
-            "8315cb0b37bf2360"
-        ],
-        "x": 65,
-        "y": 620,
-        "wires": [
-            [
-                "48fe8ebc4af5cd6b"
-            ]
-        ]
-    },
-    {
-        "id": "ca0494bb7ee27c7b",
-        "type": "function",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Stocker Données",
-        "func": "flow.set('form_data_original', msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": "",
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 970,
-        "y": 180,
-        "wires": [
-            [
-                "07cbe2e7971d840e"
-            ]
-        ]
-    },
-    {
-        "id": "5201f1bc8e4e41e5",
-        "type": "link in",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "Supprimer_Badge",
-        "links": [
-            "3223507d3cfa6ef0"
-        ],
-        "x": 65,
-        "y": 680,
-        "wires": [
-            [
-                "e81743050a9f376b"
-            ]
-        ]
-    },
-    {
-        "id": "be51f9118da183d6",
-        "type": "link call",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "",
-        "links": [
-            "d2ce0b8ca3f408a5"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 210,
-        "y": 420,
-        "wires": [
-            [
-                "982e71bcc423b51e"
-            ]
-        ]
-    },
-    {
-        "id": "48fe8ebc4af5cd6b",
-        "type": "link call",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "",
-        "links": [
-            "d2ce0b8ca3f408a5"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 190,
-        "y": 620,
-        "wires": [
-            [
-                "update-csv"
-            ]
-        ]
-    },
-    {
-        "id": "e81743050a9f376b",
-        "type": "link call",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "",
-        "links": [
-            "d2ce0b8ca3f408a5"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 190,
-        "y": 680,
-        "wires": [
-            [
-                "delete-from-csv"
-            ]
-        ]
-    },
-    {
-        "id": "1f52d09d7dfc537a",
-        "type": "comment",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Gestion de l'affichage des boutons (ajout / modification / suppression)",
-        "info": "",
-        "x": 650,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "e3c2daa8b6415d3c",
-        "type": "comment",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Affichage de la liste des badges dans un tableau",
-        "info": "",
-        "x": 660,
-        "y": 180,
-        "wires": []
-    },
-    {
         "id": "f1b989b616a3c2b8",
         "type": "link out",
         "z": "b7fb87140232fe9d",
@@ -5520,197 +4655,6 @@
         "x": 315,
         "y": 20,
         "wires": []
-    },
-    {
-        "id": "a29b7c7115c54d1d",
-        "type": "link call",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "",
-        "links": [
-            "d2ce0b8ca3f408a5"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 250,
-        "y": 300,
-        "wires": [
-            [
-                "parse-csv"
-            ]
-        ]
-    },
-    {
-        "id": "6c65b544c9dba5ad",
-        "type": "link out",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "Fichier_Badge_Modifié",
-        "mode": "link",
-        "links": [
-            "89be4880b3ec336f",
-            "beaa458f9661cf23",
-            "6e5e0738ae1a22ca"
-        ],
-        "x": 825,
-        "y": 600,
-        "wires": []
-    },
-    {
-        "id": "beaa458f9661cf23",
-        "type": "link in",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Table_Update",
-        "links": [
-            "6c65b544c9dba5ad",
-            "3849a00f85e52cfb"
-        ],
-        "x": 105,
-        "y": 300,
-        "wires": [
-            [
-                "a29b7c7115c54d1d"
-            ]
-        ]
-    },
-    {
-        "id": "af9e52185c4c958b",
-        "type": "link in",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Form_Read_Tag",
-        "links": [
-            "92e181a1ce7fe4e8"
-        ],
-        "x": 625,
-        "y": 260,
-        "wires": [
-            [
-                "428593e904c3f9e3"
-            ]
-        ]
-    },
-    {
-        "id": "0dd4a1227a3644e8",
-        "type": "link in",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Form_Memo_Suppr",
-        "links": [
-            "3223507d3cfa6ef0"
-        ],
-        "x": 625,
-        "y": 300,
-        "wires": [
-            [
-                "01bd06a552790404"
-            ]
-        ]
-    },
-    {
-        "id": "01bd06a552790404",
-        "type": "change",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Ancienne valeur",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "form_data",
-                "tot": "flow",
-                "dc": true
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 740,
-        "y": 300,
-        "wires": [
-            [
-                "add-badge"
-            ]
-        ]
-    },
-    {
-        "id": "428593e904c3f9e3",
-        "type": "function",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "uid Lu",
-        "func": "var uid = msg.payload.uid;\n\nmsg.payload = {\n    uid : uid\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 770,
-        "y": 260,
-        "wires": [
-            [
-                "add-badge"
-            ]
-        ]
-    },
-    {
-        "id": "cdc669b609c0032f",
-        "type": "function",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Pas modifié",
-        "func": "let _old = flow.get('form_data_original');\nlet _new = flow.get('form_data');\n\nvar equals = _old.uid === _new.uid\n    && _old.firstname === _new.firstname\n    && _old.lastname === _new.lastname\n    && _old.group === _new.group\n    && _old.active === _new.active\n\nif (equals === true) \n{\n    msg.action = \"show\";\n} else {\n    msg.action = \"hide\";\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1010,
-        "y": 460,
-        "wires": [
-            [
-                "8319687c46b92b91"
-            ]
-        ]
-    },
-    {
-        "id": "07cbe2e7971d840e",
-        "type": "link out",
-        "z": "b7fb87140232fe9d",
-        "g": "6fb40bcfcadc177b",
-        "name": "Table_Selection",
-        "mode": "link",
-        "links": [
-            "89be4880b3ec336f"
-        ],
-        "x": 1095,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "a306b64fd90323a8",
-        "type": "link call",
-        "z": "b7fb87140232fe9d",
-        "g": "5444c772b7bef63c",
-        "name": "",
-        "links": [
-            "d2ce0b8ca3f408a5"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 190,
-        "y": 560,
-        "wires": [
-            [
-                "b4193616c42bd034"
-            ]
-        ]
     },
     {
         "id": "0f4dd6a43470ed40",
@@ -5838,28 +4782,623 @@
         ]
     },
     {
-        "id": "6e4b4b8b5815a5b4",
-        "type": "ui_text_input",
+        "id": "efed0cc9daf8e52e",
+        "type": "switch",
         "z": "b7fb87140232fe9d",
-        "name": "",
-        "label": "",
-        "tooltip": "",
-        "group": "1fc36ff59a0aba4d",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "mode": "text",
-        "delay": "0",
-        "topic": "topic",
-        "sendOnBlur": true,
+        "g": "575d895f6b230871",
+        "name": "Action ?",
+        "property": "payload.action",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "edit",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "delete",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 200,
+        "y": 460,
+        "wires": [
+            [
+                "dd297373fe76f86b"
+            ],
+            [
+                "e40f53f8ea27e7b3"
+            ]
+        ]
+    },
+    {
+        "id": "dd297373fe76f86b",
+        "type": "switch",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Ajout ?",
+        "property": "payload.row.ID",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "NEW",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 440,
+        "y": 440,
+        "wires": [
+            [
+                "aeb677d91cfd82c9"
+            ],
+            [
+                "8efca2fde607a68d"
+            ]
+        ]
+    },
+    {
+        "id": "aeb677d91cfd82c9",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "New ID",
+        "func": "let csvData = flow.get(\"csvJson\") || [];\n\n// Récupère tous les IDs numériques existants\nlet usedIDs = csvData\n    .map(row => parseInt(row.ID))\n    .filter(ID => !isNaN(ID))\n    .sort((a, b) => a - b);\n\n// Trouve le plus petit ID libre à partir de 1\nlet newID = 1;\nfor (let i = 0; i < usedIDs.length; i++) {\n    if (usedIDs[i] !== i + 1) {\n        newID = i + 1;\n        break;\n    }\n    newID = usedIDs.length + 1;\n}\n\nmsg.payload = newID;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 420,
+        "wires": [
+            [
+                "777f2ac226c23648"
+            ]
+        ]
+    },
+    {
+        "id": "777f2ac226c23648",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Ajout dans CSV",
+        "func": "let newID = msg.payload;\nlet rowData = flow.get('rowData');  // La ligne à ajouter\n\n// Concatène les valeurs de l'objet en une ligne CSV\n// Tu peux ajuster l'ordre et le délimiteur en fonction de tes besoins.\nlet csvLine = `\\n${newID},${rowData.UID},${rowData.FirstName},${rowData.LastName},${rowData.Group},${rowData.Active}`;\n\n// Écrire cette ligne dans msg.payload pour l'enregistrer dans un fichier\nmsg.payload = csvLine;  // Ajoute un retour à la ligne à la fin\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 420,
+        "wires": [
+            [
+                "59540b46f3d7ca9e"
+            ]
+        ]
+    },
+    {
+        "id": "59540b46f3d7ca9e",
+        "type": "file",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Ajout au fichier",
+        "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1020,
+        "y": 420,
+        "wires": [
+            [
+                "6b0432544f452b75"
+            ]
+        ]
+    },
+    {
+        "id": "6b0432544f452b75",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Fichier_Badge_Modifié",
+        "mode": "link",
+        "links": [
+            "0a45dc10695af6d5"
+        ],
+        "x": 1175,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "8efca2fde607a68d",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Modification dans CSV",
+        "func": "const rawCsv = flow.get('csvRaw');\nconst updatedRow = msg.payload.row;\n\nif (!rawCsv || !updatedRow || updatedRow.ID === undefined) {\n    node.error(\"Données manquantes ou ID invalide.\");\n    return null;\n}\n\n// 1. Séparer le CSV brut en lignes\nlet lines = rawCsv.split(/\\r?\\n/);\n\n// 2. La première ligne est l'en-tête\nconst headers = lines[0].split(\",\");\n\n// 3. Reconstruire les lignes, en remplaçant celle avec le bon ID\nlet updatedLines = [lines[0]]; // Commence par l'entête\nfor (let i = 1; i < lines.length; i++) {\n    const line = lines[i];\n    if (!line.trim()) continue; // ignore lignes vides\n\n    const values = line.split(\",\");\n    const rowObj = {};\n    headers.forEach((key, idx) => {\n        rowObj[key] = values[idx];\n    });\n\n    if (String(rowObj.ID) === String(updatedRow.ID)) {\n        // Remplace par la ligne mise à jour\n        const newLine = headers.map(h => updatedRow[h] ?? \"\").join(\",\");\n        updatedLines.push(newLine);\n    } else {\n        updatedLines.push(line);\n    }\n}\n\n// 4. Génère le nouveau CSV\nconst newCsv = updatedLines.join(\"\\n\");\n\n// Retourne le CSV mis à jour\nmsg.payload = newCsv;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 460,
+        "wires": [
+            [
+                "43f84b618083288c"
+            ]
+        ]
+    },
+    {
+        "id": "43f84b618083288c",
+        "type": "file",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Mettre à jour le fichier",
+        "filename": "/home/pi/Documents/ControleAcces/Badges.csv",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1000,
+        "y": 500,
+        "wires": [
+            [
+                "6b0432544f452b75"
+            ]
+        ]
+    },
+    {
+        "id": "80de99bb6bbca7b6",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Suppression dans CSV",
+        "func": "const rawCsv = flow.get(\"csvRaw\");\nconst rowToDelete = flow.get(\"rowData\");\n\nif (!rawCsv || !rowToDelete || rowToDelete.ID === undefined) {\n    node.error(\"Données manquantes ou ID invalide.\");\n    return null;\n}\n\n// 1. Séparer le CSV brut en lignes\nlet lines = rawCsv.split(/\\r?\\n/);\n\n// 2. La première ligne est l'en-tête\nconst headers = lines[0].split(\",\");\n\n// 3. Construit le nouveau CSV sans la ligne à supprimer\nlet updatedLines = [lines[0]]; // Conserver l'en-tête\nfor (let i = 1; i < lines.length; i++) {\n    const line = lines[i];\n    if (!line.trim()) continue;\n\n    const values = line.split(\",\");\n    const rowObj = {};\n    headers.forEach((key, idx) => {\n        rowObj[key] = values[idx];\n    });\n\n    if (String(rowObj.ID) !== String(rowToDelete.ID)) {\n        updatedLines.push(line);\n    }\n}\n\n// 4. Génère le nouveau CSV\nconst newCsv = updatedLines.join(\"\\n\");\n\n// Retourne le CSV mis à jour\nmsg.payload = newCsv;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 500,
+        "wires": [
+            [
+                "43f84b618083288c"
+            ]
+        ]
+    },
+    {
+        "id": "2f275904ba8dab1b",
+        "type": "ui_toast",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Oui",
+        "cancel": "Annuler",
+        "raw": false,
         "className": "",
-        "topicType": "msg",
-        "x": 330,
-        "y": 60,
+        "topic": "",
+        "name": "Confirmation",
+        "x": 530,
+        "y": 500,
+        "wires": [
+            [
+                "80de99bb6bbca7b6"
+            ]
+        ]
+    },
+    {
+        "id": "e40f53f8ea27e7b3",
+        "type": "change",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Suppression d'accès",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Êtes-vous sûr de vouloir supprimer cet accès ?",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 500,
+        "wires": [
+            [
+                "2f275904ba8dab1b"
+            ]
+        ]
+    },
+    {
+        "id": "1c9fc92971e1e350",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Modifier_CSV",
+        "links": [
+            "eca119a785cac7a6"
+        ],
+        "x": 95,
+        "y": 460,
+        "wires": [
+            [
+                "efed0cc9daf8e52e"
+            ]
+        ]
+    },
+    {
+        "id": "3313ca87ebe648a1",
+        "type": "switch",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Verification",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "ID,UID,FirstName,LastName,Group,Active",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 540,
+        "wires": [
+            [
+                "43f84b618083288c"
+            ]
+        ]
+    },
+    {
+        "id": "2945d3477fdfbe5d",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Ecrasement_CSV",
+        "links": [
+            "a20bbe98d7949240"
+        ],
+        "x": 475,
+        "y": 540,
+        "wires": [
+            [
+                "747c5582537284f4"
+            ]
+        ]
+    },
+    {
+        "id": "747c5582537284f4",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "575d895f6b230871",
+        "name": "Copie",
+        "func": "let csv = msg.payload.csv;\n\nmsg.payload = csv;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 540,
+        "wires": [
+            [
+                "3313ca87ebe648a1"
+            ]
+        ]
+    },
+    {
+        "id": "d3dfbc6a764c33c4",
+        "type": "csv",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "name": "CSV → JSON",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "7df5559eee03f93f",
+                "2e94c583f238963d"
+            ]
+        ]
+    },
+    {
+        "id": "2e94c583f238963d",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "name": "Stocker dans flow",
+        "func": "flow.set(\"csvJson\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 200,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "7df5559eee03f93f",
+        "type": "ui_template",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "group": "d7771fcfb8b9b3fc",
+        "name": "Tableau CSV avec actions",
+        "order": 2,
+        "width": 30,
+        "height": 9,
+        "format": "<!-- Sources locales -->\n<!-- s'assurer que cette ligne est présente dans le fichier setting.js de node red -->\n<!--     httpStatic: '/home/pi/.node-red/projects/CtrlAccesPoulduPiscine/static/tabulator', -->\n<link href=\"/tabulator.min.css\" rel=\"stylesheet\">\n<script src=\"/tabulator.min.js\"></script>\n\n<!-- Sources en ligne nécéssite internet -->\n<!-- <link href=\"https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css\" rel=\"stylesheet\"> -->\n<!-- <script src=\"https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js\"></script> -->\n\n<div style=\"padding: 10px;\">\n    <button onclick=\"addRow()\">Ajouter un accès</button>\n</div>\n<div id=\"csv-table\" style=\"height: 100%; width: 100%; font-size: 14px;\"></div>\n\n<script>\n    (function(scope) {\n    let table;\n\n    // Fonction pour ajouter une ligne\n    window.addRow = function() {\n        const newRow = {\n            \"ID\": \"NEW\",\n            \"Active\": true,\n            \"UID\": \"Nouveau UID\",\n            \"Group\": \"Nouveau groupe\",\n            \"LastName\": \"Nom\",\n            \"FirstName\": \"Prénom\"\n        };\n        table.addRow(newRow);\n    }\n\n    window.sendAction = function(action, rowData) {\n        scope.send({ payload: { action: action, row: rowData } });\n    }\n\n    function buildTable(data) {\n        table = new Tabulator(\"#csv-table\", {\n            data: data,\n            layout: \"fitColumns\",\n            columns: [\n                { title: \"ID\", field: \"ID\", hozAlign: \"center\", width: 0 },\n                { title: \"Activé\", field: \"Active\", formatter: \"tickCross\", editor: true, hozAlign: \"center\", width: 100 },\n                { title: \"Code / n° de badge\", field: \"UID\", hozAlign: \"center\", editor: \"input\", widthGrow: 1 },\n                { title: \"Type accès\", field: \"Group\", editor: \"input\", hozAlign: \"center\", widthGrow: 1 },\n                { title: \"Nom\", field: \"LastName\", editor: \"input\", widthGrow: 2 },\n                { title: \"Prénom\", field: \"FirstName\", editor: \"input\", widthGrow: 2 },\n                {\n                    title: \"Actions\",\n                    field: \"ID\",\n                    hozAlign: \"center\",\n                    formatter: function(cell) {\n                        return `\n                            <button class=\"edit-btn\" style=\"border:none;background:none;cursor:pointer;\">✏️</button>\n                            <button class=\"delete-btn\" style=\"border:none;background:none;cursor:pointer;\">🗑️</button>\n                        `;\n                    },\n                    width: 100\n                }\n            ],\n            rowFormatter: function(row) {\n                const el = row.getElement();\n                const editBtn = el.querySelector(\".edit-btn\");\n                const deleteBtn = el.querySelector(\".delete-btn\");\n                \n                if (editBtn && deleteBtn) {\n                    // Envoie l'action edit lorsque le bouton edit est cliqué\n                    editBtn.addEventListener(\"click\", () => {\n                        window.sendAction(\"edit\", row.getData());\n                        // Lorsque l'utilisateur clique sur \"Edit\", on réinitialise la couleur de la ligne\n                        row.getElement().classList.remove(\"modified\");\n                    });\n                    // Envoie l'action delete lorsque le bouton delete est cliqué\n                    deleteBtn.addEventListener(\"click\", () => window.sendAction(\"delete\", row.getData()));\n                }\n\n                // Ajout d'un écouteur pour la modification de la cellule\n                row.getCells().forEach(function(cell) {\n                    // Lors de la modification de la cellule, on applique la classe \"modified\" à toute la ligne\n                    cell.getElement().addEventListener('change', function() {\n                        row.getElement().classList.add('modified');\n                    });\n                });\n            }\n        });\n    }\n\n    scope.$watch(\"msg\", function(msg) {\n        if (msg && Array.isArray(msg.payload)) {\n            if (table) {\n                table.replaceData(msg.payload);\n                setTimeout(() => table.redraw(), 50);\n            } else {\n                buildTable(msg.payload);\n            }\n        }\n    });\n})(scope);\n\n</script>\n\n<style>\n    /* Style pour la ligne modifiée */\n    .modified {\n        background-color: #ffeb3b;\n        /* Jaune clair */\n        transition: background-color 1s ease;\n        /* Transition douce */\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 240,
+        "wires": [
+            [
+                "9118d957a056e497",
+                "2a22efb09aaa7ad8"
+            ]
+        ]
+    },
+    {
+        "id": "99c67c3ba753208a",
+        "type": "link call",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "name": "",
+        "links": [
+            "d2ce0b8ca3f408a5"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "d3dfbc6a764c33c4",
+                "33ccc9f399c4f4b0",
+                "064e82f8fc1ef2cc"
+            ]
+        ]
+    },
+    {
+        "id": "34e6e31d1fb1cefb",
+        "type": "ui_ui_control",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "name": "",
+        "events": "all",
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "99c67c3ba753208a"
+            ]
+        ]
+    },
+    {
+        "id": "9118d957a056e497",
+        "type": "debug",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2a22efb09aaa7ad8",
+        "type": "change",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "name": "Mémo saisie",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rowData",
+                "pt": "flow",
+                "to": "payload.row",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 240,
+        "wires": [
+            [
+                "eca119a785cac7a6"
+            ]
+        ]
+    },
+    {
+        "id": "33ccc9f399c4f4b0",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "name": "Stocker dans flow",
+        "func": "flow.set(\"csvRaw\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a45dc10695af6d5",
+        "type": "link in",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "name": "Table_Update",
+        "links": [
+            "6b0432544f452b75"
+        ],
+        "x": 185,
+        "y": 280,
+        "wires": [
+            [
+                "99c67c3ba753208a"
+            ]
+        ]
+    },
+    {
+        "id": "eca119a785cac7a6",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "name": "Tableau_Badge_Modifier",
+        "mode": "link",
+        "links": [
+            "1c9fc92971e1e350"
+        ],
+        "x": 1125,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "3177acf70e1108e9",
+        "type": "ui_form",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "name": "",
+        "label": "Ecriture de masse",
+        "group": "26d6c4e63959da4e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "",
+                "value": "csv",
+                "type": "multiline",
+                "required": true,
+                "rows": 10
+            }
+        ],
+        "formValue": {
+            "csv": ""
+        },
+        "payload": "",
+        "submit": "Réécrire le fichier",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 550,
+        "y": 280,
+        "wires": [
+            [
+                "a20bbe98d7949240"
+            ]
+        ]
+    },
+    {
+        "id": "064e82f8fc1ef2cc",
+        "type": "function",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "name": "Copie",
+        "func": "let csv = msg.payload;\n\nmsg.payload = {\n\n    csv : csv\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "3177acf70e1108e9"
+            ]
+        ]
+    },
+    {
+        "id": "a20bbe98d7949240",
+        "type": "link out",
+        "z": "b7fb87140232fe9d",
+        "g": "b6cfbfcba18ed7c0",
+        "name": "Override_CSV",
+        "mode": "link",
+        "links": [
+            "2945d3477fdfbe5d"
+        ],
+        "x": 745,
+        "y": 300,
+        "wires": []
     },
     {
         "id": "78bc32fd489261d1",
