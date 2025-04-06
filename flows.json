@@ -7961,7 +7961,7 @@
         "z": "ca1ccaf40a3d0a3c",
         "g": "7b7480533a396aab",
         "name": "Verification",
-        "property": "payload",
+        "property": "payload.csv",
         "propertyType": "msg",
         "rules": [
             {
@@ -8084,7 +8084,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 880,
+        "x": 1020,
         "y": 160,
         "wires": []
     }
