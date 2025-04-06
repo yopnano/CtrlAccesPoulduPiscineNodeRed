@@ -684,7 +684,8 @@
             "962a375e4d9fd177",
             "6e5e0738ae1a22ca",
             "38ea4ae7c22d7227",
-            "7c357023e2ea894f"
+            "401827deb2be5540",
+            "f6dca712937abd81"
         ],
         "x": 74,
         "y": 39,
@@ -7530,7 +7531,7 @@
             [
                 "6e832b57bc1d6d16",
                 "962a375e4d9fd177",
-                "7c357023e2ea894f"
+                "401827deb2be5540"
             ]
         ]
     },
@@ -7929,22 +7930,46 @@
         ]
     },
     {
-        "id": "7c357023e2ea894f",
-        "type": "ui_template",
+        "id": "401827deb2be5540",
+        "type": "ui_text_input",
         "z": "ca1ccaf40a3d0a3c",
         "g": "bfb66a8ea5694501",
+        "name": "",
+        "label": "Ecraser le fichier CSV",
+        "tooltip": "Attention le fichier va être entièrement réécrit",
         "group": "d7771fcfb8b9b3fc",
-        "name": "Fichier CSV",
-        "order": 2,
-        "width": "30",
+        "order": 1,
+        "width": "9",
         "height": "9",
-        "format": "<div>msg.payload</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
+        "passthru": false,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
         "className": "",
-        "x": 550,
+        "topicType": "msg",
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "f6dca712937abd81"
+            ]
+        ]
+    },
+    {
+        "id": "f6dca712937abd81",
+        "type": "function",
+        "z": "ca1ccaf40a3d0a3c",
+        "g": "bfb66a8ea5694501",
+        "name": "Stocker dans flow",
+        "func": "flow.set(\"csvOverride\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
         "y": 160,
         "wires": [
             []
