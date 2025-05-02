@@ -13,7 +13,6 @@
         "type": "tab",
         "label": "Interface",
         "disabled": false,
-        "locked": true,
         "info": "",
         "env": []
     },
@@ -2409,7 +2408,6 @@
         "id": "b2517b9c2b89c31b",
         "type": "switch",
         "z": "f99f61d176d88850",
-        "d": true,
         "g": "08523bcc635d9f44",
         "name": "Temps écoulé",
         "property": "TempoWlan",
