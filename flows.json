@@ -1,10 +1,17 @@
 [
     {
+        "id": "591abc7ecc8a82dd",
+        "type": "tab",
+        "label": "Communication Série",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "0401eb93d584c99a",
         "type": "tab",
         "label": "Contrôle d'accès",
         "disabled": false,
-        "locked": true,
         "info": "",
         "env": []
     },
@@ -13,7 +20,6 @@
         "type": "tab",
         "label": "Interface",
         "disabled": false,
-        "locked": true,
         "info": "",
         "env": []
     },
@@ -22,16 +28,6 @@
         "type": "tab",
         "label": "CSV Badges",
         "disabled": false,
-        "locked": true,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "591abc7ecc8a82dd",
-        "type": "tab",
-        "label": "Communication",
-        "disabled": false,
-        "locked": true,
         "info": "",
         "env": []
     },
@@ -40,7 +36,6 @@
         "type": "tab",
         "label": "Parametres",
         "disabled": false,
-        "locked": true,
         "info": "Gestion des fichier de paramétrage\r\n\r\nCe flux permet de modifier les paramètres avec les formulaires disponible sur l'interface web graphique",
         "env": []
     },
@@ -62,13 +57,14 @@
             "92e181a1ce7fe4e8",
             "af6ae15c6f3eed6c",
             "f32ba09408f3c256",
-            "e84bd0b3f880aafe",
-            "b86b319c84fdbb3d"
+            "b86b319c84fdbb3d",
+            "5e4c7744775832b7",
+            "bd9bee64f97b0179"
         ],
         "x": 54,
         "y": 19,
-        "w": 892,
-        "h": 162
+        "w": 1012,
+        "h": 142
     },
     {
         "id": "6ae47d635703e4eb",
@@ -199,10 +195,10 @@
             "9d7108206de36d72",
             "377f56af49bc3b6c",
             "6be108f6c54f7f4d",
-            "959ab5871d0d2368",
             "78854bcb29ee6538",
             "abdc29633cede91b",
-            "a570e08cc71571cf"
+            "a570e08cc71571cf",
+            "1334ce77ba7d2670"
         ],
         "x": 74,
         "y": 599,
@@ -374,33 +370,29 @@
             "color": "#3f3f3f"
         },
         "nodes": [
-            "78bc32fd489261d1",
-            "c9c3485fced0181e",
-            "ac8af869b3242cbd",
-            "b6730c9cd280693e",
-            "1b3a505c1fb09b5a",
-            "c2a5d3ed4375ca2e",
-            "960329839e07f6fd",
-            "41517a322d9eb80e",
-            "85b7f075344482af",
-            "af2ce02634a47f83",
-            "413eeeea223db926",
-            "3487b4a67424ab63",
-            "7e39c6db9fc3e5d7",
             "70e975d29c6d573f",
-            "422152293a8cc4ae",
-            "4ae815b9e2048893",
-            "7dd13654c169f94c",
-            "96e1a885a08e2b85",
-            "a48aabe134c6753a",
             "8b66295461714e80",
-            "0d1b2a142d8a2c92",
-            "456387f7ddb14772"
+            "d8b59f3350b520fa",
+            "d2273536d7b960a9",
+            "link_in_ping",
+            "prepare_pong",
+            "vers_serial_out",
+            "set_true",
+            "watchdog_10s",
+            "filtre_rbe",
+            "set_global",
+            "fed63bd06ccf09d0",
+            "switch_etat_com",
+            "msg_retabli",
+            "msg_defaut",
+            "notif_ok",
+            "notif_defaut",
+            "debug_com"
         ],
-        "x": 14,
+        "x": 34,
         "y": 19,
-        "w": 1212,
-        "h": 342
+        "w": 1292,
+        "h": 302
     },
     {
         "id": "8da2d3af0c18bd9f",
@@ -532,7 +524,9 @@
             "51ef47107bcb28e5",
             "ec5ece38a7e0f659",
             "394bcbfa64d4c0ae",
-            "df9f1dafc385623e"
+            "df9f1dafc385623e",
+            "fe883bfe5557fe7d",
+            "9b1f8ac831a2b8e3"
         ],
         "x": 34,
         "y": 1319,
@@ -610,6 +604,34 @@
         "y": 159,
         "w": 1132,
         "h": 182
+    },
+    {
+        "id": "83ecd4a67a4142a2",
+        "type": "group",
+        "z": "591abc7ecc8a82dd",
+        "name": "Activation liaison série",
+        "style": {
+            "stroke": "#3f3f3f",
+            "label": true,
+            "color": "#3f3f3f",
+            "fill": "#bfdbef",
+            "label-position": "n"
+        },
+        "nodes": [
+            "d476717faa78ae26",
+            "f4dafd831a2a6ecb",
+            "f54a310178ca9aeb",
+            "457f3ce98c6fecbf",
+            "b91cb1e0cda450c2",
+            "ed8acf2a62f733b9",
+            "852df01558d3d2b6",
+            "e07ba1a741c1e7b5",
+            "c3f9a14ca7b0b38f"
+        ],
+        "x": 34,
+        "y": 339,
+        "w": 1292,
+        "h": 202
     },
     {
         "id": "3847267b4923ef9c",
@@ -900,6 +922,934 @@
         "className": ""
     },
     {
+        "id": "6f8263b42e6febb8",
+        "type": "serial-port",
+        "name": "Arduino",
+        "serialport": "/dev/ttyACM0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "\\n",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "d8b59f3350b520fa",
+        "type": "mqtt in",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "",
+        "topic": "CtrlAccess/state/Online",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "631cc1e4eb5c5735",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 240,
+        "wires": [
+            [
+                "d2273536d7b960a9"
+            ]
+        ]
+    },
+    {
+        "id": "d2273536d7b960a9",
+        "type": "link out",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "MQTT_Online",
+        "mode": "link",
+        "links": [
+            "413b7f85a50b09f0"
+        ],
+        "x": 325,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "70e975d29c6d573f",
+        "type": "link out",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "DefComm",
+        "mode": "link",
+        "links": [
+            "bdba2b4f959a87a0"
+        ],
+        "x": 1065,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "8b66295461714e80",
+        "type": "comment",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Aide",
+        "info": "# Documentation du Flux : Gestion de la Communication MQTT avec Bit de Vie\n\nCe flux gère la communication MQTT en surveillant l'état de vie (`Life Bit`) et en détectant les éventuels défauts de communication. Voici une explication des principaux nœuds et de leur rôle.\n\n---\n\n## Nœuds Principaux\n\n### 1. **[Entrée MQTT : CtrlAccess/state/Life]**\n- **Type** : `mqtt in`\n- **Description** : Ce nœud écoute les messages MQTT publiés sur le topic `CtrlAccess/state/Life` pour détecter les bits de vie (indicateurs que la communication est active).  \n- **Connecté à** : \n  - Le nœud de debug (`debug 3`) pour observer les messages reçus.\n  - Le nœud de comparaison (`Différente`) pour analyser si l'état reçu est nouveau.\n  - Le nœud de sortie MQTT (`CtrlAccess/Life`) pour réémettre l'état.\n\n---\n\n### 2. **[Sortie MQTT : CtrlAccess/Life]**\n- **Type** : `mqtt out`\n- **Description** : Ce nœud publie l'état `Life` sur le topic `CtrlAccess/Life` pour le renvoyer à la source qui se charge d'inverser ce quelle reçoi via ce topic.\n\n---\n\n### 3. **[Mémo Old : Sauvegarde de l'état précédent]**\n- **Type** : `change`\n- **Description** : Ce nœud enregistre l'état précédent du bit de vie (`LifeOld`) dans le contexte `flow` pour comparer les nouveaux états.  \n- **Connecté à** : Le nœud de comparaison (`Différente`).\n\n---\n\n### 4. **[Différente : Comparaison d'états]**\n- **Type** : `switch`\n- **Description** : Ce nœud compare l'état actuel reçu (`payload`) avec l'état précédent (`LifeOld`).  \n- **Règle** : Si les deux états sont différents, le flux continue vers :\n  - **Mémo Old** pour mettre à jour l'état sauvegardé.\n  - **Tempo RAZ** pour réinitialiser le compteur de temporisation.\n\n---\n\n### 5. **[Tempo RAZ : Réinitialisation de la temporisation]**\n- **Type** : `change`\n- **Description** : Ce nœud remet la temporisation (`TempoComm`) à 0 pour indiquer qu'un bit de vie a été détecté.  \n\n---\n\n### 6. **[Gestion tempo : Gestion de la temporisation]**\n- **Type** : `function`\n- **Description** : Ce nœud incrémente périodiquement la temporisation (`TempoComm`) si aucune donnée nouvelle n'est reçue.  \n- **Logiciel** : Si la temporisation atteint une valeur limite (10 ici), cela indique un défaut de communication.\n\n---\n\n### 7. **[État communication : Vérification de la temporisation]**\n- **Type** : `switch`\n- **Description** : Ce nœud vérifie si la temporisation est en dessous ou au-dessus de la limite (10).  \n- **Règles** : \n  - Si `< 10` : La communication est considérée comme fonctionnelle.\n  - Si `>= 10` : Un défaut de communication est déclaré.\n\n---\n\n### 8. **[Défaut : Gestion des défauts de communication]**\n- **Type** : `switch`\n- **Description** : Ce nœud divise le flux selon l'état de la communication :  \n  - **Défaut** : Active une notification d'erreur et met à jour le contexte global (`DefCom`).  \n  - **OK** : Informe que la communication est rétablie.\n\n---\n\n### 9. **[Notification et Journalisation]**\n- **Type** : `ui_toast` et `debug`\n- **Description** : \n  - Une notification visuelle est affichée en cas de défaut ou de rétablissement de la communication.\n  - Les messages d'état sont également affichés dans la console debug pour faciliter le diagnostic.\n\n---\n\n## Scénarios\n- **Bit de vie reçu** : Le flux réinitialise la temporisation et enregistre l'état reçu. La communication est considérée comme fonctionnelle.\n- **Aucun bit de vie reçu pendant un certain temps** : Le flux détecte un défaut, génère une alerte et met à jour l'état global.\n- **Communication rétablie après un défaut** : Une notification de rétablissement est affichée, et l'état global est remis à jour.\n\n---\n\n## Points à noter\n- **Temporisation** : Le système repose sur une temporisation incrémentale pour surveiller les défauts de communication. Cela permet de tolérer des interruptions momentanées.  \n- **Notifications** : Les notifications aident à surveiller en temps réel l'état du système, sans intervention constante.  \n",
+        "x": 110,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "switch_principal",
+        "type": "switch",
+        "z": "591abc7ecc8a82dd",
+        "name": "Tri DATA / LOG",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^DATA:",
+                "vt": "str",
+                "case": true
+            },
+            {
+                "t": "regex",
+                "v": "^LOG:",
+                "vt": "str",
+                "case": true
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 140,
+        "y": 760,
+        "wires": [
+            [
+                "nettoyeur_data"
+            ],
+            [
+                "nettoyeur_log"
+            ]
+        ]
+    },
+    {
+        "id": "nettoyeur_data",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "name": "Enlever DATA:",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "DATA:",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 720,
+        "wires": [
+            [
+                "switch_actions"
+            ]
+        ]
+    },
+    {
+        "id": "switch_actions",
+        "type": "switch",
+        "z": "591abc7ecc8a82dd",
+        "name": "Tri des Actions",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "^PING",
+                "vt": "str",
+                "case": true
+            },
+            {
+                "t": "regex",
+                "v": "^BADGE:",
+                "vt": "str",
+                "case": true
+            },
+            {
+                "t": "regex",
+                "v": "^BOUTON:",
+                "vt": "str",
+                "case": true
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 700,
+        "y": 720,
+        "wires": [
+            [
+                "link_call_ping"
+            ],
+            [
+                "f67502000eedbec7"
+            ],
+            [
+                "debug_bouton"
+            ]
+        ]
+    },
+    {
+        "id": "nettoyeur_log",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "name": "Enlever LOG:",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "LOG:",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 820,
+        "wires": [
+            [
+                "aac204884ae1de68"
+            ]
+        ]
+    },
+    {
+        "id": "debug_log",
+        "type": "debug",
+        "z": "591abc7ecc8a82dd",
+        "name": "Fichier LOG",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "debug_bouton",
+        "type": "debug",
+        "z": "591abc7ecc8a82dd",
+        "name": "Bouton de Sortie",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "serial_in",
+        "type": "serial in",
+        "z": "591abc7ecc8a82dd",
+        "name": "Arduino MEGA In",
+        "serial": "6f8263b42e6febb8",
+        "x": 120,
+        "y": 640,
+        "wires": [
+            [
+                "nettoyage_global"
+            ]
+        ]
+    },
+    {
+        "id": "serial_out",
+        "type": "serial out",
+        "z": "591abc7ecc8a82dd",
+        "name": "Arduino MEGA Out",
+        "serial": "6f8263b42e6febb8",
+        "x": 1190,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "nettoyage_global",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "name": "Nettoyer \\r\\n",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$trim(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 130,
+        "y": 700,
+        "wires": [
+            [
+                "switch_principal"
+            ]
+        ]
+    },
+    {
+        "id": "link_call_ping",
+        "type": "link call",
+        "z": "591abc7ecc8a82dd",
+        "name": "Surveillance_Com",
+        "links": [
+            "link_in_ping"
+        ],
+        "linkType": "static",
+        "timeout": "5",
+        "x": 950,
+        "y": 660,
+        "wires": [
+            [
+                "serial_out"
+            ]
+        ]
+    },
+    {
+        "id": "vers_serial_out",
+        "type": "link out",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Vers Arduino (Serial Out)",
+        "mode": "return",
+        "links": [],
+        "x": 365,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "link_in_ping",
+        "type": "link in",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "InPING (Fonction)",
+        "links": [],
+        "x": 85,
+        "y": 140,
+        "wires": [
+            [
+                "prepare_pong",
+                "set_true"
+            ]
+        ]
+    },
+    {
+        "id": "prepare_pong",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Préparation PONG",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "PONG",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 230,
+        "y": 120,
+        "wires": [
+            [
+                "vers_serial_out"
+            ]
+        ]
+    },
+    {
+        "id": "set_true",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Etat = TRUE",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 210,
+        "y": 160,
+        "wires": [
+            [
+                "watchdog_10s"
+            ]
+        ]
+    },
+    {
+        "id": "watchdog_10s",
+        "type": "trigger",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Watchdog (10s)",
+        "op1": "",
+        "op2": "false",
+        "op1type": "pay",
+        "op2type": "bool",
+        "duration": "10",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "filtre_rbe"
+            ]
+        ]
+    },
+    {
+        "id": "filtre_rbe",
+        "type": "rbe",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Filtre Changement",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 610,
+        "y": 160,
+        "wires": [
+            [
+                "set_global",
+                "fed63bd06ccf09d0"
+            ]
+        ]
+    },
+    {
+        "id": "set_global",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Maj global.ComOK",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ComOK",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 870,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "switch_etat_com",
+        "type": "switch",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "True / False",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 810,
+        "y": 240,
+        "wires": [
+            [
+                "msg_retabli"
+            ],
+            [
+                "msg_defaut"
+            ]
+        ]
+    },
+    {
+        "id": "msg_retabli",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Com OK",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Communication Arduino établie.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 220,
+        "wires": [
+            [
+                "notif_ok",
+                "debug_com"
+            ]
+        ]
+    },
+    {
+        "id": "msg_defaut",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Défaut",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ALERTE : Perte de communication avec l'Arduino !",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 260,
+        "wires": [
+            [
+                "notif_defaut",
+                "debug_com"
+            ]
+        ]
+    },
+    {
+        "id": "notif_ok",
+        "type": "ui_toast",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "Green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Toast OK",
+        "x": 1180,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "notif_defaut",
+        "type": "ui_toast",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "position": "top right",
+        "displayTime": "0",
+        "highlight": "Red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Toast ALERTE",
+        "x": 1200,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "debug_com",
+        "type": "debug",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "Log Etat Com",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f4dafd831a2a6ecb",
+        "type": "ui_switch",
+        "z": "591abc7ecc8a82dd",
+        "g": "83ecd4a67a4142a2",
+        "name": "ArduinoSerial",
+        "label": "Communication Arduino",
+        "tooltip": "",
+        "group": "2af2e23a3cac9b4d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 960,
+        "y": 420,
+        "wires": [
+            [
+                "b91cb1e0cda450c2"
+            ]
+        ]
+    },
+    {
+        "id": "d476717faa78ae26",
+        "type": "ui_ui_control",
+        "z": "591abc7ecc8a82dd",
+        "g": "83ecd4a67a4142a2",
+        "name": "",
+        "events": "all",
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "f54a310178ca9aeb"
+            ]
+        ]
+    },
+    {
+        "id": "f54a310178ca9aeb",
+        "type": "serial control",
+        "z": "591abc7ecc8a82dd",
+        "g": "83ecd4a67a4142a2",
+        "name": "",
+        "serial": "6f8263b42e6febb8",
+        "x": 500,
+        "y": 420,
+        "wires": [
+            [
+                "457f3ce98c6fecbf"
+            ]
+        ]
+    },
+    {
+        "id": "457f3ce98c6fecbf",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "g": "83ecd4a67a4142a2",
+        "name": "Enabled ?",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.enabled",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 420,
+        "wires": [
+            [
+                "f4dafd831a2a6ecb",
+                "ed8acf2a62f733b9"
+            ]
+        ]
+    },
+    {
+        "id": "b91cb1e0cda450c2",
+        "type": "function",
+        "z": "591abc7ecc8a82dd",
+        "g": "83ecd4a67a4142a2",
+        "name": "Enable / Disable",
+        "func": "let payload = msg.payload;\n\nmsg.payload = { enabled: payload };\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 420,
+        "wires": [
+            [
+                "f54a310178ca9aeb"
+            ]
+        ]
+    },
+    {
+        "id": "ed8acf2a62f733b9",
+        "type": "change",
+        "z": "591abc7ecc8a82dd",
+        "g": "83ecd4a67a4142a2",
+        "name": "SurveillanceComm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "SurveillanceComm",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fed63bd06ccf09d0",
+        "type": "switch",
+        "z": "591abc7ecc8a82dd",
+        "g": "75a9a7cf037a474d",
+        "name": "SurveillanceComm ?",
+        "property": "SurveillanceComm",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 620,
+        "y": 240,
+        "wires": [
+            [
+                "switch_etat_com"
+            ]
+        ]
+    },
+    {
+        "id": "852df01558d3d2b6",
+        "type": "inject",
+        "z": "591abc7ecc8a82dd",
+        "g": "83ecd4a67a4142a2",
+        "name": "0",
+        "props": [
+            {
+                "p": "payload.enabled",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "c3f9a14ca7b0b38f"
+            ]
+        ]
+    },
+    {
+        "id": "e07ba1a741c1e7b5",
+        "type": "inject",
+        "z": "591abc7ecc8a82dd",
+        "g": "83ecd4a67a4142a2",
+        "name": "1",
+        "props": [
+            {
+                "p": "payload.enabled",
+                "v": "true",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "c3f9a14ca7b0b38f"
+            ]
+        ]
+    },
+    {
+        "id": "c3f9a14ca7b0b38f",
+        "type": "serial control",
+        "z": "591abc7ecc8a82dd",
+        "g": "83ecd4a67a4142a2",
+        "name": "",
+        "serial": "6f8263b42e6febb8",
+        "x": 300,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f67502000eedbec7",
+        "type": "link out",
+        "z": "591abc7ecc8a82dd",
+        "name": "Controle_Acces",
+        "mode": "link",
+        "links": [
+            "5e4c7744775832b7"
+        ],
+        "x": 875,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "07ec86717f11f1e5",
+        "type": "link out",
+        "z": "591abc7ecc8a82dd",
+        "name": "Log_Out",
+        "mode": "link",
+        "links": [
+            "fe883bfe5557fe7d"
+        ],
+        "x": 1035,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "aac204884ae1de68",
+        "type": "function",
+        "z": "591abc7ecc8a82dd",
+        "name": "Format Log",
+        "func": "msg.payload = {\n    message: String(msg.payload),\n    timestamp: Date.now()\n};\n\n// Retourner le message transformé\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 820,
+        "wires": [
+            [
+                "cbc13b946d585bd3"
+            ]
+        ],
+        "info": "Formatage de l'UID reçu sous forme décimale en chaine \r\nde caractère représentant la valeur en hexadécimal\r\n\r\nL'ordre des octets est inversée pour correpondre\r\nà la valeur inscrite sur le badge"
+    },
+    {
+        "id": "cbc13b946d585bd3",
+        "type": "moment",
+        "z": "591abc7ecc8a82dd",
+        "name": "Format Date",
+        "topic": "",
+        "input": "payload.timestamp",
+        "inputType": "msg",
+        "inTz": "Europe/Paris",
+        "adjAmount": "1",
+        "adjType": "months",
+        "adjDir": "add",
+        "format": "object",
+        "locale": "fr-FR",
+        "output": "payload.datetime",
+        "outputType": "msg",
+        "outTz": "Europe/Paris",
+        "x": 890,
+        "y": 820,
+        "wires": [
+            [
+                "debug_log",
+                "07ec86717f11f1e5"
+            ]
+        ]
+    },
+    {
         "id": "db65c9d28895a6c5",
         "type": "moment",
         "z": "0401eb93d584c99a",
@@ -917,7 +1867,7 @@
         "output": "payload.datetime",
         "outputType": "msg",
         "outTz": "Europe/Paris",
-        "x": 550,
+        "x": 590,
         "y": 80,
         "wires": [
             [
@@ -939,7 +1889,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 850,
+        "x": 970,
         "y": 60,
         "wires": []
     },
@@ -949,14 +1899,14 @@
         "z": "0401eb93d584c99a",
         "g": "03abf3d3ef281a57",
         "name": "Format HEX",
-        "func": "msg.payload = {\n    uid: String(msg.payload.code),\n    timestamp: Date.now()\n};\n\n// Retourner le message transformé\nreturn msg;",
+        "func": "msg.payload = {\n    uid: String(msg.payload),\n    timestamp: Date.now()\n};\n\n// Retourner le message transformé\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
+        "x": 390,
         "y": 80,
         "wires": [
             [
@@ -975,7 +1925,7 @@
         "links": [
             "5fe01198061cfc1b"
         ],
-        "x": 815,
+        "x": 935,
         "y": 100,
         "wires": []
     },
@@ -1042,7 +1992,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 710,
+        "x": 770,
         "y": 80,
         "wires": [
             [
@@ -1492,47 +2442,6 @@
         ]
     },
     {
-        "id": "e84bd0b3f880aafe",
-        "type": "mqtt in",
-        "z": "0401eb93d584c99a",
-        "g": "03abf3d3ef281a57",
-        "name": "Badge / Code",
-        "topic": "CtrlAccess/state/Wiegand",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "631cc1e4eb5c5735",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 190,
-        "y": 80,
-        "wires": [
-            [
-                "599740772563d9fe"
-            ]
-        ]
-    },
-    {
-        "id": "959ab5871d0d2368",
-        "type": "mqtt out",
-        "z": "0401eb93d584c99a",
-        "g": "6236bcedb5ad3ed2",
-        "name": "Déverouillage",
-        "topic": "CtrlAccess/Deverrouillage",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "631cc1e4eb5c5735",
-        "x": 920,
-        "y": 680,
-        "wires": []
-    },
-    {
         "id": "b12f129bdae72d5f",
         "type": "change",
         "z": "0401eb93d584c99a",
@@ -1669,14 +2578,14 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "{{payload.temps_ouverture.entree}}",
+        "template": "OPEN:{{payload.temps_ouverture.entree}}",
         "output": "str",
         "x": 690,
         "y": 660,
         "wires": [
             [
                 "a570e08cc71571cf",
-                "959ab5871d0d2368"
+                "1334ce77ba7d2670"
             ]
         ]
     },
@@ -1804,9 +2713,7 @@
         "name": "",
         "props": [
             {
-                "p": "payload.code",
-                "v": "207A0A32",
-                "vt": "str"
+                "p": "payload"
             }
         ],
         "repeat": "",
@@ -1814,13 +2721,73 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 150,
-        "y": 140,
+        "payload": "23B0991C",
+        "payloadType": "str",
+        "x": 180,
+        "y": 120,
         "wires": [
             [
                 "599740772563d9fe"
             ]
         ]
+    },
+    {
+        "id": "5e4c7744775832b7",
+        "type": "link in",
+        "z": "0401eb93d584c99a",
+        "g": "03abf3d3ef281a57",
+        "name": "Reception_Code_Badge",
+        "links": [
+            "f67502000eedbec7"
+        ],
+        "x": 95,
+        "y": 60,
+        "wires": [
+            [
+                "bd9bee64f97b0179"
+            ]
+        ]
+    },
+    {
+        "id": "bd9bee64f97b0179",
+        "type": "change",
+        "z": "0401eb93d584c99a",
+        "g": "03abf3d3ef281a57",
+        "name": "UID",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "BADGE:",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "599740772563d9fe"
+            ]
+        ]
+    },
+    {
+        "id": "1334ce77ba7d2670",
+        "type": "serial out",
+        "z": "0401eb93d584c99a",
+        "g": "6236bcedb5ad3ed2",
+        "name": "Arduino MEGA Out",
+        "serial": "6f8263b42e6febb8",
+        "x": 930,
+        "y": 680,
+        "wires": []
     },
     {
         "id": "e306ac211462d63b",
@@ -1886,6 +2853,7 @@
         "id": "01bf14d42e33bb88",
         "type": "exec",
         "z": "f99f61d176d88850",
+        "d": true,
         "g": "08523bcc635d9f44",
         "command": "sudo nmcli c up bridge0-wlan0",
         "addpay": "",
@@ -1909,6 +2877,7 @@
         "id": "cc7f6406773f5abb",
         "type": "exec",
         "z": "f99f61d176d88850",
+        "d": true,
         "g": "08523bcc635d9f44",
         "command": "sudo nmcli c down bridge0-wlan0",
         "addpay": "",
@@ -2157,7 +3126,7 @@
         "g": "ecc3d44747b5a6e4",
         "name": "",
         "group": "2af2e23a3cac9b4d",
-        "order": 3,
+        "order": 4,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2192,7 +3161,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 870,
+        "x": 840,
         "y": 840,
         "wires": [
             [],
@@ -2204,6 +3173,7 @@
         "id": "2a321425f18897f0",
         "type": "exec",
         "z": "f99f61d176d88850",
+        "d": true,
         "g": "2473d132d401207a",
         "command": "sudo shutdown now",
         "addpay": "",
@@ -2213,7 +3183,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 980,
+        "x": 860,
         "y": 1020,
         "wires": [
             [],
@@ -2678,7 +3648,7 @@
         "g": "2473d132d401207a",
         "name": "",
         "group": "2af2e23a3cac9b4d",
-        "order": 4,
+        "order": 5,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -3357,7 +4327,7 @@
         "label": "Lecture seule",
         "tooltip": "",
         "group": "2af2e23a3cac9b4d",
-        "order": 2,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -3955,7 +4925,7 @@
         "g": "72d8a25691f036aa",
         "name": "",
         "group": "2af2e23a3cac9b4d",
-        "order": 5,
+        "order": 6,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -4489,6 +5459,43 @@
         "y": 600,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "fe883bfe5557fe7d",
+        "type": "link in",
+        "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
+        "name": "Log_In",
+        "links": [
+            "07ec86717f11f1e5"
+        ],
+        "x": 225,
+        "y": 1420,
+        "wires": [
+            [
+                "9b1f8ac831a2b8e3"
+            ]
+        ]
+    },
+    {
+        "id": "9b1f8ac831a2b8e3",
+        "type": "template",
+        "z": "f99f61d176d88850",
+        "g": "72d8a25691f036aa",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{{payload.datetime.date}}/{{payload.datetime.months}}/{{payload.datetime.years}} {{payload.datetime.hours}}:{{payload.datetime.minutes}}:{{payload.datetime.seconds}} >> {{payload.message}}",
+        "output": "str",
+        "x": 340,
+        "y": 1420,
+        "wires": [
+            [
+                "45d357f3962dc5ea"
+            ]
         ]
     },
     {
@@ -5062,7 +6069,7 @@
         "order": 2,
         "width": 30,
         "height": 9,
-        "format": "<!-- Sources locales -->\n<!-- s'assurer que cette ligne est présente dans le fichier setting.js de node red -->\n<!--     httpStatic: '/home/pi/.node-red/projects/CtrlAccesPoulduPiscine/static/tabulator', -->\n<link href=\"/tabulator.min.css\" rel=\"stylesheet\">\n<script src=\"/tabulator.min.js\"></script>\n\n<!-- Sources en ligne nécéssite internet -->\n<!-- <link href=\"https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css\" rel=\"stylesheet\"> -->\n<!-- <script src=\"https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js\"></script> -->\n\n<div style=\"padding: 10px;\">\n    <button onclick=\"addRow()\">Ajouter un accès</button>\n</div>\n<div id=\"csv-table\" style=\"height: 100%; width: 100%; font-size: 14px;\"></div>\n\n<script>\n    (function(scope) {\n    let table;\n\n    // Fonction pour ajouter une ligne\n    window.addRow = function() {\n        const newRow = {\n            \"ID\": \"NOUVEAU\",\n            \"Active\": true,\n            \"UID\": \"\",\n            \"Group\": \"1\",\n            \"LastName\": \"\",\n            \"FirstName\": \"\"\n        };\n        table.addRow(newRow);\n    }\n\n    window.sendAction = function(action, rowData) {\n        scope.send({ payload: { action: action, row: rowData } });\n    }\n\n    function buildTable(data) {\n        table = new Tabulator(\"#csv-table\", {\n            data: data,\n            layout: \"fitColumns\",\n            columns: [\n                { title: \"ID\", field: \"ID\", hozAlign: \"center\", width: 0 },\n                { title: \"Activé\", field: \"Active\", formatter: \"tickCross\", editor: true, hozAlign: \"center\", width: 100 },\n                { title: \"Code / n° de badge\", field: \"UID\", hozAlign: \"center\", editor: \"input\", widthGrow: 1 },\n                { title: \"Type accès\", field: \"Group\", editor: \"input\", hozAlign: \"center\", widthGrow: 1 },\n                { title: \"Nom\", field: \"LastName\", editor: \"input\", widthGrow: 2 },\n                { title: \"Prénom\", field: \"FirstName\", editor: \"input\", widthGrow: 2 },\n                {\n                    title: \"Actions\",\n                    field: \"ID\",\n                    hozAlign: \"center\",\n                    formatter: function(cell) {\n                        return `\n                            <button class=\"edit-btn\" style=\"border:none;background:none;cursor:pointer;\" title=\"Enregistrer les modifications\">✏️</button>\n                            <button class=\"delete-btn\" style=\"border:none;background:none;cursor:pointer;\" title=\"Supprimer l'accès\">🗑️</button>\n                        `;\n                    },\n                    width: 100\n                }\n            ],\n            rowFormatter: function(row) {\n                const el = row.getElement();\n                const editBtn = el.querySelector(\".edit-btn\");\n                const deleteBtn = el.querySelector(\".delete-btn\");\n\n                if (editBtn && deleteBtn) {\n                    // Envoie l'action edit lorsque le bouton edit est cliqué\n                    editBtn.addEventListener(\"click\", () => {\n                        window.sendAction(\"edit\", row.getData());\n                        // Lorsque l'utilisateur clique sur \"Edit\", on réinitialise la couleur de la ligne\n                        row.getElement().classList.remove(\"modified\");\n                    });\n                    // Envoie l'action delete lorsque le bouton delete est cliqué\n                    deleteBtn.addEventListener(\"click\", () => window.sendAction(\"delete\", row.getData()));\n                }\n\n                // Ajout d'un écouteur pour la modification de la cellule\n                row.getCells().forEach(function(cell) {\n                    // Lors de la modification de la cellule, on applique la classe \"modified\" à toute la ligne\n                    cell.getElement().addEventListener('change', function() {\n                        row.getElement().classList.add('modified');\n                    });\n                });\n            }\n        });\n    }\n\n    scope.$watch(\"msg\", function(msg) {\n        if (msg && Array.isArray(msg.payload)) {\n            if (table) {\n                table.replaceData(msg.payload);\n                setTimeout(() => table.redraw(), 50);\n            } else {\n                buildTable(msg.payload);\n            }\n        }\n    });\n})(scope);\n\n</script>\n\n<style>\n    /* Style pour la ligne modifiée */\n    .modified {\n        background-color: #ffeb3b !important;\n        /* Jaune clair avec priorité */\n        transition: background-color 1s ease;\n        /* Transition douce */\n    }\n\n    /* Optionnel : ajuster la couleur de fond pour l'alternance des lignes, pour éviter le conflit */\n    .tabulator-row:nth-child(odd) {\n        background-color: #e8e8e8;\n    }\n\n    .tabulator-row:nth-child(even) {\n        background-color: #ffffff;\n    }\n</style>",
+        "format": "<!-- Sources locales -->\n<!-- s'assurer que cette ligne est présente dans le fichier setting.js de node red -->\n<!--     httpStatic: '/home/pi/.node-red/projects/CtrlAccesPiscinePouldu/static/tabulator', -->\n\n<link href=\"/tabulator.min.css\" rel=\"stylesheet\">\n<script src=\"/tabulator.min.js\"></script>\n\n<!-- Sources en ligne nécéssite internet -->\n<!-- <link href=\"https://unpkg.com/tabulator-tables@5.5.0/dist/css/tabulator.min.css\" rel=\"stylesheet\"> -->\n<!-- <script src=\"https://unpkg.com/tabulator-tables@5.5.0/dist/js/tabulator.min.js\"></script> -->\n\n<div style=\"padding: 10px;\">\n    <button onclick=\"addRow()\">Ajouter un accès</button>\n</div>\n<div id=\"csv-table\" style=\"height: 100%; width: 100%; font-size: 14px;\"></div>\n\n<script>\n    (function(scope) {\n    let table;\n\n    // Fonction pour ajouter une ligne\n    window.addRow = function() {\n        const newRow = {\n            \"ID\": \"NOUVEAU\",\n            \"Active\": true,\n            \"UID\": \"\",\n            \"Group\": \"1\",\n            \"LastName\": \"\",\n            \"FirstName\": \"\"\n        };\n        table.addRow(newRow);\n    }\n\n    window.sendAction = function(action, rowData) {\n        scope.send({ payload: { action: action, row: rowData } });\n    }\n\n    function buildTable(data) {\n        table = new Tabulator(\"#csv-table\", {\n            data: data,\n            layout: \"fitColumns\",\n            columns: [\n                { title: \"ID\", field: \"ID\", hozAlign: \"center\", width: 0 },\n                { title: \"Activé\", field: \"Active\", formatter: \"tickCross\", editor: true, hozAlign: \"center\", width: 100 },\n                { title: \"Code / n° de badge\", field: \"UID\", hozAlign: \"center\", editor: \"input\", widthGrow: 1 },\n                { title: \"Type accès\", field: \"Group\", editor: \"input\", hozAlign: \"center\", widthGrow: 1 },\n                { title: \"Nom\", field: \"LastName\", editor: \"input\", widthGrow: 2 },\n                { title: \"Prénom\", field: \"FirstName\", editor: \"input\", widthGrow: 2 },\n                {\n                    title: \"Actions\",\n                    field: \"ID\",\n                    hozAlign: \"center\",\n                    formatter: function(cell) {\n                        return `\n                            <button class=\"edit-btn\" style=\"border:none;background:none;cursor:pointer;\" title=\"Enregistrer les modifications\">✏️</button>\n                            <button class=\"delete-btn\" style=\"border:none;background:none;cursor:pointer;\" title=\"Supprimer l'accès\">🗑️</button>\n                        `;\n                    },\n                    width: 100\n                }\n            ],\n            rowFormatter: function(row) {\n                const el = row.getElement();\n                const editBtn = el.querySelector(\".edit-btn\");\n                const deleteBtn = el.querySelector(\".delete-btn\");\n\n                if (editBtn && deleteBtn) {\n                    // Envoie l'action edit lorsque le bouton edit est cliqué\n                    editBtn.addEventListener(\"click\", () => {\n                        window.sendAction(\"edit\", row.getData());\n                        // Lorsque l'utilisateur clique sur \"Edit\", on réinitialise la couleur de la ligne\n                        row.getElement().classList.remove(\"modified\");\n                    });\n                    // Envoie l'action delete lorsque le bouton delete est cliqué\n                    deleteBtn.addEventListener(\"click\", () => window.sendAction(\"delete\", row.getData()));\n                }\n\n                // Ajout d'un écouteur pour la modification de la cellule\n                row.getCells().forEach(function(cell) {\n                    // Lors de la modification de la cellule, on applique la classe \"modified\" à toute la ligne\n                    cell.getElement().addEventListener('change', function() {\n                        row.getElement().classList.add('modified');\n                    });\n                });\n            }\n        });\n    }\n\n    scope.$watch(\"msg\", function(msg) {\n        if (msg && Array.isArray(msg.payload)) {\n            if (table) {\n                table.replaceData(msg.payload);\n                setTimeout(() => table.redraw(), 50);\n            } else {\n                buildTable(msg.payload);\n            }\n        }\n    });\n})(scope);\n\n</script>\n\n<style>\n    /* Style pour la ligne modifiée */\n    .modified {\n        background-color: #ffeb3b !important;\n        /* Jaune clair avec priorité */\n        transition: background-color 1s ease;\n        /* Transition douce */\n    }\n\n    /* Optionnel : ajuster la couleur de fond pour l'alternance des lignes, pour éviter le conflit */\n    .tabulator-row:nth-child(odd) {\n        background-color: #e8e8e8;\n    }\n\n    .tabulator-row:nth-child(even) {\n        background-color: #ffffff;\n    }\n</style>",
         "storeOutMessages": true,
         "fwdInMessages": false,
         "resendOnRefresh": true,
@@ -5119,7 +6126,7 @@
         "z": "b7fb87140232fe9d",
         "g": "b6cfbfcba18ed7c0",
         "name": "debug Tableau badge",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5416,570 +6423,6 @@
         "always": true,
         "x": 680,
         "y": 620,
-        "wires": []
-    },
-    {
-        "id": "78bc32fd489261d1",
-        "type": "mqtt in",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "",
-        "topic": "CtrlAccess/state/Life",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "631cc1e4eb5c5735",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 120,
-        "wires": [
-            [
-                "c2a5d3ed4375ca2e",
-                "c9c3485fced0181e",
-                "b6730c9cd280693e"
-            ]
-        ]
-    },
-    {
-        "id": "d8b59f3350b520fa",
-        "type": "mqtt in",
-        "z": "591abc7ecc8a82dd",
-        "name": "",
-        "topic": "CtrlAccess/state/Online",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "631cc1e4eb5c5735",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 440,
-        "wires": [
-            [
-                "d2273536d7b960a9"
-            ]
-        ]
-    },
-    {
-        "id": "d2273536d7b960a9",
-        "type": "link out",
-        "z": "591abc7ecc8a82dd",
-        "name": "MQTT_Online",
-        "mode": "link",
-        "links": [
-            "413b7f85a50b09f0"
-        ],
-        "x": 285,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "c9c3485fced0181e",
-        "type": "mqtt out",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "",
-        "topic": "CtrlAccess/Life",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "631cc1e4eb5c5735",
-        "x": 400,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "ac8af869b3242cbd",
-        "type": "change",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Mémo Old",
-        "rules": [
-            {
-                "t": "set",
-                "p": "LifeOld",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 590,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b6730c9cd280693e",
-        "type": "switch",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Différente",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "LifeOld",
-                "vt": "flow"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 380,
-        "y": 180,
-        "wires": [
-            [
-                "ac8af869b3242cbd",
-                "1b3a505c1fb09b5a"
-            ]
-        ]
-    },
-    {
-        "id": "1b3a505c1fb09b5a",
-        "type": "change",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Tempo RAZ",
-        "rules": [
-            {
-                "t": "set",
-                "p": "TempoComm",
-                "pt": "flow",
-                "to": "0",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 590,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c2a5d3ed4375ca2e",
-        "type": "debug",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "debug 3",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 380,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "960329839e07f6fd",
-        "type": "inject",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "ft1s",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "10",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 110,
-        "y": 280,
-        "wires": [
-            [
-                "41517a322d9eb80e",
-                "85b7f075344482af"
-            ]
-        ]
-    },
-    {
-        "id": "41517a322d9eb80e",
-        "type": "function",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Gestion tempo",
-        "func": "let tempo = flow.get(\"TempoComm\");\n\nif (tempo < 10)\n{\n    tempo = tempo + 1;\n    flow.set(\"TempoComm\", tempo);\n}\nmsg.payload = tempo;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "85b7f075344482af",
-        "type": "switch",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Etat communication",
-        "property": "TempoComm",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "lt",
-                "v": "10",
-                "vt": "str"
-            },
-            {
-                "t": "gte",
-                "v": "10",
-                "vt": "str"
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 2,
-        "x": 290,
-        "y": 300,
-        "wires": [
-            [
-                "413eeeea223db926"
-            ],
-            [
-                "af2ce02634a47f83"
-            ]
-        ]
-    },
-    {
-        "id": "af2ce02634a47f83",
-        "type": "change",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "KO",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 470,
-        "y": 320,
-        "wires": [
-            [
-                "422152293a8cc4ae"
-            ]
-        ]
-    },
-    {
-        "id": "413eeeea223db926",
-        "type": "change",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "OK",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 470,
-        "y": 280,
-        "wires": [
-            [
-                "422152293a8cc4ae"
-            ]
-        ]
-    },
-    {
-        "id": "3487b4a67424ab63",
-        "type": "debug",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Défaut de commnunication",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "$globalContext(\"DefCom\")",
-        "targetType": "jsonata",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "7e39c6db9fc3e5d7",
-        "type": "inject",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Firstscan",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "10",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 160,
-        "y": 180,
-        "wires": [
-            [
-                "b6730c9cd280693e"
-            ]
-        ]
-    },
-    {
-        "id": "70e975d29c6d573f",
-        "type": "link out",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "DefComm",
-        "mode": "link",
-        "links": [
-            "bdba2b4f959a87a0"
-        ],
-        "x": 875,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "422152293a8cc4ae",
-        "type": "switch",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Changement de valeur",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "DefCom",
-                "vt": "global"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 660,
-        "y": 300,
-        "wires": [
-            [
-                "a48aabe134c6753a"
-            ]
-        ]
-    },
-    {
-        "id": "0d1b2a142d8a2c92",
-        "type": "ui_toast",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "position": "top right",
-        "displayTime": "5",
-        "highlight": "Red",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "Notification",
-        "x": 1130,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "4ae815b9e2048893",
-        "type": "change",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Message",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Communication MQTT rétablie.",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 980,
-        "y": 200,
-        "wires": [
-            [
-                "456387f7ddb14772"
-            ]
-        ]
-    },
-    {
-        "id": "7dd13654c169f94c",
-        "type": "switch",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Défaut",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "false"
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 2,
-        "x": 830,
-        "y": 180,
-        "wires": [
-            [
-                "96e1a885a08e2b85"
-            ],
-            [
-                "4ae815b9e2048893"
-            ]
-        ]
-    },
-    {
-        "id": "96e1a885a08e2b85",
-        "type": "change",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Message",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Défaut de communication MQTT.",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 980,
-        "y": 160,
-        "wires": [
-            [
-                "0d1b2a142d8a2c92"
-            ]
-        ]
-    },
-    {
-        "id": "456387f7ddb14772",
-        "type": "ui_toast",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "position": "top right",
-        "displayTime": "2",
-        "highlight": "Green",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "Notification",
-        "x": 1130,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "a48aabe134c6753a",
-        "type": "change",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Memo",
-        "rules": [
-            {
-                "t": "set",
-                "p": "DefCom",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 770,
-        "y": 240,
-        "wires": [
-            [
-                "7dd13654c169f94c",
-                "3487b4a67424ab63",
-                "70e975d29c6d573f"
-            ]
-        ]
-    },
-    {
-        "id": "8b66295461714e80",
-        "type": "comment",
-        "z": "591abc7ecc8a82dd",
-        "g": "75a9a7cf037a474d",
-        "name": "Aide",
-        "info": "# Documentation du Flux : Gestion de la Communication MQTT avec Bit de Vie\n\nCe flux gère la communication MQTT en surveillant l'état de vie (`Life Bit`) et en détectant les éventuels défauts de communication. Voici une explication des principaux nœuds et de leur rôle.\n\n---\n\n## Nœuds Principaux\n\n### 1. **[Entrée MQTT : CtrlAccess/state/Life]**\n- **Type** : `mqtt in`\n- **Description** : Ce nœud écoute les messages MQTT publiés sur le topic `CtrlAccess/state/Life` pour détecter les bits de vie (indicateurs que la communication est active).  \n- **Connecté à** : \n  - Le nœud de debug (`debug 3`) pour observer les messages reçus.\n  - Le nœud de comparaison (`Différente`) pour analyser si l'état reçu est nouveau.\n  - Le nœud de sortie MQTT (`CtrlAccess/Life`) pour réémettre l'état.\n\n---\n\n### 2. **[Sortie MQTT : CtrlAccess/Life]**\n- **Type** : `mqtt out`\n- **Description** : Ce nœud publie l'état `Life` sur le topic `CtrlAccess/Life` pour le renvoyer à la source qui se charge d'inverser ce quelle reçoi via ce topic.\n\n---\n\n### 3. **[Mémo Old : Sauvegarde de l'état précédent]**\n- **Type** : `change`\n- **Description** : Ce nœud enregistre l'état précédent du bit de vie (`LifeOld`) dans le contexte `flow` pour comparer les nouveaux états.  \n- **Connecté à** : Le nœud de comparaison (`Différente`).\n\n---\n\n### 4. **[Différente : Comparaison d'états]**\n- **Type** : `switch`\n- **Description** : Ce nœud compare l'état actuel reçu (`payload`) avec l'état précédent (`LifeOld`).  \n- **Règle** : Si les deux états sont différents, le flux continue vers :\n  - **Mémo Old** pour mettre à jour l'état sauvegardé.\n  - **Tempo RAZ** pour réinitialiser le compteur de temporisation.\n\n---\n\n### 5. **[Tempo RAZ : Réinitialisation de la temporisation]**\n- **Type** : `change`\n- **Description** : Ce nœud remet la temporisation (`TempoComm`) à 0 pour indiquer qu'un bit de vie a été détecté.  \n\n---\n\n### 6. **[Gestion tempo : Gestion de la temporisation]**\n- **Type** : `function`\n- **Description** : Ce nœud incrémente périodiquement la temporisation (`TempoComm`) si aucune donnée nouvelle n'est reçue.  \n- **Logiciel** : Si la temporisation atteint une valeur limite (10 ici), cela indique un défaut de communication.\n\n---\n\n### 7. **[État communication : Vérification de la temporisation]**\n- **Type** : `switch`\n- **Description** : Ce nœud vérifie si la temporisation est en dessous ou au-dessus de la limite (10).  \n- **Règles** : \n  - Si `< 10` : La communication est considérée comme fonctionnelle.\n  - Si `>= 10` : Un défaut de communication est déclaré.\n\n---\n\n### 8. **[Défaut : Gestion des défauts de communication]**\n- **Type** : `switch`\n- **Description** : Ce nœud divise le flux selon l'état de la communication :  \n  - **Défaut** : Active une notification d'erreur et met à jour le contexte global (`DefCom`).  \n  - **OK** : Informe que la communication est rétablie.\n\n---\n\n### 9. **[Notification et Journalisation]**\n- **Type** : `ui_toast` et `debug`\n- **Description** : \n  - Une notification visuelle est affichée en cas de défaut ou de rétablissement de la communication.\n  - Les messages d'état sont également affichés dans la console debug pour faciliter le diagnostic.\n\n---\n\n## Scénarios\n- **Bit de vie reçu** : Le flux réinitialise la temporisation et enregistre l'état reçu. La communication est considérée comme fonctionnelle.\n- **Aucun bit de vie reçu pendant un certain temps** : Le flux détecte un défaut, génère une alerte et met à jour l'état global.\n- **Communication rétablie après un défaut** : Une notification de rétablissement est affichée, et l'état global est remis à jour.\n\n---\n\n## Points à noter\n- **Temporisation** : Le système repose sur une temporisation incrémentale pour surveiller les défauts de communication. Cela permet de tolérer des interruptions momentanées.  \n- **Notifications** : Les notifications aident à surveiller en temps réel l'état du système, sans intervention constante.  \n",
-        "x": 90,
-        "y": 60,
         "wires": []
     },
     {
