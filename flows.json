@@ -3187,7 +3187,6 @@
         "id": "2a321425f18897f0",
         "type": "exec",
         "z": "f99f61d176d88850",
-        "d": true,
         "g": "2473d132d401207a",
         "command": "sudo shutdown now",
         "addpay": "",
